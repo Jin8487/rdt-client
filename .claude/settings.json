@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__bb0d7c93-6f11-4380-8772-e6226aaf7446__search_files",
+      "mcp__bb0d7c93-6f11-4380-8772-e6226aaf7446__download_file_content",
+      "mcp__bb0d7c93-6f11-4380-8772-e6226aaf7446__read_file_content",
+      "mcp__bb0d7c93-6f11-4380-8772-e6226aaf7446__get_file_metadata",
+      "mcp__Google_Drive__search_files",
+      "mcp__Google_Drive__get_file_metadata",
+      "mcp__Google_Drive__read_file_content",
+      "mcp__bf7c680d-5fdc-5ef4-b4a0-abadb619bf0a__list_repos"
+    ]
+  }
+}
