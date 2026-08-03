@@ -69,6 +69,24 @@ Changes (frags 01–17):
   a benign ticket-ID race (two `create`s within ~1s of a `done` can get the
   same MNT ref — only plausible under synthetic load).
 
+## v3 — edge staging: DEPLOYED (3 Aug, evening) — one paste pending
+Mo's real phone test (MNT-0017) showed 3 × 210KB photos taking **4m40s**:
+stalled, timeout-less fetches to script.google.com — the phone→Google leg is
+the problem, not payload size. v3 removes it:
+* Media is staged as raw binary to `repairs.candorhousing.com/stage/<key>`
+  (Cloudflare Worker + KV namespace `repairs-stage`, 24h TTL) the moment it is
+  captured — while the tenant is still answering questions. Stall-detection
+  abort (45s without a byte moving) + retry; no base64 on the wire.
+* On Send, the new `fetchFiles` Apps Script action pulls the staged files
+  server-to-server (Google↔Cloudflare) — Send no longer depends on the
+  tenant's uplink. `apps-script-fetchfiles.gs` in this folder is the paste;
+  until pasted the app auto-falls back to the legacy chunk path.
+* Every backend request now has a hard timeout (create 30s ×2 attempts,
+  fetchFiles 90s, done 120s) — nothing can hang silently again.
+* Both paths proven by the robot journey (staging mode: zero phone→Google
+  uploads, eager staging before Send, correct pulls; legacy mode: chunk path
+  with stagger intact).
+
 ## Cleanup for Mo (nothing here is automated on purpose)
 * Delete Drive folder **MNT-0016 — 4 Repton Road** and the Baserow
   "Maintenance" row MNT-0016 (automated speed-test garbage; both test runs
