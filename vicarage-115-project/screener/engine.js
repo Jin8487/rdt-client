@@ -40,7 +40,31 @@
     "balsall-heath": { name: "Balsall Heath core", ppsf: 215, ceiling: 400000, pd: true, bike: 11, train: null, ev: "reviewed net £0–15k; £/sqft barely clears build cost; avoid" },
     "cannon-hill-edgbaston-fringe": { name: "Cannon Hill / Edgbaston fringe", ppsf: 230, ceiling: 420000, pd: true, bike: 12, train: null, ev: "park pocket in Rea flood-warning corridor; Calthorpe side needs estate consent" },
     "hall-green": { name: "Hall Green", ppsf: 275, ceiling: 500000, pd: true, bike: 13, train: "Hall Green (Shakespeare line)", ev: "reviewed net £10–20k — dated entry within £25/sqft of finished" },
+    "edgbaston-calthorpe": { name: "Edgbaston — Calthorpe Estate", ppsf: 450, ceiling: 1500000, pd: false, bike: 16, train: "Five Ways (Cross-City)", ev: "Sir Harrys Rd solds £850k–£1.8m; Calthorpe scheme-of-management consent + CA on top of planning — high friction, high ceiling" },
     "billesley-yardley-wood": { name: "Billesley / Yardley Wood", ppsf: 245, ceiling: 440000, pd: true, bike: 9, train: "Yardley Wood (Shakespeare line)", ev: "Haunch/Wheelers border only; estate core modelled at a loss" },
+  };
+
+  // ---- Geography: outcode parsing + great-circle distance ----
+  const HOME = { lat: 52.429, lon: -1.8931 }; // B14 7QG, Vicarage Rd
+
+  function parseOutcode(str) {
+    const m = String(str || "").trim().toUpperCase().match(/^([A-Z]{1,2}\d{1,2}[A-Z]?)\s*(\d[A-Z]{2})?$/);
+    return m ? m[1] : null;
+  }
+
+  function haversineMiles(a, b) {
+    const R = 3958.8, rad = Math.PI / 180;
+    const dLat = (b.lat - a.lat) * rad, dLon = (b.lon - a.lon) * rad;
+    const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin(dLon / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(h));
+  }
+
+  // District each area's stock sits in (for postcode-radius coverage mode)
+  const AREA_DISTRICT = {
+    "moseley-prime": "B13", "moseley-outer": "B13", "selly-park-villa": "B29", "selly-park-south": "B29",
+    "kings-heath-top": "B14", "kings-heath-mid": "B14", "cotteridge-offtrust": "B30", "stirchley": "B30",
+    "kings-norton": "B38", "balsall-heath": "B12", "cannon-hill-edgbaston-fringe": "B12",
+    "hall-green": "B28", "billesley-yardley-wood": "B13", "edgbaston-calthorpe": "B15",
   };
 
   const REFURB_RATE = { light: 25, medium: 50, full: 90 };
@@ -142,8 +166,15 @@
     chk("Guide price uplift +8% applied", g.entry, 270000);
     const fin = underwrite({ area_key: "selly-park-villa", price: 550000, price_type: "sold-recent", existing_sqft: 2200, addable_sqft: 400, condition: "medium" }, Object.assign({}, s0, { finance: true }), null);
     chk("9-month bridge costs £35–60k of margin", sp.margin - fin.margin, 35000, 60000);
+
+    const pc = (s2, want) => t.push({ name: `Postcode parse "${s2}"`, got: parseOutcode(s2) === want ? 1 : 0, want: "1", pass: parseOutcode(s2) === want });
+    pc("b14 7qg", "B14"); pc("CV1 2AB", "CV1"); pc("B90", "B90"); pc("not a postcode", null);
+    const lonBhm = Math.round(haversineMiles({ lat: 51.5074, lon: -0.1278 }, { lat: 52.4862, lon: -1.8904 }));
+    chk("Haversine London↔Birmingham ≈ 101 mi", lonBhm, 98, 105);
+    const b14b13 = haversineMiles({ lat: 52.4176, lon: -1.8882 }, { lat: 52.4364, lon: -1.8779 });
+    chk("B14↔B13 district centroids 1–2 miles", Math.round(b14b13 * 10), 10, 25);
     return t;
   }
 
-  globalThis.SCREENER = { sdltAdditional, underwrite, runTests, AREAS, DEFAULTS, REFURB_RATE, PRICE_ADJ };
+  globalThis.SCREENER = { sdltAdditional, underwrite, runTests, AREAS, DEFAULTS, REFURB_RATE, PRICE_ADJ, parseOutcode, haversineMiles, AREA_DISTRICT, HOME };
 })();
