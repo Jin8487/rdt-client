@@ -1,0 +1,117 @@
+{
+ "summary": "115 Vicarage Road is a detached, two-storey, white-rendered inter-war house with a hipped plain-tile main roof and a mock-Tudor gabled two-storey bay to the front left. It has an integral front garage (street-right) with a flat-roofed room over, and an existing full-width single-storey flat-roofed rear extension plus a flat-roofed two-storey rear outrigger element on part of the plan. Neighbour no.117 (street-right / garden-left) is a white detached house whose boundary-side garage and white polycarbonate/conservatory-type structure sit close to the shared boundary; neighbour no.113 (street-left / garden-right) is the larger house whose rear wing/roof comes within a very narrow gap (the stated ~1.25m alleyway) of 115's two-storey rear projection, and it has an obscure-glazed first-floor window facing the gap. Boundary treatments are timber close-board fencing both sides at the rear and a low fence/wall to the front drive. Rear flat-roof height sits just below first-floor cill level (~2.9-3.1m estimated); main eaves ~5.2-5.5m, ridge ~7.5-8m (estimates from door height and brick coursing).",
+ "facts": [
+  {
+   "topic": "House type",
+   "detail": "Detached. Clear fenced gap between 115's integral garage and no.117's garage on one side (photo 35); narrow ~1.25m gap to no.113's rear wing on the other side (photo 39). Not physically attached to either neighbour.",
+   "source": "00000034/35/39 photos + aerial 00000022",
+   "confidence": "high",
+   "value": "Detached"
+  },
+  {
+   "topic": "Storeys",
+   "detail": "Two storeys plus roof void. Main hipped roof with no existing dormers visible to the rear; loft appears unconverted externally (only a satellite dish and chimneys on the rear slope).",
+   "source": "00000038/40",
+   "confidence": "high",
+   "value": "2 storeys"
+  },
+  {
+   "topic": "Roof form",
+   "detail": "Main roof is hipped on both sides to the rear (clay plain tiles, moss-stained). Front has a projecting mock-Tudor half-timbered gable over the two-storey bay (street-left). A brick chimney with red pot rises through the rear slope right-of-centre (garden view); a second stack sits at the 113-side flank. Rear hipped form limits easy loft conversion without hip-to-gable or large dormer.",
+   "source": "00000034/38/40",
+   "confidence": "high",
+   "value": "Hipped main roof, front feature gable"
+  },
+  {
+   "topic": "Garage",
+   "detail": "Integral garage at the front, on the RIGHT as viewed from the street, with dark (black) up-and-over style opening flush with the front elevation. Above it is a flat-roofed first-floor section with two windows \u2014 i.e. an existing two-storey front/side addition whose roof is lower than the main hipped roof.",
+   "source": "00000034/35",
+   "confidence": "high",
+   "value": "Integral front garage, street-right, room over with flat roof"
+  },
+  {
+   "topic": "Existing rear extension",
+   "detail": "Full-width single-storey rear extension, cream/white render, flat felt roof with black fascia. Rear elevation (garden view): small obscure window and half-glazed uPVC door on the LEFT, large fixed kitchen window centre-left, and a 4-panel uPVC French/patio door set on the RIGHT. Flat roof line runs continuously across the whole rear and wraps toward the 117 side. Render is stained/blowing in places with a vertical crack above the patio doors.",
+   "source": "00000037/40",
+   "confidence": "high",
+   "value": "Full-width single-storey flat-roof rear extension"
+  },
+  {
+   "topic": "Existing two-storey rear projection",
+   "detail": "On part of the rear (toward the 113 side / garden-right area) there is an existing flat-roofed, parapet-edged TWO-storey rendered projection with a first-floor window (bottles visible on cill \u2014 likely bathroom) and a white flue/soil-vent pipe rising past the flat roof. Its flat roof sits below the main hipped ridge, roughly at main-eaves level. This is the element that comes closest to no.113's roof slope across the narrow gap.",
+   "source": "00000038/39",
+   "confidence": "high",
+   "value": "Flat-roof 2-storey rear outrigger present"
+  },
+  {
+   "topic": "Neighbour no.117 \u2014 side and rear form",
+   "detail": "No.117 is on the RIGHT viewed from the street, therefore on the LEFT viewed from the rear garden. White rendered detached house with two-storey bay, half-timbered gable and a green-doored garage/annex hard against the boundary with 115 under a small pitched red-tile canopy. Aerial view shows a long white ribbed (polycarbonate/conservatory-type) roof structure on 117's boundary side facing 115, plus a white flat-roofed rear addition \u2014 consistent with the described conservatory at 117. Rear photo 37 shows this white glazed structure at the far left edge behind tarpaulin-covered items.",
+   "source": "aerials 00000022/27 + 00000035/37",
+   "confidence": "high",
+   "value": "117 = street-right / garden-left; conservatory + garage on boundary"
+  },
+  {
+   "topic": "Neighbour no.113 \u2014 side and rear form",
+   "detail": "No.113 is on the LEFT viewed from the street, therefore on the RIGHT viewed from the rear garden. Larger house with big hipped clay-tile roof and a substantial dark flat-roofed rear addition visible on the aerial. Its rear wing/roof slope comes within a very narrow gap of 115's two-storey rear projection (the ~1.25m alleyway); a small OBSCURE-GLAZED first-floor window in 113's flank faces this gap (photo 39) \u2014 a side-facing window relevant to 45-degree/outlook tests. A red-brick two-storey rear elevation of 113 with modern windows is visible beyond the fence at garden-right (photo 37/40).",
+   "source": "aerial 00000022 + 00000037/39/40",
+   "confidence": "high",
+   "value": "113 = street-left / garden-right; own rear extension, obscure flank window"
+  },
+  {
+   "topic": "Boundary treatments",
+   "detail": "Front: fully block-paved (herringbone) drive across the frontage, low concrete-post/timber remnant wall to the footpath, close-board timber fence on the 117 boundary beside the garage, low brick pier/wall at 117's drive entrance. Rear: timber close-board/panel fencing on the 113 side (garden-right) and a woven/panel fence on the 117 side visible at the far corner; rear garden beyond 115's extension is mostly paved slabs then rough lawn with a small tree close to the rear elevation.",
+   "source": "00000034/35/37/40",
+   "confidence": "high"
+  },
+  {
+   "topic": "Height estimates",
+   "detail": "Using the rear door (~2.03m) and render band lines: single-storey rear extension flat roof/fascia approx 2.9-3.1m, sitting just below first-floor window cills. First-floor window heads ~4.8m; main eaves ~5.2-5.5m; hipped ridge estimated ~7.5-8.0m. The over-garage flat-roof section at the front is roughly at main-eaves height. The two-storey rear outrigger parapet is approximately at or just above main-eaves level.",
+   "source": "00000037/38/39/40 (scaled from door/window proportions)",
+   "confidence": "medium",
+   "value": "Ext. flat roof ~3m; eaves ~5.3m; ridge ~7.5-8m"
+  },
+  {
+   "topic": "Services / constraints on rear elevation",
+   "detail": "Rear elevation carries: black rainwater downpipe at the garden-left end of the extension; brown/copper-coloured downpipe from the main roof discharging onto the extension flat roof; black soil pipe near the patio; large white flue/soil-vent pipe up the two-storey outrigger (113 side); satellite dish on rear roof slope (117 side) and another on the chimney near 113; two solar-powered security floodlights and vent grilles on the rear wall. All would need diverting/rebuilding within a 6m+ deep extension.",
+   "source": "00000037/38/39/40",
+   "confidence": "high"
+  },
+  {
+   "topic": "First-floor rear windows (own house)",
+   "detail": "Rear first floor has: a small obscure-glazed window at the garden-left end (bathroom/WC), a clear casement window centre-left with net curtain, a top-hung open casement centre-right, and the outrigger window on the 113 side. These indicate at least one habitable room plus bathrooms at first-floor rear \u2014 relevant to how a 4m first-floor addition would re-plan the rear rooms.",
+   "source": "00000038/40",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Front elevation character",
+   "detail": "White render with black detailing: two-storey canted/square bay under the half-timbered gable (street-left), arched brick door surround painted black/white with '115' on a white panelled door (centre), small landscape window to its left, garage to the right, two first-floor windows over the garage under a flat roof. TV aerial and small dish at the chimney. Street is a mature suburban avenue of large detached/semi inter-war houses with grass verges and trees.",
+   "source": "00000034/35/36",
+   "confidence": "high"
+  },
+  {
+   "topic": "Aerial context / precedent",
+   "detail": "Aerial screenshot 00000022 confirms plot layout: 115 between 113 (toward the road junction) and 117; 115 already shows a large dark flat-roofed rear addition. Second aerial (00000027) is centred on 8 Colmore Rd, the road backing/adjoining to the south \u2014 a large hipped-roof property with wide rear additions and outbuildings, evidently the 'precedent in area' the owner refers to. Long rear gardens (~30m+) mean rear-garden amenity space is not a limiting factor for a 6-6.7m extension.",
+   "source": "00000022/00000027",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Levels",
+   "detail": "No significant level change visible: rear patio slabs run level from the extension threshold to the lawn; front drive falls gently to the street. Thresholds appear near-flush at the rear doors.",
+   "source": "00000037/40",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Left/right convention used",
+   "detail": "From the STREET facing the front: garage and no.113 side on the RIGHT is INCORRECT \u2014 garage is street-RIGHT but that is the no.117 side; no.113 is street-LEFT (bay/gable side). From the REAR GARDEN facing the house this mirrors: no.117 (conservatory) is garden-LEFT, no.113 (1.25m gap, obscure flank window, own extension) is garden-RIGHT. The existing two-storey flat-roof rear outrigger of 115 is at the garden-right (113) side of the rear elevation.",
+   "source": "cross-check of aerial 00000022 vs photos 34/35/37/39",
+   "confidence": "medium"
+  }
+ ],
+ "open_questions": [
+  "Confirm on the ground which flank the 2005 (~3.3m) permission related to and whether the existing full-width flat-roof extension exceeds it \u2014 the aerial suggests the built extension is deeper/wider than a 3.3m span.",
+  "Verify numbering direction on Vicarage Rd from a doorstep check or Street View: the left/right assignment of 113 vs 117 rests on the aerial label positions and one oblique street photo (photo 35's neighbour with the green garage door assumed to be 117).",
+  "Whether no.113's obscure-glazed flank window over the alleyway is a habitable-room or non-habitable window (affects impact assessment).",
+  "Exact depth of 115's existing rear extension and of 113's and 117's rear projections \u2014 needs measurement; photos alone cannot give reliable metre figures.",
+  "Whether the loft is already converted internally (no rear dormer/rooflights visible, but front/side rooflights were not photographed)."
+ ]
+}

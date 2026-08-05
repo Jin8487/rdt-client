@@ -1,0 +1,159 @@
+{
+ "summary": "Research via the Planning Inspectorate casework portal (acp.planninginspectorate.gov.uk) and Google found: (1) a directly on-point ALLOWED Birmingham householder appeal, APP/P4605/D/25/3373138 (834 Walsall Road, Perry Barr B42 1ES, app ref 2025/02999/PA), where an inspector granted a two-storey side AND rear extension plus single-storey rear extension and outbuilding against Birmingham CC refusal, engaging the same Birmingham Design Guide SPD 2022 \"smaller than the main part of the house / should not dominate\" test and 45-Degree Code/living-conditions issues cited in the 115 Vicarage Road pre-app; (2) multiple allowed appeals establishing that \"subservient/subordinate\" is a matter of planning judgement with no numeric definition - inspectors have allowed extensions of \"notable depth\" where set-down of ridge/eaves, hipped roof forms, set-backs and limited public visibility preserve the \"primacy\" of the host dwelling (APP/D3125/D/25/3365914; appeal 3352809; Dudley and Harrow consultancy case studies); (3) no published Birmingham policy or SPD figure prescribes a 4m maximum two-storey rear depth - the officer's \"reduce by 2m to 4m\" is an unquantified judgement, and commentary confirms depth rules of thumb are \"guidance, not law, and rigid application of them is exactly what inspectors are willing to look past\"; (4) national householder appeal success rate is approximately 36% allowed in 2025/26 versus 32% for all development types (PINS Annual Time Series, published 23 April 2026), with ~30-33% across 2024-25; (5) a cautionary local picture - recent B13/B14/B30 householder appeals in the sample checked were dismissed, and Birmingham dismissal APP/P4605/D/25/3371627 (24 Ellesboro Road B17) shows two-storey additions still fail where design harm is found. Caveat: the ACP portal and most PDF hosts returned 403 through the sandbox proxy, so extracts come from search-indexed text of the decision PDFs rather than full-document reads; paragraph-level quotes from 3373138 should be verified by downloading the PDF directly (fileid 64412349).",
+ "facts": [
+  {
+   "topic": "Key precedent - allowed Birmingham two-storey rear appeal",
+   "detail": "Appeal APP/P4605/D/25/3373138, 834 Walsall Road, Perry Barr, Birmingham B42 1ES (application 2025/02999/PA, appellant Mr Masawar Iqbal v Birmingham City Council). Decision: 'The appeal is allowed and planning permission is granted for a two storey side and rear extension, with a single storey porch and a rear extension, and outbuilding.' Main issues were (a) character and appearance of the host property and area, and (b) living conditions (natural light and outlook) at 832A and 836 Walsall Road. The decision recites the same Birmingham Design Guide SPD 2022 test quoted in the 115 Vicarage Road pre-app: 'the design of an extension must consider the style of the host property and the character of the area; and that its size should be smaller than the main part of the house, and should not dominate its appearance' - and the inspector still allowed the scheme. This is the closest like-for-like Birmingham precedent found (2025, same LPA, same SPD test, two-storey rear massing allowed on appeal).",
+   "source": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=64412349",
+   "value": "APP/P4605/D/25/3373138 - ALLOWED",
+   "confidence": "high"
+  },
+  {
+   "topic": "Subservience survives 'notable depth' - APP/D3125/D/25/3365914",
+   "detail": "Appeal APP/D3125/D/25/3365914 (2025): inspector allowed an extension despite acknowledging it 'would be at notable depth'. Reasoning extracted: 'the set down in both eave and ridge height is sufficient for the proposal to read as an extension to the host dwelling... The primacy of the host property, and the balance of the semi-detached pair, would be retained'; despite the notable depth and double-pile form with hipped element and high-level flat roof, the inspector 'did not find the proposal to represent poor design nor be a contrived and incongruous addition'. Directly useful against a bare 'not subservient' objection: subservience is achieved through roof set-down and articulation, not depth caps. Note the appeal property was semi-detached; 115 Vicarage Road is detached, where symmetry/balance concerns are weaker still.",
+   "source": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=63391514",
+   "value": "Allowed despite 'notable depth'; primacy of host retained via set-down",
+   "confidence": "high"
+  },
+  {
+   "topic": "Subservience test as applied by inspectors - appeal 3352809",
+   "detail": "Appeal 3352809: two-storey additions to both sides plus single-storey rear allowed. Inspector reasoning: extensions 'not excessive in width, when compared to that of the existing dwelling... recessed at first-floor level and would have a ridge height that is set lower than that of the central part of the dwelling. Together, the width, first-floor set back and reduced ridge height would ensure that the side extensions would appear subservient to the host dwelling, which would remain visually dominant.' Demonstrates the design levers (set-back, lower ridge, matching hipped roof) that convert a large scheme into an approvable 'subservient' one - relevant to the officer's requirement that any roof 'should match the existing hipped roof design'.",
+   "source": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=60196661",
+   "value": "Design levers, not size caps, determine subservience",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Rear-facing massing carries less weight - public visibility principle",
+   "detail": "Across allowed decisions found in search extracts: a two-storey rear extension 'would appear subservient to the two-storey element of the existing dwelling when viewed from the public realm and would be consistent with the pattern of development in the area'; another inspector noted a rear extension had 'little impact on the amenity of the street scene' and was 'subservient to the host dwelling' because views from the road were restricted. Principle: for REAR extensions (unlike side extensions), the character/appearance harm case is weak where the addition is not readily visible from the street - a strong argument for a detached, hipped-roof house where the rear elevation faces only private gardens.",
+   "source": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=62610862 (and related decisions surfaced in search extracts)",
+   "value": "Limited street visibility undermines 'dominance' objections to rear extensions",
+   "confidence": "medium"
+  },
+  {
+   "topic": "'Subordinate/subservient' is judgement, not rule - no defining figure",
+   "detail": "Planning appeals commentary (My Planning Appeal): refusal for not being 'subordinate' is 'treated as a design judgement, not a rule... There is no figure that defines subordinate... These are useful starting points, but they are guidance, not law, and rigid application of them is exactly what inspectors are willing to look past.' Neither the Birmingham Design Guide SPD 2022 passage quoted by the officer (LW-16: 'smaller than the main part of the house and not dominate its appearance') nor Development Management in Birmingham DPD 2021 prescribes any numeric maximum depth for a two-storey rear extension. The pre-app's '6m must be reduced by 2m to 4m' is therefore an officer judgement with no codified policy figure behind it - the appeal argument is that a well-articulated 6m (or intermediate ~4.5-5m) scheme meets the qualitative test, and the officer has identified no policy metric it breaches. No appeal decision was found expressly branding a 6m-to-4m reduction 'arbitrary'; that specific principle would need to be argued from the absence of a policy figure rather than quoted from a precedent.",
+   "source": "https://myplanningappeal.co.uk/extension-refused-not-subordinate/",
+   "value": "No policy figure defines subservience; officer's 4m cap is unquantified judgement",
+   "confidence": "high"
+  },
+  {
+   "topic": "45 Degree Code - policy basis and flexibility",
+   "detail": "Policy DM10 of the Development Management in Birmingham DPD incorporates the '45 Degree Code' into City Note LW-4 of the Birmingham Design Guide (2022): the code is measured at 45 degrees 'from the nearest window providing the main source of natural light to a habitable room', with stated flexibility 'where it can be robustly demonstrated that adhering to the standards is not feasible due to physical constraints'. Critically for 115 Vicarage Road, the pre-app already concedes the strongest points: 'it would appear the 45 Degree Code would be met from both neighbouring properties' and, for No.117, the code 'would be taken from the end of this conservatory rather than the original window openings' (because the conservatory has a solid side wall). Original 45 Degree Code document: Birmingham CC, March 2006. This means the residential-amenity leg of any refusal is already neutralised on the officer's own analysis; the only contestable issue is the design/subservience judgement.",
+   "source": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=56148068 (DM10/LW-4 recitation); https://www.birmingham.gov.uk/download/downloads/id/16864/ebd43_bcc_45_degree_code_for_residential_extensions_march_2006.pdf",
+   "value": "45 Degree Code met from both neighbours per the council's own pre-app",
+   "confidence": "high"
+  },
+  {
+   "topic": "National householder appeal success rate",
+   "detail": "Planning Inspectorate Annual and Quarterly Statistics (Annual Time Series tables, published 23 April 2026): householder development appeals were allowed at approximately 36% in 2025/26, versus about 32% for all development types. Broader context: about 30% of all appeals succeeded in 2024-25; s78 appeals hit a seven-year-high 33% allowed in Q1 2025 (Savills analysis: success rates strengthening across England). Consultancy commentary: 'around a third are overturned - for householder schemes the odds are slightly better still.' So roughly one in three householder appeals succeeds nationally - better than average, but not a majority: no strategy 'cannot be refused', and the strongest position is a scheme the council can approve, with the appeal precedents used as negotiating leverage.",
+   "source": "https://www.gov.uk/government/statistics/planning-inspectorate-statistical-release-23-october-2025/planning-inspectorate-statistical-release-23-october-2025; https://appealfinder.co.uk/Planning-appeal-success-rates-and-timescales.n48.html; https://www.savills.co.uk/blog/article/388902/commercial-property/planning-appeals-on-the-rise--why-success-rates-are-strengthening-across-england.aspx",
+   "value": "~36% householder appeals allowed 2025/26 (vs ~32% all types)",
+   "confidence": "high"
+  },
+  {
+   "topic": "Consultancy-reported allowed appeals on overdevelopment refusals",
+   "detail": "Dudley Council case (Planning Appeals UK): two-storey and part first-floor extension allowed on appeal; inspector 'accepted that while the proposal would unbalance the symmetry of the pair of houses, this imbalance would not appear harmful' and noted 'even a more traditionally subservient design would also have disrupted the pair's symmetry'; setback, lower ground level and spacing meant no harm to character. Harrow case (Just Planning): two-storey side-to-rear extension refused as excessive in width and bulk; inspector allowed it, finding it 'would not overdevelop the plot, would be proportionate to the size of the dwelling', giving weight to articulated design, lowered roof form and 'the use of a hipped roof to the rear' to avoid an overly bulky appearance. These show inspectors routinely overturn 'overdevelopment/excessive bulk' refusals where the design detailing is competent - and that a hipped rear roof (as the Birmingham officer requires) is itself an argument-winning subservience device.",
+   "source": "https://www.planningappealsuk.com/two-storey-and-part-first-floor-extension-planning-appeal-dudley-council/; https://just-planning.co.uk/successes/appeal-against-a-refusal-of-planning-permission-for-two-storey-side-and-rear-extensions-roof-extensions-porch-and-outbuilding/",
+   "value": "Overdevelopment refusals frequently overturned where design articulation is shown",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Cautionary Birmingham comparators - dismissals",
+   "detail": "APP/P4605/D/25/3371627, 24 Ellesboro Road, Birmingham B17 8PT (appellant Mr Shailesh Nakeshree): appeal DISMISSED for a scheme including two-storey side and rear extensions - the refusal turned on the two-storey side extension's design. Recent local sample from Appeal Finder's Birmingham page: an LDC appeal in Kings Heath B14 7EG dismissed 18 Feb 2026; a householder appeal in Bournville B30 2AS dismissed 30 Apr 2025; a Moseley B13 0DE appeal dismissed 2 May 2025. The realistic read: Birmingham householder appeals in B13/B14 skew toward dismissal in the sample found, so the robust route is to bank the officer-supported 4m two-storey consent (or an improved negotiated depth), and only appeal a deeper scheme with strong design evidence (hipped roof matching, first-floor set-in, ridge set-down) plus the 45-Degree-Code compliance already conceded in pre-app 2026/03356/PA.",
+   "source": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=64573580; https://appealfinder.co.uk/Birmingham-City-Council+Appeal+Decisions+past+30+days.a16.html",
+   "value": "Local B13/B14 sample skews dismissed; APP/P4605/D/25/3371627 dismissed",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Permitted development fallback for a detached house",
+   "detail": "Under GPDO Part 1 Class A, a detached house can build a single-storey rear extension up to 8m deep under the larger home extension prior-approval route (6m for attached houses), and a 3m-deep two-storey rear extension is permitted development if at least 7m remains to the rear boundary, roof pitch matches, and materials are similar. The 2005-consented ~3.3m single-storey extension and these PD rights can ground a fallback argument at appeal or in negotiation, but note inspectors give an unimplemented fallback 'only limited weight' (extract from appeal fileid 58935589), and combined schemes cannot always be aggregated from separate PD/consented elements.",
+   "source": "https://planningjungle.com/householder-permitted-development/gpdo-part-1-class-a-larger-rear-extensions-prior-approval-appeal-decisions/; https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=58935589; https://just-planning.co.uk/larger-home-extension-appeal/",
+   "value": "8m single-storey PD (prior approval) and 3m two-storey PD fallbacks exist but carry limited appeal weight",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Access limitation on primary sources",
+   "detail": "The sandbox proxy returned HTTP 403 for all direct fetches of acp.planninginspectorate.gov.uk documents, gov.uk pages, appealfinder.co.uk, and consultancy sites (CONNECT tunnel denied at gateway). All decision text above comes from search-engine-indexed extracts of the PDFs, which were substantial but partial. Appeal references, outcomes and addresses are corroborated across multiple extracts (high confidence); paragraph-level reasoning quotes are as-indexed and should be re-verified against the full PDFs (fileids: 64412349 for 3373138; 63391514 for 3365914; 60196661 for 3352809; 64573580 for 3371627; 56148068 for the DM10/45-Degree recitation) before citing them verbatim in an appeal statement.",
+   "source": "Proxy status check: gateway answered 403 to CONNECT for target hosts",
+   "value": "Quotes derived from indexed extracts, not full PDF reads",
+   "confidence": "high"
+  }
+ ],
+ "open_questions": [
+  "Exact approved depth and dimensions of the two-storey rear element at 834 Walsall Road (APP/P4605/D/25/3373138) - the decision PDF (fileid 64412349) must be downloaded outside the sandbox to confirm whether the allowed depth exceeds 4m and to lift the inspector's verbatim subservience reasoning.",
+  "No appeal decision was found expressly holding that an officer's 6m-to-4m depth reduction 'lacks policy basis' in Birmingham - is there a Birmingham decision post-2022 (post-Design Guide) allowing a two-storey rear extension deeper than 4m on a detached house? A systematic trawl of ACP search results for LPA 'Birmingham' + householder + allowed (2022-2026) is needed and was not possible through the proxy.",
+  "The inspector's name and decision date for APP/P4605/D/25/3373138 were not indexed and need confirming from the PDF.",
+  "Whether 115 Vicarage Road retains permitted development rights (no Article 4 direction or condition removing them) - Kings Heath has Article 4 directions in some streets, which would affect the 8m/3m PD fallback strategy.",
+  "Garden depth at 115 Vicarage Road: the two-storey 3m PD route requires 7m or more to the rear boundary - unverified.",
+  "Whether the 2025/26 36% householder success figure holds for the written-representations/expedited householder appeal service specifically (the April 2026 procedural changes mean the inspector 'decides on your drawings plus a short summary')."
+ ],
+ "references": [
+  {
+   "title": "Appeal Decision APP/P4605/D/25/3373138 - 834 Walsall Road, Perry Barr, Birmingham B42 1ES (allowed)",
+   "url": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=64412349",
+   "quote": "The appeal is allowed and planning permission is granted for a two storey side and rear extension, with a single storey porch and a rear extension, and outbuilding at 834 Walsall Road, Perry Barr, Birmingham B42 1ES... [The Birmingham Design Guide SPD 2022 states] the design of an extension must consider the style of the host property and the character of the area; and that its size should be smaller than the main part of the house, and should not dominate its appearance."
+  },
+  {
+   "title": "Appeal Decision APP/D3125/D/25/3365914 (allowed despite 'notable depth')",
+   "url": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=63391514",
+   "quote": "The set down in both eave and ridge height is sufficient for the proposal to read as an extension to the host dwelling... The primacy of the host property... would be retained. [Despite] the proposal being at notable depth... [the inspector] did not find the proposal to represent poor design nor be a contrived and incongruous addition."
+  },
+  {
+   "title": "Appeal Decision 3352809 (allowed - subservience via set-back and ridge set-down)",
+   "url": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=60196661",
+   "quote": "Together, the width, first-floor set back and reduced ridge height would ensure that the side extensions would appear subservient to the host dwelling, which would remain visually dominant."
+  },
+  {
+   "title": "Appeal Decision APP/P4605/D/25/3371627 - 24 Ellesboro Road, Birmingham B17 8PT (dismissed - cautionary comparator)",
+   "url": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=64573580",
+   "quote": "The appeal is dismissed... The Council's reason for refusal under the first main issue relates solely to the two-storey side extension."
+  },
+  {
+   "title": "Appeal decision reciting Policy DM10 / 45 Degree Code (City Note LW-4, Birmingham Design Guide 2022)",
+   "url": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=56148068",
+   "quote": "Policy DM10... will need to ensure adequate outlook and daylight to dwellings, in line with the approach of the '45 Degree Code' incorporated into City Note LW-4 of the Birmingham Design Guide (2022)... with flexibility where it can be robustly demonstrated that adhering to the standards is not feasible due to physical constraints."
+  },
+  {
+   "title": "Birmingham City Council - 45 Degree Code for Residential Extensions (March 2006)",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/16864/ebd43_bcc_45_degree_code_for_residential_extensions_march_2006.pdf"
+  },
+  {
+   "title": "My Planning Appeal - Extension Refused for Not Being 'Subordinate'?",
+   "url": "https://myplanningappeal.co.uk/extension-refused-not-subordinate/",
+   "quote": "It's treated as a design judgement, not a rule... There is no figure that defines 'subordinate'... they are guidance, not law, and rigid application of them is exactly what inspectors are willing to look past."
+  },
+  {
+   "title": "Planning Appeals UK - Two Storey and Part First Floor Extension appeal, Dudley Council (allowed)",
+   "url": "https://www.planningappealsuk.com/two-storey-and-part-first-floor-extension-planning-appeal-dudley-council/",
+   "quote": "The inspector accepted that while the proposal would unbalance the symmetry of the pair of houses, this imbalance would not appear harmful... even a more traditionally subservient design would also have disrupted the pair's symmetry."
+  },
+  {
+   "title": "Just Planning - Harrow appeal success: two-storey side and rear extensions, roof extensions, porch and outbuilding (allowed)",
+   "url": "https://just-planning.co.uk/successes/appeal-against-a-refusal-of-planning-permission-for-two-storey-side-and-rear-extensions-roof-extensions-porch-and-outbuilding/",
+   "quote": "The proposal would not overdevelop the plot, would be proportionate to the size of the dwelling... the use of a hipped roof to the rear... helped to avoid an overly bulky appearance."
+  },
+  {
+   "title": "Appeal Finder - Planning appeal success rates and timescales (PINS Annual Time Series, publ. 23 April 2026)",
+   "url": "https://appealfinder.co.uk/Planning-appeal-success-rates-and-timescales.n48.html",
+   "quote": "Householder development has a significantly higher success rate on appeal, averaging 36% over 2025/26, compared to the average of 32% for all developments."
+  },
+  {
+   "title": "Planning Inspectorate statistical release 23 October 2025 - GOV.UK",
+   "url": "https://www.gov.uk/government/statistics/planning-inspectorate-statistical-release-23-october-2025/planning-inspectorate-statistical-release-23-october-2025"
+  },
+  {
+   "title": "Savills - Planning appeals on the rise: why success rates are strengthening across England",
+   "url": "https://www.savills.co.uk/blog/article/388902/commercial-property/planning-appeals-on-the-rise--why-success-rates-are-strengthening-across-england.aspx",
+   "quote": "Section 78 appeals reached a seven-year high in Q1 2025 with 33% allowed... 30% of all appeals were successful in 2024-25."
+  },
+  {
+   "title": "The Planning Jungle - GPDO Part 1 Class A (Larger Rear Extensions) prior approval appeal decisions",
+   "url": "https://planningjungle.com/householder-permitted-development/gpdo-part-1-class-a-larger-rear-extensions-prior-approval-appeal-decisions/"
+  },
+  {
+   "title": "Appeal Finder - Recent Planning Appeals for Birmingham City Council (local outcome snapshot)",
+   "url": "https://appealfinder.co.uk/Birmingham-City-Council+Appeal+Decisions+past+30+days.a16.html",
+   "quote": "LDC appeal, Kings Heath B14 7EG, dismissed 18 February 2026; householder appeal, Bournville B30 2AS, dismissed 30 April 2025; appeal, Moseley B13 0DE, dismissed 2 May 2025."
+  }
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "summary": "Researched GPDO 2015 (SI 2015/596) Schedule 2 Part 1 Classes B, C, D, E and AA plus Part 14 solar, and the MHCLG householder technical guidance. Direct fetches of legislation.gov.uk and gov.uk were blocked by the session egress proxy, so verbatim statutory text was obtained from a full consolidated mirror of SI 2015/596 (last updated 9 April 2026, sourced from legislation.gov.uk) downloaded from GitHub (raw.githubusercontent.com/legalize-dev/legalize-uk), cross-checked against web-search snippets of the official pages; a local copy is at /tmp/claude-0/-home-user-rdt-client/989d67f4-15f7-5ac2-bc14-b3dafd80fee2/scratchpad/uksi-2015-596.md. KEY FINDINGS: (1) Class B roof enlargements: 40 m3 (terrace) / 50 m3 (any other case) added to the ORIGINAL roof space, cubic content measured EXTERNALLY, counting all previous roof enlargements; nothing may exceed the highest part of the existing roof (so raising the ridge or a true mansard is outside PD and needs a full householder application); nothing may extend beyond the plane of a roof slope forming the principal elevation fronting a highway (rear dormers only on typical houses); 0.2 m eaves set-back \"so far as practicable\" (measured along the roof slope from the outside edge of the eaves), NOT required for hip-to-gable enlargements or enlargements joining the original roof to a rear/side extension roof \u2014 so hip-to-gable conversions and L-shaped dormers over rear outriggers are expressly permitted within the volume cap; side windows must be obscure-glazed and non-opening below 1.7 m; full-width rear dormers are permitted provided no part extends beyond the outside face of any external wall of the original dwellinghouse; Class B unavailable on article 2(3) land (conservation areas etc.) and after a Class AA enlargement. (2) Class C permits rooflights protruding max 0.15 m beyond the roof plane, not higher than the highest part of the original roof, side-elevation rooflights obscure-glazed/non-opening below 1.7 m. (3) Class E outbuildings: max 50% of curtilage covered (excluding original house footprint), single storey, max height 4 m dual-pitched / 3 m otherwise / 2.5 m within 2 m of a boundary, eaves max 2.5 m, nothing forward of the principal elevation, max 10 sq m more than 20 m from the house on AONB/National Park/Broads/WHS land. (4) Mansards and any ridge-raise need a full planning application; LPAs commonly resist mansards/ridge raises on inter- and post-war suburban semis because they unbalance the mirrored pair and street roofline (secondary sources), while several urban LPAs accept mansards on terraces. (5) For a DETACHED house, Class AA (up to 2 additional storeys, +7 m/18 m caps, prior approval required, same roof pitch, no side windows, house built 1.7.1948\u201328.10.2018) and Class B interact one-way: using Class AA kills Class B (B.1(h)), while a Class B loft/dormer is not a \"storey\" for AA purposes (AA.4(2) excludes roof accommodation), though AA works would physically replace the enlarged roof. Part 14 Class A solar: max 0.2 m protrusion beyond roof plane, not above ridge (0.6 m above a flat roof), restrictions on highway-fronting walls in conservation areas.",
+ "facts": [
+  {
+   "topic": "Class B - permitted development",
+   "detail": "Verbatim: \"The enlargement of a dwellinghouse consisting of an addition or alteration to its roof.\" (Sch 2, Part 1, Class B, GPDO 2015)",
+   "value": "Class B covers dormers, hip-to-gable and other roof enlargements",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1/crossheading/class-b-additions-etc-to-the-roof-of-a-dwellinghouse",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class B - volume allowance B.1(d)",
+   "detail": "Verbatim B.1: \"Development is not permitted by Class B if\u2014 ... (d) the cubic content of the resulting roof space would exceed the cubic content of the original roof space by more than\u2014 (i) 40 cubic metres in the case of a terrace house, or (ii) 50 cubic metres in any other case;\". So 40 m3 for terraced, 50 m3 for semi-detached AND detached.",
+   "value": "40 m3 terrace / 50 m3 semi + detached",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class B - how volume is measured",
+   "detail": "Article 2(1) GPDO 2015, verbatim: \"'cubic content' means the cubic content of a structure or building measured externally\". Interpretation B.3 verbatim: \"For the purposes of Class B, 'resulting roof space' means the roof space as enlarged, taking into account any enlargement to the original roof space, whether permitted by this Class or not.\" Technical guidance confirms measurement is external and that ANY previous roof enlargement anywhere on the house counts against the 40/50 m3 allowance. Baseline is the ORIGINAL roof space (house as first built / as at 1.7.1948).",
+   "value": "Measured externally against the original roof; all prior roof enlargements count",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/article/2 and https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance/permitted-development-rights-for-householders-technical-guidance",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class B - no extension beyond highway-facing front roof slope B.1(c)",
+   "detail": "Verbatim B.1(c): \"any part of the dwellinghouse would, as a result of the works, extend beyond the plane of any existing roof slope which forms the principal elevation of the dwellinghouse and fronts a highway;\". Practical effect: no front dormers on a highway-fronting principal elevation; roof enlargements go to the rear (or a side not forming the principal elevation).",
+   "value": "No projection beyond the principal-elevation roof slope fronting a highway",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class B - ridge height limit B.1(b)",
+   "detail": "Verbatim B.1(b): \"any part of the dwellinghouse would, as a result of the works, exceed the height of the highest part of the existing roof;\". Dormers may be built up to but not above the existing ridge line. Note this limb references the EXISTING roof (not original).",
+   "value": "Nothing may exceed the highest part of the existing roof (the ridge)",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class B - other exclusions B.1(a),(e)-(h)",
+   "detail": "Verbatim: not permitted if (a) the dwellinghouse use was granted only under Part 3 Classes G, M, MA, N, P, PA or Q; (e) it would include \"(i) the construction or provision of a verandah, balcony or raised platform, or (ii) the installation, alteration or replacement of a chimney, flue or soil and vent pipe\"; (f) \"the dwellinghouse is on article 2(3) land\" (conservation area, AONB, National Park, the Broads, World Heritage Site \u2014 so NO Class B dormers in conservation areas); (g) house built under Part 20; (h) \"the existing dwellinghouse has been enlarged in reliance on the permission granted by Class AA (enlargement of a dwellinghouse by construction of additional storeys).\"",
+   "value": "No Class B on article 2(3) land, no balconies, none after Class AA use",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class B - conditions B.2 incl 0.2m eaves set-back and materials",
+   "detail": "Verbatim B.2: \"Development is permitted by Class B subject to the following conditions\u2014 (a) the materials used in any exterior work must be of a similar appearance to those used in the construction of the exterior of the existing dwellinghouse; (b) the enlargement must be constructed so that\u2014 (i) other than in the case of a hip-to-gable enlargement or an enlargement which joins the original roof to the roof of a rear or side extension\u2014 (aa) the eaves of the original roof are maintained or reinstated; and (bb) the edge of the enlargement closest to the eaves of the original roof is, so far as practicable, not less than 0.2 metres from the eaves, measured along the roof slope from the outside edge of the eaves; and (ii) other than in the case of an enlargement which joins the original roof to the roof of a rear or side extension, no part of the enlargement extends beyond the outside face of any external wall of the original dwellinghouse\". Technical guidance: the 0.2 m is measured along the original roof slope from the outermost edge of the eaves (edge of tiles/slates, excluding guttering) and is required \"unless it can be demonstrated that this is not possible due to practical or structural considerations\" (the 'so far as practicable' test).",
+   "value": "0.2 m eaves set-back; similar materials; exceptions for hip-to-gable and roof-join enlargements",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1 and technical guidance",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class B - side window obscure glazing condition B.2(c)",
+   "detail": "Verbatim B.2(c): \"any window inserted on a wall or roof slope forming a side elevation of the dwellinghouse must be\u2014 (i) obscure-glazed, and (ii) non-opening unless the parts of the window which can be opened are more than 1.7 metres above the floor of the room in which the window is installed.\"",
+   "value": "Side windows: obscure-glazed and non-opening below 1.7 m",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class B - full-width rear dormer",
+   "detail": "A rear dormer CAN be full width: nothing in Class B limits dormer width; the constraints are the 40/50 m3 volume cap, B.1(b) (not above the ridge), B.2(b)(i) (0.2 m up from the eaves) and B.2(b)(ii) (no part of the enlargement may extend beyond the outside face of any external wall of the original dwellinghouse, i.e. the dormer cheeks may sit on/flush with, but not oversail, the flank walls; B.3 confirms overhanging roof tiles/guttering/fascias are disregarded). Full-width flat-roof box dormers are routinely accepted as PD by LPAs and inspectors on this basis (extensive LDC appeal history collated by Planning Jungle).",
+   "value": "Yes - full-width rear box dormer is possible within Class B",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1; https://planningjungle.com; https://www.planninggeek.co.uk/gpdo/house/roofs/",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class B - L-shaped dormers over rear additions/outriggers",
+   "detail": "Expressly accommodated: both B.2(b)(i) and B.2(b)(ii) carve out \"an enlargement which joins the original roof to the roof of a rear or side extension\", and interpretation B.3 states verbatim: \"'rear or side extension' includes an original part of, or a subsequent extension of, the dwellinghouse that extends from the rear or side of the principal part of the original dwellinghouse.\" The gov.uk technical guidance describes this as the arrangement \"generally referred to as an 'L-shaped dormer'\" over an outrigger/back addition. The whole L-shaped enlargement must still fit the 40/50 m3 allowance and not exceed the main ridge.",
+   "value": "L-shaped dormers over Victorian-style outriggers are permitted within the volume cap",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1 and https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance/permitted-development-rights-for-householders-technical-guidance",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class B - hip-to-gable conversions",
+   "detail": "Hip-to-gable is done under Class B (it is an enlargement of the roof). The gable infill volume counts against the 40/50 m3 allowance (important when combined with a rear dormer \u2014 on a semi the combined hip-to-gable + full-width dormer must total under 50 m3). B.2(b)(i) expressly exempts \"a hip-to-gable enlargement\" from the maintain-eaves and 0.2 m set-back requirements. It must not exceed the existing ridge height (B.1(b)) and must use materials of similar appearance (B.2(a)). Not available on article 2(3) land. Note: a side hip slope is normally not the \"principal elevation\", so B.1(c) does not usually bite, but on corner plots a side roof slope fronting a highway can still be caught if it forms the principal elevation.",
+   "value": "Hip-to-gable is PD under Class B, volume counts toward 40/50 m3",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1; https://www.planninggeek.co.uk/gpdo/house/roofs/",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class C - rooflights",
+   "detail": "Verbatim Class C: \"Any other alteration to the roof of a dwellinghouse.\" Not permitted if: \"(b) the alteration would protrude more than 0.15 metres beyond the plane of the slope of the original roof when measured from the perpendicular with the external surface of the original roof; (c) it would result in the highest part of the alteration being higher than the highest part of the original roof; ... (d) it would consist of or include\u2014 (i) the installation, alteration or replacement of a chimney, flue or soil and vent pipe, or (ii) the installation, alteration or replacement of solar photovoltaics or solar thermal equipment\". Condition C.2 verbatim: \"any window located on a roof slope forming a side elevation of the dwellinghouse must be\u2014 (a) obscure-glazed; and (b) non-opening unless the parts of the window which can be opened are more than 1.7 metres above the floor of the room in which the window is installed.\" Class C applies to FRONT roof slopes too (no highway-fronting prohibition) and is available on article 2(3) land \u2014 so flush rooflights (max 0.15 m proud) are the standard way to light a loft on the front slope or in a conservation area.",
+   "value": "Rooflights: max 0.15 m protrusion, not above ridge, side ones obscure-glazed",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class D - porches (for completeness)",
+   "detail": "Verbatim limits: ground area max 3 square metres measured externally, no part more than 3 metres above ground level, no part within 2 metres of any boundary of the curtilage with a highway.",
+   "value": "3 sq m / 3 m high / 2 m from highway boundary",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class E - outbuildings 50% curtilage rule",
+   "detail": "Verbatim E.1(b): development not permitted if \"the total area of ground covered by buildings, enclosures and containers within the curtilage (other than the original dwellinghouse) would exceed 50% of the total area of the curtilage (excluding the ground area of the original dwellinghouse)\". Also E.1(c): nothing \"situated on land forward of a wall forming the principal elevation of the original dwellinghouse\"; E.1(d): \"the building would have more than a single storey\"; E.1(h): no verandah, balcony or raised platform; E.1(g): not within the curtilage of a listed building.",
+   "value": "Max 50% of curtilage; single storey; not forward of principal elevation",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1/crossheading/class-e-buildings-etc-incidental-to-the-enjoyment-of-a-dwellinghouse",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class E - height rules 4m/3m/2.5m",
+   "detail": "Verbatim E.1(e)-(f): not permitted if \"the height of the building, enclosure or container would exceed\u2014 (i) 4 metres in the case of a building with a dual-pitched roof, (ii) 2.5 metres in the case of a building, enclosure or container within 2 metres of the boundary of the curtilage of the dwellinghouse, or (iii) 3 metres in any other case; (f) the height of the eaves of the building would exceed 2.5 metres\". On article 2(3) land, E.3 adds (verbatim): not permitted \"if any part of the building, enclosure, pool or container would be situated on land between a wall forming a side elevation of the dwellinghouse and the boundary of the curtilage\". On AONB/Broads/National Park/World Heritage Site land, E.2 limits outbuildings more than 20 metres from any wall of the house to a total ground area of 10 square metres (operative words confirmed via secondary sources; the mirror copy truncated this sub-paragraph).",
+   "value": "4 m dual-pitched / 3 m other / 2.5 m within 2 m of boundary; 2.5 m eaves",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Roof forms needing FULL planning permission",
+   "detail": "Anything breaching B.1 needs a householder planning application: (1) raising the ridge / increasing overall roof height \u2014 B.1(b) bars any part exceeding the highest part of the existing roof, so a ridge lift of any amount is never PD; (2) mansard roofs \u2014 a true mansard rebuilds the roof with a ~70-72 degree front and rear slope, almost always alters the plane of the principal-elevation slope fronting a highway (B.1(c)), typically exceeds the 40/50 m3 allowance and usually raises the party/flank walls, so mansards \"almost always need planning permission\"; (3) front dormers on the highway-facing principal elevation (B.1(c)); (4) any roof enlargement on article 2(3) land (B.1(f)); (5) roof enlargements exceeding 40/50 m3; (6) balconies/roof terraces formed in the roof (B.1(e)(i)).",
+   "value": "Mansards, ridge raises, front dormers, conservation-area dormers = full application",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1; https://extensionarchitecture.co.uk/loft-conversions/ideas/guide-to-mansard-loft-conversions/",
+   "confidence": "high"
+  },
+  {
+   "topic": "LPA attitude to mansards on inter/post-war suburban semis",
+   "detail": "Typical LPA position (from design guides, appeal commentary and practitioner sources): mansards are a historically appropriate form on flat-parapet Georgian/Victorian urban terraces and several urban authorities support them there (some, e.g. via mansard-friendly SPDs, actively encourage consistent terrace-wide mansards); but on inter-war and post-war suburban semis with pitched hipped/gabled roofs, mansards and ridge raises are generally RESISTED because they unbalance the mirrored pair (semis are read as a symmetrical unit), disrupt a uniform street roofline and eaves line, and appear as an alien top-heavy storey; forum/practitioner consensus is that consent to raise the roof of one half of a semi is \"extremely unlikely\" unless the neighbour has already done it or the street shows precedent. Expect design objections on bulk, proportion and character; success usually requires matching an established precedent on the same street.",
+   "value": "Mansards on suburban semis usually refused on character/symmetry grounds",
+   "source": "https://www.diynot.com/diy/threads/planning-permission-to-raise-the-ridge-height-on-a-semi-detached.610534/; https://www.westminster.gov.uk/media/document/roofs-a-guide-to-alterations-and-extensions-on-domestic-buildings-spg; https://abbeylofts.net/blog/mansard-loft-conversions/",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Class AA - additional storeys (detached house)",
+   "detail": "Verbatim Class AA: \"The enlargement of a dwellinghouse consisting of the construction of\u2014 (a) up to two additional storeys, where the existing dwellinghouse consists of two or more storeys; or (b) one additional storey, where the existing dwellinghouse consists of one storey, immediately above the topmost storey of the dwellinghouse\". Key limits (AA.1): house must have been \"constructed before 1st July 1948 or after 28th October 2018\" \u2014 wait, verbatim is: not permitted if \"the dwellinghouse was constructed before 1st July 1948 or after 28th October 2018\" (i.e. only houses built between those dates qualify); not on article 2(3) land or SSSI; total height max 18 m; max +3.5 m (single-storey house) or +7 m (multi-storey); floor-to-ceiling of new storey max 3 m or existing storey height if lower; storeys only on the principal part. Conditions (AA.2): similar materials; \"the development must not include a window in any wall or roof slope forming a side elevation\"; \"the roof pitch of the principal part of the dwellinghouse following the development must be the same as the roof pitch of the existing dwellinghouse\"; PRIOR APPROVAL required from the LPA covering amenity of adjoining premises (overlooking/privacy/loss of light), external appearance, air traffic/defence assets and protected vistas, plus a construction management report; complete within 3 years of prior approval.",
+   "value": "Up to 2 extra storeys, prior approval, +7 m/18 m caps, 1948-2018 build date",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1 (Class AA, inserted by SI 2020/755)",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class AA vs Class B interaction for a detached house",
+   "detail": "One-way exclusivity: (1) B.1(h) verbatim \u2014 Class B is NOT available if \"the existing dwellinghouse has been enlarged in reliance on the permission granted by Class AA\"; so use Class AA first and you can never add a PD dormer afterwards. (2) The reverse is not symmetrical: AA.1(d) bars Class AA only where the house \"has been enlarged by the addition of one or more storeys above the original dwellinghouse\", and AA.4(2) verbatim provides that references to a 'storey' \"do not include ... any accommodation within the roof of a dwellinghouse, whether comprising part of the original dwellinghouse or created by a subsequent addition or alteration\" \u2014 so a Class B loft conversion/dormer is NOT a 'storey' and does not by itself disqualify a later Class AA application, though the AA storeys are built \"immediately above the topmost storey\" and would physically replace the existing roof (AA.4(2) confirms an 'additional storey' includes one that \"replaces accommodation within the roof of the existing dwellinghouse\"). Practical comparison for a detached house: Class B = no application/fee, no neighbour consultation, 50 m3 cap, cannot exceed existing ridge; Class AA = full extra storey(s) above the ridge but needs prior approval (neighbours notified, amenity and external appearance assessed, refusal common on design grounds), same roof pitch, no side windows, and it extinguishes Class B.",
+   "value": "Class AA use blocks Class B (B.1(h)); a Class B loft is not a 'storey' so does not itself block AA",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Part 14 solar (Classes A and B)",
+   "detail": "Part 14 Class A (solar on a house/flat/curtilage building), verbatim limits: not permitted if \"(a) the solar PV or solar thermal equipment would protrude more than 0.2 metres beyond the plane of the wall or, in the case of a pitched roof, the roof slope when measured from the perpendicular...; (b) in the case of ... a pitched roof, it would result in the highest part of the solar PV or solar thermal equipment being higher than the highest part of the roof (excluding any chimney); (ba) in the case of ... a flat roof, ... more than 0.6 metres higher than the highest part of the roof (excluding any chimney); (c) in the case of land within a conservation area or ... World Heritage Site, the ... equipment would be installed on a wall which fronts a highway; ... (e) ... on a building within the curtilage of the dwellinghouse ... if the dwellinghouse ... is a listed building.\" Conditions: sited so far as practicable to minimise effect on external appearance and amenity; removed as soon as reasonably practicable when no longer needed; flat-roof installs on article 2(3) land need prior approval for appearance. Class B (stand-alone solar): max 1 per curtilage, max 4 m high, min 5 m from boundary (per statute), array max 9 sq m / 3 m any dimension. Note Part 1 Class C.1(d)(ii) excludes solar from Class C \u2014 panels go under Part 14 instead.",
+   "value": "Roof solar: 0.2 m max protrusion, not above ridge, PD even on most houses",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/14",
+   "confidence": "high"
+  },
+  {
+   "topic": "Definitions used by Part 1",
+   "detail": "Verbatim Part 1 interpretation: \"'terrace house' ... means a dwellinghouse situated in a row of 3 or more dwellinghouses used or designed for use as single dwellings, where\u2014 it shares a party wall with, or has a main wall adjoining the main wall of, the dwellinghouse on either side; or if it is at the end of a row, it shares a party wall with or has a main wall adjoining the main wall of a dwellinghouse which fulfils the requirements of paragraph (a)\" (so an END-of-terrace house is a 'terrace house' with the 40 m3 allowance); \"'highway' includes an unadopted street or a private way\". Article 2(3) land = conservation areas, AONB, National Parks, the Broads, World Heritage Sites.",
+   "value": "End-of-terrace counts as terrace (40 m3); 'highway' includes private ways",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Householder technical guidance",
+   "detail": "Current edition: MHCLG \"Permitted development rights for householders: technical guidance\", September 2019. Confirms: 0.2 m set-back measured along the original roof slope from the outermost edge of the eaves (edge of tiles/slates, excluding guttering); hip-to-gable and roof-join (L-shaped dormer/outrigger) enlargements exempt from the maintain-eaves and 0.2 m rules; volume allowances include all previous roof enlargements; dormer faces/cheeks to be finished in materials of similar visual appearance to the existing house.",
+   "value": "Sept 2019 technical guidance is the authoritative interpretive document",
+   "source": "https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance (PDF: https://assets.publishing.service.gov.uk/media/5d77afc8e5274a27cdb2c9e9/190910_Tech_Guide_for_publishing.pdf)",
+   "confidence": "high"
+  },
+  {
+   "topic": "Research method / source integrity",
+   "detail": "legislation.gov.uk, gov.uk and council PDF hosts were unreachable from this session (egress proxy CONNECT 403 for both curl and WebFetch). Verbatim statute text was taken from a consolidated markdown mirror of SI 2015/596 (front-matter: source legislation.gov.uk/uksi/2015/596, last_updated 2026-04-09, includes amendments through SI 2026/313) fetched from raw.githubusercontent.com (legalize-dev/legalize-uk), saved at /tmp/claude-0/-home-user-rdt-client/989d67f4-15f7-5ac2-bc14-b3dafd80fee2/scratchpad/uksi-2015-596.md, and cross-checked against WebSearch snippets of the official legislation.gov.uk pages, which matched. One known gap: the operative words of Class E paragraph E.2 (10 sq m beyond 20 m on designated land) were truncated in the mirror and were confirmed from secondary sources only.",
+   "value": "Statutory quotes from a 2026-consolidated mirror, cross-checked",
+   "source": "https://raw.githubusercontent.com/legalize-dev/legalize-uk/main/uk/uksi-2015-596.md",
+   "confidence": "high"
+  }
+ ],
+ "open_questions": [
+  "Class E paragraph E.2 verbatim wording (10 sq m limit for outbuildings more than 20 m from the house on AONB/National Park/Broads/WHS land) could not be read directly from legislation.gov.uk in this session \u2014 confirmed from secondary sources only; verify against https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1 if exact quotation is needed in a client-facing document.",
+  "Whether the September 2019 technical guidance has been superseded by a later edition after the 2024/2026 GPDO amendments \u2014 searches indicated Sept 2019 is still the current published edition, but the gov.uk page could not be opened to confirm the 'last updated' date.",
+  "LPA attitude to mansards on suburban semis is a practice generalisation from design guides and practitioner sources, not a statutory rule \u2014 the specific local plan / residential design SPD of the relevant LPA should be checked for the actual site."
+ ],
+ "references": [
+  {
+   "title": "GPDO 2015 (SI 2015/596), Schedule 2, Part 1 \u2014 Development within the curtilage of a dwellinghouse (legislation.gov.uk)",
+   "url": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "quote": "the cubic content of the resulting roof space would exceed the cubic content of the original roof space by more than\u2014 (i) 40 cubic metres in the case of a terrace house, or (ii) 50 cubic metres in any other case"
+  },
+  {
+   "title": "GPDO 2015, Sch 2 Pt 1 Class B crossheading (legislation.gov.uk)",
+   "url": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1/crossheading/class-b-additions-etc-to-the-roof-of-a-dwellinghouse",
+   "quote": "other than in the case of a hip-to-gable enlargement or an enlargement which joins the original roof to the roof of a rear or side extension ... the edge of the enlargement closest to the eaves of the original roof is, so far as practicable, not less than 0.2 metres from the eaves, measured along the roof slope from the outside edge of the eaves"
+  },
+  {
+   "title": "GPDO 2015, Sch 2 Pt 14 \u2014 Renewable energy, Classes A and B (legislation.gov.uk)",
+   "url": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/14",
+   "quote": "the solar PV or solar thermal equipment would protrude more than 0.2 metres beyond the plane of the wall or, in the case of a pitched roof, the roof slope"
+  },
+  {
+   "title": "Permitted development rights for householders: technical guidance (MHCLG, September 2019) \u2014 gov.uk",
+   "url": "https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance/permitted-development-rights-for-householders-technical-guidance",
+   "quote": "The enlarged part of the roof may join the original roof to the roof of a rear or side extension (generally referred to as an 'L-shaped dormer')"
+  },
+  {
+   "title": "Technical guidance PDF (assets.publishing.service.gov.uk)",
+   "url": "https://assets.publishing.service.gov.uk/media/5d77afc8e5274a27cdb2c9e9/190910_Tech_Guide_for_publishing.pdf"
+  },
+  {
+   "title": "SI 2020/755 \u2014 inserted Part 1 Class AA (additional storeys) from 31 August 2020",
+   "url": "https://www.legislation.gov.uk/uksi/2020/755"
+  },
+  {
+   "title": "Consolidated mirror of SI 2015/596 used for verbatim extraction (last updated 9 April 2026)",
+   "url": "https://raw.githubusercontent.com/legalize-dev/legalize-uk/main/uk/uksi-2015-596.md"
+  },
+  {
+   "title": "Planning Geek \u2014 Dormers & hip to gable under Class B (practitioner commentary)",
+   "url": "https://www.planninggeek.co.uk/gpdo/house/roofs/"
+  },
+  {
+   "title": "Planning Jungle \u2014 GPDO Part 1 LDC appeal decisions library (2,086 decisions incl. full-width dormer cases)",
+   "url": "https://planningjungle.com/2026/07/20/gpdo-part-1-all-classes-ldc-appeal-decisions-3-additional-appeal-decisions-total-2086/"
+  },
+  {
+   "title": "Westminster City Council \u2014 Roofs: a guide to alterations and extensions on domestic buildings (SPG, example of LPA mansard/roof-alteration policy)",
+   "url": "https://www.westminster.gov.uk/media/document/roofs-a-guide-to-alterations-and-extensions-on-domestic-buildings-spg"
+  },
+  {
+   "title": "Extension Architecture \u2014 Guide to mansard loft conversions (mansards almost always need planning permission)",
+   "url": "https://extensionarchitecture.co.uk/loft-conversions/ideas/guide-to-mansard-loft-conversions/"
+  },
+  {
+   "title": "DIYnot forum \u2014 Planning permission to raise the ridge height on a semi-detached (practitioner consensus on LPA attitude)",
+   "url": "https://www.diynot.com/diy/threads/planning-permission-to-raise-the-ridge-height-on-a-semi-detached.610534/"
+  }
+ ]
+}

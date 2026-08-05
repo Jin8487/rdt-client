@@ -1,0 +1,136 @@
+{
+ "summary": "Birmingham Design Guide SPD (adopted 6 Sept 2022) comprises a Design Principles Document plus 5 City Manuals; householder extension guidance sits in the \"Healthy Living and Working Places City Manual\" under \"DESIGN OF RESIDENTIAL EXTENSIONS\", City Notes LW-16 to LW-22 (\"Living Well\" = LW prefix). LW-16 is titled \"Respect the appearance of your home and local area\" and its supporting text reads (verbatim, recovered via indexed copies): \"As with any new development the design of an extension must consider the architectural style of the house being extended and character of the surrounding area; leading to a design that complements the scale and style of the house and its surroundings.\" The sentence the officer paraphrased \u2014 \"Extensions should be smaller than the main part of the house and not dominate its appearance\" \u2014 is Birmingham's long-standing wording originating verbatim in the superseded 2004 \"Extending Your Home\" SPD and carried into the Design Guide material; the officer's version (\"the size of the extension should be smaller than...\") is a light paraphrase. The Design Principles Document (Design Principle 16, supporting para 2.116, as cited by a Planning Inspector in appeal APP/P4605/D/25/3371627) \"requires the form and design of extensions to complement the host building, and not over-dominate or substantially alter its overall appearance, scale or mass\"; LW-18 (\"Location of extensions\") supporting para 2.72 requires side extensions to \"appear secondary\". Key analytical findings: (a) \"Subservient\" is nowhere defined by depth, volume or footprint \u2014 every operative formulation is about APPEARANCE/scale/mass (\"smaller than the main part\", \"not dominate its appearance\", \"not over-dominate or substantially alter its overall appearance, scale or mass\", \"appear secondary\"). The officer's \"doubling the size of the existing property\" volume test is her own gloss, not SPD text. (b) No numeric maximum depth for two-storey rear extensions exists anywhere in the 2022 Design Guide (or the superseded 2004 guide); the \"reduce by 2m to 4m\" figure is pure officer judgement anchored only to qualitative wording \u2014 the only geometric tests in the Guide are the 45 Degree Code (now City Note LW-4) and privacy/separation distances, and the officer concedes the 45 Degree Code is PASSED from both neighbours (taken from the end of No.117's solid-walled conservatory). (c) Loopholes/tensions: the Guide's own rear-extension text notes rear extensions \"do not usually affect the appearance of the street\", so for a detached house the \"dominance\" test collapses to private/garden views; a 5-6m two-storey with a matching hipped roof, ridge set down below the main ridge and flanks set in from the original side walls addresses precisely the appearance-based criteria the Guide actually uses \u2014 and cures the officer's separate criticism of the existing flat-roofed side extension (\"any roof design should match the existing hipped roof design\"), a betterment argument. The officer's concessions (principle of two-storey rear acceptable; 45 Degree Code met both sides) strip out all amenity refusal reasons, leaving only a judgement-based design objection \u2014 the softest ground at appeal. There is also a strong permitted-development fallback for a DETACHED house: a 3m-deep two-storey rear extension is PD under GPDO Sch.2 Part 1 Class A (subject to 7m-to-rear-boundary, matching roof pitch/materials, no side-wall breach) and up to 8m single-storey via larger-home prior approval \u2014 a real-world fallback massing an inspector must weigh. (d) The Guide's comparator is \"the main part of the house\" / \"host building\" / \"existing building\" \u2014 NOT the \"original\" dwelling (an expression belonging to PD law); the officer's letter is internally inconsistent, testing subservience against \"the original property\" while measuring \"doubling\" against \"the existing property\". Since the lawful existing house already includes the two-storey side extension, the correct SPD comparator is the enlarged house, which proportionately supports a deeper rear extension; nothing found in the Guide codifies a cumulative cap against the original dwelling.",
+ "facts": [
+  {
+   "topic": "SPD structure",
+   "detail": "Birmingham Design Guide SPD adopted 6 September 2022; comprises a Design Principles Document plus 5 City Manuals. Householder extension guidance is in the 'Healthy Living and Working Places City Manual' (Sept 2022), section 'DESIGN OF RESIDENTIAL EXTENSIONS', City Notes prefixed LW ('Living Well').",
+   "value": "City Notes LW-16 to LW-22 govern extensions; LW-4 = 45 Degree Code",
+   "source": "https://www.birmingham.gov.uk/download/downloads/id/24168/4_healthy_living_and_working_city_manual_-_september_2022.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "City Note index for extensions",
+   "detail": "LW-16 'Respect the appearance of your home and local area' (heads the Design of Residential Extensions section); LW-17 'Extending dwellings in the green belt'; LW-18 'Location of extensions'; LW-19 'Roof Top Extensions'; LW-20/21/22 cover basement extensions, garages/outbuildings, garden extensions. LW-4 covers the 45 Degree Code; a separate LW note covers privacy/overlooking distances.",
+   "source": "Search-indexed contents of the Healthy Living and Working Places City Manual (adopted and draft text-only versions)",
+   "confidence": "high"
+  },
+  {
+   "topic": "LW-16 verbatim supporting text",
+   "detail": "Recovered verbatim from the indexed Manual: 'As with any new development the design of an extension must consider the architectural style of the house being extended and character of the surrounding area; leading to a design that complements the scale and style of the house and its surroundings.' This is the sentence the officer cited as 'City Note LW-16' almost word-for-word.",
+   "source": "Healthy Living and Working Places City Manual, Design of Residential Extensions / City Note LW-16",
+   "confidence": "high"
+  },
+  {
+   "topic": "Officer's 'smaller than the main part' quote \u2014 true origin",
+   "detail": "The exact sentence is 'Extensions should be smaller than the main part of the house and not dominate its appearance.' It appears verbatim in Birmingham's 2004 'Extending Your Home \u2013 Home Extensions Design Guide' SPD (superseded by the 2022 Design Guide) and is carried into the Design Guide extension guidance; domain-restricted search attributes the phrase to both the 2004 SPD and the 2022 Manual PDFs. The officer's version ('the size of the extension should be smaller than the main part of the house and not dominate its appearance') is a light paraphrase, not an exact quote.",
+   "value": "Extensions should be smaller than the main part of the house and not dominate its appearance.",
+   "source": "2004 SPD mirror: https://www.abcplans.co.uk/rdgs/birmingham.pdf ; 2022 Manual: https://www.birmingham.gov.uk/download/downloads/id/24168/4_healthy_living_and_working_city_manual_-_september_2022.pdf",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Design Principles Document test (DP16, para 2.116)",
+   "detail": "As quoted by a Planning Inspector (appeal APP/P4605/D/25/3371627, Birmingham two-storey side extension): 'Supporting Paragraph 2.116 of Design Principle 16 requires the form and design of extensions to complement the host building, and not over-dominate or substantially alter its overall appearance, scale or mass. This is echoed in City Note LW-18 of the Birmingham Design Guide - Healthy Living and Working Places City Manual (2022), supporting paragraph 2.72 of which requires side extensions to appear secondary.'",
+   "source": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=64573580 (via search extraction); Design Principles Document: https://www.birmingham.gov.uk/download/downloads/id/24164/design_principles_document_-_september_2022.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "(a) How 'subservient' is defined",
+   "detail": "Nowhere defined by depth, volume, footprint or a ratio. Every operative formulation is visual/appearance-based: 'smaller than the main part of the house and not dominate its appearance'; 'complements the scale and style of the house'; 'not over-dominate or substantially alter its overall appearance, scale or mass'; side extensions to 'appear secondary'. The word the Guide's ecosystem uses is appearance/scale/mass judgement. The officer's 'doubling the size of the existing property' is a floorspace/volume gloss with no textual basis in the SPD; 'subservient' itself does not appear as a defined term.",
+   "confidence": "high"
+  },
+  {
+   "topic": "(b) Numeric maximum depth",
+   "detail": "No numeric maximum depth for two-storey (or single-storey) rear extensions exists in the 2022 Design Guide; none was found in the superseded 2004 guide either. The only geometric/quantitative tools are the 45 Degree Code (LW-4, formerly the March 2006 '45 Degree Code' document ebd43) and privacy/separation distances. The officer's 'reduced by 2m to 4m in depth' is therefore professional judgement, not a codified standard \u2014 and her own letter concedes the 45 Degree Code is met from BOTH neighbours (measured from the end of No.117's solid-walled conservatory, not its original rear windows).",
+   "value": "4m figure = officer judgement, not SPD standard",
+   "source": "45 Degree Code 2006: https://www.birmingham.gov.uk/download/downloads/id/16864/ebd43_bcc_45_degree_code_for_residential_extensions_march_2006.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "(c) Internal tensions / loopholes",
+   "detail": "(1) The Manual's own rear-extension text says rear extensions 'do not usually affect the appearance of the street' and only 'where visible' does street-scene design weigh heavily \u2014 for a detached hipped-roof house the dominance test collapses to garden/neighbour views, and both amenity tests are already passed. (2) A 5-6m two-storey rear with a matching hipped roof, ridge set below the main ridge, and flanks set in from the original side walls answers the Guide's actual (appearance-based) criteria head-on; it also delivers the betterment the officer herself demanded ('any roof design should match the existing hipped roof design') against the existing flat-roofed side extension. (3) The officer conceded the PRINCIPLE of a two-storey rear extension \u2014 leaving only a judgement-based subservience objection, the weakest ground at appeal. (4) Detached-house PD fallback: GPDO Sch.2 Part 1 Class A permits a 3m-deep two-storey rear extension without any subservience test (conditions: >=7m to rear boundary, matching materials, roof pitch to match so far as practicable, not beyond side walls), and up to 8m single-storey via larger-home-extension prior approval \u2014 a lawful fallback massing that can be weighed at appeal and combined (e.g. 4m two-storey consented + PD single-storey wrap below).",
+   "confidence": "medium"
+  },
+  {
+   "topic": "(d) Original vs enlarged house comparator",
+   "detail": "The Guide's comparators are 'the main part of the house', 'the house being extended', 'host building', 'existing building' \u2014 it does not direct assessment against the ORIGINAL (pre-extension) dwelling; 'original dwellinghouse' is a PD-law concept only. The pre-app letter is internally inconsistent: it tests subservience against 'the original property' but measures 'doubling' against 'the existing property'. Since the lawful existing house already includes the two-storey side extension over the garage, the SPD's own comparator (the house as it stands) is materially larger, which proportionately supports a deeper rear addition; no cumulative-enlargement cap referenced to the original dwelling was found anywhere in the 2022 Guide.",
+   "confidence": "high"
+  },
+  {
+   "topic": "45 Degree Code detail (LW-4)",
+   "detail": "The Code is applied from the nearest MAIN habitable-room window (living rooms, bedrooms, kitchens, conservatories \u2014 not bathrooms, utility rooms, halls, landings, garages); a 45-degree line drawn from the neighbour's nearest habitable window must not be crossed. Officer confirmed for No.117 it is taken from the END of the conservatory (solid side wall), which \u2014 with the conservatory already protruding 60cm beyond No.115's extension \u2014 is what lets a deep extension pass.",
+   "source": "City Note LW-4, Healthy Living and Working Places City Manual; predecessor doc ebd43 (2006)",
+   "confidence": "high"
+  },
+  {
+   "topic": "Other development-plan policies in play",
+   "detail": "Development Management in Birmingham DPD (adopted 7 Dec 2021): Policy DM2 requires development not to cause unacceptable adverse impacts on neighbours (privacy, overlooking, daylight, overshadowing, aspect, outlook) \u2014 satisfied here per the officer's own 45-degree findings. The DPD's 16 policies contain no numeric extension-depth standard (DM10 covers new residential development standards, not householder depth limits). BDP 2017 Policy PG3 (Place-making) is the strategic design hook.",
+   "source": "https://www.birmingham.gov.uk/download/downloads/id/21273/development_management_in_birmingham_dpd.pdf",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Supersession chain",
+   "detail": "The 2022 Design Guide superseded the 2004 'Extending Your Home' SPD and the 2006 '45 Degree Code' guidance (per BCC 'List of policies and guidance to be superseded'). The 'smaller than the main part of the house' sentence survives from the 2004 guide into current practice \u2014 useful because 20 years of appeal decisions interpret that exact wording as an appearance test, not a floorspace ratio.",
+   "source": "https://www.birmingham.gov.uk/downloads/file/21277/list_of_policies_and_guidance_to_be_superseded",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Access limitation this session",
+   "detail": "All direct fetches (curl and WebFetch) to birmingham.gov.uk, birminghambeheard.org.uk, abcplans.co.uk and acp.planninginspectorate.gov.uk were 403-blocked by the session egress proxy (WebFetch is blocked for all hosts). Verbatim text above was recovered via search-engine extraction of the indexed PDFs/appeal decisions; exact adopted paragraph numbers in the 2022 Manual could not be page-verified.",
+   "confidence": "high"
+  }
+ ],
+ "open_questions": [
+  "Page-verify the adopted (Sept 2022) Healthy Living and Working Places City Manual PDF to confirm whether the sentence 'Extensions should be smaller than the main part of the house and not dominate its appearance' appears verbatim in the adopted LW-16 supporting text, or whether the officer was quoting the carried-over 2004 wording (either way it is guidance, not a numeric standard).",
+  "Confirm adopted paragraph numbering: Design Principles Document DP16 para 2.116 and Manual para 2.72 were cited by the Inspector in APP/P4605/D/25/3371627 \u2014 cross-check against the adopted PDFs when accessible.",
+  "Check whether the Manual's LW-18 'Location of extensions' supporting text contains any depth-related rules of thumb for rear extensions (none surfaced in any indexed snippet, but full-text verification was blocked).",
+  "Pull 3-5 recent Birmingham householder appeal decisions (APP/P4605/D/...) where 5m+ two-storey rear extensions on detached houses were allowed against LW-16 subservience objections, to arm the 'matter of planning judgement' argument.",
+  "Confirm the current GPDO Class A limits as applied to this detached house (3m two-storey rear PD subject to the 7m rear-boundary condition; single-storey larger-home prior approval up to 8m for detached) against the actual rear garden depth at 115 Vicarage Road, and whether PD rights are intact (no Article 4 direction, no conditions on S/03404/05/FUL removing them)."
+ ],
+ "references": [
+  {
+   "title": "Birmingham Design Guide - Healthy Living and Working Places City Manual (adopted September 2022) [PDF]",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/24168/4_healthy_living_and_working_city_manual_-_september_2022.pdf",
+   "quote": "CITY NOTE LW-16 \u00b7 Respect the appearance of your home and local area \u2014 'As with any new development the design of an extension must consider the architectural style of the house being extended and character of the surrounding area; leading to a design that complements the scale and style of the house and its surroundings.'"
+  },
+  {
+   "title": "Birmingham Design Guide - Design Principles Document (September 2022) [PDF]",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/24164/design_principles_document_-_september_2022.pdf",
+   "quote": "Design Principle 16, supporting para 2.116: requires the form and design of extensions 'to complement the host building, and not over-dominate or substantially alter its overall appearance, scale or mass' (as quoted by the Inspector in APP/P4605/D/25/3371627)."
+  },
+  {
+   "title": "Birmingham Design Guide landing page, Birmingham City Council",
+   "url": "https://www.birmingham.gov.uk/info/20054/local_plan_documents/1367/birmingham_design_guide",
+   "quote": "The Birmingham Design Guide was adopted on 6 September 2022 ... comprises 6 documents: the Design Principles Document and 5 City Manuals."
+  },
+  {
+   "title": "Draft Birmingham Design Guide - Healthy Living & Working City Manual (text-only, consultation version)",
+   "url": "https://www.birminghambeheard.org.uk/economy/birmingham-design-guide/supporting_documents/5.%20draft%20Birmingham%20Design%20Guide%20%20Healthy%20Living%20%20Working%20City%20Manual%20%20TEXT%20ONLY.pdf",
+   "quote": "DESIGN OF RESIDENTIAL EXTENSIONS \u2014 City Notes covering respect for appearance (LW-16), green belt (LW-17), location of extensions (LW-18), roof top extensions (LW-19), basements, garages/outbuildings and garden extensions; rear extensions 'do not usually affect the appearance of the street'."
+  },
+  {
+   "title": "Extending Your Home - Home Extensions Design Guide SPD, Birmingham CC, September 2004 (superseded; mirror)",
+   "url": "https://www.abcplans.co.uk/rdgs/birmingham.pdf",
+   "quote": "Extensions should be smaller than the main part of the house and not dominate its appearance."
+  },
+  {
+   "title": "The 45 Degree Code for Residential Extensions, Birmingham CC, March 2006 (predecessor of City Note LW-4)",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/16864/ebd43_bcc_45_degree_code_for_residential_extensions_march_2006.pdf",
+   "quote": "45-degree line drawn from the neighbour's nearest main habitable-room window (living rooms, bedrooms, kitchens, conservatories; not bathrooms, utility rooms, halls, landings or garages) must not be crossed by the extension."
+  },
+  {
+   "title": "Planning Inspectorate appeal decision APP/P4605/D/25/3371627 (Birmingham, two-storey side extension)",
+   "url": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=64573580",
+   "quote": "Supporting Paragraph 2.116 of Design Principle 16 requires the form and design of extensions to complement the host building, and not over-dominate or substantially alter its overall appearance, scale or mass. This is echoed in City Note LW-18 of the Birmingham Design Guide - Healthy Living and Working Places City Manual (2022), supporting paragraph 2.72 of which requires side extensions to appear secondary."
+  },
+  {
+   "title": "Development Management in Birmingham DPD (adopted 7 December 2021) [PDF]",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/21273/development_management_in_birmingham_dpd.pdf",
+   "quote": "Policy DM2: development must not result in unacceptable adverse impacts on neighbours, having regard to privacy, overlooking, daylight, overshadowing, aspect and outlook."
+  },
+  {
+   "title": "List of policies and guidance to be superseded, Birmingham City Council",
+   "url": "https://www.birmingham.gov.uk/downloads/file/21277/list_of_policies_and_guidance_to_be_superseded",
+   "quote": "Identifies the older guidance (including Extending Your Home 2004 and the 45 Degree Code 2006) replaced by the Birmingham Design Guide 2022."
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "summary": "Birmingham City Council's planning register is NOT reachable from this environment: eplanning.birmingham.gov.uk (Northgate Planning Explorer) returns HTTP 403 to every request, and planning.birmingham.gov.uk, birmingham.gov.uk (weekly-list PDFs), planit.org.uk, landcycle.com, planningappealsuk.com and acp.planninginspectorate.gov.uk are all blocked by the outbound agent proxy (\"gateway answered 403 to CONNECT \u2014 policy denial\"), confirmed both via WebFetch and curl with the proxy CA bundle. All findings below therefore come from Google/WebSearch result snippets of indexed portal pages, not from the portal itself. What was recoverable: (1) 2025/04397/PA \u2014 131 Vicarage Road, Kings Heath B14 7QQ, householder application for \"erection of a first floor rear extension\", received in the council's weekly list for 10\u201316 Aug 2025; decision status not recoverable \u2014 this is the most relevant recent rear-extension precedent on the street. (2) 2015/01188/PA \u2014 1 Vicarage Road, Kings Heath B14 7QA, change of use from offices (A2) to residential (C3), registered 12-03-2015, approved with conditions 30-04-2015. (3) An eplanning details page for 2014/06721/PA was returned by Google against a query for 111/113/117 Vicarage Road, but its content (address/description/decision) could not be retrieved \u2014 it needs checking on the portal. (4) No trace of the 2005 application S/03404/05/FUL at 115 Vicarage Road in any indexed source \u2014 old S-prefix records exist on the Northgate portal but are not Google-indexed. (5) No public trace of pre-app 2026/03356/PA \u2014 Birmingham does not generally publish pre-application advice files on the public register, so this may never appear online. (6) The neighbour anecdote (\"one rejected a few doors down, then they put in high-level windows and a lantern\") could not be verified without portal access. (7) Appeals: no Vicarage Road appeal found; search snippets identified a dismissed appeal at 65 Church Road, Moseley & Kings Heath B13 9EB (second-floor side extension), a Birmingham retrospective rear-extension appeal refused for breaching the 45-Degree Code (loss of light/outlook) described on planningappealsuk.com, and an acp.planninginspectorate.gov.uk decision PDF (fileid=64492257) that mentions Birmingham B14 but could not be opened. Practical fallback: the register is publicly searchable at https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/GeneralSearch.aspx from any normal browser, and pre-2010 files (incl. S/03404/05/FUL) may require a documents request to planning.enquiries@birmingham.gov.uk.",
+ "facts": [
+  {
+   "topic": "Portal accessibility",
+   "detail": "eplanning.birmingham.gov.uk returns HTTP 403 to all requests (search page and StdDetails pages) via both WebFetch and curl; the agent proxy log shows 'gateway answered 403 to CONNECT (policy denial or upstream failure)' for planning.birmingham.gov.uk and other planning hosts. birmingham.gov.uk weekly-list PDFs, planit.org.uk API, landcycle.com, planningappealsuk.com and acp.planninginspectorate.gov.uk are equally blocked. Only WebSearch snippets were usable.",
+   "value": "Portal unreachable \u2014 proxy policy denial",
+   "confidence": "high",
+   "source": "Direct WebFetch/curl attempts + $HTTPS_PROXY/__agentproxy/status output"
+  },
+  {
+   "topic": "131 Vicarage Road \u2014 2025/04397/PA",
+   "detail": "Householder application: 'Erection of a first floor rear extension' at 131 Vicarage Road, Birmingham, B14 7QQ. Appears in Birmingham's weekly list of applications received 10\u201316 August 2025. Decision and approved dimensions not recoverable from search snippets. This is the closest recent rear-extension precedent to the target properties (105\u2013125 range) that could be found.",
+   "value": "2025/04397/PA \u2014 first floor rear extension, 131 Vicarage Road B14 7QQ, received Aug 2025, decision unknown",
+   "confidence": "high",
+   "source": "Google snippet of birmingham.gov.uk weekly list PDF (downloads id 30667)"
+  },
+  {
+   "topic": "1 Vicarage Road \u2014 2015/01188/PA",
+   "detail": "Change of use from offices (A2) to residential (C3) at 1 Vicarage Road, Kings Heath, Birmingham B14 7QA. Registered 12-03-2015; Approved subject to conditions 30-04-2015. Same address later listed on the brownfield register (permission dated 2023-11-22, min 2 net dwellings). Not an extension precedent but confirms the eplanning URL pattern for the street.",
+   "value": "2015/01188/PA \u2014 approved with conditions 30-04-2015",
+   "confidence": "high",
+   "source": "Google snippet of eplanning.birmingham.gov.uk StdDetails page (PARAM0=710235) and provide.planning.data.gov.uk brownfield entry"
+  },
+  {
+   "topic": "Possible application near 111/113/117 \u2014 2014/06721/PA",
+   "detail": "An eplanning details page for application 2014/06721/PA (PARAM0=670695) was returned by Google specifically against the query '111 Vicarage Road OR 113 Vicarage Road OR 117 Vicarage Road Kings Heath planning application', suggesting the indexed page text contains one of those addresses. The page itself is 403-blocked so reference/address/description/decision are unverified. Worth checking first when portal access is available.",
+   "value": "2014/06721/PA \u2014 unverified, matched search for nos. 111/113/117",
+   "confidence": "low",
+   "source": "Google search result URL (eplanning StdDetails, PARAM0=670695)"
+  },
+  {
+   "topic": "115 Vicarage Road \u2014 S/03404/05/FUL (2005)",
+   "detail": "No trace found in Google-indexed sources. Birmingham's pre-2010 S-prefix applications are held on the Northgate portal (Planning Applications On-Line) but the individual old records are generally not indexed by Google; documents for 2005 applications are often not scanned/online and may need a request to planning.enquiries@birmingham.gov.uk or a visit to the portal's 'previous application' search.",
+   "value": "Not found in any accessible source \u2014 portal or council enquiry required",
+   "confidence": "high",
+   "source": "WebSearch for \"S/03404/05/FUL\" and \"115 Vicarage Road\" returned only property-price/estate-agent pages"
+  },
+  {
+   "topic": "Pre-app 2026/03356/PA",
+   "detail": "No public trace found. Birmingham City Council does not normally publish pre-application advice submissions on the public register (they are exempt from publication), so this reference may never be visible on Planning Online; only a formal application that follows it would appear.",
+   "value": "Not publicly available \u2014 pre-apps not published by Birmingham",
+   "confidence": "medium",
+   "source": "WebSearch for \"2026/03356/PA\" (no relevant hits); general Birmingham pre-app practice"
+  },
+  {
+   "topic": "Neighbour anecdote (rejected scheme a few doors down, then high-level windows + roof lantern)",
+   "detail": "Could not be verified. No refused application at 105\u2013125 Vicarage Road surfaced in indexed weekly lists or snippets. The described redesign (high-level/obscure-glazed flank windows plus a roof lantern instead of conventional rear-facing glazing at first floor) is the classic response to a 45-Degree Code / overlooking refusal, so the account is plausible, but the actual refs need a portal address search on 'Vicarage Road' filtered to B14 7QG/7QQ.",
+   "value": "Unverified \u2014 requires portal address search",
+   "confidence": "low",
+   "source": "Absence from all accessible search results"
+  },
+  {
+   "topic": "Appeals \u2014 Birmingham 45-Degree Code",
+   "detail": "planningappealsuk.com describes a Birmingham City Council appeal concerning a retrospective rear extension refused for non-compliance with the '45 Degree Code for House Extensions' and loss of outlook/light to a neighbour (page 403-blocked, details from snippet only). A dismissed appeal at 65 Church Road, Moseley & Kings Heath, B13 9EB concerned a second-floor side extension. An acp.planninginspectorate.gov.uk decision document (fileid=64492257) matching 'Vicarage Road Kings Heath B14' query mentions Birmingham B14 but could not be opened. No Vicarage Road appeal decision was positively identified. Context sources confirm the 45-degree rule is the decisive daylight test Birmingham applies in Moseley/Kings Heath (B13/B14) Victorian/Edwardian terraces, measured from the centre of the nearest habitable-room window of the adjoining house.",
+   "value": "No Vicarage Road appeal found; 45-Degree Code confirmed as key refusal ground in B13/B14 appeals",
+   "confidence": "medium",
+   "source": "WebSearch snippets: planningappealsuk.com, mcternandesign.co.uk, acp.planninginspectorate.gov.uk results"
+  },
+  {
+   "topic": "How to complete this research manually",
+   "detail": "From an unproxied browser: (1) eplanning.birmingham.gov.uk > Planning Applications On-Line > address search 'Vicarage Road' + Kings Heath, which lists all historic apps incl. S-prefix 2005 records; (2) appealfinder.co.uk Birmingham City Council page and acp.planninginspectorate.gov.uk case search (LPA: Birmingham, keyword 'rear extension', postcodes B13/B14) for 45-degree appeal precedents; (3) weekly lists at birmingham.gov.uk/planningapplications for anything received in 2026.",
+   "confidence": "high",
+   "source": "Portal structure inferred from indexed URLs"
+  }
+ ],
+ "open_questions": [
+  "What is 2014/06721/PA \u2014 is it at 111, 113 or 117 Vicarage Road, and what was proposed/decided? (eplanning page PARAM0=670695, blocked)",
+  "Decision and approved dimensions for 2025/04397/PA (first floor rear extension, 131 Vicarage Road B14 7QQ)",
+  "Full record of S/03404/05/FUL at 115 Vicarage Road \u2014 description, decision date, and whether 2005 drawings (extension depth/height) are scanned on the portal",
+  "Status/content of pre-app 2026/03356/PA and whether it concerns one of the target houses",
+  "Which address 'a few doors down' had the refusal followed by the high-level-windows-and-lantern consent, and the two application references involved",
+  "Content of Planning Inspectorate decision fileid=64492257 (mentions Birmingham B14) \u2014 is it a two-storey rear extension / 45-degree case?"
+ ],
+ "references": [
+  {
+   "title": "Birmingham Planning Online \u2014 General Search (blocked from this environment, HTTP 403)",
+   "url": "https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/GeneralSearch.aspx"
+  },
+  {
+   "title": "eplanning details page \u2014 2015/01188/PA, 1 Vicarage Road, Kings Heath B14 7QA (A2-to-C3 change of use, approved with conditions 30-04-2015)",
+   "url": "https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/Generic/StdDetails.aspx?PT=Planning+Applications+On-Line&TYPE=PL/PlanningPK.xml&PARAM0=710235&XSLT=/Northgate/PlanningExplorer/SiteFiles/Skins/Birmingham/xslt/PL/PLDetails.xslt&FT=Planning+Application+Details&PUBLIC=Y&DAURI=PLANNING",
+   "quote": "Planning application 2015/01188/PA... registered on 12-03-2015 and received approval subject to conditions on 30-04-2015 (from Google snippet)"
+  },
+  {
+   "title": "eplanning details page \u2014 2014/06721/PA (returned by Google against a 111/113/117 Vicarage Road query; content unretrievable)",
+   "url": "https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/Generic/StdDetails.aspx?DAURI=PLANNING&FT=Planning+Application+Details&PARAM0=670695&PUBLIC=Y&TYPE=PL%2FPlanningPK.xml&XSLT=%2FNorthgate%2FPlanningExplorer%2FSiteFiles%2FSkins%2FBirmingham%2Fxslt%2FPL%2FPLDetails.xslt"
+  },
+  {
+   "title": "Birmingham weekly list, applications received 10\u201316 Aug 2025 (source of 2025/04397/PA, 131 Vicarage Road first floor rear extension)",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/30667/planning_applications_received_10_august_to_16_august_2025.pdf",
+   "quote": "2025/04397/PA \u2014 Erection of a first floor rear extension \u2014 131 Vicarage Road, Birmingham, B14 7QQ \u2014 Householder (from search snippet)"
+  },
+  {
+   "title": "Birmingham City Council \u2014 view planning applications and documents (portal entry point)",
+   "url": "https://www.birmingham.gov.uk/info/20160/planning_applications/22/planning_applications_and_documents"
+  },
+  {
+   "title": "Planning Appeals UK \u2014 retrospective rear extension appeal, Birmingham City Council (refused under the 45 Degree Code; page blocked, snippet only)",
+   "url": "https://www.planningappealsuk.com/retrospective-rear-extension-planning-appeal-birmingham-city-council/"
+  },
+  {
+   "title": "Planning Inspectorate appeal decision PDF mentioning Birmingham B14 (blocked, unopened)",
+   "url": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=64492257"
+  },
+  {
+   "title": "Appeal Finder \u2014 Birmingham City Council appeal decisions, last 30 days",
+   "url": "https://appealfinder.co.uk/Birmingham+City+Council+Appeal+Decisions+past+30+days.a16.html"
+  },
+  {
+   "title": "McTernan Design \u2014 Birmingham extension guide (45-degree rule as applied in Moseley/Kings Heath/Selly Oak)",
+   "url": "https://www.mcternandesign.co.uk/birmingham-single-storey-extension-permitted-development-rights-guide"
+  },
+  {
+   "title": "115 Vicarage Road, Kings Heath B14 7QG \u2014 property record (confirms address/postcode; no planning data)",
+   "url": "https://themovemarket.com/tools/propertyprices/115-vicarage-road-kings-heath-birmingham-b14-7qg"
+  },
+  {
+   "title": "Landcycle \u2014 planning applications in Birmingham B14 (aggregator, blocked)",
+   "url": "https://www.landcycle.com/planning-applications/local-authority/Birmingham/B14"
+  }
+ ]
+}

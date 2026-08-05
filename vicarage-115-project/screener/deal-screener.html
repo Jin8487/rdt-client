@@ -1,0 +1,663 @@
+<title>B14 Deal Screener</title>
+<style>
+  :root {
+    --ground:#EEF1F4; --panel:#FFFFFF; --panel2:#F7F9FB; --ink:#16212C; --ink2:#4E5D6C; --mut:#7A8794;
+    --line:#D7DEE5; --accent:#2D5F8A; --accent-ink:#FFFFFF; --pass:#1E7A46; --loss:#6B4FA8; --warn:#A97614;
+    --miss:#64707C; --passbg:#E4F1E9; --lossbg:#EEE9F7; --warnbg:#F6EEDD;
+    --shadow:0 1px 2px rgba(22,33,44,.06), 0 4px 14px rgba(22,33,44,.05);
+  }
+  @media (prefers-color-scheme: dark) { :root {
+    --ground:#10161C; --panel:#1A2129; --panel2:#151C23; --ink:#E6ECF2; --ink2:#93A1AE; --mut:#6E7C8A;
+    --line:#2A3441; --accent:#7FB2DC; --accent-ink:#0E1620; --pass:#35A866; --loss:#8A6ED2; --warn:#D9A84E;
+    --miss:#8A97A3; --passbg:#17301F; --lossbg:#241D38; --warnbg:#33270F;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
+  } }
+  :root[data-theme="dark"] {
+    --ground:#10161C; --panel:#1A2129; --panel2:#151C23; --ink:#E6ECF2; --ink2:#93A1AE; --mut:#6E7C8A;
+    --line:#2A3441; --accent:#7FB2DC; --accent-ink:#0E1620; --pass:#35A866; --loss:#8A6ED2; --warn:#D9A84E;
+    --miss:#8A97A3; --passbg:#17301F; --lossbg:#241D38; --warnbg:#33270F;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
+  }
+  :root[data-theme="light"] {
+    --ground:#EEF1F4; --panel:#FFFFFF; --panel2:#F7F9FB; --ink:#16212C; --ink2:#4E5D6C; --mut:#7A8794;
+    --line:#D7DEE5; --accent:#2D5F8A; --accent-ink:#FFFFFF; --pass:#1E7A46; --loss:#6B4FA8; --warn:#A97614;
+    --miss:#64707C; --passbg:#E4F1E9; --lossbg:#EEE9F7; --warnbg:#F6EEDD;
+    --shadow:0 1px 2px rgba(22,33,44,.06), 0 4px 14px rgba(22,33,44,.05);
+  }
+  * { box-sizing: border-box; }
+  body { background:var(--ground); color:var(--ink); font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; margin:0; }
+  .num, td.n, .stat b, input[type=number] { font-family: ui-monospace,"SF Mono",Menlo,Consolas,monospace; font-variant-numeric: tabular-nums; }
+  h1,h2,h3 { font-family:"Avenir Next Condensed","Helvetica Neue","Arial Narrow",sans-serif; font-weight:600; letter-spacing:.01em; text-wrap:balance; margin:0; }
+  a { color:var(--accent); }
+  .wrap { max-width:1280px; margin:0 auto; padding:20px clamp(12px,3vw,28px) 80px; }
+  header.top { display:flex; flex-wrap:wrap; gap:10px 18px; align-items:baseline; padding:18px 0 6px; }
+  header.top h1 { font-size:clamp(24px,3.4vw,34px); }
+  .sub { color:var(--ink2); font-size:13.5px; max-width:72ch; }
+  .chip { display:inline-flex; align-items:center; gap:6px; font-size:12px; padding:3px 10px; border-radius:99px; border:1px solid var(--line); background:var(--panel); color:var(--ink2); white-space:nowrap; }
+  .chip.ok { background:var(--passbg); color:var(--pass); border-color:transparent; }
+  .chip.bad { background:var(--warnbg); color:var(--warn); border-color:transparent; }
+  .layout { display:grid; grid-template-columns:300px minmax(0,1fr); gap:18px; align-items:start; margin-top:14px; }
+  @media (max-width:900px){ .layout { grid-template-columns:1fr; } aside.rail { position:static; } }
+  aside.rail { position:sticky; top:12px; max-height:calc(100vh - 24px); overflow-y:auto; display:flex; flex-direction:column; gap:10px; scrollbar-width:thin; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:10px; box-shadow:var(--shadow); }
+  .rail .card { padding:12px 14px; }
+  details.grp summary { cursor:pointer; font-family:"Avenir Next Condensed","Arial Narrow",sans-serif; font-size:15px; font-weight:600; letter-spacing:.02em; text-transform:uppercase; color:var(--ink2); list-style:none; display:flex; justify-content:space-between; align-items:center; }
+  details.grp summary::after { content:"+"; color:var(--mut); font-size:16px; }
+  details.grp[open] summary::after { content:"–"; }
+  details.grp summary::-webkit-details-marker { display:none; }
+  .ctl { margin-top:10px; }
+  .ctl label.t { display:flex; justify-content:space-between; align-items:baseline; font-size:12.5px; color:var(--ink2); margin-bottom:3px; gap:8px; }
+  .ctl label.t output { color:var(--ink); font-family:ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums; font-size:12.5px; }
+  input[type=range]{ width:100%; accent-color:var(--accent); height:22px; }
+  input[type=number], select { width:100%; background:var(--panel2); color:var(--ink); border:1px solid var(--line); border-radius:6px; padding:5px 8px; font-size:13px; }
+  input[type=checkbox]{ accent-color:var(--accent); width:15px; height:15px; }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; }
+  .ck { display:flex; align-items:center; gap:8px; font-size:13px; padding:3px 0; }
+  .ck small { color:var(--mut); margin-left:auto; font-size:11.5px; }
+  .btn { background:var(--accent); color:var(--accent-ink); border:none; border-radius:7px; padding:7px 14px; font-size:13.5px; font-weight:600; cursor:pointer; }
+  .btn.ghost { background:transparent; color:var(--accent); border:1px solid var(--line); }
+  .btn:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .presets { display:flex; gap:6px; flex-wrap:wrap; }
+  .presets .btn { flex:1; padding:6px 4px; font-size:12.5px; }
+  .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; }
+  .stat { padding:12px 14px; }
+  .stat small { display:block; font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--mut); }
+  .stat b { font-size:22px; font-weight:600; }
+  .stat b.pass { color:var(--pass); } .stat b.loss { color:var(--loss); }
+  .chartcard { padding:14px 16px 8px; margin-top:12px; }
+  .chartcard h2, .tablecard h2, .formcard h2, .areacard h2, .testcard h2 { font-size:17px; margin-bottom:2px; }
+  .chartcard .leg { display:flex; gap:14px; font-size:12px; color:var(--ink2); margin:4px 0 2px; flex-wrap:wrap; }
+  .leg i { font-style:normal; font-size:13px; }
+  .leg .p { color:var(--pass);} .leg .m { color:var(--miss);} .leg .l { color:var(--loss);}
+  .chartwrap { overflow-x:auto; }
+  .tip { position:fixed; pointer-events:none; background:var(--ink); color:var(--ground); font-size:12px; padding:6px 9px; border-radius:6px; z-index:50; display:none; max-width:260px; line-height:1.4; }
+  .tablecard { margin-top:12px; padding:14px 0 6px; }
+  .tablecard .hd { display:flex; flex-wrap:wrap; gap:10px; align-items:center; padding:0 16px 8px; }
+  .tablecard .hd .sp { flex:1; }
+  .tblwrap { overflow-x:auto; }
+  table.deals { border-collapse:collapse; width:100%; min-width:860px; font-size:13.5px; }
+  table.deals th { text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--mut); font-weight:600; padding:6px 10px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  table.deals th.n, table.deals td.n { text-align:right; }
+  table.deals td { padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  table.deals tr.main { cursor:pointer; }
+  table.deals tr.main:hover { background:var(--panel2); }
+  td .lbl { font-weight:600; } td .ar { color:var(--ink2); font-size:12px; display:block; }
+  .flags { display:flex; gap:4px; flex-wrap:wrap; margin-top:2px; }
+  .flag { font-size:10.5px; padding:1px 7px; border-radius:99px; background:var(--panel2); border:1px solid var(--line); color:var(--ink2); white-space:nowrap; }
+  .flag.w { background:var(--warnbg); color:var(--warn); border-color:transparent; }
+  .mg { font-weight:700; } .mg.p { color:var(--pass);} .mg.x { color:var(--loss);} .mg.m { color:var(--miss);}
+  .sens { display:block; font-size:11px; color:var(--mut); }
+  tr.det td { background:var(--panel2); padding:12px 16px; }
+  .stack { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:4px 22px; font-size:12.5px; max-width:900px; }
+  .stack span { display:flex; justify-content:space-between; gap:10px; border-bottom:1px dashed var(--line); padding:2px 0; }
+  .stack span b { font-family:ui-monospace,Menlo,monospace; font-variant-numeric:tabular-nums; font-weight:600; }
+  .det .note { font-size:12.5px; color:var(--ink2); margin-top:8px; max-width:95ch; }
+  .formcard, .areacard, .testcard { margin-top:12px; padding:14px 16px; }
+  .fgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; margin-top:10px; }
+  .fgrid label { font-size:12px; color:var(--ink2); display:block; }
+  table.areas { border-collapse:collapse; width:100%; min-width:680px; font-size:13px; }
+  table.areas th { text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--mut); padding:5px 8px; border-bottom:1px solid var(--line); }
+  table.areas td { padding:5px 8px; border-bottom:1px solid var(--line); }
+  table.areas input { width:90px; }
+  table.areas .ev { font-size:11.5px; color:var(--mut); max-width:340px; }
+  .tests { display:flex; flex-direction:column; gap:4px; margin-top:8px; font-size:13px; }
+  .tests div { display:flex; gap:10px; align-items:baseline; }
+  .tests .tchip { font-size:10.5px; font-weight:700; padding:1px 8px; border-radius:99px; }
+  .tests .ok { background:var(--passbg); color:var(--pass); } .tests .no { background:var(--warnbg); color:var(--warn); }
+  .foot { color:var(--mut); font-size:12px; margin-top:22px; max-width:100ch; }
+  @media (prefers-reduced-motion: no-preference) { .card { transition: background .2s; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>B14 Deal Screener</h1>
+    <span class="chip" id="candCount"></span>
+    <span class="chip" id="testChip"></span>
+    <span class="chip">SDLT +5% surcharge · selling costs · ceiling caps — all priced in</span>
+  </header>
+  <p class="sub">Every candidate is underwritten live: entry (adjusted by price type) + SDLT + works + contingency + planning route + selling costs [+ bridging] against an exit capped at the street ceiling. Set your margin target and every assumption below — the table and chart re-rank instantly. Calibrated from the Aug 2026 eight-area sweep and its adversarial review.</p>
+
+  <div class="layout">
+    <aside class="rail">
+      <div class="card">
+        <div class="ctl">
+          <label class="t">Margin target <output id="o-threshold"></output></label>
+          <input type="range" id="threshold" min="0" max="300000" step="5000">
+        </div>
+        <div class="presets" style="margin-top:8px">
+          <button class="btn ghost" data-preset="conservative">Cautious</button>
+          <button class="btn ghost" data-preset="base">Base</button>
+          <button class="btn ghost" data-preset="stretch">Stretch</button>
+        </div>
+      </div>
+
+      <div class="card"><details class="grp" open><summary>Travel from B14 7QG</summary>
+        <div class="ctl">
+          <label class="t">Max cycle time <output id="o-maxBike"></output></label>
+          <input type="range" id="maxBike" min="3" max="30" step="1">
+        </div>
+        <label class="ck"><input type="checkbox" id="requireTrain"> Train access required</label>
+        <div id="areaChips" style="margin-top:6px"></div>
+      </details></div>
+
+      <div class="card"><details class="grp" open><summary>Deal economics</summary>
+        <div class="ctl"><label class="t">Build cost (added space) <output id="o-buildPpsf"></output></label>
+          <input type="range" id="buildPpsf" min="150" max="260" step="5"></div>
+        <div class="ctl"><label class="t">Works contingency <output id="o-contingencyPct"></output></label>
+          <input type="range" id="contingencyPct" min="0" max="25" step="1"></div>
+        <div class="ctl"><label class="t">Refurb £/sqft — light · medium · full</label>
+          <div class="row3">
+            <input type="number" id="refurbLight" min="5" max="60" step="5" aria-label="light refurb rate">
+            <input type="number" id="refurbMedium" min="20" max="90" step="5" aria-label="medium refurb rate">
+            <input type="number" id="refurbFull" min="50" max="140" step="5" aria-label="full refurb rate">
+          </div></div>
+        <div class="ctl row2">
+          <div><label class="t">Buy fees £</label><input type="number" id="buyFees" min="0" max="30000" step="500"></div>
+          <div><label class="t">Planning route £</label><input type="number" id="planningCost" min="0" max="25000" step="500"></div>
+        </div>
+        <div class="ctl"><label class="t">SDLT surcharge <output id="o-surchargePct"></output></label>
+          <input type="range" id="surchargePct" min="0" max="10" step="1"></div>
+        <div class="ctl"><label class="t">Expected vs quoted price — asking · offers-over · guide (%)</label>
+          <div class="row3">
+            <input type="number" id="adjAsking" min="-15" max="5" step="1" aria-label="asking adjustment">
+            <input type="number" id="adjOffersOver" min="-5" max="15" step="1" aria-label="offers-over adjustment">
+            <input type="number" id="adjGuide" min="0" max="25" step="1" aria-label="guide adjustment">
+          </div></div>
+        <div class="ctl row2">
+          <div><label class="t">Selling agent %</label><input type="number" id="sellingPct" min="0" max="3" step="0.25"></div>
+          <div><label class="t">Selling legal £</label><input type="number" id="sellingLegal" min="0" max="5000" step="250"></div>
+        </div>
+      </details></div>
+
+      <div class="card"><details class="grp"><summary>Exit &amp; sensitivity</summary>
+        <div class="ctl"><label class="t">Global exit adjustment <output id="o-exitAdjPct"></output></label>
+          <input type="range" id="exitAdjPct" min="-15" max="15" step="1"></div>
+        <p style="font-size:12px;color:var(--mut);margin:6px 0 0">Per-street £/sqft and ceilings are editable in the area table below the results.</p>
+      </details></div>
+
+      <div class="card"><details class="grp"><summary>Bridging finance</summary>
+        <label class="ck"><input type="checkbox" id="finance"> Model bridging finance</label>
+        <div class="ctl row3">
+          <div><label class="t">Months</label><input type="number" id="financeMonths" min="3" max="24" step="1"></div>
+          <div><label class="t">%/month</label><input type="number" id="financeRatePm" min="0.5" max="1.5" step="0.05"></div>
+          <div><label class="t">LTV %</label><input type="number" id="ltv" min="50" max="80" step="5"></div>
+        </div>
+      </details></div>
+
+      <div class="card"><details class="grp"><summary>Property filters</summary>
+        <div class="ctl"><label class="t">Max entry price <output id="o-maxEntry"></output></label>
+          <input type="range" id="maxEntry" min="150000" max="1500000" step="25000"></div>
+        <div class="ctl row2">
+          <div><label class="t">Min beds</label><input type="number" id="minBeds" min="0" max="6" step="1"></div>
+          <div><label class="t">Min sqft</label><input type="number" id="minSqft" min="0" max="3000" step="100"></div>
+        </div>
+        <label class="ck"><input type="checkbox" id="pdOnly"> Full PD rights only</label>
+        <label class="ck"><input type="checkbox" id="excludeFlood"> Exclude flood-flagged</label>
+        <label class="ck"><input type="checkbox" id="excludeLease"> Exclude lease/covenant-flagged</label>
+        <label class="ck"><input type="checkbox" id="hideSold"> Hide sold benchmarks</label>
+      </details></div>
+
+      <div class="card" style="display:flex;gap:8px">
+        <button class="btn ghost" id="resetBtn" style="flex:1">Reset all</button>
+        <button class="btn ghost" id="csvBtn" style="flex:1">Copy CSV</button>
+      </div>
+    </aside>
+
+    <main>
+      <div class="stats">
+        <div class="card stat"><small>Clear your target</small><b class="pass" id="stPass">–</b></div>
+        <div class="card stat"><small>Best margin</small><b id="stBest">–</b></div>
+        <div class="card stat"><small>Best margin-on-cost</small><b id="stRoi">–</b></div>
+        <div class="card stat"><small>Cheapest passing entry</small><b id="stCheap">–</b></div>
+      </div>
+
+      <div class="card chartcard">
+        <h2>Margin vs capital deployed</h2>
+        <div class="leg"><span><i class="p">●</i> Clears target</span><span><i class="m">○</i> Below target</span><span><i class="l">✕</i> Loss</span><span style="color:var(--mut)">— dashed: your target · dotted: break-even</span></div>
+        <div class="chartwrap"><svg id="chart" width="100%" height="320" role="img" aria-label="Scatter chart of net margin against total capital deployed for each candidate property"></svg></div>
+      </div>
+
+      <div class="card tablecard">
+        <div class="hd">
+          <h2>Ranked deals</h2>
+          <span class="sp"></span>
+          <label style="font-size:12px;color:var(--ink2)">Sort
+            <select id="sortBy" style="width:auto;margin-left:6px">
+              <option value="margin">Net margin</option>
+              <option value="roi">Margin-on-cost %</option>
+              <option value="moc">Margin-on-cash %</option>
+              <option value="perbike">Margin per bike-minute</option>
+              <option value="entry">Entry price ↑</option>
+            </select></label>
+        </div>
+        <div class="tblwrap"><table class="deals" id="dealTable">
+          <thead><tr><th>#</th><th>Property</th><th class="n">Entry*</th><th class="n">All-in</th><th class="n">Exit</th><th class="n">Net margin</th><th class="n">On-cost</th><th class="n">🚲 min</th><th>Status</th></tr></thead>
+          <tbody></tbody>
+        </table></div>
+        <p style="font-size:11.5px;color:var(--mut);padding:8px 16px">*Entry = quoted price adjusted by price-type expectation. Click any row for the full cost stack. Rows marked “sold” are calibration benchmarks, not buyable stock.</p>
+      </div>
+
+      <div class="card formcard"><details class="grp"><summary>Underwrite your own property</summary>
+        <div class="fgrid">
+          <label>Label<input type="text" id="f-label" placeholder="e.g. 12 Oakfield Rd" style="width:100%;background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:5px 8px"></label>
+          <label>Area<select id="f-area"></select></label>
+          <label>Price £<input type="number" id="f-price" step="5000"></label>
+          <label>Price type<select id="f-ptype"><option value="asking">Asking</option><option value="guide">Auction guide</option><option value="offers-over">Offers over</option><option value="sold-recent">Agreed/sold</option></select></label>
+          <label>Beds<input type="number" id="f-beds" min="1" max="8"></label>
+          <label>Existing sqft<input type="number" id="f-sqft" step="50"></label>
+          <label>Addable sqft<input type="number" id="f-add" step="25"></label>
+          <label>Condition<select id="f-cond"><option value="light">Light</option><option value="medium" selected>Medium</option><option value="full">Full gut</option></select></label>
+        </div>
+        <div style="margin-top:10px;display:flex;gap:8px"><button class="btn" id="f-addBtn">Add to screener</button><button class="btn ghost" id="f-clearBtn">Remove my entries</button></div>
+      </details></div>
+
+      <div class="card areacard"><details class="grp"><summary>Area calibration — edit £/sqft &amp; ceilings</summary>
+        <div class="tblwrap" style="margin-top:8px"><table class="areas" id="areaTable">
+          <thead><tr><th>Area</th><th>Finished £/sqft</th><th>Ceiling £</th><th>PD?</th><th>🚲</th><th>Train</th><th class="ev">Evidence</th></tr></thead>
+          <tbody></tbody>
+        </table></div>
+      </details></div>
+
+      <div class="card testcard"><details class="grp"><summary>Model checks — <span id="testSummary"></span></summary>
+        <div class="tests" id="testList"></div>
+        <p style="font-size:12px;color:var(--mut);margin-top:8px">The same suite runs in Python during development and here in your browser on every load: SDLT band arithmetic vs hand-worked figures, backtests vs the adversarially-reviewed area archetypes, ceiling-clipping, price-type adjustment and finance behaviour.</p>
+      </details></div>
+
+      <p class="foot" id="provenance"></p>
+    </main>
+  </div>
+</div>
+<div class="tip" id="tip"></div>
+
+<script>
+/* Deal-screener margin engine — mirrors margin_engine.py (calibration v2, post adversarial review).
+   Plain script: attaches SCREENER to globalThis so it runs in the artifact page and under node. */
+(function () {
+  "use strict";
+
+  // ---- SDLT: England residential standard bands + additional-dwelling surcharge ----
+  const STD_BANDS = [
+    [125000, 0.0],
+    [250000, 0.02],
+    [925000, 0.05],
+    [1500000, 0.1],
+    [Infinity, 0.12],
+  ];
+
+  function sdltAdditional(price, surchargePct) {
+    let tax = 0, prev = 0;
+    for (const [cap, rate] of STD_BANDS) {
+      const band = Math.max(0, Math.min(price, cap) - prev);
+      tax += band * rate;
+      prev = cap;
+      if (price <= cap) break;
+    }
+    return Math.round(tax + (price * surchargePct) / 100);
+  }
+
+  // ---- Area calibration v2 (8-area sweep + adversarial review, Aug 2026) ----
+  // ppsf: evidenced finished £/sqft · ceiling: repeatable 2026 exit cap (not the record)
+  // pd: PD-extend model survives (false = CA/Article4/estate scheme → planning route)
+  // bike: minutes from B14 7QG by cycle · train: usable station or null
+  const AREAS = {
+    "moseley-prime": { name: "Moseley — prime villa grid", ppsf: 400, ceiling: 1300000, pd: false, bike: 9, train: "Moseley Village (Camp Hill)", ev: "27 Chantry Rd £1.28m Feb '26−1; 53 Chantry unmod £785k Jan '26; reviewed net £110–180k" },
+    "moseley-outer": { name: "Moseley — outside the CAs", ppsf: 330, ceiling: 900000, pd: true, bike: 8, train: "Moseley Village (Camp Hill)", ev: "School Rd £351/sqft; Grove Ave £900k; mid-market extend ≈ £0 — entry fully priced" },
+    "selly-park-villa": { name: "Selly Park — villa core", ppsf: 355, ceiling: 950000, pd: false, bike: 15, train: null, ev: "96 Oakfield £1.14m Apr '24; dated £600k Mar '26; reviewed net £75–150k. Upland/Warwards keep PD" },
+    "selly-park-south": { name: "Selly Park South terraces", ppsf: 290, ceiling: 320000, pd: true, bike: 14, train: null, ev: "Rea flood corridor; terrace cap ~£310–320k" },
+    "kings-heath-top": { name: "Kings Heath — top streets", ppsf: 300, ceiling: 725000, pd: true, bike: 3, train: "Kings Heath (Camp Hill)", ev: "261 Vicarage £680k '23; home-play benchmark £80–110k" },
+    "kings-heath-mid": { name: "Kings Heath — mid streets", ppsf: 290, ceiling: 550000, pd: true, bike: 5, train: "Kings Heath (Camp Hill)", ev: "best-street averages £515–540k" },
+    "cotteridge-offtrust": { name: "Cotteridge / off-Trust B30", ppsf: 300, ceiling: 600000, pd: true, bike: 12, train: "Kings Norton (Camp Hill + Cross-City)", ev: "reviewed: underwrite £560–650k proven exits, NOT the £700k+ MHR askings; budget archetype ~£45k" },
+    "stirchley": { name: "Stirchley", ppsf: 300, ceiling: 460000, pd: true, bike: 10, train: "Pineapple Rd (Camp Hill)", ev: "reviewed net £0–10k — entry already gentrified; avoid for flips" },
+    "kings-norton": { name: "Kings Norton B38", ppsf: 285, ceiling: 470000, pd: true, bike: 20, train: "Kings Norton (Camp Hill + Cross-City)", ev: "reviewed net £5–35k, base ~£5k; Green CA pockets" },
+    "balsall-heath": { name: "Balsall Heath core", ppsf: 215, ceiling: 400000, pd: true, bike: 11, train: null, ev: "reviewed net £0–15k; £/sqft barely clears build cost; avoid" },
+    "cannon-hill-edgbaston-fringe": { name: "Cannon Hill / Edgbaston fringe", ppsf: 230, ceiling: 420000, pd: true, bike: 12, train: null, ev: "park pocket in Rea flood-warning corridor; Calthorpe side needs estate consent" },
+    "hall-green": { name: "Hall Green", ppsf: 275, ceiling: 500000, pd: true, bike: 13, train: "Hall Green (Shakespeare line)", ev: "reviewed net £10–20k — dated entry within £25/sqft of finished" },
+    "billesley-yardley-wood": { name: "Billesley / Yardley Wood", ppsf: 245, ceiling: 440000, pd: true, bike: 9, train: "Yardley Wood (Shakespeare line)", ev: "Haunch/Wheelers border only; estate core modelled at a loss" },
+  };
+
+  const REFURB_RATE = { light: 25, medium: 50, full: 90 };
+  const PRICE_ADJ = { asking: -3, "offers-over": 2, guide: 8, "sold-recent": 0 };
+
+  const DEFAULTS = {
+    threshold: 150000,
+    buildPpsf: 190,
+    refurbLight: 25, refurbMedium: 50, refurbFull: 90,
+    contingencyPct: 10,
+    buyFees: 5000,
+    surchargePct: 5,
+    adjAsking: -3, adjOffersOver: 2, adjGuide: 8,
+    sellingPct: 1.5, sellingLegal: 1500,
+    planningCost: 6000,
+    exitAdjPct: 0,
+    finance: false, financeMonths: 9, financeRatePm: 0.95, ltv: 75,
+    maxBike: 30, requireTrain: false,
+    maxEntry: 1500000, minBeds: 0, minSqft: 0,
+    pdOnly: false, excludeFlood: false, excludeLease: false,
+  };
+
+  function underwrite(cand, s, areaOverrides) {
+    const base = AREAS[cand.area_key];
+    if (!base) return null;
+    const ov = (areaOverrides && areaOverrides[cand.area_key]) || {};
+    const ppsf = (ov.ppsf || base.ppsf) * (1 + s.exitAdjPct / 100);
+    const ceiling = (ov.ceiling || base.ceiling) * (1 + s.exitAdjPct / 100);
+
+    const adjPct = cand.price_type === "asking" ? s.adjAsking
+      : cand.price_type === "offers-over" ? s.adjOffersOver
+      : cand.price_type === "guide" ? s.adjGuide : 0;
+    const entry = cand.price * (1 + adjPct / 100);
+
+    // Never pay to build space the ceiling won't buy.
+    const headroom = Math.max(0, ceiling / ppsf - cand.existing_sqft);
+    const usedAdd = Math.min(cand.addable_sqft, headroom);
+    const wastedAdd = cand.addable_sqft - usedAdd;
+    const finishedSqft = cand.existing_sqft + usedAdd;
+    const exit = Math.min(ceiling, finishedSqft * ppsf);
+
+    const stamp = sdltAdditional(entry, s.surchargePct);
+    const refurbRate = { light: s.refurbLight, medium: s.refurbMedium, full: s.refurbFull }[cand.condition];
+    const worksRaw = usedAdd * s.buildPpsf + cand.existing_sqft * refurbRate;
+    const works = worksRaw * (1 + s.contingencyPct / 100);
+    const planning = base.pd ? 0 : s.planningCost;
+    const selling = exit * (s.sellingPct / 100) + s.sellingLegal;
+    const fin = s.finance ? (entry * (s.ltv / 100) + works) * (s.financeRatePm / 100) * s.financeMonths : 0;
+
+    const totalIn = entry + stamp + s.buyFees + works + planning + selling + fin;
+    const margin = exit - totalIn;
+    const cash = s.finance ? entry * (1 - s.ltv / 100) + stamp + s.buyFees + works + planning : totalIn - selling;
+
+    // Sensitivity: margin if exit £/sqft moves ±7.5% (ceiling scaled with it)
+    const sens = [-7.5, 7.5].map((d) => {
+      const p2 = ppsf * (1 + d / 100), c2 = ceiling * (1 + d / 100);
+      const e2 = Math.min(c2, finishedSqft * p2);
+      return Math.round(e2 - (totalIn - selling) - (e2 * (s.sellingPct / 100) + s.sellingLegal));
+    });
+
+    return {
+      entry: Math.round(entry), sdlt: stamp, works: Math.round(works), planning,
+      selling: Math.round(selling), finance: Math.round(fin), exit: Math.round(exit),
+      totalIn: Math.round(totalIn), margin: Math.round(margin),
+      marginLo: sens[0], marginHi: sens[1],
+      roiPct: Math.round((1000 * margin) / totalIn) / 10,
+      cashNeeded: Math.round(cash),
+      marginOnCash: cash > 0 ? Math.round((1000 * margin) / cash) / 10 : null,
+      usedAdd: Math.round(usedAdd), wastedAdd: Math.round(wastedAdd),
+      finishedSqft: Math.round(finishedSqft),
+      bike: cand.bike_min || base.bike, train: base.train, pd: base.pd,
+    };
+  }
+
+  // ---- Self-test: same expectations as margin_engine.py (calibration v2) ----
+  function runTests() {
+    const t = [];
+    const chk = (name, got, lo, hi) => t.push({ name, got, want: hi === undefined ? `${lo.toLocaleString()}` : `${lo.toLocaleString()}–${hi.toLocaleString()}`, pass: got >= lo && got <= (hi === undefined ? lo : hi) });
+    chk("SDLT £290k additional dwelling (hand-worked £19k)", sdltAdditional(290000, 5), 19000);
+    chk("SDLT £430k (hand-worked £33k)", sdltAdditional(430000, 5), 33000);
+    chk("SDLT £550k (hand-worked £45k)", sdltAdditional(550000, 5), 45000);
+    chk("SDLT £785k (hand-worked £68.5k)", sdltAdditional(785000, 5), 68500);
+    chk("SDLT £1.0m band cross-check (£93.75k)", sdltAdditional(1000000, 5), 93750);
+
+    const s0 = Object.assign({}, DEFAULTS, { contingencyPct: 0 });
+    const sp = underwrite({ area_key: "selly-park-villa", price: 550000, price_type: "sold-recent", existing_sqft: 2200, addable_sqft: 400, condition: "medium" }, s0, null);
+    chk("Selly Park villa backtest (review: £75–150k)", sp.margin, 90000, 130000);
+    const mo = underwrite({ area_key: "moseley-prime", price: 785000, price_type: "sold-recent", existing_sqft: 3200, addable_sqft: 0, condition: "full" }, Object.assign({}, s0, { buyFees: 8000 }), null);
+    chk("Moseley Chantry villa backtest (review: £110–180k)", mo.margin, 90000, 200000);
+    const st = underwrite({ area_key: "stirchley", price: 315000, price_type: "sold-recent", existing_sqft: 1000, addable_sqft: 450, condition: "medium" }, s0, null);
+    chk("Stirchley semi-extend is negative (review: ≈ −£35k)", st.margin, -75000, -5000);
+    const kh = underwrite({ area_key: "kings-heath-top", price: 430000, price_type: "sold-recent", existing_sqft: 1776, addable_sqft: 700, condition: "medium" }, s0, null);
+    chk("Kings Heath at-market entry is thin (bought well = £80–110k)", kh.margin, -20000, 60000);
+
+    const big = underwrite({ area_key: "selly-park-villa", price: 550000, price_type: "sold-recent", existing_sqft: 2400, addable_sqft: 2000, condition: "medium" }, s0, null);
+    chk("Ceiling clip: wasted sqft detected", big.wastedAdd, 1, 2000);
+    chk("Ceiling clip: exit capped at ceiling", big.exit, 950000);
+    const g = underwrite({ area_key: "moseley-outer", price: 250000, price_type: "guide", existing_sqft: 1100, addable_sqft: 500, condition: "full" }, s0, null);
+    chk("Guide price uplift +8% applied", g.entry, 270000);
+    const fin = underwrite({ area_key: "selly-park-villa", price: 550000, price_type: "sold-recent", existing_sqft: 2200, addable_sqft: 400, condition: "medium" }, Object.assign({}, s0, { finance: true }), null);
+    chk("9-month bridge costs £35–60k of margin", sp.margin - fin.margin, 35000, 60000);
+    return t;
+  }
+
+  globalThis.SCREENER = { sdltAdditional, underwrite, runTests, AREAS, DEFAULTS, REFURB_RATE, PRICE_ADJ };
+})();
+
+</script>
+<script>
+"use strict";
+const SEED = [{"label": "Cartland Rd \u2014 3-bed semi, 'requires modernisation throughout'", "area_key": "stirchley", "price": 315000, "price_type": "asking", "beds": 3, "ptype": "semi", "existing_sqft": 1050, "sqft_source": "estimated (1930s 3-bed semi)", "condition": "medium", "addable_sqft": 450, "constraint_notes": "Full PD. Cartland Rd is partly inside the River Rea flood-warning polygon \u2014 plot-level EA check before offering", "url": "https://www.rightmove.co.uk/properties/166523942", "status": "live", "notes": "entry already ~\u00a3290/sqft \u2014 Stirchley gentrification priced in"}, {"label": "Cartland Rd \u2014 3-bed terrace, 'requiring some updating'", "area_key": "stirchley", "price": 235000, "price_type": "asking", "beds": 3, "ptype": "terrace", "existing_sqft": 1150, "sqft_source": "estimated (Victorian terrace)", "condition": "medium", "addable_sqft": 250, "constraint_notes": "Full PD; flood polygon check as above", "url": "https://www.heritage-estates.co.uk/properties/21635566/sales", "status": "live", "notes": "street terraced average sold \u00a3235k"}, {"label": "School Rd (south end) \u2014 dated 3-bed semi", "area_key": "moseley-outer", "price": 460000, "price_type": "asking", "beds": 3, "ptype": "semi", "existing_sqft": 1250, "sqft_source": "estimated (Edwardian semi)", "condition": "medium", "addable_sqft": 600, "constraint_notes": "South stretch outside both Moseley CAs \u2014 verify exact boundary on BCC map before relying on PD", "url": "https://www.rightmove.co.uk/properties/162682742", "status": "live", "notes": "the entry level of the Moseley semi belt"}, {"label": "School Rd \u2014 3-bed semi", "area_key": "moseley-outer", "price": 495000, "price_type": "asking", "beds": 3, "ptype": "semi", "existing_sqft": 1300, "sqft_source": "estimated", "condition": "light", "addable_sqft": 600, "constraint_notes": "CA boundary check needed \u2014 parts of School Rd fall inside St Agnes CA", "url": "https://www.onthemarket.com/details/15110739/", "status": "live", "notes": ""}, {"label": "Leighton Rd \u2014 5-bed period, 'in need of modernisation'", "area_key": "moseley-outer", "price": 395000, "price_type": "asking", "beds": 5, "ptype": "period semi", "existing_sqft": 1900, "sqft_source": "estimated (5-bed Victorian)", "condition": "full", "addable_sqft": 500, "constraint_notes": "Outside both CAs \u2014 full PD. PRICE ESTIMATED from street average \u00a3337.5k + condition \u2014 verify actual asking", "url": "https://www.zoopla.co.uk/house-prices/moseley/leighton-road/", "status": "live", "notes": "street average sold \u00a3337.5k; big footprint for the money"}, {"label": "Moseley \u2014 3-bed mid-terrace, auction, 'in need of modernisation'", "area_key": "moseley-outer", "price": 190000, "price_type": "guide", "beds": 3, "ptype": "terrace", "existing_sqft": 1100, "sqft_source": "estimated", "condition": "full", "addable_sqft": 350, "constraint_notes": "Auction \u2014 legal pack review essential; check for BCC lease/bring-back-into-use covenant variants", "url": "https://www.bondwolfe.com/auctions/properties/217568-property-auction-birmingham/", "status": "auction", "notes": "Bond Wolfe catalogue"}, {"label": "53 Chantry Rd \u2014 unmodernised villa (SOLD \u00a3785k Jan '26 \u2014 benchmark)", "area_key": "moseley-prime", "price": 785000, "price_type": "sold-recent", "beds": 6, "ptype": "period villa", "existing_sqft": 3200, "sqft_source": "estimated (large Victorian villa)", "condition": "full", "addable_sqft": 0, "constraint_notes": "Moseley CA + Article 4 \u2014 refurb-led play, extensions by full application", "url": "https://www.zoopla.co.uk/house-prices/moseley/chantry-road/", "status": "sold benchmark", "notes": "the template deal: 27 Chantry (modernised) made \u00a31.28m Feb '25 on the same street"}, {"label": "Oakfield Rd \u2014 dated villa (SOLD \u00a3600k Mar '26 \u2014 benchmark)", "area_key": "selly-park-villa", "price": 600000, "price_type": "sold-recent", "beds": 5, "ptype": "period villa", "existing_sqft": 2200, "sqft_source": "estimated", "condition": "medium", "addable_sqft": 400, "constraint_notes": "Selly Park CA + Article 4 \u2014 rear extension via full application; no PD loft", "url": "https://www.zoopla.co.uk/house-prices/selly-park/oakfield-road/b29-7hl/", "status": "sold benchmark", "notes": "finished comps on the same road: \u00a3819k (Mar '25), \u00a31.14m (Apr '24)"}, {"label": "247 Warwards Lane \u2014 3-bed detached, 'full renovation project'", "area_key": "selly-park-villa", "price": 260000, "price_type": "guide", "beds": 3, "ptype": "detached", "existing_sqft": 1100, "sqft_source": "estimated", "condition": "full", "addable_sqft": 500, "constraint_notes": "Outside the CA \u2014 full PD. SW-edge street with a lower ceiling than the villa core \u2014 sanity-check exit against Warwards comps, not Oakfield", "url": "https://list.gotoproperties.co.uk/lot/details/84ccc9e4-bacc-493c-8850-db9cb378d878", "status": "auction", "notes": "online auction"}, {"label": "Middleton Hall Rd \u2014 dated 3-bed", "area_key": "cotteridge-offtrust", "price": 285000, "price_type": "asking", "beds": 3, "ptype": "semi", "existing_sqft": 1150, "sqft_source": "estimated", "condition": "medium", "addable_sqft": 500, "constraint_notes": "Off-Trust, full PD. Underwrite exit at proven \u00a3560\u2013650k tier, not the \u00a3700k+ askings", "url": "https://www.onthemarket.com/details/10248674/", "status": "live", "notes": "ceiling street of off-Trust Cotteridge"}, {"label": "Franklin Rd \u2014 6-bed terrace, 'modernisation and repair', auction", "area_key": "cotteridge-offtrust", "price": 242000, "price_type": "guide", "beds": 6, "ptype": "terrace", "existing_sqft": 1800, "sqft_source": "estimated (6-bed Victorian terrace)", "condition": "full", "addable_sqft": 300, "constraint_notes": "Off-Trust Victorian grid near Bournville stn \u2014 confirm NOT on BVT land via the street checker; legal pack for repair covenants", "url": "https://www.nestoria.co.uk/franklin-road-b30/property/buy", "status": "auction", "notes": "guide \u00a3235\u2013250k"}, {"label": "Kings Norton \u2014 vacant 3-bed semi, auction", "area_key": "kings-norton", "price": 194000, "price_type": "guide", "beds": 3, "ptype": "semi", "existing_sqft": 1050, "sqft_source": "estimated", "condition": "full", "addable_sqft": 450, "constraint_notes": "Full PD (check Kings Norton Green CA boundary)", "url": "https://www.onthemarket.com/details/15247321/", "status": "auction", "notes": "room auction, Avery Fields"}, {"label": "115 Vicarage Rd \u2014 your home play (benchmark)", "area_key": "kings-heath-top", "price": 430000, "price_type": "sold-recent", "beds": 3, "ptype": "detached", "existing_sqft": 1776, "sqft_source": "listed", "condition": "medium", "addable_sqft": 700, "constraint_notes": "Full PD (subject to detached LDC strategy); no CA in Kings Heath", "url": "", "status": "owned", "notes": "bought Apr '25; margin here shows the buy-side economics only \u2014 you already own it, so no SDLT surcharge applies in practice"}];
+const S = SCREENER, $ = (id) => document.getElementById(id);
+const fmtK = (v) => (v < 0 ? "−£" : "£") + Math.round(Math.abs(v) / 1000) + "k";
+const fmt = (v) => (v < 0 ? "−£" : "£") + Math.abs(Math.round(v)).toLocaleString();
+
+const LS = "b14screener-v1";
+let saved = {}; try { saved = JSON.parse(localStorage.getItem(LS) || "{}"); } catch (e) {}
+let settings = Object.assign({}, S.DEFAULTS, saved.settings || {});
+let areaOn = saved.areaOn || Object.fromEntries(Object.keys(S.AREAS).map(k => [k, true]));
+let areaOv = saved.areaOv || {};
+let custom = saved.custom || [];
+let expanded = null;
+
+const PRESETS = {
+  conservative: { exitAdjPct: -7.5, buildPpsf: 205, contingencyPct: 15, adjGuide: 12, adjAsking: 0 },
+  base: { exitAdjPct: 0, buildPpsf: 190, contingencyPct: 10, adjGuide: 8, adjAsking: -3 },
+  stretch: { exitAdjPct: 5, buildPpsf: 180, contingencyPct: 5, adjGuide: 5, adjAsking: -5 },
+};
+
+const NUMS = ["threshold","maxBike","buildPpsf","contingencyPct","refurbLight","refurbMedium","refurbFull","buyFees","planningCost","surchargePct","adjAsking","adjOffersOver","adjGuide","sellingPct","sellingLegal","exitAdjPct","financeMonths","financeRatePm","ltv","maxEntry","minBeds","minSqft"];
+const BOOLS = ["requireTrain","finance","pdOnly","excludeFlood","excludeLease","hideSold"];
+
+function syncControls() {
+  for (const k of NUMS) { const el = $(k); if (el) el.value = settings[k]; const o = $("o-" + k); if (o) o.textContent = fmtOut(k); }
+  for (const k of BOOLS) { const el = $(k); if (el) el.checked = !!settings[k]; }
+}
+function fmtOut(k) {
+  const v = settings[k];
+  if (k === "threshold" || k === "maxEntry") return fmtK(v);
+  if (k === "maxBike") return v + " min";
+  if (k === "buildPpsf") return "£" + v + "/sqft";
+  if (["contingencyPct","surchargePct","exitAdjPct"].includes(k)) return (v > 0 && k === "exitAdjPct" ? "+" : "") + v + "%";
+  return v;
+}
+function persist() { localStorage.setItem(LS, JSON.stringify({ settings, areaOn, areaOv, custom })); }
+
+function flagsFor(c) {
+  const f = [], t = (c.constraint_notes || "") + " " + (c.notes || "");
+  const area = S.AREAS[c.area_key];
+  if (area && !area.pd) f.push(["planning route", "w"]);
+  if (/flood|rea corridor/i.test(t)) f.push(["flood check", "w"]);
+  if (/lease|covenant|bvt|calthorpe|bring.?back/i.test(t)) f.push(["lease/covenant", "w"]);
+  if (/estimated/i.test(c.sqft_source || "")) f.push(["sqft est.", ""]);
+  if (c.price_type === "guide") f.push(["auction", ""]);
+  return f;
+}
+
+function computeAll() {
+  const rows = [];
+  for (const c of SEED.concat(custom)) {
+    const area = S.AREAS[c.area_key]; if (!area) continue;
+    const u = S.underwrite(c, settings, areaOv); if (!u) continue;
+    rows.push({ c, u });
+  }
+  return rows;
+}
+function passesFilters(r) {
+  const { c, u } = r, t = (c.constraint_notes || "") + " " + (c.notes || "");
+  if (!areaOn[c.area_key]) return false;
+  if (u.bike > settings.maxBike) return false;
+  if (settings.requireTrain && !u.train) return false;
+  if (u.entry > settings.maxEntry) return false;
+  if ((c.beds || 0) < settings.minBeds) return false;
+  if ((c.existing_sqft || 0) < settings.minSqft) return false;
+  if (settings.pdOnly && !u.pd) return false;
+  if (settings.excludeFlood && /flood|rea corridor/i.test(t)) return false;
+  if (settings.excludeLease && /lease|covenant|bvt|calthorpe|bring.?back/i.test(t)) return false;
+  if (settings.hideSold && c.price_type === "sold-recent") return false;
+  return true;
+}
+const sorters = {
+  margin: (a, b) => b.u.margin - a.u.margin,
+  roi: (a, b) => b.u.roiPct - a.u.roiPct,
+  moc: (a, b) => (b.u.marginOnCash || -999) - (a.u.marginOnCash || -999),
+  perbike: (a, b) => b.u.margin / Math.max(1, b.u.bike) - a.u.margin / Math.max(1, a.u.bike),
+  entry: (a, b) => a.u.entry - b.u.entry,
+};
+
+function render() {
+  const all = computeAll(), vis = all.filter(passesFilters);
+  vis.sort(sorters[$("sortBy").value]);
+  const pass = vis.filter(r => r.u.margin >= settings.threshold);
+  $("candCount").textContent = vis.length + " of " + all.length + " candidates shown";
+  $("stPass").textContent = pass.length + " / " + vis.length;
+  $("stBest").textContent = vis.length ? fmtK(Math.max(...vis.map(r => r.u.margin))) : "–";
+  const bestRoi = vis.length ? vis.reduce((m, r) => r.u.roiPct > m.u.roiPct ? r : m, vis[0]) : null;
+  $("stRoi").textContent = bestRoi ? bestRoi.u.roiPct + "%" : "–";
+  $("stCheap").textContent = pass.length ? fmtK(Math.min(...pass.map(r => r.u.entry))) : "none";
+  renderTable(vis); renderChart(vis);
+  persist();
+}
+
+function renderTable(vis) {
+  const tb = $("dealTable").querySelector("tbody"); tb.innerHTML = "";
+  vis.forEach((r, i) => {
+    const { c, u } = r;
+    const tr = document.createElement("tr"); tr.className = "main"; tr.tabIndex = 0;
+    const cls = u.margin < 0 ? "x" : u.margin >= settings.threshold ? "p" : "m";
+    const flags = flagsFor(c).map(f => `<span class="flag ${f[1]}">${f[0]}</span>`).join("");
+    tr.innerHTML = `<td class="n">${i + 1}</td>
+      <td><span class="lbl">${c.label}</span><span class="ar">${S.AREAS[c.area_key].name} · ${c.beds || "?"} bed ${c.ptype || ""} · ${c.existing_sqft.toLocaleString()}→${u.finishedSqft.toLocaleString()} sqft</span><span class="flags">${flags}</span></td>
+      <td class="n">${fmtK(u.entry)}</td><td class="n">${fmtK(u.totalIn)}</td><td class="n">${fmtK(u.exit)}</td>
+      <td class="n"><span class="mg ${cls}">${fmtK(u.margin)}</span><span class="sens">${fmtK(u.marginLo)} … ${fmtK(u.marginHi)}</span></td>
+      <td class="n">${u.roiPct}%</td><td class="n">${u.bike}</td><td style="font-size:12px">${c.status || ""}</td>`;
+    const key = c.label + c.area_key;
+    tr.addEventListener("click", () => { expanded = expanded === key ? null : key; render(); });
+    tr.addEventListener("keydown", (e) => { if (e.key === "Enter") { expanded = expanded === key ? null : key; render(); } });
+    tb.appendChild(tr);
+    if (expanded === key) {
+      const dt = document.createElement("tr"); dt.className = "det";
+      const wasted = u.wastedAdd > 25 ? `<span style="color:var(--warn)">⚠ ${u.wastedAdd} sqft of buildable space earns £0 — the ceiling caps out first. Build ${u.usedAdd} sqft, not ${c.addable_sqft}.</span><br>` : "";
+      dt.innerHTML = `<td colspan="9"><div class="stack">
+        <span>Entry (adj.) <b>${fmt(u.entry)}</b></span><span>SDLT (+${settings.surchargePct}% surcharge) <b>${fmt(u.sdlt)}</b></span>
+        <span>Buy fees <b>${fmt(settings.buyFees)}</b></span><span>Works incl. ${settings.contingencyPct}% cont. <b>${fmt(u.works)}</b></span>
+        <span>Planning route <b>${fmt(u.planning)}</b></span><span>Selling costs <b>${fmt(u.selling)}</b></span>
+        <span>Finance <b>${fmt(u.finance)}</b></span><span>All-in <b>${fmt(u.totalIn)}</b></span>
+        <span>Exit <b>${fmt(u.exit)}</b></span><span>Net margin <b>${fmt(u.margin)}</b></span>
+        <span>Cash needed <b>${fmt(u.cashNeeded)}</b></span><span>Margin on cash <b>${u.marginOnCash === null ? "–" : u.marginOnCash + "%"}</b></span></div>
+        <p class="note">${wasted}${c.constraint_notes || ""}${c.notes ? " · " + c.notes : ""} · <em>${S.AREAS[c.area_key].ev}</em>${u.train ? " · 🚆 " + u.train : ""}${c.url ? ` · <a href="${c.url}" target="_blank" rel="noopener">listing ↗</a>` : ""}${c.sqft_source ? " · size: " + c.sqft_source : ""}</p></td>`;
+      tb.appendChild(dt);
+    }
+  });
+  if (!vis.length) tb.innerHTML = `<tr><td colspan="9" style="text-align:center;color:var(--mut);padding:30px">Nothing passes the current filters — widen the radius, areas, or entry cap.</td></tr>`;
+}
+
+function renderChart(vis) {
+  const svg = $("chart"), tip = $("tip");
+  const W = Math.max(svg.clientWidth || 640, 560), H = 320, P = { l: 58, r: 18, t: 14, b: 40 };
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.innerHTML = "";
+  if (!vis.length) return;
+  const xs = vis.map(r => r.u.totalIn), ys = vis.map(r => r.u.margin).concat([settings.threshold, 0]);
+  const x0 = Math.min(...xs) * 0.93, x1 = Math.max(...xs) * 1.05;
+  const y0 = Math.min(...ys) - 20000, y1 = Math.max(...ys) + 25000;
+  const X = v => P.l + (v - x0) / (x1 - x0) * (W - P.l - P.r);
+  const Y = v => H - P.b - (v - y0) / (y1 - y0) * (H - P.t - P.b);
+  const NS = "http://www.w3.org/2000/svg";
+  const mk = (n, at, parent) => { const e = document.createElementNS(NS, n); for (const k in at) e.setAttribute(k, at[k]); (parent || svg).appendChild(e); return e; };
+  const css = getComputedStyle(document.documentElement);
+  const col = v => css.getPropertyValue(v).trim();
+  // grid + axes
+  const xticks = 5, yticks = 5;
+  for (let i = 0; i <= yticks; i++) {
+    const v = y0 + (y1 - y0) * i / yticks, y = Y(v);
+    mk("line", { x1: P.l, x2: W - P.r, y1: y, y2: y, stroke: col("--line"), "stroke-width": .7 });
+    mk("text", { x: P.l - 7, y: y + 4, "text-anchor": "end", "font-size": 11, fill: col("--mut") }).textContent = fmtK(v);
+  }
+  for (let i = 0; i <= xticks; i++) {
+    const v = x0 + (x1 - x0) * i / xticks;
+    mk("text", { x: X(v), y: H - P.b + 16, "text-anchor": "middle", "font-size": 11, fill: col("--mut") }).textContent = fmtK(v);
+  }
+  mk("text", { x: (P.l + W - P.r) / 2, y: H - 6, "text-anchor": "middle", "font-size": 11, fill: col("--ink2") }).textContent = "Total capital deployed (all-in)";
+  // zero + threshold
+  if (0 > y0 && 0 < y1) mk("line", { x1: P.l, x2: W - P.r, y1: Y(0), y2: Y(0), stroke: col("--mut"), "stroke-width": 1, "stroke-dasharray": "2 3" });
+  const ty = Y(settings.threshold);
+  mk("line", { x1: P.l, x2: W - P.r, y1: ty, y2: ty, stroke: col("--accent"), "stroke-width": 1.4, "stroke-dasharray": "7 4" });
+  mk("text", { x: W - P.r, y: ty - 6, "text-anchor": "end", "font-size": 11, fill: col("--accent"), "font-weight": 600 }).textContent = "target " + fmtK(settings.threshold);
+  // marks (labels for top 3 passing)
+  const top3 = vis.filter(r => r.u.margin >= settings.threshold).slice(0, 3).map(r => r.c.label);
+  for (const r of vis) {
+    const { c, u } = r, x = X(u.totalIn), y = Y(u.margin);
+    const st = u.margin < 0 ? "loss" : u.margin >= settings.threshold ? "pass" : "miss";
+    const color = st === "pass" ? col("--pass") : st === "loss" ? col("--loss") : col("--miss");
+    if (st === "loss") {
+      mk("path", { d: `M${x - 4.5} ${y - 4.5} L${x + 4.5} ${y + 4.5} M${x - 4.5} ${y + 4.5} L${x + 4.5} ${y - 4.5}`, stroke: color, "stroke-width": 2.2, "stroke-linecap": "round" });
+    } else {
+      mk("circle", { cx: x, cy: y, r: 5.5, fill: st === "pass" ? color : "none", stroke: color, "stroke-width": st === "pass" ? 0 : 2 });
+      if (st === "pass") mk("circle", { cx: x, cy: y, r: 7.5, fill: "none", stroke: col("--panel"), "stroke-width": 2 });
+    }
+    if (top3.includes(c.label)) {
+      mk("text", { x: x + 9, y: y - 8, "font-size": 11, fill: col("--ink2") }).textContent = c.label.split("—")[0].trim().slice(0, 26);
+    }
+    const hit = mk("circle", { cx: x, cy: y, r: 13, fill: "transparent", style: "cursor:pointer" });
+    hit.addEventListener("mousemove", (e) => {
+      tip.style.display = "block"; tip.style.left = Math.min(e.clientX + 14, innerWidth - 270) + "px"; tip.style.top = (e.clientY + 12) + "px";
+      tip.innerHTML = `<b>${c.label}</b><br>margin ${fmtK(u.margin)} · on-cost ${u.roiPct}%<br>all-in ${fmtK(u.totalIn)} → exit ${fmtK(u.exit)}<br>🚲 ${u.bike} min${u.train ? " · 🚆" : ""}`;
+    });
+    hit.addEventListener("mouseleave", () => { tip.style.display = "none"; });
+  }
+}
+
+function buildAreaUI() {
+  const chips = $("areaChips"); chips.innerHTML = "";
+  for (const [k, a] of Object.entries(S.AREAS)) {
+    const l = document.createElement("label"); l.className = "ck";
+    l.innerHTML = `<input type="checkbox" data-area="${k}" ${areaOn[k] ? "checked" : ""}> ${a.name}<small>${a.bike}′${a.train ? " 🚆" : ""}</small>`;
+    l.querySelector("input").addEventListener("change", (e) => { areaOn[k] = e.target.checked; render(); });
+    chips.appendChild(l);
+  }
+  const tb = $("areaTable").querySelector("tbody"); tb.innerHTML = "";
+  for (const [k, a] of Object.entries(S.AREAS)) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${a.name}</td>
+      <td><input type="number" step="5" value="${(areaOv[k] && areaOv[k].ppsf) || a.ppsf}" data-k="${k}" data-f="ppsf"></td>
+      <td><input type="number" step="10000" value="${(areaOv[k] && areaOv[k].ceiling) || a.ceiling}" data-k="${k}" data-f="ceiling"></td>
+      <td>${a.pd ? "✔ PD" : "planning"}</td><td class="n">${a.bike}′</td><td style="font-size:12px">${a.train || "—"}</td><td class="ev">${a.ev}</td>`;
+    tr.querySelectorAll("input").forEach(inp => inp.addEventListener("change", () => {
+      const k2 = inp.dataset.k; areaOv[k2] = areaOv[k2] || {}; areaOv[k2][inp.dataset.f] = +inp.value; render();
+    }));
+    tb.appendChild(tr);
+  }
+  const sel = $("f-area"); sel.innerHTML = Object.entries(S.AREAS).map(([k, a]) => `<option value="${k}">${a.name}</option>`).join("");
+}
+
+function runTestsUI() {
+  const t = S.runTests(), fails = t.filter(x => !x.pass).length;
+  $("testChip").textContent = (t.length - fails) + "/" + t.length + " model checks pass";
+  $("testChip").className = "chip " + (fails ? "bad" : "ok");
+  $("testSummary").textContent = (t.length - fails) + "/" + t.length + " passing";
+  $("testList").innerHTML = t.map(x => `<div><span class="tchip ${x.pass ? "ok" : "no"}">${x.pass ? "PASS" : "FAIL"}</span><span>${x.name} — got <b class="num">${x.got.toLocaleString()}</b>, expected ${x.want}</span></div>`).join("");
+}
+
+// wiring
+for (const k of NUMS) { const el = $(k); if (!el) continue; el.addEventListener("input", () => { settings[k] = +el.value; const o = $("o-" + k); if (o) o.textContent = fmtOut(k); render(); }); }
+for (const k of BOOLS) { const el = $(k); if (!el) continue; el.addEventListener("change", () => { settings[k] = el.checked; render(); }); }
+$("sortBy").addEventListener("change", render);
+document.querySelectorAll("[data-preset]").forEach(b => b.addEventListener("click", () => { Object.assign(settings, PRESETS[b.dataset.preset]); syncControls(); render(); }));
+$("resetBtn").addEventListener("click", () => { settings = Object.assign({}, S.DEFAULTS); areaOv = {}; areaOn = Object.fromEntries(Object.keys(S.AREAS).map(k => [k, true])); syncControls(); buildAreaUI(); render(); });
+$("csvBtn").addEventListener("click", () => {
+  const vis = computeAll().filter(passesFilters).sort(sorters[$("sortBy").value]);
+  const head = "rank,label,area,entry,all_in,exit,margin,margin_lo,margin_hi,on_cost_pct,bike_min,status,url";
+  const lines = vis.map((r, i) => [i + 1, `"${r.c.label}"`, r.c.area_key, r.u.entry, r.u.totalIn, r.u.exit, r.u.margin, r.u.marginLo, r.u.marginHi, r.u.roiPct, r.u.bike, r.c.status, r.c.url || ""].join(","));
+  navigator.clipboard.writeText([head].concat(lines).join("\n")).then(() => { $("csvBtn").textContent = "Copied ✓"; setTimeout(() => $("csvBtn").textContent = "Copy CSV", 1500); });
+});
+$("f-addBtn").addEventListener("click", () => {
+  const c = { label: $("f-label").value || "My deal", area_key: $("f-area").value, price: +$("f-price").value || 0, price_type: $("f-ptype").value, beds: +$("f-beds").value || 3, ptype: "custom", existing_sqft: +$("f-sqft").value || 1000, sqft_source: "user", condition: $("f-cond").value, addable_sqft: +$("f-add").value || 0, constraint_notes: "user-entered", url: "", status: "yours", notes: "" };
+  if (c.price > 0) { custom.push(c); render(); }
+});
+$("f-clearBtn").addEventListener("click", () => { custom = []; render(); });
+addEventListener("resize", () => renderChart(computeAll().filter(passesFilters).sort(sorters[$("sortBy").value])));
+
+$("provenance").innerHTML = "Calibration: eight-area research sweep (Aug 2026) + adversarial arithmetic review; ceilings are repeatable street evidence, not records. Engine costs: SDLT standard bands + additional-dwelling surcharge, works contingency, planning-route fees on Article 4/conservation-area candidates, 1.5% + legal selling costs, optional bridging. Sizes marked “estimated” are inferred from type and era — verify on EPC before offering. This is a screening model, not a valuation: always confirm the exit with two local agents before bidding.";
+
+syncControls(); buildAreaUI(); runTestsUI(); render();
+const mo = new MutationObserver(() => render());
+mo.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => render());
+</script>

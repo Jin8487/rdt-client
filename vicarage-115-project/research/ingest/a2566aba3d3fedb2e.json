@@ -1,0 +1,141 @@
+{
+ "summary": "All three PDFs are single A3 sheets at 1:100 by DPC Ltd (Design Plan & Construction Ltd), Drg No D01 \"EXISTING PLANS\", status APPROVAL, project \"115 Vicarage Rd, Birmingham, B14 7QG\", First Issue 12.05.26, Drawn RA. Each shows an Existing GRD Floor Plan (with both neighbours' rear projections and 45-degree lines) and an Existing 1ST Floor Plan. The house is DETACHED (clear gaps to both side boundaries; plot ~12.36m wide between boundary chain lines). The existing rear block (CONSERVATORY + KITCHEN + W/C in one projection) is scaled at 4.36m deep beyond the original rear wall and ~10.35m wide. Written dimensions only: 00000126 (original): 2072 and 6433 with a 45deg line from the CENTRE of no.113's kitchen rear window, plus an unlabelled 45deg line from no.117's kitchen flank window that crosses the boundary 0.93m BEFORE the existing rear wall and grazes 115's east flank line only ~0.11m beyond it. 00000147 (Rev A, file dated 01.06.26): same 2072/6433 (half-point line from no.113) plus a new 45deg line from the CENTRE of no.117's conservatory front glazing dimensioned 3562 at the east side line, and a dashed proposed-extension outline: 3562mm deep off the existing rear wall across the width, stepped down to 2072mm for a 1.49m strip on the no.113 side (step corner exactly on the 45deg line). 00000151 (later Rev A, 05.06.26, duplicated as 00000190): outline deleted; both 45deg lines re-drawn from the QUARTER points of the same windows nearest the shared boundary, giving written dims 1647 (beyond existing rear wall) / 6008 (beyond original rear wall) on the no.113 side; the no.117 quarter-point line is drawn only to the boundary (no dim; scales to ~1.78m beyond the existing rear wall at the boundary, ~2.82m if projected to 115's east flank line). So between the two Rev A files the architect's own 45-degree analysis tightened from allowing ~3.56m/2.07m to ~2.8m/1.65m beyond the ALREADY 4.36m-deep existing rear block. All unlabelled figures below were scaled by vector extraction at the stated 1:100 (sheets carry a \"do not scale\" warning).",
+ "facts": [
+  {
+   "topic": "Sheet identity / title block (all three PDFs)",
+   "detail": "DPC Ltd / Design Plan & Construction Ltd, 'Architectural & Structural Engineering Services', Tel 07815575110, email DPC-Ltd@outlook.com. Status box: 'APPROVAL'. Project: '115 Vicarage Rd, Birmingham, B14 7QG'. Drg Title: 'EXISTING PLANS'. Drg No: D01. Scale 1:100, Size A3, First Issue 12.05.26, Drawn RA, Checked '-', bottom-right Rev cell '-'. Revision strip on ALL three sheets (including the pre-revision 126) shows a row 'A | - | - | RA | -' with no description or date. Scale bar 1m-10m bottom left. Notes verbatim: 'DRAWING NOT TO BE SCALED FOR ACCURATE SETTING OUT. ALL DIMENSIONS TO BE CHECKED ON SITE. PROPOSALS SUBJECT TO LOCAL AUTHORITY APPROVALS. THIS DRAWING IS TO OBTAIN PLANNING AND OR BUILDING REGULATIONS ONLY. ALL WORKS ON OR WITHIN A 3 MTR ZONE OF A NEIGHBOURING BOUNDARY ARE TO BE NOTIFIED 14 DAYS BEFORE COMMENCEMENT ON SITE IN ACCORDANCE WITH THE PARTY WALL ACT 1996.'",
+   "source": "all three PDFs, title block",
+   "confidence": "high"
+  },
+  {
+   "topic": "File relationships",
+   "value": "147 and 151 are BOTH titled 'D01 Ext Plans A' but have different content",
+   "detail": "00000126 (12.05.26) = original D01. 00000147 (file date 01.06.26) = first 'Rev A' content. 00000151 (05.06.26) = second, different 'Rev A' content; 00000190 in the same folder is byte-identical (same size/timestamp) to 00000151. The title block was not updated between 147 and 151 - an undocumented revision under the same rev letter.",
+   "source": "folder listing + content comparison",
+   "confidence": "high"
+  },
+  {
+   "topic": "House type",
+   "value": "Detached",
+   "detail": "115 stands clear of both boundaries: main house west face ~1.52m from the no.113 boundary line, garage east face ~0.27m from the no.117 boundary line. No party walls. No.113's kitchen block and no.117's conservatory/garage are separate structures across the boundary chain lines.",
+   "source": "scaled from vector geometry, all sheets",
+   "confidence": "high"
+  },
+  {
+   "topic": "Plot width",
+   "value": "~12.36m (scaled, not written)",
+   "detail": "Distance between the two long-dash boundary lines flanking the GF plan = 2920 units = 12.36m at 1:100. Plot DEPTH is not determinable - the boundary lines are truncated at ~14m shown length and the rear garden runs off the drawn area on all sheets.",
+   "source": "scaled from vectors",
+   "confidence": "high"
+  },
+  {
+   "topic": "Existing rear extension (conservatory block) - position and depth",
+   "value": "4.36m deep, ~10.35m wide (scaled)",
+   "detail": "One full-width rear projection contains CONSERVATORY (west, internal ~3.66m wide x 4.09m deep), KITCHEN (centre, internal ~4.79m wide), W/C (east, internal ~1.12m wide) behind one continuous rear building line 4.36m beyond the original rear wall (4361mm = the difference between the written pairs 6433-2072 and 6008-1647, identical on all sheets). Block width conservatory west face to W/C east face ~10.35m. The conservatory west face projects ~0.55m proud (west) of the main house west wall; on the east the block stops ~0.76m short of the garage east face. NOTE: this drawn 4.36m existing depth is materially deeper than the ~3.3m single-storey extension shown on the 2005 permission S/03404/05/FUL section.",
+   "source": "scaled from vectors, all sheets",
+   "confidence": "high"
+  },
+  {
+   "topic": "Original rear wall position",
+   "detail": "The original (main house) rear wall is the wall between THROUGH LOUNGE/STUDY and the conservatory/kitchen block, drawn ~275mm thick. It sits 4.36m behind (south of) the existing rear building line. Both long written dims reference it: 6433 (sheets 126/147) and 6008 (sheet 151) are measured from this wall to the respective 45-degree intersection points. The through lounge has a wide window/opening (~1.9m) in this wall into the conservatory.",
+   "source": "vector geometry + written dims",
+   "confidence": "high"
+  },
+  {
+   "topic": "Written dimensions - sheet 00000126 (original)",
+   "value": "2072, 6433, 45deg (x2 angle labels)",
+   "detail": "2072 = distance from the existing conservatory rear wall to where the 45deg line from no.113 crosses the projection of the conservatory WEST side wall. 6433 = same intersection measured from the ORIGINAL rear wall (6433-2072=4361=existing block depth). Vector check: 2.074m and 6.435m. No dimension on the no.117 side. No other written dimensions anywhere on the sheet (house footprint, plot etc. all unannotated).",
+   "source": "126 PDF, verified by vector measurement",
+   "confidence": "high"
+  },
+  {
+   "topic": "Written dimensions - sheet 00000147 (Rev A #1)",
+   "value": "2072, 6433, 3562, 45deg (x2)",
+   "detail": "Retains 2072/6433 on the no.113 side (same half-point origin). Adds 3562 on the no.117 side = distance from the existing rear building line to where the 45deg line from no.117's conservatory front (half point) crosses the east side line of the dashed outline (the projection of 115's rear-block east flank wall). Vector check: 3.564m at exactly the outline corner.",
+   "source": "147 PDF, verified by vector measurement",
+   "confidence": "high"
+  },
+  {
+   "topic": "Written dimensions - sheet 00000151 (Rev A #2)",
+   "value": "1647, 6008, 45deg (x2)",
+   "detail": "1647 = existing conservatory rear wall to the 45deg intersection on the conservatory-west-wall projection line (line now from the QUARTER point of no.113's window). 6008 = same point from the original rear wall (6008-1647=4361). Vector check: 1.647m / 6.007m exact. (An earlier low-res read as '1847' was wrong - it is 1647.) NO dimension is given on the no.117 side of this sheet, and the 2072/6433/3562 dims are deleted.",
+   "source": "151 PDF, verified by vector measurement",
+   "confidence": "high"
+  },
+  {
+   "topic": "45-degree line, no.113 side - origin",
+   "detail": "Origin window: no.113's ground-floor KITCHEN rear window (labelled 'KITCHEN No.113'), width ~1.64m, its nearest (east) jamb ~1.28m from the shared boundary; no.113's kitchen rear wall lies 3.36m forward of 115's original rear wall (i.e. 115's existing block already projects ~1.0m beyond no.113's kitchen rear wall). Sheets 126 & 147: line springs from the CENTRE (half point) of this window at 45deg -> intersection dims 2072/6433. Sheet 151: two small tick marks are added on the window marking the centre and the QUARTER point nearest the boundary, and the line springs from the QUARTER point -> dims 1647/6008. The quarter point sits ~0.43m closer to the boundary, which is exactly the 425mm reduction (2072->1647).",
+   "source": "1200dpi crops + vector fits of dash segments",
+   "confidence": "high"
+  },
+  {
+   "topic": "45-degree line, no.117 side - origin (changes every issue)",
+   "detail": "Sheet 126: line taken from no.117's KITCHEN flank windows - two ~0.57m windows on the kitchen's west flank wall facing the alleyway (wall labelled 'KITCHEN No.117', windows sitting ~0.3-1.9m north of 115's original rear wall line); the line springs from about the centre of the LOWER (southern) window. No dimension. Sheet 147: line moved to the CENTRE (half point) of no.117's CONSERVATORY front glazing (glazed front ~2.94m wide with central ~1.3m double doors opening into the garden, front wall 0.73m proud of 115's existing rear building line) -> written dim 3562. Sheet 151: quarter/centre tick marks added on the conservatory front and the line re-drawn from the QUARTER point nearest the boundary; drawn only as far as the boundary chain line; no dimension.",
+   "source": "1200dpi crops + vector fits",
+   "confidence": "high"
+  },
+  {
+   "topic": "Where the 45-degree lines intersect the site (metres beyond the EXISTING rear building line unless stated)",
+   "detail": "No.113 side (measured on the projection of the conservatory west wall): 126/147 = 2.072m (written 2072); 151 = 1.647m (written 1647). No.117 side: 126 (kitchen-flank-window origin) = crosses the boundary 0.93m SOUTH of (before) the existing rear wall and reaches the projection of 115's east flank wall only 0.106m beyond the existing rear wall (scaled, unlabelled) - i.e. on the original sheet virtually no rear projection clears the no.117 45deg test; 147 (conservatory half point) = 3.564m at the east flank line (written 3562), 2.53m where it crosses the boundary; 151 (conservatory quarter point) = 1.78m where it meets the boundary (extent drawn), 2.82m if projected on to the east flank line (scaled, unlabelled). Equivalent distances beyond the ORIGINAL rear wall: add 4.361m (e.g. written 6433 and 6008 on the no.113 side).",
+   "source": "written dims + vector intersection computation",
+   "confidence": "high"
+  },
+  {
+   "topic": "Dashed proposed-extension outline (sheet 147 only)",
+   "detail": "Only 147 shows a dashed rear-extension footprint: depth 3562mm off the existing rear building line (i.e. ~7.92m off the original rear wall), spanning from the projection of the rear-block EAST flank wall (flush with the existing W/C flank, ~1.03m from the no.117 boundary) across to the conservatory WEST wall line, EXCEPT a 1.49m-wide strip on the no.113 side which is held back to 2072mm depth; the 1.49x1.49m step corner sits exactly on the no.113 45-degree half-point line, and the outline's NE corner sits exactly on the no.117 45-degree half-point line (the 3562 point). 126 and 151 contain no proposed outline at all.",
+   "source": "147 vector geometry",
+   "confidence": "high"
+  },
+  {
+   "topic": "Gaps / alleyway on the no.117 side",
+   "value": "~1.33m between extensions",
+   "detail": "115 rear block east face to boundary ~1.03m; boundary to no.117 conservatory west face ~0.30m; total gap between the two structures ~1.33m (owner quotes 1.25m). On the no.113 side: 115 conservatory west face to boundary ~0.97m; boundary to no.113 kitchen east flank ~0.45m (no.113 has a door in that flank facing the gap).",
+   "source": "scaled from vectors",
+   "confidence": "high"
+  },
+  {
+   "topic": "House footprint (all scaled - nothing written)",
+   "detail": "Main house width (through lounge to lobby/study, excl. garage) ~8.05m; attached garage ~2.52m wide (garage door opening ~2.25m); overall front width incl. garage ~10.57m. Main body depth front wall to original rear wall ~5.4m (front bay of the through lounge projects further, ~0.6-1m); overall existing depth incl. rear block ~9.8m from lounge front wall to conservatory rear wall. External walls drawn ~275-300mm; internal partitions ~110mm; conservatory west wall ~280mm.",
+   "source": "scaled from vectors (1:100)",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Ground-floor room labels (verbatim, all sheets)",
+   "detail": "115: CONSERVATORY, KITCHEN, W/C, THROUGH LOUNGE, STUDY, LOBBY, GARAGE. Neighbours: 'KITCHEN No.113' (left), and right side 'CONSERVATORY', 'UTILITY?', 'KITCHEN No.117', 'GARAGE' (no.117's). Annotations: 'GULLY' (on 115's kitchen rear wall), 'EXISTING I.C.' (inspection chamber ~0.2m off the rear wall behind the kitchen/W.C., with dash-dot drain run from the gully), 'DRAINAGE RUNS TO BE CONFIRMED ON SITE' (vertical note through the garage), 'EXISTING MANHOLE' (dashed square on the driveway in front of the garage), titles 'Existing GRD Floor Plan' / 'Existing 1ST Floor Plan'.",
+   "source": "all sheets",
+   "confidence": "high"
+  },
+  {
+   "topic": "115's own rear elevation openings (relevant to extension)",
+   "detail": "Conservatory rear wall: window + central outward double doors + window. Kitchen rear wall: window over the sink (~0.9-1.0m). W/C: rear window. First floor rear wall (on the original rear wall line): windows to BEDROOM 4, a small central window (stair/landing), and BATHROOM window(s), all looking over the hatched flat roof of the rear block.",
+   "source": "crops of all sheets",
+   "confidence": "medium"
+  },
+  {
+   "topic": "First-floor plan",
+   "detail": "Rooms: BEDROOM 1 (front, with bay), BEDROOM 2 (front centre), BEDROOM 3 (front east), BEDROOM 4 (rear west), BATHROOM (rear east, bath/WC/basin), central stair. A hatched rectangle behind the FF rear wall represents the flat roof of the 4.36m rear block, full width. No written dimensions anywhere on the FF plan on any sheet; FF layout identical across all three sheets.",
+   "source": "all sheets",
+   "confidence": "high"
+  },
+  {
+   "topic": "Differences 126 -> 147 -> 151 (complete list)",
+   "detail": "Building fabric identical on all three (plans merely repositioned slightly on the sheet). 126: 45deg lines from no.113 kitchen-window CENTRE (dims 2072/6433) and from no.117 KITCHEN flank window (no dim, very restrictive); no outline. 147: no.117 line moved to conservatory-front CENTRE (dim 3562 added); dashed stepped extension outline added (3562 deep, 2072 strip on no.113 side); 2072/6433 kept. 151: outline and 3562/2072/6433 deleted; both lines moved to QUARTER points nearest the boundary with half/quarter tick marks added; new dims 1647/6008 on the no.113 side only; no.117 line drawn only to the boundary with no dim. Title block unchanged throughout.",
+   "source": "comparison of all three PDFs",
+   "confidence": "high"
+  },
+  {
+   "topic": "Which numbers are written vs scaled",
+   "detail": "Written on the drawings: 2072, 6433 (126+147); 3562 (147 only); 1647, 6008 (151 only); '45deg' angle labels; scale bar 1m-10m; '1:100' and 'A3'. Everything else in this extraction (plot width 12.36m, block depth 4.361m, block width 10.35m, gaps 1.33m/0.97m/0.45m/0.30m, window widths, wall thicknesses, no.117 conservatory 0.73m projection, intersection distances on unlabelled sides, house footprint) was scaled by me from the PDF vector geometry at the stated 1:100 and is exact to the drawing but subject to the sheets' 'do not scale' caveat.",
+   "source": "method note",
+   "confidence": "high"
+  }
+ ],
+ "open_questions": [
+  "Why is the drawn existing rear block 4.36m deep when the 2005 permission section shows ~3.3m - is part of the conservatory/kitchen block unconsented or was the 2005 scheme built deeper? (Drawing gives no construction dates.)",
+  "Sheets 147 and 151 are both titled D01 rev A with identical title blocks but different 45-degree analyses - which one was actually issued to the council with pre-app 2026/03356/PA?",
+  "No dimension is given on the no.117 side of sheet 151; the quarter-point line there scales to ~1.78m (at boundary) / ~2.82m (at 115's east flank line) beyond the existing rear wall - confirm with the architect whether that is the intended constraint figure.",
+  "The 45-degree lines are all measured from the EXISTING conservatory rear wall (already 4.36m deep), not from the original rear wall - whether BCC will accept the existing block as the baseline is a planning judgement outside these drawings.",
+  "Plot depth and rear garden length are not shown on any of the three sheets (boundaries truncated).",
+  "The revision strip row 'A' appears even on the original 00000126 sheet with no date/description - the rev history is unreliable for dating."
+ ]
+}

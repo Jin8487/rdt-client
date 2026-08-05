@@ -1,0 +1,208 @@
+{
+ "summary": "Research on the England GPDO larger home extension prior approval regime and related doctrine. (1) Under GPDO 2015 (SI 2015/596) Sch.2 Part 1 Class A para A.4, the developer notifies the LPA with a written description/plan; the LPA consults owners/occupiers of adjoining premises for at least 21 days; ONLY if an adjoining owner/occupier objects is the LPA's prior approval required, and then solely \"as to the impact of the proposed development on the amenity of any adjoining premises\" (considering all adjoining premises, not just objectors); development may begin on written notice that prior approval is not required, on written prior approval, or on expiry of 42 days without any LPA notification (deemed consent). (2) It is not a planning application: s.38(6) development-plan primacy does not govern it, and CAB Housing Ltd v SSLUHC [2022] EWHC 208 (Admin), upheld [2023] EWCA Civ 194, confirms the LPA may consider only the matters specified in the Order (though \"amenity\" itself is read broadly). Planning Inspectorate appeal decisions consistently hold a local 45-degree daylight code (e.g. Solihull's House Extension Guidelines SPD) is guidance only \u2014 \"a breach of the 45-degree line is not necessarily determinative, nor should it result in automatic refusal\"; mechanistic application of an SPD code in place of a case-by-case amenity judgment is an error, but no High Court authority squarely on the 45-degree code in Class A prior approval was found (nearest is CAB Housing on scope-of-matters). (3) A s.192 TCPA 1990 Lawful Development Certificate (CLOPUD) makes a proposed PD scheme effectively incontestable before build: s.192(4) provides lawfulness \"shall be conclusively presumed\" unless there is a material change before operations begin; for a larger home extension the prior-approval procedure must be completed first, since beginning development before the A.4 process is complete takes it outside the permitted development. (4) Fallback doctrine: Mansell v Tonbridge & Malling BC [2017] EWCA Civ 1314 (Lindblom LJ, para 27) confirms an extant or available PD right (e.g. a 6m prior approval or the 3m Class A right) is a material consideration in a full planning application where there is a \"real prospect\" of it being implemented \u2014 \"it does not have to be probable or likely: a possibility will suffice\". (5) A routine materials-approval condition on a 2005 permission (e.g. condition B1) governs only that permission and does not bite on later PD unless, per Article 3(4) GPDO and Dunnett Investments v SSCLG [2017] EWCA Civ 192, its words \"clearly evince an intention\" to exclude GPDO rights; separately, GPDO condition A.3(a) independently requires the extension's exterior materials to be \"of a similar appearance\" to the existing dwellinghouse. (6) Time limits: the assumption of a 3-year completion deadline is WRONG for Class A larger home extensions \u2014 SI 2019/907 (in force 25 May 2019) made the right permanent by deleting \"until 30th May 2019\" from A.1(g) and omitting A.4(13)-(15) (the 30 May 2019 completion deadline and the completion-notification duty), so there is currently no statutory deadline to begin or complete a larger home extension after prior approval; the 3-year-from-prior-approval completion condition belongs to other classes such as Part 1 Class AA (additional storeys). The right subsists only while the GPDO remains in its current form (an Article 4 direction or future amendment could remove it prospectively). Note: research was conducted via web search; the sandbox proxy blocked direct fetches of legislation.gov.uk and PINS documents, so quotes are as reproduced in search results from those sources.",
+ "facts": [
+  {
+   "topic": "Prior approval trigger and scope (A.4(7))",
+   "detail": "Under GPDO 2015 Sch.2 Part 1 Class A para A.4, prior approval is required only where an owner or occupier of adjoining premises objects: \"Where any owner or occupier of any adjoining premises objects to the proposed development, the prior approval of the local planning authority is required as to the impact of the proposed development on the amenity of any adjoining premises.\" If no objection is received, the LPA has no amenity jurisdiction and must issue (or the 42 days simply expire).",
+   "value": "Amenity assessment only if adjoining owner/occupier objects; amenity of adjoining premises is the sole matter",
+   "source": "legislation.gov.uk SI 2015/596; High Peak consolidated GPDO PDF",
+   "confidence": "high"
+  },
+  {
+   "topic": "All adjoining premises considered once triggered",
+   "detail": "When considering objections the LPA \"must take into account any representations made as a result of the notice given, and consider the amenity of all adjoining premises, not just adjoining premises which are the subject of representations\" (MHCLG guidance/technical guidance reflected in A.4). Prior approval may be granted unconditionally or subject to conditions \"reasonably related to the impact of the proposed development on the amenity of any adjoining premises\".",
+   "confidence": "high",
+   "source": "GPDO A.4(8)-(9) and MHCLG householder technical guidance (via search results)"
+  },
+  {
+   "topic": "21-day neighbour consultation",
+   "detail": "On receipt of the developer's notification (written description, plan, addresses of adjoining premises), the LPA must notify owners/occupiers of adjoining premises and give a minimum of 21 days for objections. This is the 'neighbour consultation scheme'.",
+   "confidence": "high",
+   "source": "GPDO A.4(3)-(6); planninggeek.co.uk; council guidance pages"
+  },
+  {
+   "topic": "42-day determination and deemed consent",
+   "detail": "Development must not begin before one of: \"(a) the receipt by the developer from the local planning authority of a written notice that their prior approval is not required; (b) the receipt by the developer from the local planning authority of a written notice giving their prior approval; or (c) the expiry of 42 days following the date on which the information [required by the notification] was received by the local planning authority without the local planning authority notifying the developer as to whether prior approval is given or refused.\" Silence for 42 days = deemed consent and the extension may lawfully proceed. (Note: since 2021 LPAs and applicants can agree in writing to extend prior approval determination periods \u2014 Browne Jacobson note.)",
+   "confidence": "high",
+   "source": "GPDO Part 1 Class A para A.4 (quoted verbatim in search results from High Peak consolidated GPDO and Martin Goodall's blog)"
+  },
+  {
+   "topic": "Prior approval is not a planning application \u2014 matters limited to the Order",
+   "detail": "CAB Housing Ltd v Secretary of State for Levelling Up, Housing and Communities [2022] EWHC 208 (Admin) (Holgate J), upheld by the Court of Appeal in [2023] EWCA Civ 194: in a prior approval application the council \"was not entitled to have regard to all material considerations... but only those set out in the order\". Section 38(6) PCPA 2004 development-plan primacy governs planning applications, not prior approval; local policies/SPDs may inform the exercise of judgment on the specified matter but cannot expand the matters for decision. Holgate J also held \"impact on amenity\" in the prior approval matters \"is not limited to overlooking, privacy or loss of light\" (a broad reading of amenity), and \"adjoining premises\" means neighbouring premises generally, not only those physically abutting.",
+   "value": "CAB Housing [2022] EWHC 208 (Admin); [2023] EWCA Civ 194",
+   "confidence": "high",
+   "source": "Local Government Lawyer; Planning Jungle; caselaw.nationalarchives.gov.uk/ewca/civ/2023/194"
+  },
+  {
+   "topic": "45-degree SPD code cannot be applied mechanically in amenity assessments",
+   "detail": "Planning Inspectorate appeal decisions on extensions hold: \"A breach of the 45-degree line is not necessarily determinative, nor should it result in automatic refusal \u2013 it falls to consider the actual impacts of the proposal on a case-by-case basis\" (PINS appeal decision surfaced via acp.planninginspectorate.gov.uk, e.g. appeal 3371670 document set). Another inspector: the SPD \"is only guidance and does not rule out larger rear extensions\". In larger home extension prior approval appeals, inspectors confine the assessment to actual impact on adjoining amenity (daylight, sunlight, outlook, overbearing effect) \u2014 they cannot refuse on design, character or 'looks too big' grounds, and an SPD daylight code (such as Solihull's 45-degree code in its House Extension Guidelines SPD) can be used as an analytical tool but not as a determinative standard. I found no High Court authority squarely on the 45-degree code within Class A prior approval; CAB Housing (limits on considerations) plus the consistent inspector approach is the best available authority.",
+   "confidence": "medium",
+   "source": "acp.planninginspectorate.gov.uk appeal decisions; just-planning.co.uk; planningjungle.com Class A prior approval appeal archive (100+ decisions); Solihull House Extension Guidelines SPD"
+  },
+  {
+   "topic": "s.192 LDC (CLOPUD) \u2014 making the scheme incontestable pre-build",
+   "detail": "TCPA 1990 s.192 lets any person ascertain whether proposed operations on land would be lawful; if the certificate issues, s.192(4) provides: \"The lawfulness of any use or operations for which a certificate is in force under this section shall be conclusively presumed unless there is a material change, before the use is instituted or the operations are begun, in any of the matters relevant to determining such lawfulness.\" A s.192 certificate for a PD extension therefore makes the scheme legally incontestable before build (subject to no material change, e.g. a later Article 4 direction or GPDO amendment before commencement). For a larger home extension, the A.4 prior-approval procedure must be completed first \u2014 development begun before the prior approval process concludes is outside the PD grant altogether (the 'jumping the gun' line of cases/appeals), so the usual sequence is: prior approval (or deemed consent) \u2192 s.192 LDC \u2192 build.",
+   "value": "TCPA 1990 s.192(4) conclusive presumption",
+   "confidence": "high",
+   "source": "legislation.gov.uk/ukpga/1990/8/section/192; DCLG Annex 8 LDC guidance; planninghouse.co.uk CLOPUD guide; Martin Goodall 'Jumping the gun on permitted development'"
+  },
+  {
+   "topic": "Fallback doctrine \u2014 Mansell",
+   "detail": "Mansell v Tonbridge and Malling BC [2017] EWCA Civ 1314 (Lindblom LJ, judgment para 27) is the leading authority that an available permitted development scheme is a material consideration in determining a planning application for an alternative (including larger) scheme where there is a \"real prospect\" of the fallback being implemented: \"for a prospect to be a 'real prospect', it does not have to be probable or likely: a possibility will suffice.\" The Court upheld reliance on a Class Q PD fallback (barn conversion) to justify granting permission for four new dwellings, and it was lawful to take the fallback into account \"without a specific application\" having been made, based on planning history, landowner intention and the PD rights. Applied to a householder context: an extant 6m single-storey prior approval, or the as-of-right 3/4m Class A extension, is a genuine fallback strengthening a full application for a similar or larger extension \u2014 the decision-maker compares the harm of the applied-for scheme against what could be built anyway.",
+   "value": "Mansell [2017] EWCA Civ 1314, para 27 (Lindblom LJ)",
+   "confidence": "high",
+   "source": "bailii.org/ew/cases/EWCA/Civ/2017/1314.html; Buckles LLP note; Martin Goodall 'Can PD rights represent a fall-back position?'"
+  },
+  {
+   "topic": "Effect of conditions on a 2005 permission (materials condition B1)",
+   "detail": "A standard materials-approval condition (e.g. 'B1: samples/details of materials to be submitted and approved before commencement') regulates only the development authorised by that 2005 permission; once discharged/built out it has no continuing effect on later permitted development. It could only bite on a new PD extension via Article 3(4) GPDO 2015 (\"nothing in the GPDO permits development contrary to any condition imposed by any planning permission\"), and per Dunnett Investments Ltd v SSCLG [2017] EWCA Civ 192 a condition excludes GPDO rights only where its words \"taken in their full context, must clearly evince an intention on the part of the local planning authority to make such an exclusion\" (in Dunnett, 'no other purpose whatsoever, without express planning consent from the Local Planning Authority first being obtained' sufficed). A routine materials condition comes nowhere near that threshold, so it does not affect the current PD/prior-approval position \u2014 but the 2005 decision notice should be checked for any separate condition expressly removing Part 1 PD rights. Independently, GPDO condition A.3(a) requires the PD extension's exterior materials to be \"of a similar appearance to those used in the construction of the exterior of the existing dwellinghouse\" (judged against the host house only, not neighbours).",
+   "value": "Article 3(4) GPDO; Dunnett Investments [2017] EWCA Civ 192; GPDO condition A.3(a)",
+   "confidence": "high",
+   "source": "Landmark Chambers 'Permitted Development: pitfalls'; bailii.org/ew/cases/EWCA/Civ/2017/192.html; DCP Online 'A close match?'"
+  },
+  {
+   "topic": "Time limits after prior approval \u2014 NO 3-year rule for Class A",
+   "detail": "The 'complete within 3 years of prior approval' rule does NOT apply to larger home extensions. The original scheme had a hard deadline (former condition A.4(13): \"The development must be completed on or before 30th May 2019\") plus a completion-notification duty (A.4(14)-(15)). SI 2019/907 (Town and Country Planning (Permitted Development, Advertisement and Compensation Amendments) (England) Regulations 2019, made 1 May 2019, in force 25 May 2019) made the right permanent by omitting \"until 30th May 2019\" from A.1(g) and omitting sub-paragraphs (13)-(15) of A.4 \u2014 which also removed the duty to notify the LPA of completion. Result: there is currently no statutory time limit for beginning or completing a Class A larger home extension after prior approval/deemed consent, and the prior approval itself has no expiry. By contrast, Part 1 Class AA (additional storeys) and several Part 20 classes carry an express condition that \"the development must be completed within a period of 3 years starting with the date prior approval is granted\". Practical caveat: the works must still match the notified/approved details, and the right only endures while the GPDO stays unamended and no Article 4 direction intervenes \u2014 hence the value of a s.192 LDC banked before build.",
+   "value": "No completion deadline for Class A since 25 May 2019 (SI 2019/907); 3-year completion is a Class AA condition, not Class A",
+   "confidence": "high",
+   "source": "legislation.gov.uk/uksi/2019/907/made; Martin Goodall 'New amendments to the GPDO'; Planning Portal blog 16 May 2019; planninggeek.co.uk Class AA page"
+  },
+  {
+   "topic": "Refusal and appeal route",
+   "detail": "If prior approval is refused, the applicant may appeal to the Planning Inspectorate under s.78 TCPA 1990 (as applied to prior approval refusals), and inspectors determine such appeals within the confined statutory framework (amenity of adjoining premises only). Practitioners report inspectors are 'more measured and pragmatic' than LPAs that wrongly treat the notification as a full planning application (Just Planning). Alternatively, a fresh notification can be submitted (re-running the 42-day clock).",
+   "confidence": "medium",
+   "source": "just-planning.co.uk/larger-home-extension-appeal/; CAB Housing (right of appeal noted)"
+  },
+  {
+   "topic": "Research access limitation",
+   "detail": "The sandbox web proxy returned 403 (policy denial) on direct fetches of legislation.gov.uk, bailii.org, gov.uk assets and acp.planninginspectorate.gov.uk, so verbatim quotes were captured via web-search snippets of those primary sources rather than full-text retrieval. Statutory wording of A.4 sub-paragraph numbering (e.g. whether the commencement gateway is A.4(10) in the current consolidated text) should be confirmed against legislation.gov.uk 'latest available' version before citing in formal documents.",
+   "confidence": "high",
+   "source": "agent proxy status log"
+  }
+ ],
+ "open_questions": [
+  "Exact current sub-paragraph numbering of para A.4 in the consolidated GPDO (post-2019 and later amendments) \u2014 e.g. whether the 42-day commencement gateway is A.4(10) and the accordance-with-details condition A.4(11)-(12) \u2014 needs confirming against legislation.gov.uk full text (fetch was blocked).",
+  "No High Court authority was located that deals squarely with a 45-degree daylight code (e.g. Solihull's SPD) being applied in a Class A larger home extension prior approval amenity assessment; the position rests on CAB Housing (considerations limited to the Order's specified matters) plus consistent inspector appeal decisions. A targeted search of the Planning Jungle Class A prior-approval appeal archive (members-only, 100+ summarised decisions) would yield directly citable appeal references for the specific LPA involved.",
+  "Whether the specific 2005 permission's decision notice contains any condition expressly restricting Part 1 PD rights (Article 3(4)/Dunnett test) \u2014 requires reading the actual decision notice; a generic materials condition (B1) does not do so.",
+  "Precise PINS appeal reference for the quoted sentence 'A breach of the 45-degree line is not necessarily determinative...' \u2014 it appears in an appeal decision surfaced at acp.planninginspectorate.gov.uk (fileid 63983868, appeal 3371670 heading) but the document could not be fetched to confirm the reference, site address and LPA.",
+  "Whether the LPA and applicant have agreed any written extension of the 42-day period (permitted since the 2021 amendments) \u2014 deemed consent only runs where no such agreement exists and the notification was valid/complete with the correct fee."
+ ],
+ "references": [
+  {
+   "title": "The Town and Country Planning (General Permitted Development) (England) Order 2015 (SI 2015/596), Sch.2 Part 1 Class A",
+   "url": "https://www.legislation.gov.uk/uksi/2015/596/made",
+   "quote": "Where any owner or occupier of any adjoining premises objects to the proposed development, the prior approval of the local planning authority is required as to the impact of the proposed development on the amenity of any adjoining premises."
+  },
+  {
+   "title": "GPDO 2015 as amended (consolidated, Arts 1-4 and Sch.2 Part 1 Classes A-C) \u2014 High Peak BC core document CD5.8",
+   "url": "https://www.highpeak.gov.uk/media/7604/CD5.8-GPDO-2015-as-amended-as-at-12.10.22-Arts-1-4-sch-2-part-1-classes-A-C/pdf/rsCD5.8_GPDO_2015_as_amended_as_at_12.10.22_Arts_1-4__sch_2__part_1_classes_A-C.pdf?m=1665993331427",
+   "quote": "(a) the receipt by the developer from the local planning authority of a written notice that their prior approval is not required; (b) the receipt by the developer from the local planning authority of a written notice giving their prior approval; or (c) the expiry of 42 days following the date on which the information ... was received by the local planning authority without the local planning authority notifying the developer as to whether prior approval is given or refused."
+  },
+  {
+   "title": "Planning Geek \u2014 Larger Home Extension (Class A prior approval guide)",
+   "url": "https://www.planninggeek.co.uk/gpdo/house/extensions/larger-home-extension/",
+   "quote": "The determination period ends 42 days after the application is received by the local authority. Neighbours will have 21 days in which to make an objection."
+  },
+  {
+   "title": "The Planning Jungle \u2014 GPDO Part 1 Class A (Larger Rear Extensions), Background Information",
+   "url": "https://planningjungle.com/householder-permitted-development/gpdo-part-1-class-a-larger-rear-extensions-background-information/",
+   "quote": "When considering such objections, the local planning authority must ... consider the amenity of all adjoining premises, not just adjoining premises which are the subject of representations."
+  },
+  {
+   "title": "CAB Housing Ltd v SSLUHC [2022] EWHC 208 (Admin) \u2014 Local Government Lawyer report",
+   "url": "https://www.localgovernmentlawyer.co.uk/planning/401-planning-news/49599-planning-court-judge-issues-ruling-on-prior-approval-and-upward-extensions",
+   "quote": "A council was not entitled to have regard to all material considerations, when considering prior approval but only those set out in the order."
+  },
+  {
+   "title": "CAB Housing Ltd v SSLUHC [2023] EWCA Civ 194 (Court of Appeal, upholding Holgate J)",
+   "url": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2023/194",
+   "quote": "In paragraph AA.2(3)(a)(i) of Part 1, 'impact on amenity' is not limited to overlooking, privacy or loss of light."
+  },
+  {
+   "title": "The Planning Jungle \u2014 High Court judgment on the scope of the prior approval matters (amenity of any adjoining premises) (03/02/2022)",
+   "url": "https://planningjungle.com/2022/02/25/high-court-judgment-about-the-scope-of-the-prior-approval-matters-the-impact-on-the-amenity-of-any-adjoining-premises-and-the-external-appearance-of-the-dwellinghouse-within-part-1-class-aa/"
+  },
+  {
+   "title": "Planning Inspectorate appeal decision (via ACP document viewer, appeal 3371670 document set) \u2014 45-degree line not determinative",
+   "url": "https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=63983868",
+   "quote": "A breach of the 45-degree line is not necessarily determinative, nor should it result in automatic refusal \u2013 it falls to consider the actual impacts of the proposal on a case-by-case basis."
+  },
+  {
+   "title": "Just Planning \u2014 Larger Home Extensions: why councils refuse them and why you should appeal",
+   "url": "https://just-planning.co.uk/larger-home-extension-appeal/",
+   "quote": "When a neighbour objects, the council can only assess the proposal's impact on amenity of adjoining neighbours - it cannot assess design, parking, character, or refuse it because it 'looks too big'."
+  },
+  {
+   "title": "Solihull MBC \u2014 House Extension Guidelines Supplementary Planning Document (45-degree code)",
+   "url": "https://www.solihull.gov.uk/sites/default/files/migrated/Planning_SPD%20House%20Extension%20Guide.pdf"
+  },
+  {
+   "title": "Town and Country Planning Act 1990, s.192 \u2014 Certificate of lawfulness of proposed use or development",
+   "url": "https://www.legislation.gov.uk/ukpga/1990/8/section/192",
+   "quote": "The lawfulness of any use or operations for which a certificate is in force under this section shall be conclusively presumed unless there is a material change, before the use is instituted or the operations are begun, in any of the matters relevant to determining such lawfulness."
+  },
+  {
+   "title": "DCLG \u2014 Annex 8: lawfulness and the Lawful Development Certificate (LDC)",
+   "url": "https://assets.publishing.service.gov.uk/media/5a78a10a40f0b62b22cbb850/321541.pdf"
+  },
+  {
+   "title": "Planning House \u2014 Practical Guide to Certificate of Lawful Proposed Use or Development (CLPUD)",
+   "url": "https://planninghouse.co.uk/practical-guide-to-certificate-of-lawful-proposed-use-or-development-clpud/"
+  },
+  {
+   "title": "Mansell v Tonbridge and Malling BC [2017] EWCA Civ 1314 (Bailii full text)",
+   "url": "https://www.bailii.org/ew/cases/EWCA/Civ/2017/1314.html",
+   "quote": "for a prospect to be a 'real prospect', it does not have to be probable or likely: a possibility will suffice."
+  },
+  {
+   "title": "Buckles Solicitors \u2014 When is a fallback position a material planning consideration?",
+   "url": "https://www.buckles-law.co.uk/library-news/when-is-a-fallback-position-a-material-planning-consideration/",
+   "quote": "The Court of Appeal in Mansell v Tonbridge And Malling Borough Council has clarified when a 'fallback' development may be a material planning consideration for an alternative development scheme."
+  },
+  {
+   "title": "Martin Goodall's Planning Law Blog \u2014 Can PD rights represent a fall-back position?",
+   "url": "http://planninglawblog.blogspot.com/2017/09/can-pd-rights-represent-fall-back.html"
+  },
+  {
+   "title": "Dunnett Investments Ltd v SSCLG [2017] EWCA Civ 192 (Bailii full text)",
+   "url": "http://www.bailii.org/ew/cases/EWCA/Civ/2017/192.html",
+   "quote": "In order to exclude the application of the GPDO, the words used in the relevant condition, taken in their full context, must clearly evince an intention on the part of the local planning authority to make such an exclusion."
+  },
+  {
+   "title": "Landmark Chambers \u2014 Permitted Development: pitfalls (Article 3(4) and conditions excluding PD rights)",
+   "url": "https://www.landmarkchambers.co.uk/news-and-cases/permitted-development-pitfalls",
+   "quote": "Article 3(4) of the Order provides that nothing in the GPDO permits development contrary to any condition imposed by any planning permission granted or deemed to be granted under Part 3 of the Town and Country Planning Act 1990."
+  },
+  {
+   "title": "The Town and Country Planning (Permitted Development, Advertisement and Compensation Amendments) (England) Regulations 2019 (SI 2019/907)",
+   "url": "https://www.legislation.gov.uk/uksi/2019/907/made",
+   "quote": "Part 1, Class A ... was amended by omitting the words 'until 30th May 2019' in paragraph A.1(g), and by omitting sub-paragraphs (13), (14) and (15) in paragraph A.4, thus making this class of PD permanent."
+  },
+  {
+   "title": "Martin Goodall's Planning Law Blog \u2014 New amendments to the GPDO (May 2019)",
+   "url": "http://planninglawblog.blogspot.com/2019/05/new-amendments-to-gpdo.html",
+   "quote": "The condition referred to was contained in paragraph A.4 (13) ['The development must be completed on or before 30th May 2019'] but this condition was removed with effect from 25 May."
+  },
+  {
+   "title": "Planning Portal blog \u2014 Time limited PD rights for rear extensions made permanent (16 May 2019)",
+   "url": "https://blog.planningportal.co.uk/2019/05/16/time-limited-pd-rights-for-rear-extensions-made-permanent/"
+  },
+  {
+   "title": "Planning Geek \u2014 Class AA additional storeys (3-year completion condition, for contrast with Class A)",
+   "url": "https://www.planninggeek.co.uk/gpdo/house/class-aa/",
+   "quote": "The development must be completed within a period of 3 years starting with the date prior approval is granted."
+  },
+  {
+   "title": "Martin Goodall's Planning Law Blog \u2014 Jumping the gun on permitted development (development begun before prior approval is not PD)",
+   "url": "http://planninglawblog.blogspot.com/2017/03/jumping-gun-on-permitted-development.html"
+  },
+  {
+   "title": "Browne Jacobson \u2014 LPAs may now agree to extend the time period for determining prior approval applications",
+   "url": "https://www.brownejacobson.com/insights/local-planning-authorities-to-extend-the-time-period-for-determining-prior-approval-applications"
+  },
+  {
+   "title": "The Planning Jungle \u2014 GPDO Part 1 Class A (Larger Rear Extensions), Prior Approval Appeal Decisions archive (100+ summarised decisions)",
+   "url": "https://planningjungle.com/householder-permitted-development/gpdo-part-1-class-a-larger-rear-extensions-prior-approval-appeal-decisions/"
+  }
+ ]
+}

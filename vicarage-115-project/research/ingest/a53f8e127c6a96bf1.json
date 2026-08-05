@@ -1,0 +1,103 @@
+{
+ "summary": "Extracted all dimensions and annotations from the three D03 'Proposed Plans' PDFs for 115 Vicarage Rd, B14 7QG (DPC Ltd, scale 1:100 @ A3, no text layer - all read from 200/300dpi renders, with pixel-calibration cross-checks against written dims). Only TWO written dimensions exist on any version: rear extension width 11109mm and depth 6008mm (versions of 05.06.26 and 09.06.26) or 6710mm (revision A, 30.07.26). Depth is measured from the outer face of the ORIGINAL rear wall of the house to the outer face of the new rear wall (confirmed by pixel measurement: rectangle bottom line sits on the original rear-wall outer face, wall ~270mm thick). The 05.06.26 sheet (00000152) shows both a Proposed GRD Floor Plan and a Proposed 1ST Floor Plan: the first-floor extension area is drawn with the IDENTICAL footprint to the ground floor (~11100 x ~6020mm by measurement; it carries no written dimensions of its own) and is annotated 'PROPOSED 1ST FLOOR EXTENSION AREA IF USING THE 45 DEGREE LINES AS SHOWN' - i.e. the drawing shows a ~6m-deep first floor, NOT the 4m first floor the architect now proposes. The 09.06.26 file (00000191) is geometrically identical but both explanatory text annotations have been deleted. Revision A (00000011, 30.07.26) deletes the first-floor plan entirely, shows ground floor only, and deepens the rectangle to 6710mm ('up to 6.7m' claim confirmed as a written dim). 45-degree dashed construction lines appear on the ground-floor plan only: from a door/window opening on no.113's rear kitchen projection (left) and from no.117's conservatory nearest corner (right), each labelled '45' with an arc; the extension's rear corners sit on these lines. No heights, eaves, sections, elevations or areas appear on any version. Title blocks are identical across all three files (Drg No D03, Rev '-', First Issue 05.06.26, Drawn RA, marked APPROVAL) - even the 'Prop Plans A' file still reads Rev '-', with an empty pre-formed revision-table row 'A / - / - / RA / -' present in all three.",
+ "facts": [
+  {
+   "topic": "Drawing identity (all 3 files)",
+   "detail": "Title block identical in all three PDFs: DPC Ltd / Design Plan & Construction Ltd, Architectural & Structural Engineering Services, Tel 07815575110, email DPC-Ltd@outlook.com; stamped 'APPROVAL'; Project: 115 Vicarage Rd, Birmingham, B14 7QG; Drg Title: PROPOSED PLANS; Scale 1:100; Size A3; First Issue 05.06.26; Drawn: RA; Checked: '-'; Drg No: D03; Rev: '-'. Revision table row above reads 'A | - | - | RA | -' (rev letter A present but description/date blank) in ALL three files, including the two non-A files. The 'Prop Plans A' file is NOT distinguishable from its title block - only by filename, PDF creation date, and changed geometry.",
+   "value": "D03 PROPOSED PLANS, 1:100 @ A3",
+   "source": "Title block crops of all three PDFs at 300dpi",
+   "confidence": "high"
+  },
+  {
+   "topic": "PDF dates",
+   "detail": "PDF metadata creation dates: 00000152-D03 Prop Plans.pdf = 5 Jun 2026; 00000191-D03 Prop Plans.pdf = 9 Jun 2026; 00000011-D03 Prop Plans A.pdf = 30 Jul 2026. All authored by 'rouhe', file path 'C:\\Users\\rouhe\\Documents\\Freelance Work\\115 Vicarage Rd, B14 7QG\\...'. No embedded text layer in any file (vector outlines only), so all text was read from rendered images.",
+   "value": "05.06.26 / 09.06.26 / 30.07.26",
+   "source": "pdfinfo on all three files",
+   "confidence": "high"
+  },
+  {
+   "topic": "Ground-floor extension depth - versions 152 and 191",
+   "detail": "Written dimension on left side of ground-floor extension rectangle: 6008 (mm). Pixel calibration (200dpi, 1:100 = 12.7mm/px) measures the rectangle at 6020mm deep - consistent. The dimension runs from the outer face of the proposed new rear wall to the OUTER face of the existing ORIGINAL rear wall of the house (the original two-storey rear wall, ~270mm thick to its inner face). It is NOT measured from the existing conservatory or any existing extension wall.",
+   "value": "6008 mm (~6.0m) from original rear wall",
+   "source": "00000152 and 00000191 D03 Prop Plans, written dim verified by pixel measurement",
+   "confidence": "high"
+  },
+  {
+   "topic": "Ground-floor extension depth - revision A",
+   "detail": "Written dimension on revision A (00000011, 30.07.26): 6710 (mm), same width 11109. Pixel measurement gives 6718 x 11100mm - consistent. Same measurement basis: from outer face of original rear wall to outer face of new rear wall. This is the drawing behind the architect's 'up to 6.7m' claim - it is a written dimension, not scaled.",
+   "value": "6710 mm (6.71m) from original rear wall",
+   "source": "00000011-D03 Prop Plans A.pdf, written dim verified by pixel measurement",
+   "confidence": "high"
+  },
+  {
+   "topic": "Extension width (all versions)",
+   "detail": "Written dimension across top of extension rectangle: 11109 (mm) in all three versions. Pixel check 11100mm. The rectangle spans the full plot width behind the house AND the integral garage, from near the no.113 boundary (left) stopping just short of no.117's conservatory line (right).",
+   "value": "11109 mm (11.1m) wide",
+   "source": "All three D03 PDFs, written dim",
+   "confidence": "high"
+  },
+  {
+   "topic": "First-floor extension - versions 152 and 191 only",
+   "detail": "The Proposed 1ST Floor Plan shows a 'PROPOSED 1ST FLOOR EXTENSION AREA' rectangle with NO written dimensions. Pixel measurement: ~11100mm wide x ~6020mm deep - the IDENTICAL footprint to the ground-floor extension, i.e. the sheet depicts a ~6m-deep FULL-WIDTH first-floor (double-storey) extension, not a 4m one. Its rear line coincides with the ground-floor extension rear line and its bottom line sits on the original rear wall. Annotation (152 only): 'PROPOSED 1ST FLOOR EXTENSION AREA IF USING THE 45 DEGREE LINES AS SHOWN'. NOTE: no 45-degree lines are actually drawn on the first-floor plan - they appear only on the ground-floor plan. The architect's proposed 4m first floor appears on NONE of these drawings.",
+   "value": "~11.1m x ~6.0m (scaled, no written dims)",
+   "source": "00000152/00000191 1st floor plan, pixel measurement calibrated to written dims",
+   "confidence": "high"
+  },
+  {
+   "topic": "First-floor plan removed in revision A",
+   "detail": "Revision A (00000011, 30.07.26) contains ONLY the 'Proposed GRD Floor Plan'. The Proposed 1ST Floor Plan present on the 05.06.26 and 09.06.26 sheets has been deleted entirely. No first-floor proposal, no loft/roof plan, and no annotation replaces it.",
+   "value": "Rev A = ground floor only",
+   "source": "00000011-D03 Prop Plans A.pdf full sheet",
+   "confidence": "high"
+  },
+  {
+   "topic": "45-degree line construction",
+   "detail": "On the ground-floor plan (all versions): a dashed diagonal labelled '45' (with angle arc) rises from a door/window opening on the rear kitchen projection of no.113 (left neighbour) to the top-left (rear-left) corner of the proposed extension rectangle; a second dashed diagonal labelled '45' runs from the nearest corner/door of no.117's CONSERVATORY (right neighbour) to the top-right (rear-right) corner. The extension rear corners sit exactly on these two lines - i.e. the rectangle is drawn as the maximum envelope permitted by a 45-degree rule taken from those two neighbour openings. In rev A the deeper 6710 rectangle still has both 45-degree lines/labels, re-drawn to its corners. The 45-degree origin on the no.117 side is the conservatory (not a main habitable-room window), and on the no.113 side is an opening in no.113's rear projection.",
+   "value": "45-deg lines from no.113 kitchen opening and no.117 conservatory corner",
+   "source": "300dpi crops of all three ground-floor plans",
+   "confidence": "high"
+  },
+  {
+   "topic": "Annotation differences between the two non-A versions",
+   "detail": "00000152 (05.06.26) carries the texts 'PROPOSED GROUND FLOOR EXTENSION AREA IF USING THE 45 DEGREE LINES AS SHOWN' (GF plan) and 'PROPOSED 1ST FLOOR EXTENSION AREA IF USING THE 45 DEGREE LINES AS SHOWN' (1st-floor plan). 00000191 (09.06.26) is geometrically identical (same 6008 x 11109, both plans, same 45-degree lines) but BOTH explanatory annotations have been deleted, leaving the extension rectangles unlabelled. Revision A also has no extension-area annotation.",
+   "value": "152 = annotated; 191 = annotations stripped; A = no annotation",
+   "source": "Side-by-side 300dpi crops",
+   "confidence": "high"
+  },
+  {
+   "topic": "Heights / sections / eaves",
+   "detail": "NO heights, eaves levels, ridge levels, sections or elevations appear on any of the three D03 sheets. They are floor plans only. Loft conversion is not shown on any of them. Any height data would have to come from other drawings (e.g. the D01 'Ext Plans' series also present in the folders, not part of this task).",
+   "value": "None on D03",
+   "source": "Full-sheet renders of all three PDFs",
+   "confidence": "high"
+  },
+  {
+   "topic": "Room layouts",
+   "detail": "Ground floor (existing house, all versions): THROUGH LOUNGE (left, with front bay), stairs, STUDY, LOBBY, integral GARAGE (right, with 'DRAINAGE RUNS TO BE CONFIRMED ON SITE' along a dash-dot line through it and 'EXISTING MANHOLE' at its rear). Neighbour context drawn: 'KITCHEN No.113' (left); on the right, no.117's 'CONSERVATORY', 'UTILITY?' (with question mark on the drawing), 'KITCHEN No.117' and 'GARAGE'. First floor (152/191 only): BEDROOM 1 (front left with bay), BEDROOM 2 (centre), BEDROOM 3 (rear right), BEDROOM 4 (small, front over stairs), BATHROOM (basin, WC, bath drawn). New internal layout within the proposed extension areas is NOT shown - both extension rectangles are empty envelopes.",
+   "value": "4-bed + bathroom upstairs; extension areas left blank",
+   "source": "All three PDFs, full sheets and crops",
+   "confidence": "high"
+  },
+  {
+   "topic": "Standard notes (verbatim, all versions)",
+   "detail": "'DRAWING NOT TO BE SCALED FOR ACCURATE SETTING OUT. ALL DIMENSIONS TO BE CHECKED ON SITE. PROPOSALS SUBJECT TO LOCAL AUTHORITY APPROVALS. THIS DRAWING IS TO OBTAIN PLANNING AND OR BUILDING REGULATIONS ONLY. ALL WORKS ON OR WITHIN A 3 MTR ZONE OF A NEIGHBOURING BOUNDARY ARE TO BE NOTIFIED 14 DAYS BEFORE COMMENCEMENT ON SITE IN ACCORDANCE WITH THE PARTY WALL ACT 1996.' A graphic scale bar 1m-10m sits bottom-left of each sheet.",
+   "value": "Party Wall Act 1996 / not-to-scale note",
+   "source": "Bottom notes block, all three PDFs",
+   "confidence": "high"
+  },
+  {
+   "topic": "Planning-justification annotations",
+   "detail": "The only planning-justification content on these sheets is the 'IF USING THE 45 DEGREE LINES AS SHOWN' wording (00000152 only) plus the drawn 45-degree lines from neighbour openings - presenting the massing as the maximum envelope under a 45-degree/BRE-style test. There is no reference on any sheet to the 2005 permission S/03404/05/FUL, the 2026 pre-app 2026/03356/PA, the council's refusal of a 6m double-storey extension, or any 3m/4m/6m permitted-development depth. File paths in the source folders: /tmp/claude-0/-home-user-rdt-client/989d67f4-15f7-5ac2-bc14-b3dafd80fee2/scratchpad/wa1/00000152-D03 Prop Plans.pdf, .../wa1/00000191-D03 Prop Plans.pdf, .../wa2/00000011-D03 Prop Plans A.pdf.",
+   "value": "45-degree envelope argument only",
+   "source": "All three PDFs",
+   "confidence": "high"
+  }
+ ],
+ "open_questions": [
+  "The architect's stated '6m ground + 4m first floor' compromise is not reflected on any of these three drawings: revision A simply deletes the first-floor plan and deepens the ground floor to 6710mm, while the June sheets show a ~6m-deep first floor identical to the ground floor. Is a further revision showing the 4m first floor expected?",
+  "Revision A's title block still reads Drg Rev '-' with an empty rev-A table row and First Issue 05.06.26, so the 6710 version is not formally identifiable as rev A from the sheet itself - a validation risk if submitted.",
+  "The 6008 vs 6710 depths are both measured from the ORIGINAL rear wall; neither sheet dimensions the projection relative to the 2005-approved single-storey extension (~3.3m) or any existing rear addition - is any as-built rear projection meant to be netted off?",
+  "No heights, eaves, sections or elevations exist on D03; the D01 'Ext Plans' files (00000126, 00000147, 00000151/00000190) in the same folders were not read under this task and may hold the height/section data.",
+  "The 45-degree lines are taken from no.113's rear-projection kitchen opening and no.117's conservatory corner; whether the council would accept the conservatory (rather than a main habitable window) as the 45-degree origin is undetermined from the drawings."
+ ]
+}

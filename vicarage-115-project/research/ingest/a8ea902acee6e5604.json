@@ -1,0 +1,230 @@
+{
+ "summary": "Research completed on GPDO 2015 (SI 2015/596) Schedule 2 Part 1 Classes A and AA and the MHCLG householder technical guidance (September 2019 edition, still the latest). Caveat on method: the sandbox egress proxy blocked direct fetches of legislation.gov.uk and gov.uk (HTTP 403 at the proxy), so verbatim texts were verified via web-search extracts of the official legislation.gov.uk pages and of official consolidated reproductions (e.g. High Peak BC's 'GPDO 2015 as amended' PDF, Planning Jungle, Planning Geek which reproduce the statutory text). All headline limits were confirmed: 4m/3m single-storey rear depth (A.1(f)), 8m/6m larger home extension (A.1(g), not on article 2(3) land or SSSI, subject to A.4 neighbour consultation where an objection triggers an LPA amenity assessment \u2014 not a veto); more-than-one-storey: max 3m beyond rear wall of ORIGINAL dwellinghouse and not within 7m of the boundary opposite the rear wall (A.1(h)), roof pitch to match so far as practicable (A.3(c)); heights: 4m max for single storey, eaves max 3m within 2m of a boundary (A.1(i)), no part higher than the existing roof and eaves no higher than existing eaves (A.1(c),(d)); side extensions: single storey, max 4m high, width max half the width of the original house (A.1(j)); 50% curtilage rule (A.1(b)); 'original' means as built or as existing on 1 July 1948 (art. 2(1)), so a 2005 extension is part of the 'existing' but not the 'original' house and consumes the allowance \u2014 reinforced by the 'total enlargement' rule in A.1(ja). Class AA (added 31 Aug 2020 by SI 2020/755): up to 2 additional storeys (1 on a single-storey house) on the principal part only, 18m total height cap, +3.5m/+7m uplift caps (and +3.5m over the next tallest attached/terrace building), 3m internal floor-to-ceiling cap, engineering operations limited to strengthening existing walls/foundations, prior approval on amenity (overlooking/privacy/loss of light), external appearance, air traffic/defence assets and protected vistas. Amendments in force as of Aug 2026: SI 2019/907 made the 6m/8m right permanent; SI 2024/579 and SI 2025/560 did NOT amend Part 1; SI 2026/313 (in force 9 April 2026) DID amend Part 1 Class AA, but the precise substance of that amendment could not be verified from accessible sources and must be checked on legislation.gov.uk before advising on Class AA.",
+ "facts": [
+  {
+   "topic": "Governing instrument",
+   "detail": "The Town and Country Planning (General Permitted Development) (England) Order 2015, SI 2015/596, Schedule 2, Part 1 ('Development within the curtilage of a dwellinghouse'), Class A: 'The enlargement, improvement or other alteration of a dwellinghouse.' Current consolidated text at legislation.gov.uk/uksi/2015/596/schedule/2/part/1.",
+   "value": "SI 2015/596, Sch 2, Pt 1, Class A",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Single-storey rear extension depth (standard)",
+   "detail": "Class A.1(f): development is not permitted if the enlarged part of the dwellinghouse 'would extend beyond the rear wall of the original dwellinghouse by more than' \u2014 '4 metres in the case of a detached dwellinghouse' or '3 metres in the case of any other dwellinghouse' (single storey; also must not exceed 4 metres in height). Depth is measured from the rear wall of the ORIGINAL dwellinghouse, not the existing one.",
+   "value": "4m detached / 3m other (A.1(f))",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1/crossheading/class-a-enlargement-improvement-or-other-alteration-of-a-dwellinghouse",
+   "confidence": "high"
+  },
+  {
+   "topic": "Larger home extension depth",
+   "detail": "Class A.1(g): for a dwellinghouse NOT on article 2(3) land (conservation areas, National Parks, AONBs, the Broads, World Heritage Sites) nor on a site of special scientific interest, a single-storey rear extension may extend up to '8 metres in the case of a detached dwellinghouse, or 6 metres in the case of any other dwellinghouse' beyond the rear wall of the original dwellinghouse, max 4 metres in height \u2014 but only subject to the paragraph A.4 neighbour consultation/prior approval conditions. Made permanent (previously expired 30 May 2019) by SI 2019/907.",
+   "value": "8m detached / 6m other (A.1(g))",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1 and https://www.legislation.gov.uk/uksi/2019/907/made",
+   "confidence": "high"
+  },
+  {
+   "topic": "A.4 neighbour consultation scheme \u2014 procedure",
+   "detail": "Condition A.4 applies to development exceeding A.1(f) limits but allowed by A.1(g). Before beginning, the developer must provide the LPA with a written description (how far the enlarged part extends beyond the rear wall of the original dwellinghouse; maximum height; eaves height \u2014 and, where it will be joined to an existing enlargement, the same information for the 'total enlargement'), a site plan, the addresses of any adjoining premises, and contact details. The LPA notifies owners/occupiers of adjoining premises, who have 21 days to make representations/objections. The development 'shall not be begun before (a) the receipt by the developer from the local planning authority of a written notice that their prior approval is not required; (b) the receipt ... of a written notice giving their prior approval; or (c) the expiry of 42 days following the date on which the information ... was received by the local planning authority without the local planning authority notifying the developer as to whether prior approval is given or refused.'",
+   "value": "21-day neighbour period; 42-day LPA determination",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1 ; https://planningjungle.com/householder-permitted-development/gpdo-part-1-class-a-larger-rear-extensions-background-information/",
+   "confidence": "high"
+  },
+  {
+   "topic": "A.4 \u2014 effect of a neighbour objection (not a veto)",
+   "detail": "Verbatim effect: 'Where any owner or occupier of any adjoining premises objects to the proposed development, the prior approval of the local planning authority is required as to the impact of the proposed development on the amenity of any adjoining premises.' An objection therefore triggers an LPA assessment of amenity impact only \u2014 it does not itself block the development. The LPA 'must, when considering the impact ... take into account any representations made as a result of the notice' and must 'consider the amenity of all adjoining premises, not just adjoining premises which are the subject of representations', and may grant prior approval unconditionally or subject to conditions reasonably related to that amenity impact. If no adjoining owner/occupier objects, prior approval is not required.",
+   "value": "Objection triggers LPA amenity assessment, not a veto (A.4(5)-(8))",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1 (A.4)",
+   "confidence": "high"
+  },
+  {
+   "topic": "Extensions of more than one storey",
+   "detail": "Class A.1(h): development is not permitted if 'the enlarged part of the dwellinghouse would have more than a single storey and \u2014 (i) extend beyond the rear wall of the original dwellinghouse by more than 3 metres, or (ii) be within 7 metres of any boundary of the curtilage of the dwellinghouse being enlarged which is opposite the rear wall of the dwellinghouse.' Condition A.3(c): 'where the enlarged part of the dwellinghouse has more than a single storey, the roof pitch of the enlarged part must, so far as practicable, be the same as the roof pitch of the original dwellinghouse.' Note A.2: on article 2(3) land, rear extensions of more than one storey are not permitted at all.",
+   "value": "3m beyond original rear wall; \u22657m to opposite boundary; matching roof pitch",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1/crossheading/class-a-enlargement-improvement-or-other-alteration-of-a-dwellinghouse/paragraph/A.1/made",
+   "confidence": "high"
+  },
+  {
+   "topic": "Height limits",
+   "detail": "A.1(c): no part of the enlarged/altered dwellinghouse may 'exceed the height of the highest part of the roof of the existing dwellinghouse'. A.1(d): the eaves of the enlarged/altered part may not 'exceed the height of the eaves of the existing dwellinghouse'. A.1(f)/(g): a single-storey rear extension must not 'exceed 4 metres in height'. A.1(i): if 'the enlarged part of the dwellinghouse would be within 2 metres of the boundary of the curtilage of the dwellinghouse', 'the height of the eaves of the enlarged part' must not 'exceed 3 metres'.",
+   "value": "4m single storey; eaves 3m within 2m of boundary; ridge/eaves \u2264 existing",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Side extension limits",
+   "detail": "Class A.1(j): development is not permitted if 'the enlarged part of the dwellinghouse would extend beyond a wall forming a side elevation of the original dwellinghouse, and would \u2014 (i) exceed 4 metres in height, (ii) have more than a single storey, or (iii) have a width greater than half the width of the original dwellinghouse.' A.1(e) also blocks any enlargement beyond a wall forming the principal elevation, or fronting a highway and forming a side elevation, of the original dwellinghouse. A.2(b): on article 2(3) land, side extensions (beyond a wall forming a side elevation) are not permitted at all; A.2(a) also bars exterior cladding on such land.",
+   "value": "Side: single storey, \u22644m high, \u2264half width of original house (A.1(j))",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1 ; https://www.planninggeek.co.uk/gpdo/house/extensions/side-extensions/",
+   "confidence": "high"
+  },
+  {
+   "topic": "50% curtilage rule",
+   "detail": "Class A.1(b): development is not permitted if 'as a result of the works, the total area of ground covered by buildings within the curtilage of the dwellinghouse (other than the original dwellinghouse) would exceed 50% of the total area of the curtilage (excluding the ground area of the original dwellinghouse)'. All extensions and outbuildings (existing and proposed, whenever built) count towards the 50%; ground area is measured externally.",
+   "value": "50% of curtilage excluding original house footprint (A.1(b))",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1 ; https://pdassessment.co.uk/guides/50-percent-curtilage-rule/",
+   "confidence": "high"
+  },
+  {
+   "topic": "'Original dwellinghouse' definition and pre-existing (e.g. 2005) extensions",
+   "detail": "Article 2(1) GPDO 2015: '\"original\" means, in relation to a building existing on 1st July 1948, as existing on that date and, in relation to a building built on or after 1st July 1948, as so built.' Technical guidance restates: the original house is 'the house as it was first built or as it stood on 1 July 1948 (if it was built before that date)'. Consequence: an extension added in (say) 2005 forms part of the EXISTING house but not the ORIGINAL house \u2014 all depth/width/coverage limits in A.1 bite by reference to the original house, so the 2005 extension consumes the permitted development allowance (whether it was built under PD or planning permission, and whoever built it). Reinforced by A.1(ja): development is not permitted if 'any total enlargement (being the enlarged part together with any existing enlargement of the original dwellinghouse to which it will be joined) exceeds or would exceed the limits set out in sub-paragraphs (e) to (j)' (anti-'extend-the-extension' rule, added 25 May 2019 by SI 2019/907).",
+   "value": "art. 2(1) 'original'; A.1(ja) 'total enlargement'",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/article/2 ; https://www.legislation.gov.uk/uksi/2019/907/made",
+   "confidence": "high"
+  },
+  {
+   "topic": "Excluded works under Class A",
+   "detail": "A.1(k): Class A does not cover works consisting of or including 'the construction or provision of a veranda, balcony or raised platform', microwave antennas, chimneys/flues/soil-and-vent pipes, or 'an alteration to any part of the roof of the dwellinghouse'. Part 1 interpretation paragraph: '\"raised\" in relation to a platform means a platform with a height greater than 0.3 metres' \u2014 hence decking over 0.3m high is outside Class A (and outbuilding Class E).",
+   "value": "Verandas/balconies/raised platforms (>0.3m) excluded",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1 ; technical guidance",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class A.3 conditions",
+   "detail": "Verbatim: 'Development is permitted by Class A subject to the following conditions \u2014 (a) the materials used in any exterior work (other than materials used in the construction of a conservatory) must be of a similar appearance to those used in the construction of the exterior of the existing dwellinghouse; (b) any upper-floor window located in a wall or roof slope forming a side elevation of the dwellinghouse must be \u2014 (i) obscure-glazed, and (ii) non-opening unless the parts of the window which can be opened are more than 1.7 metres above the floor of the room in which the window is installed; and (c) where the enlarged part of the dwellinghouse has more than a single storey, the roof pitch of the enlarged part must, so far as practicable, be the same as the roof pitch of the original dwellinghouse.'",
+   "value": "A.3(a)-(c)",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "confidence": "high"
+  },
+  {
+   "topic": "Technical guidance \u2014 latest edition",
+   "detail": "MHCLG, 'Permitted development rights for householders: technical guidance', latest edition September 2019 (updated to reflect the removal of the 30 May 2019 time limit on larger rear extensions). Still the current edition per searches as of August 2026. HTML and PDF on gov.uk.",
+   "value": "September 2019 edition (current)",
+   "source": "https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance ; PDF: https://assets.publishing.service.gov.uk/media/5d77afc8e5274a27cdb2c9e9/190910_Tech_Guide_for_publishing.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "Technical guidance \u2014 measurement conventions",
+   "detail": "Height: '\"Height\" references (such as the heights of eaves on a house extension) are measured from ground level', where 'ground level is the surface of the ground immediately adjacent to the building and would not include any addition laid on top of the ground such as decking. Where ground level is not uniform (for example if the ground is sloping), then the ground level is the highest part of the surface of the ground next to the building.' Eaves: 'the point at which the external wall of the building meets the roof covering' (the gutter line). Depth of rear extensions is measured from the (outside face of the) rear wall of the original house; ground coverage for the 50% rule and outbuilding limits is measured externally.",
+   "value": "Ground-level rule; external measurement; original rear wall datum",
+   "source": "MHCLG technical guidance Sept 2019, pp. 5-6 and Class A sections; https://assets.publishing.service.gov.uk/media/5d77afc8e5274a27cdb2c9e9/190910_Tech_Guide_for_publishing.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class AA \u2014 scope",
+   "detail": "Inserted into Sch 2 Pt 1 with effect from 31 August 2020 by SI 2020/755 (Town and Country Planning (Permitted Development and Miscellaneous Amendments) (England) (Coronavirus) Regulations 2020). Verbatim scope: enlargement of a dwellinghouse consisting of the construction of '(a) up to two additional storeys, where the existing dwellinghouse consists of two or more storeys; or (b) one additional storey, where the existing dwellinghouse consists of one storey, immediately above the topmost storey of the dwellinghouse, together with any engineering operations reasonably necessary for the purpose of that construction.'",
+   "value": "Class AA, in force 31 Aug 2020",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1/crossheading/class-aa-enlargement-of-a-dwellinghouse-by-construction-of-additional-storeys/paragraph/AA.2 ; https://planningjungle.com/2020/07/28/important-new-legislation-amendments-to-part-1-of-the-gpdo-31-08-2020/",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class AA \u2014 eligibility and height limits (AA.1)",
+   "detail": "Not permitted if: the house was constructed before 1 July 1948 or after 28 October 2018; the house is on article 2(3) land or an SSSI (or is listed/scheduled etc.); or the existing house has already been enlarged by additional storeys. Height caps: following the development the height of the highest part of the roof must not exceed 18 metres; and must not exceed the height of the highest part of the roof of the existing dwellinghouse by more than 3.5 metres (where the existing house is single-storey) or 7 metres (where it has two or more storeys). For semi-detached/terraced houses, the resulting roof height must not be more than 3.5 metres higher than the next tallest attached building in the row. Floor-to-ceiling height of any additional storey, measured internally, must not exceed the lower of 3 metres or the floor-to-ceiling height of any storey of the principal part of the existing house. Additional storeys must be constructed on the 'principal part' only \u2014 defined as the main part of the dwellinghouse excluding any front, side or rear extension of a lower height (whether original or later addition).",
+   "value": "18m cap; +3.5m/+7m; +3.5m over next tallest attached; 3m internal storey cap; principal part only; built 1.7.1948-28.10.2018",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1 (Class AA) ; https://www.planninggeek.co.uk/gpdo/house/class-aa/ ; https://www.tpexpert.org/knowledge/class-aa-enlargement-of-a-dwellinghouse-by-construction-of-additional-storeys/",
+   "confidence": "high"
+  },
+  {
+   "topic": "Class AA \u2014 engineering operations and conditions (AA.2)",
+   "detail": "Engineering operations are confined to works within the curtilage of the dwellinghouse to strengthen its existing walls and existing foundations; strengthening works must not extend beyond the curtilage and visible external support structures are not permitted. Conditions include: materials of similar appearance to the existing house; no windows in any wall or roof slope forming a side elevation; the roof pitch of the principal part following the development must be the same as the existing roof pitch; the dwelling must remain in use as a single dwellinghouse (Class C3). Note: the Order requires no structural engineer's report as part of a Part 1 Class AA prior approval application (unlike some Part 20 requirements) \u2014 the 'engineering' control is the works limitation above, though LPAs assess the works details submitted with the application.",
+   "value": "AA.1/AA.2 engineering-operations limits",
+   "source": "https://www.planninggeek.co.uk/gpdo/house/class-aa/ ; https://www.adpltd.co.uk/our-knowledge/permitted-development-adding-additional-storeys-to-a-house",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Class AA \u2014 prior approval matters (AA.2(3))",
+   "detail": "Before beginning the development the developer must apply to the LPA for prior approval as to: '(i) impact on the amenity of any adjoining premises including overlooking, privacy and the loss of light; (ii) the external appearance of the dwellinghouse, including the design and architectural features of the principal elevation of the dwellinghouse, and any side elevation of the dwellinghouse that fronts a highway; (iii) air traffic and defence asset impacts of the development' and whether 'the development will impact on a protected view identified in the Directions Relating to Protected Vistas dated 15th March 2012 issued by the Secretary of State'. Case law (Court of Appeal, 2023, CAB Housing Ltd v SSLUHC [2023] EWCA Civ 194) holds 'amenity of any adjoining premises' is not limited to overlooking/privacy/light and 'adjoining' means neighbouring, not only contiguous; external appearance assessment is not limited to the principal/highway-fronting elevations. Development must be completed within 3 years of the prior approval grant and the LPA notified on completion.",
+   "value": "AA.2(3) prior approval matters",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1/crossheading/class-aa-enlargement-of-a-dwellinghouse-by-construction-of-additional-storeys/paragraph/AA.2 ; https://planningjungle.com/2022/02/25/high-court-judgment-about-the-scope-of-the-prior-approval-matters... ; https://www.townlegal.com/wp-content/uploads/2023-EWCA-Civ-194-23-February-2023.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "Amendments in force as of August 2026 \u2014 Part 1",
+   "detail": "(1) SI 2019/907 (Town and Country Planning (Permitted Development, Advertisement and Compensation Amendments) (England) Regulations 2019, in force 25 May 2019): made the 6m/8m larger home extension right permanent, removed the 30 May 2019 completion condition, and inserted the A.1(ja) 'total enlargement' restriction. (2) SI 2020/755: inserted Class AA from 31 August 2020. (3) SI 2024/579 (in force 21 May 2024) amended Parts 3 and 6 (agricultural Classes Q, R, and Part 6 Classes A and B) \u2014 it did NOT amend Part 1. (4) SI 2025/560 (in force 29 May 2025) expanded EV charge point rights in Part 2 Classes D and E \u2014 not Part 1. (5) SI 2026/313, The Town and Country Planning (General Permitted Development etc.) (England) (Amendment) Order 2026, in force 9 April 2026: DID amend Part 1 Class AA (per Planning Jungle's 'Amendments to Part 1 of the GPDO (09/04/2026)' post), and elsewhere inserted a new Part 7 Class CA (reverse vending machines) and clarified school/college/university/prison/hospital rights. The precise substance of the Class AA amendment could not be verified from accessible sources in this sandbox \u2014 check the SI and Explanatory Memorandum before relying on the pre-2026 Class AA text.",
+   "value": "SI 2019/907; SI 2020/755; SI 2026/313 (amends Class AA, 9 Apr 2026)",
+   "source": "https://www.legislation.gov.uk/uksi/2026/313/made ; https://planningjungle.com/2026/03/20/important-new-legislation-amendments-to-part-1-of-the-gpdo-09-04-2026/ ; https://www.legislation.gov.uk/uksi/2024/579/made ; https://www.legislation.gov.uk/uksi/2025/560/made",
+   "confidence": "medium"
+  },
+  {
+   "topic": "A.2 article 2(3) land restrictions (Class A)",
+   "detail": "On article 2(3) land (conservation areas, National Parks, AONBs, the Broads, World Heritage Sites) development is not permitted by Class A if it would 'consist of or include the cladding of any part of the exterior'; if the enlarged part would 'extend beyond a wall forming a side elevation of the original dwellinghouse'; or if the enlarged part would have more than a single storey and extend beyond the rear wall of the original dwellinghouse. The 6m/8m larger home extension is also unavailable on article 2(3) land and SSSIs (A.1(g) opening words).",
+   "value": "A.2(a)-(c)",
+   "source": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1 ; https://www.planninggeek.co.uk/gpdo/article-2-protected-land/",
+   "confidence": "high"
+  },
+  {
+   "topic": "Research limitation",
+   "detail": "Direct HTTPS fetches of legislation.gov.uk and gov.uk were blocked by the sandbox egress proxy (CONNECT 403), so no page could be opened directly; verbatim quotes were captured through web-search extraction of the official legislation.gov.uk pages and official consolidated reproductions (High Peak BC consolidated PDF of Sch 2 Pt 1 Classes A-C as amended at 12.10.2022: https://www.highpeak.gov.uk/media/7604/CD5.8-GPDO-2015-as-amended-as-at-12.10.22-Arts-1-4-sch-2-part-1-classes-A-C/pdf/rsCD5.8_GPDO_2015_as_amended_as_at_12.10.22_Arts_1-4__sch_2__part_1_classes_A-C.pdf). Sub-paragraph lettering (e.g. (f)/(g)/(h)/(i)/(j)/(ja)) matches the consolidated as-amended text but should be spot-checked against the live legislation.gov.uk 'latest available (revised)' version, which also flags any outstanding unapplied amendments.",
+   "confidence": "high"
+  }
+ ],
+ "open_questions": [
+  "What exactly did SI 2026/313 (in force 9 April 2026) change in Part 1 Class AA? Planning Jungle confirms Part 1 Class AA was amended, but no accessible source stated the substance. Verify at https://www.legislation.gov.uk/uksi/2026/313/made and its Explanatory Memorandum before advising on Class AA.",
+  "Whether legislation.gov.uk shows any 'prospective' or unapplied amendments to Sch 2 Pt 1 Classes A/AA beyond SI 2026/313 as of August 2026 (the site's 'changes to legislation' banner could not be read because direct access was blocked).",
+  "Current prior approval application fees (the \u00a396 larger-home-extension/Class AA fee cited in older sources was increased by the December 2023 fees regulations and may have been indexed again by 2026) \u2014 confirm against the current Fees Regulations before quoting.",
+  "Whether the September 2019 technical guidance remains the latest edition (searches found no later edition, and it does not cover Class AA at all \u2014 Class AA guidance sits in separate MHCLG prior-approval guidance)."
+ ],
+ "references": [
+  {
+   "title": "GPDO 2015, Sch 2 Pt 1 (current consolidated text), legislation.gov.uk",
+   "url": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "quote": "Development is not permitted by Class A if ... the enlarged part of the dwellinghouse would extend beyond the rear wall of the original dwellinghouse by more than 4 metres in the case of a detached dwellinghouse, or 3 metres in the case of any other dwellinghouse"
+  },
+  {
+   "title": "GPDO 2015, Sch 2 Pt 1 Class A, paragraph A.1 (crossheading page)",
+   "url": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1/crossheading/class-a-enlargement-improvement-or-other-alteration-of-a-dwellinghouse",
+   "quote": "the enlarged part of the dwellinghouse would have more than a single storey and\u2014 (i) extend beyond the rear wall of the original dwellinghouse by more than 3 metres, or (ii) be within 7 metres of any boundary of the curtilage of the dwellinghouse being enlarged which is opposite the rear wall of the dwellinghouse"
+  },
+  {
+   "title": "GPDO 2015, Sch 2 Pt 1, Class A.4 neighbour consultation scheme",
+   "url": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1",
+   "quote": "Where any owner or occupier of any adjoining premises objects to the proposed development, the prior approval of the local planning authority is required as to the impact of the proposed development on the amenity of any adjoining premises ... [the LPA must] consider the amenity of all adjoining premises, not just adjoining premises which are the subject of representations"
+  },
+  {
+   "title": "GPDO 2015, Sch 2 Pt 1, Class AA paragraph AA.2 (prior approval)",
+   "url": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1/crossheading/class-aa-enlargement-of-a-dwellinghouse-by-construction-of-additional-storeys/paragraph/AA.2",
+   "quote": "(i) impact on the amenity of any adjoining premises including overlooking, privacy and the loss of light; (ii) the external appearance of the dwellinghouse, including the design and architectural features of the principal elevation ... and any side elevation ... that fronts a highway; (iii) air traffic and defence asset impacts of the development ... a protected view identified in the Directions Relating to Protected Vistas dated 15th March 2012"
+  },
+  {
+   "title": "MHCLG, Permitted development rights for householders: technical guidance (September 2019) \u2014 publication page",
+   "url": "https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance",
+   "quote": "Height references (such as the heights of eaves on a house extension) are measured from ground level ... ground level is the surface of the ground immediately adjacent to the building and would not include any addition laid on top of the ground such as decking ... where ground level is not uniform ... the ground level is the highest part of the surface of the ground next to the building."
+  },
+  {
+   "title": "MHCLG technical guidance September 2019 \u2014 PDF",
+   "url": "https://assets.publishing.service.gov.uk/media/5d77afc8e5274a27cdb2c9e9/190910_Tech_Guide_for_publishing.pdf",
+   "quote": "the original house [is] the house as it was first built or as it stood on 1 July 1948 (if it was built before that date)"
+  },
+  {
+   "title": "SI 2019/907 \u2014 Town and Country Planning (Permitted Development, Advertisement and Compensation Amendments) (England) Regulations 2019",
+   "url": "https://www.legislation.gov.uk/uksi/2019/907/made",
+   "quote": "made permanent the existing temporary right to enlarge a dwellinghouse by up to 8 metres in the case of a detached dwellinghouse or by 6 metres in the case of any other dwellinghouse ... [and inserted A.1(ja):] any total enlargement (being the enlarged part together with any existing enlargement of the original dwellinghouse to which it will be joined) exceeds or would exceed the limits set out in sub-paragraphs (e) to (j)"
+  },
+  {
+   "title": "SI 2026/313 \u2014 The Town and Country Planning (General Permitted Development etc.) (England) (Amendment) Order 2026",
+   "url": "https://www.legislation.gov.uk/uksi/2026/313/made",
+   "quote": "comes into force on 9th April 2026 ... amends the Town and Country Planning (General Permitted Development) (England) Order 2015"
+  },
+  {
+   "title": "Planning Jungle \u2014 IMPORTANT: New Legislation \u2013 Amendments to Part 1 of the GPDO (09/04/2026)",
+   "url": "https://planningjungle.com/2026/03/20/important-new-legislation-amendments-to-part-1-of-the-gpdo-09-04-2026/",
+   "quote": "SI 2026 No. 313 ... amended Part 1 Class AA"
+  },
+  {
+   "title": "SI 2024/579 \u2014 GPDO amendments May 2024 (did not amend Part 1)",
+   "url": "https://www.legislation.gov.uk/uksi/2024/579/made"
+  },
+  {
+   "title": "SI 2025/560 \u2014 GPDO amendment May 2025 (EV charging, Part 2; not Part 1)",
+   "url": "https://www.legislation.gov.uk/uksi/2025/560/made"
+  },
+  {
+   "title": "High Peak BC \u2014 GPDO 2015 as amended (consolidated, arts 1-4 and Sch 2 Pt 1 Classes A-C, at 12.10.2022)",
+   "url": "https://www.highpeak.gov.uk/media/7604/CD5.8-GPDO-2015-as-amended-as-at-12.10.22-Arts-1-4-sch-2-part-1-classes-A-C/pdf/rsCD5.8_GPDO_2015_as_amended_as_at_12.10.22_Arts_1-4__sch_2__part_1_classes_A-C.pdf",
+   "quote": "(j) the enlarged part of the dwellinghouse would extend beyond a wall forming a side elevation of the original dwellinghouse, and would\u2014 (i) exceed 4 metres in height, (ii) have more than a single storey, or (iii) have a width greater than half the width of the original dwellinghouse"
+  },
+  {
+   "title": "Planning Jungle \u2014 GPDO Part 1 Class A (Larger Rear Extensions) background",
+   "url": "https://planningjungle.com/householder-permitted-development/gpdo-part-1-class-a-larger-rear-extensions-background-information/",
+   "quote": "the expiry of 42 days following the date on which the information ... was received by the local planning authority without the local planning authority notifying the developer as to whether prior approval is given or refused"
+  },
+  {
+   "title": "Planning Geek \u2014 Class AA (additional storeys on a house)",
+   "url": "https://www.planninggeek.co.uk/gpdo/house/class-aa/",
+   "quote": "up to a maximum height of 3.5m on a bungalow or single storey property or up to 7m where the existing house consists of two or three storeys ... limited to 3.5m above the other property or the highest part of the terrace ... total height cannot exceed 18 metres ... can't exceed that of any existing floor to ceiling height or 3m, whichever is the lower"
+  },
+  {
+   "title": "CAB Housing Ltd v SSLUHC [2023] EWCA Civ 194 (scope of Class AA prior approval matters)",
+   "url": "https://www.townlegal.com/wp-content/uploads/2023-EWCA-Civ-194-23-February-2023.pdf"
+  }
+ ]
+}

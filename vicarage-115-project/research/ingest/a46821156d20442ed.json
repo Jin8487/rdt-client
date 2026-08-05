@@ -1,0 +1,94 @@
+{
+ "summary": "None of the nine documents is the 2005 permission S/03404/05/FUL for 115 Vicarage Road. Eight of them are the complete file for a NEIGHBOUR-STREET precedent: 95 Vicarage Road, Kings Heath, B14 7QG, application 2020/06341/PA (\"Retention of single storey rear extension and associated remedial works\", i.e. retrospective), granted 11 December 2020. That file comprises the decision notice, officer's delegated report, the scanned householder application form (agent: Mr Hanif Ghumra, 733 Walsall Road, Great Barr), drawings P001/P001 Rev A (proposed ground-floor + roof plans) and P002/P002 Rev A (proposed elevations), and 1:500 block / 1:1250 location plans. The ninth document (00000069-attachment.pdf) is a Tide bank payment confirmation dated 22 Apr 2026 from CANDOR DEVOIR LTD paying \u00a31,500.00 to \"Design & plan construction ltd\", reference \"Conversion Design\" \u2014 i.e. Mo's own payment to the architect, not a planning document. Key extracted numbers for the 95 Vicarage Road extension: described on the application form as a \"3.5M SINGLE STOREY REAR EXTENSION. ORANGERY\" (work started ~1/5/19-20, not completed at submission); the only written dimensions on any drawing are two stacked \"1500\" annotations on the P002 left side elevation (1500mm brick plinth + 1500mm glazing = c.3.0m to flat-roof deck, with a low pitched glass-roof lantern above); drawings are 1:100 @ A3 with a 0-5m scale bar, so all other dimensions (depth scales to c.3.5-3.8m, full rear width) must be scaled off the sheet. The officer's report records that the extension FAILED the 45-Degree Code (vs No.99's rear patio doors) and failed the numerical guidelines, but was approved because the offending section is mainly glass (fully glazed roof secured by condition, obscure glazing to side facing No.93, glazed roof to be completed within 6 months), a previous conservatory of similar scale existed in the same location, and boundary fencing mitigated impact. The 2005 documents for 115 Vicarage Road (with the 3600mm Catnic lintel / 3300mm span section) are NOT in this batch.",
+ "facts": [
+  {
+   "topic": "Batch identification",
+   "detail": "Documents 00000093-00000100 all relate to 95 Vicarage Road, Kings Heath, Birmingham B14 7QG, application 2020/06341/PA (Householder, retrospective) - NOT 115 Vicarage Road and NOT the 2005 application S/03404/05/FUL. No document in this batch shows the 3600mm Catnic lintel / 3300mm span section referenced in the task.",
+   "value": "2020/06341/PA - 95 Vicarage Road",
+   "source": "All nine PDFs in /tmp/claude-0/-home-user-rdt-client/989d67f4-15f7-5ac2-bc14-b3dafd80fee2/scratchpad/wa1/",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000069-attachment.pdf",
+   "detail": "Tide (ClearBank) Payment Confirmation, generated 22 Apr 2026. Payer: Business Owner CANDOR DEVOIR LTD, London, England SW19 1DG; sort code 040605, account 23531503. Recipient: 'Design & plan construction ltd', sort code 778570, account 63410668. Amount GBP 1,500.00; payment date 22 Apr 2026; cleared 22 Apr 2026; status Cleared; Faster Payment System, Domestic Transfer; Transaction ID 52e157a92ff242d7861020260422826040605; Reference 'Conversion Design'. This is the owner's payment to the designer, not a planning document.",
+   "value": "GBP 1,500.00 paid 22 Apr 2026",
+   "source": "00000069-attachment.pdf (text layer)",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000093 - Decision notice 2020/06341/PA",
+   "detail": "Birmingham City Council DECISION DOCUMENT granting planning permission subject to conditions: 'Retention of single storey rear extension and associated remedial works at 95 Vicarage Road, Kings Heath, Birmingham, B14 7QG'. Dated Friday 11th December 2020, signed Ian MacLeod, Director - Inclusive Growth (Acting). Condition 1: accordance with approved plans P001 Rev A, P002 Rev A, 1:500 Block Plan, 1:1250 Location Plan. Condition 2: window(s) in side elevation facing No. 93 Vicarage Road to be obscure glazed, obscurity rating not less than 4 Pilkington range, retained as such. Condition 3: the glazed roof to be installed and completed within 6 months of the permission date and retained as such.",
+   "value": "Granted 11 Dec 2020, 3 conditions",
+   "source": "00000093-Document-7AE4F972E27137E57C42E256BD355C38.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000094 - Drawing P001 (original)",
+   "detail": "A3 drawing 'PROPOSED LAYOUT PLANS' (Proposed Ground Floor Plan + Proposed Roof Plan), Drawing No P001, no Rev, Scale 1:100 @ A3, Drawn By IV, Checked By HG, Date 05-08-2020. Titleblock name HANIF GHUMRA, hanif.ghumra@yahoo.com, 07813706185, address 95 Vicarage Road Kings Heath B14 7QG. Scale bar 0-5 (m). Rooms labelled: KITCHEN (in rear extension), FAMILY ROOM, DINING ROOM, LIVING ROOM, STUDY. NO written dimensions anywhere on the sheet - all dimensions would need scaling. Rear extension spans virtually the full rear width of the (side-extended) house with two rooflight/lantern positions shown dashed; scaled at 1:100/200dpi the extension depth is roughly 3.5-3.8m and overall rear width roughly 8.5-9m (scaled, approximate, includes the existing two-storey side extension width).",
+   "value": "P001, 1:100 @ A3, 05-08-2020, no written dims",
+   "source": "00000094-Document-568B14A66BFEEC0C42DA8F66AC9E44D5.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000095 - Block plan and location plan for 95 Vicarage Road",
+   "detail": "Page 1: Blackwell's Mapping Services OS MasterMap extract titled '95 Vicarage Road, B14 7QG', 1:500 scale print at A4, Centre 407024 E, 281386 N, Thursday August 6 2020, ID MPMBW-00893418, Crown Copyright OS Licence 10041041; red-line boundary around No.95's long rear plot down to a rear 'Track'; the built rear extension is shaded black on the plan; handwritten 'VICARAGE ROAD' label; spot level 151.7m on the road; scale bar 0-20m; grid lines 28142.0m/40/38/28136.0m and 40700m/02/04/40706m; neighbouring plots numbered 105, 99, 95, 93, 89, 87, 83. Page 2: same supplier, 1:1250 scale print at A4, Centre 407060 E, 281411 N, ID MPMBW-00893417; shows Vicarage Road / Abbots Road / Hazelhurst Road (handwritten label), spot heights 151.8m, 151.7m, 151.2m, 153.0m, 150.6m; scale bar 0-50m; red-line around 95's plot. No building dimensions written.",
+   "value": "1:500 block plan + 1:1250 location plan, Aug 2020",
+   "source": "00000095-Document-95310C737184DBD86CE5CA7915103B54.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000096 - Drawing P001 Rev A",
+   "detail": "Same 'PROPOSED LAYOUT PLANS' sheet as P001 but Rev A, Date 05-11-2020, Scale 1:100 @ A3. Amendments: roof plan now annotated 'GLASS ROOF' over the section of the extension adjacent to No.93, and 'WARM DECK FLAT ROOF' twice (over the remainder of the extension and the side-return strip); ground floor plan shows the glazed-roof bay with hip lines dashed. Still NO written dimensions - scaling required. These Rev A amendments are what secured approval (fully glazed roof to overcome 45-Degree Code failure).",
+   "value": "P001 Rev A, 05-11-2020, glass roof + warm deck flat roof labels",
+   "source": "00000096-Document-1368552C7B985864F0DA4138D33A8CAA.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000097 - Scanned householder application form (6 pages)",
+   "detail": "Birmingham CC 'Householder Application for Planning Permission for works or extension to a dwelling', for 95 Vicarage Road, Kingsheath B14 7QG (applicant name redacted/blacked out). Agent: MR HANIF GHUMRA, 733 WALSALL ROAD, GREAT BARR, postcode handwritten 'B42 (EN' (reads B42 1EN or B42 4EN), mobile 07813706185, email hanif.ghumra@yahoo.com. Q3 Description of Proposed Works: '3.5M SINGLE STOREY REAR EXTENSION. ORANGERY.' Work already started: YES, date handwritten '1/5/19' or '1/5/20' (last digit overwritten/ambiguous); work completed: NO. Pre-application advice: No ('Planning as required' handwritten across the boxes). Materials (existing column): Walls 'Brickwork / Glass block'; Roof 'Flat Roof with GLASS'; Windows 'UPVC D/g'; Doors 'UPVC Bifolding'; Others (Proposed): 'raise patio Area By 400mm'. Trees/hedges: No. Parking affected: No. Site visible from public road: Yes. Ownership Certificate A signed by agent (signature/date blacked out). Supplying additional info on plans: No.",
+   "value": "3.5m single storey rear extension / orangery; patio raised 400mm",
+   "source": "00000097-Document-B948FC01C98CC7E72F1920B0E45A1467.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000098 - Drawing P002 Rev A (elevations)",
+   "detail": "'PROPOSED ELEVATIONS' Drawing No P002 Rev A, Scale 1:100 @ A3, Drawn IV, Checked HG, Date 05-11-2020, for 95 Vicarage Road. Shows Proposed Rear Elevation, Proposed Left Side Elevation, Proposed Right Side Elevation. The ONLY written dimensions on the sheet are on the Left Side Elevation: two stacked dimensions of '1500' and '1500' (mm) - lower 1500 = brick plinth wall, upper 1500 = glazing band - giving c.3.0m from ground to the flat-roof/eaves line of the extension, with a shallow pitched 'GLASS ROOF' lantern above (glass roof labelled on rear, left and right elevations). Extension shown with brick piers/plinth, full-height glazing panels, and bi-fold door sets on the rear elevation. Eaves/ridge heights of the main house are NOT dimensioned; extension total height, depth and width would need scaling (extension depth scales to c.3.5m, ridge of glass lantern scales to c.3.4-3.5m).",
+   "value": "Written dims: 1500 + 1500 (mm); everything else scale 1:100",
+   "source": "00000098-Document-C33E3AEAFBAA9E7B0A733EC78AEE7125.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000099 - Officer's delegated report 2020/06341/PA",
+   "detail": "Delegated date 10/12/2020; Accepted 12/08/2020; Target 11/12/2020; Application type Householder; Ward Brandwood & King's Heath; Officer Leah Russell. Proposal: retention of single storey rear extension (already complete); follows enforcement case 2019/1762/ENF for an unauthorised rear extension. Amended plans sought to make extension roof fully glazed to overcome 45 Degree Code issues. Site: semi-detached, hipped roof, previously extended with first floor side and rear extensions and single storey rear extensions. Attached neighbour No.93 has ground floor patio doors serving habitable room nearest the site; adjacent No.99 has a door to a lean-to nearest the site, nearest habitable window is a rear kitchen window. Planning history for 95: 1999/03206/PA lounge/kitchen/WC/bedroom extension approved 18/08/1999; 1999/13206/PA canopy across front 05/05/2000; 2006/06910/PA conservatory approved 11/12/2006; 2016/04560/PA two storey side extension, first floor rear extension, single storey front extension and conservatory approved 12/07/2016. Assessment: Complies with 45 Degree Code? NO. Complies with numerical guidelines? NO. Justification: extension technically breaches 45 Degree Code from rear patio doors of No.99, but the code allows mainly-glass structures; section adjacent No.93 has side glazing above fence line, large bi-fold doors, and (amended) fully glazed roof; close-boarded fence mitigates; previous conservatory of similar scale in same location. Side windows fail the 5m-per-storey separation distance for windows overlooking private amenity space - obscure glazing condition imposed. No neighbour responses received. No CIL. Policy: BDP 2017, Places for Living SPG 2001, 45 Degree Code SPG 2006, Extending Your Home SPD 2007, NPPF, UDP 2005 saved policies. Approved subject to same 3 conditions as decision notice.",
+   "value": "Approved despite failing 45 Degree Code and numerical guidelines (glass structure exception)",
+   "source": "00000099-Document-C270247148A0C330988F190CAE1D9D96.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000100 - Drawing P002 (original)",
+   "detail": "Identical 'PROPOSED ELEVATIONS' sheet to 00000098 but no Rev, Date 05-08-2020. Same three elevations, same two written '1500'/'1500' dimensions on the left side elevation; the original version lacks the 'GLASS ROOF' labelling shown prominently on Rev A (roof shown as flat deck with small lantern). Scale 1:100 @ A3, scale bar 0-5m.",
+   "value": "P002 (pre-amendment), 05-08-2020",
+   "source": "00000100-Document-DDC7DBF05EC0C5FD478B762622691120.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "Relevance to 115 Vicarage Road strategy (data point only)",
+   "detail": "The 95 Vicarage Road file is a same-street precedent (same B14 7QG postcode) in which Birmingham CC accepted a full-width single-storey rear extension of ~3.5m depth and ~3.0m height that FAILED both the 45 Degree Code and the numerical guidelines, on the basis of a fully glazed roof, glazing above fence line, existing close-boarded fence, and a prior conservatory of similar scale. The agent on that application (Hanif Ghumra) is the same name as on the drawing titleblocks. No document in this batch contains any dimension for 115 Vicarage Road itself.",
+   "source": "00000093/97/98/99",
+   "confidence": "high"
+  },
+  {
+   "topic": "Other files present but not in task list",
+   "detail": "The same folder (scratchpad/wa1) also contains: 00000126-D01 Ext Plans.pdf, 00000147-D01 Ext Plans A.pdf, 00000151-D01 Ext Plans A.pdf, 00000152-D03 Prop Plans.pdf, 00000189-115 Location Plan.pdf, 00000190-D01 Ext Plans A.pdf, 00000191-D03 Prop Plans.pdf - PDF titles reference 'C:\\Users\\rouhe\\Documents\\Freelance Work\\115 Vicarage Rd, B14 7QG' (i.e. the current 115 scheme drawings). Not read as they were outside the task list.",
+   "source": "pdfinfo listing of /tmp/claude-0/-home-user-rdt-client/989d67f4-15f7-5ac2-bc14-b3dafd80fee2/scratchpad/wa1/",
+   "confidence": "high"
+  }
+ ],
+ "open_questions": [
+  "The 2005 application S/03404/05/FUL for 115 Vicarage Road (with the section showing the 3600mm Catnic lintel / 3300mm span) is NOT among these nine documents - the as-approved 2005 depth cannot be confirmed from this batch; the actual 2005 drawings/decision still need to be located (possibly among the unlisted wa1 files or a separate portal download).",
+  "On the 00000097 application form, the 'work started' date is handwritten and ambiguous - reads 1/5/19 or 1/5/20 (the enforcement reference 2019/1762/ENF suggests 2019).",
+  "Agent postcode on the form is handwritten 'B42 (EN' - exact postcode (B42 1EN vs B42 4EN) unverified.",
+  "All plan-form dimensions for the 95 Vicarage Road extension (depth ~3.5m per the form, width, lantern height) are unwritten on the drawings and would need scaling off the 1:100 sheets; only the two 1500mm side-elevation dimensions are written.",
+  "Whether the applicant for 2020/06341/PA (name redacted) is connected to the current 115 project beyond sharing agent Hanif Ghumra."
+ ]
+}

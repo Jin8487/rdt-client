@@ -1,0 +1,438 @@
+<title>115 Vicarage Road — Maximum Massing Envelope</title>
+<style>
+  :root{
+    --paper:#FAF9F5; --ink:#1F2A36; --ink-soft:#4A5665; --accent:#B23A2E;
+    --grid:#8C96A2; --line:#D8D5CC; --panel:#F1EFE8; --pass:#2E7D4F; --warn:#A97614;
+    --chip-pass-bg:#E4EFE7; --chip-warn-bg:#F5ECD9; --chip-no-bg:#F3DFDC;
+    --mono:ui-monospace,'SF Mono','Cascadia Mono',Menlo,Consolas,monospace;
+    --disp:'Avenir Next Condensed','Arial Narrow',Oswald,'Helvetica Neue',sans-serif;
+    --body:Charter,'Bitstream Charter',Georgia,'Times New Roman',serif;
+  }
+  @media (prefers-color-scheme: dark){:root{
+    --paper:#141B23; --ink:#E7EAEE; --ink-soft:#A6AFBA; --accent:#E2604F;
+    --grid:#5E6975; --line:#2A3441; --panel:#1B242F; --pass:#63B282; --warn:#D0A04B;
+    --chip-pass-bg:#1E3229; --chip-warn-bg:#332A17; --chip-no-bg:#3A2320;
+  }}
+  :root[data-theme="dark"]{
+    --paper:#141B23; --ink:#E7EAEE; --ink-soft:#A6AFBA; --accent:#E2604F;
+    --grid:#5E6975; --line:#2A3441; --panel:#1B242F; --pass:#63B282; --warn:#D0A04B;
+    --chip-pass-bg:#1E3229; --chip-warn-bg:#332A17; --chip-no-bg:#3A2320;
+  }
+  :root[data-theme="light"]{
+    --paper:#FAF9F5; --ink:#1F2A36; --ink-soft:#4A5665; --accent:#B23A2E;
+    --grid:#8C96A2; --line:#D8D5CC; --panel:#F1EFE8; --pass:#2E7D4F; --warn:#A97614;
+    --chip-pass-bg:#E4EFE7; --chip-warn-bg:#F5ECD9; --chip-no-bg:#F3DFDC;
+  }
+  body{background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.55;margin:0;font-size:16px;}
+  main{max-width:1000px;margin:0 auto;padding:28px 20px 80px;}
+  .col{max-width:72ch;}
+  h1,h2,h3{font-family:var(--disp);letter-spacing:.02em;text-wrap:balance;line-height:1.15;}
+  h1{font-size:2rem;margin:0;}
+  h2{font-size:1.45rem;text-transform:uppercase;letter-spacing:.06em;margin:3rem 0 .8rem;border-bottom:2px solid var(--ink);padding-bottom:.3rem;}
+  h3{font-size:1.12rem;margin:1.8rem 0 .5rem;}
+  p{margin:.65rem 0;}
+  a{color:var(--accent);text-decoration-thickness:1px;}
+  .dim{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .big{font-size:1.05em;font-weight:700;}
+  /* title block */
+  .sheet{border:2px solid var(--ink);margin-bottom:8px;}
+  .sheet-head{display:flex;flex-wrap:wrap;gap:0;border-bottom:2px solid var(--ink);}
+  .sheet-head>div{padding:14px 18px;}
+  .sheet-head .proj{flex:2 1 320px;border-right:1px solid var(--line);}
+  .sheet-head .meta{flex:1 1 220px;display:grid;grid-template-columns:auto 1fr;gap:2px 14px;align-content:center;font-size:.8rem;}
+  .meta dt{font-family:var(--disp);text-transform:uppercase;letter-spacing:.09em;color:var(--ink-soft);}
+  .meta dd{margin:0;font-family:var(--mono);}
+  .eyebrow{font-family:var(--disp);text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;color:var(--accent);margin-bottom:.4rem;}
+  .sheet-note{padding:10px 18px;font-size:.85rem;color:var(--ink-soft);}
+  /* chips */
+  .chip{display:inline-block;font-family:var(--disp);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;padding:2px 9px;border-radius:2px;white-space:nowrap;}
+  .chip.right{background:var(--chip-pass-bg);color:var(--pass);border:1px solid var(--pass);}
+  .chip.invite{background:var(--chip-warn-bg);color:var(--warn);border:1px solid var(--warn);}
+  .chip.push{background:var(--chip-no-bg);color:var(--accent);border:1px solid var(--accent);}
+  .chip.no{background:var(--chip-no-bg);color:var(--accent);border:1px dashed var(--accent);}
+  /* tables */
+  .tablewrap{overflow-x:auto;margin:1rem 0;}
+  table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:720px;}
+  th{font-family:var(--disp);text-transform:uppercase;letter-spacing:.07em;font-size:.74rem;text-align:left;color:var(--ink-soft);border-bottom:2px solid var(--ink);padding:6px 10px;}
+  td{border-bottom:1px solid var(--line);padding:8px 10px;vertical-align:top;}
+  tr:hover td{background:var(--panel);}
+  td:first-child{font-weight:700;}
+  /* callouts */
+  .callout{background:var(--panel);border-left:3px solid var(--accent);padding:12px 16px;margin:1.2rem 0;font-size:.94rem;}
+  .callout.green{border-left-color:var(--pass);}
+  .quote{font-style:italic;color:var(--ink-soft);border-left:2px solid var(--grid);padding-left:14px;margin:.8rem 0;}
+  .src{font-size:.8rem;color:var(--ink-soft);font-style:normal;}
+  ol.qs li{margin:.55rem 0;}
+  .figwrap{overflow-x:auto;border:1px solid var(--line);background:var(--panel);margin:1.2rem 0;padding:12px;}
+  figcaption{font-size:.82rem;color:var(--ink-soft);padding:6px 4px 0;}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.78rem;padding:4px;color:var(--ink-soft);font-family:var(--disp);text-transform:uppercase;letter-spacing:.05em;}
+  .sw{display:inline-block;width:22px;height:0;border-top:3px solid;vertical-align:middle;margin-right:5px;}
+  kbd,code{font-family:var(--mono);font-size:.85em;background:var(--panel);padding:1px 5px;border-radius:2px;}
+  .refs{font-size:.85rem;}
+  .refs li{margin:.4rem 0;}
+  .footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.8rem;color:var(--ink-soft);}
+  @media (prefers-reduced-motion: no-preference){ a{transition:color .15s;} }
+</style>
+
+<main>
+  <div class="sheet">
+    <div class="sheet-head">
+      <div class="proj">
+        <div class="eyebrow">Maximum Massing Envelope — Consultant's Report</div>
+        <h1>115 Vicarage Road, Kings Heath, Birmingham B14&nbsp;7QG</h1>
+      </div>
+      <div class="meta">
+        <dl class="meta" style="display:contents">
+          <dt>Status</dt><dd>ADVICE — v1</dd>
+          <dt>Date</dt><dd>04 Aug 2026</dd>
+          <dt>Pre-app</dt><dd>2026/03356/PA</dd>
+          <dt>2005 ref</dt><dd>S/03404/05/FUL</dd>
+          <dt>LPA</dt><dd>Birmingham CC</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="sheet-note">Detached inter-war dwellinghouse, hipped roof · plot 607.14 m² (written on location plan) · NOT in a conservation area · NO Article&nbsp;4 direction affecting householder rights in Kings Heath · 2005 permission carries a materials-matching condition only (no PD removal). Every dimension below states its legal vehicle and its provenance. Depth datum for all rear figures: <strong>outer face of the ORIGINAL rear wall</strong>.</div>
+  </div>
+
+  <h2>1 · The envelope at a glance</h2>
+  <div class="tablewrap"><table>
+    <tr><th>Element / direction</th><th>Maximum dimension</th><th>Legal vehicle</th><th>Contestability</th></tr>
+    <tr><td>Rear — ground floor (secure)</td><td><span class="dim big">6.00 m</span> deep × <span class="dim">~11.1 m</span> wide · height ≤ <span class="dim">4.00 m</span> · eaves ≤ <span class="dim">3.00 m</span> at both flanks — valid whether or not the house counts as "detached"</td><td>GPDO Sch.2 Pt.1 Class A.1(g) + A.4 prior approval (fee £249)</td><td><span class="chip right">As of right*</span></td></tr>
+    <tr><td>Rear — ground floor (upside)</td><td><span class="dim big">8.00 m</span> — available only if 115 is a "detached dwellinghouse" under the GPDO. The garage abuts No.117's structure for its whole length (owner-confirmed), making the house link-attached; appeal practice on link-by-garage houses is divided. Test by s.192 LDC before relying on it — never build the extra 2 m on an untested assumption. Alternatively take 6.7 m through the planning application (the officer never objected to ground-floor depth).</td><td>A.1(g)(i) "detached" limb; officer's letter calls it "detached" (helpful evidence, not determinative)</td><td><span class="chip push">Contested — test first</span></td></tr>
+    <tr><td>Rear — first floor (banked)</td><td><span class="dim big">4.00 m</span> deep × <span class="dim">~11.1 m</span> wide · hipped roof to match, ridge below main ridge</td><td>Householder planning application — the officer's own written invitation</td><td><span class="chip invite">Officer-invited</span></td></tr>
+    <tr><td>Rear — first floor (push)</td><td><span class="dim big">5.0–6.0 m</span> deep, first floor set in ≥1 m from the No.117 boundary, chamfered at the No.113 corner</td><td>Planning + BRE daylight report + Mansell fallback + appeal if needed</td><td><span class="chip push">Contested — winnable</span></td></tr>
+    <tr><td>Rear — first floor (floor)</td><td><span class="dim big">3.00 m</span> deep two-storey · ≥7 m to rear boundary · pitch to match</td><td>Class A.1(h) PD — bank with s.192 LDC</td><td><span class="chip right">As of right</span></td></tr>
+    <tr><td>Roof</td><td><span class="dim big">+50 m³</span> external volume — full-width rear box dormer up to (not above) the existing ridge (~<span class="dim">7.5–8.0 m</span>), incl. L-shaped dormer over extension roofs</td><td>Class B — no application, conditions only; bank with s.192 LDC</td><td><span class="chip right">As of right</span></td></tr>
+    <tr><td>Roof — extra storeys</td><td><span class="dim">+7.0 m / 18 m</span> cap — <strong>only if the house was built after 1 July 1948</strong></td><td>Class AA prior approval (AA.1(c) gateway)</td><td><span class="chip no">Likely unavailable</span></td></tr>
+    <tr><td>Rooflights</td><td><span class="dim">0.15 m</span> max protrusion, any slope incl. front</td><td>Class C</td><td><span class="chip right">As of right</span></td></tr>
+    <tr><td>Side (No.113 flank)</td><td>~<span class="dim">1.5 m</span> wide infill strip · single storey · ≤ <span class="dim">4.00 m</span> high · eaves ≤ <span class="dim">3.00 m</span> · width ≤ half original house</td><td>Class A.1(j)</td><td><span class="chip right">As of right</span></td></tr>
+    <tr><td>Front</td><td>Porch <span class="dim">3 m²</span> / <span class="dim">3 m</span> high / ≥2 m from highway boundary. Nothing else forward of the principal elevation.</td><td>Class D / A.1(e)</td><td><span class="chip right">As of right</span></td></tr>
+    <tr><td>Outbuildings (rear garden)</td><td>Up to 50% of curtilage · single storey · <span class="dim">4.00 m</span> dual-pitched (<span class="dim">2.50 m</span> within 2 m of a boundary) · eaves ≤ <span class="dim">2.50 m</span></td><td>Class E (plot 607 m² → generous headroom)</td><td><span class="chip right">As of right</span></td></tr>
+    <tr><td>Prohibited at this site</td><td>Balconies, verandas, roof terraces, raised platforms &gt;0.3 m; anything above the existing ridge; mansard (planning-only, officer hostile)</td><td>A.1(k), B.1(b)/(e), pre-app position</td><td><span class="chip no">Do not attempt</span></td></tr>
+  </table></div>
+  <p class="src">*"As of right" = a permitted-development <em>right</em>, not a discretionary permission: Birmingham cannot refuse it on design, subservience or Design-Guide grounds. The asterisk on the 8 m: a neighbour objection triggers an amenity-only assessment (see §3) — the officer's own pre-app letter is your shield there. All PD arithmetic is conditional on the survey confirming the datums in §8.</p>
+
+  <h2>2 · Why this envelope holds</h2>
+  <div class="col">
+  <p>The pre-app response (Leah Russell MRTPI, 7 Jul 2026) gave away more than it refused. In writing, the council has conceded: <strong>(1)</strong> the property is <em>detached</em> — which unlocks the 8 m prior-approval right, the 4 m standard rear depth and the 50 m³ loft allowance; <strong>(2)</strong> <em>"there is no objection to the principle of a two storey rear extension"</em>; <strong>(3)</strong> <em>"the 45 Degree Code would be met from both neighbouring properties"</em>, taken <em>"from the end of [No.117's] conservatory rather than the original window openings"</em>. That disposes of the amenity case. What remains is a single, judgement-based design objection — "not subservient… reduce by 2m to 4m" — citing City Note LW-16 of the Birmingham Design Guide SPD 2022.</p>
+  <p>Two verified facts defang that objection. First, <strong>no numeric depth cap for two-storey rear extensions exists anywhere</strong> in the Design Guide SPD 2022, the Development Management DPD 2021 or the BDP 2017 — "4 m" is one officer's unquantified judgement (adversarially verified; the only geometric test in the policy set is the 45° Code, which she concedes is passed). Second, subservience is an <em>appearance</em> test, not a floor-area ratio: inspectors allow extensions of "notable depth" where the ridge is set down, the roof matches and flanks are set in — see APP/P4605/D/25/3373138 (834 Walsall Road, Perry Barr): a two-storey side <em>and</em> rear extension <strong>allowed on appeal against Birmingham</strong> under the very same Design-Guide wording.</p>
+  <p>The strategy is therefore not to argue with her — it is to route everything except the first floor <em>around</em> her. Prior approval (8 m ground floor), Class B (loft) and Class E (outbuildings) are statutory rights where design opinion is legally irrelevant. Only the first-floor depth passes through discretionary planning, where you start from her own written concession of 4 m and push from a position of strength.</p>
+  </div>
+
+  <h2>3 · Element by element</h2>
+  <div class="col">
+  <h3>3.1 Ground floor rear — 6.00 m secured; 8.00 m as tested upside</h3>
+  <p><strong>Detached-status correction (owner-confirmed):</strong> 115's garage abuts No.117's structure for its whole length. If that link makes the house not a "detached dwellinghouse" for GPDO purposes (appeal practice on link-by-garage houses is divided; the officer's letter calling it "detached" is helpful evidence but not determinative), the A.1(g) limit is 6 m, not 8 m. Strategy: notify <strong>6.00 m</strong> (valid for any dwellinghouse — unchallengeable), and separately test the 8 m question by s.192 LDC if the extra 2 m matters; take 6.7 m through the planning application meanwhile. Class A.1(g): a single-storey rear enlargement may extend beyond the original rear wall by 6 m (any house) / 8 m (detached), max height 4 m, eaves ≤3 m where within 2 m of a boundary (A.1(i)) — both flanks here are. The existing rear block need <strong>not</strong> be demolished: under A.1(ja) it can be retained and subsumed provided the <em>joined total</em> stays within every limit — which makes the existing block's eaves height (measured from photos at ~2.9–3.1 m) the single most important survey dimension on the project. If it exceeds 3.00 m within 2 m of a boundary, rebuild that roof edge or demolish-and-rebuild within the envelope.</p>
+  <p>Procedure: notify the LPA (£249 fee), neighbours get 21 days, the LPA gets 42. An objection from No.113 <strong>does not block anything</strong> — it only obliges the LPA to assess <em>"the impact … on the amenity of any adjoining premises"</em>. Design, subservience and the Design Guide are legally out of bounds (the prior-approval matters are confined to those in the Order — CAB Housing v SSLUHC [2023] EWCA Civ 194). Her pre-app letter conceding the 45° Code is your amenity evidence. If the LPA is silent for 42 days, you may lawfully proceed (deemed consent). Since SI 2019/907 there is <strong>no completion deadline</strong>. Bank it afterwards with an s.192 certificate (or s.191 once built).</p>
+  <p>Independent geometry check (BRE-method, computed and shown in the working papers): a 3 m-high wall at ~3.1–3.3 m lateral from each neighbour's nearest habitable window subtends ~24–26° — below every BRE screening line — and rough Vertical Sky Component ratios are 0.96–1.00 (BRE target ≥0.8 or ≥27% VSC). There is no credible amenity case against a ≤3 m-eaves single-storey run at these separations.</p>
+  <div class="callout green"><strong>2005 file now fully recovered — three findings.</strong> (1) Calibrated metrology on the approved drawing 381/02 A puts the approved extension at <span class="dim">4.39 m ±0.08</span> deep × <span class="dim">10.53 m</span> wide, rear fascia <span class="dim">2.42–2.72 m</span>: the block standing today is the 2005 permission as built — lawful, no certificate needed, and its eaves sit inside the 3.00 m PD limit, so the joined 8 m total complies on the drawn figures. (2) The as-existing survey 381/01 shows that by March 2005 the house <em>already had</em> a full-width ~2.9 m flat-roof rear addition and the two-storey side wing over the garage — the 2005 job re-roofed and deepened the rear addition around retained structure. (3) The superseded section records: <em>"These foundations are not suitable for a two storey structure"</em> — any first floor over the existing block footprint needs new foundations or an independent frame; design the two-storey element (and the 8 m rebuild, if chosen) with foundations engineered for future load from day one.</div>
+
+  <h3>3.2 First floor rear — 4.00 m banked, 5–6 m push</h3>
+  <p>The officer wrote: <em>"The proposed extension would need to be reduced by 2m to 4m in depth"</em> with <em>"any roof design … match[ing] the existing hipped roof design"</em>. That is a written invitation for a <strong>4.00 m × full-width two-storey rear extension</strong> — submit it drawn exactly to her words and refusal would require the council to contradict its own advice (the North Wiltshire consistency principle then bites at appeal). Your own architect's 45° analysis confirms 4 m clears the code from both neighbours on every construction he tested.</p>
+  <p>The push case for 5–6 m: no policy number stands against it (§2); the 45° line from No.117 runs from the conservatory end that already projects 0.73 m beyond your existing extension; No.113's obscure-glazed flank window is excluded from the code (not a main light source); the computed BRE numbers pass even at 6 m (VSC ratios 0.90–0.93 — screening fails but the numerical test that trumps it passes). Design levers that inspectors reward: hipped roof, ridge set well below the main ridge, first floor set in ~1 m from the No.117 boundary, chamfer or set-down over the last ~1.5 m at the No.113 corner (your architect's own stepped outline of 01.06.26 shows exactly this move). With the 8 m prior approval in hand, Mansell v Tonbridge &amp; Malling [2017] EWCA Civ 1314 makes it a fallback the decision-maker must weigh: refusing the two-storey scheme achieves a <em>worse</em> outcome for the neighbours than what you can already build. Present the comparison in those terms.</p>
+  <p>Honest odds: 4 m ≈ formality. 5 m with full evidence pack ≈ good prospects at officer level, strong at appeal. 6 m ≈ likely refusal then a genuine appeal fight (householder appeals ran at ~36% allowed in 2025/26 nationally — but that is a base rate across all comers; a case armed with the LPA's own written concessions is far better placed). Recommended submission: <strong>6.0 m ground / 4.5–5.0 m first floor</strong>, with the drawings pre-engineered to fall back to 4.0 m by condition rather than refusal.</p>
+
+  <h3>3.3 Roof — 50 m³ under Class B</h3>
+  <p>Class B permits +50 m³ of roof enlargement (detached; measured externally against the <em>original</em> roof) with <strong>no application, no neighbour consultation and no design discretion</strong> — conditions only: nothing above the existing ridge, nothing through the front roof plane, materials similar, side windows obscure-glazed, 0.2 m set-back up from the eaves. A full-width flat-roof rear box dormer is lawful; the set-back and original-wall limits are expressly disapplied for hip-to-gable enlargements and for an enlargement <em>"which joins the original roof to the roof of a rear or side extension"</em> — the L-shaped dormer over your new extension roofs. (Verified: that wording is original 2015 text, inherited from SI 2014/564 — it is settled law, not a recent novelty.) On a hipped roof, spend the 50 m³ on the rear dormer rather than hip-to-gable conversions, which eat the allowance and pick a needless design fight with the officer's hipped-roof position. Mansard: planning-only, officer hostile, skip. Class AA (extra full storeys): <strong>unavailable if the house predates 1 July 1948</strong> — confirm the build date, but an inter-war house is almost certainly excluded (AA.1(c), confirmed unchanged by SI 2026/313).</p>
+
+  <h3>3.3a Roof space — the maximisation plan</h3>
+  <p>Design it as ONE roof: a unified crown roof (hipped perimeter at the existing pitch, flat centre just below the 7.52 m ridge) over house + extension, consented in the same householder application — no volume cap applies. The moves below are the PD fallbacks if the crown is resisted: <strong>(1)</strong> The new two-storey extension's roof is <em>new build under planning permission</em> — the 50 m³ Class B cap does not apply to it. Design it from day one with attic trusses, a usable loft and rear rooflights inside the hipped form the officer demands: at ~11 m × 4–5 m on plan that is a substantial extra floor-in-the-roof, delivered invisibly inside the "matching hipped roof" she asked for. <strong>(2)</strong> Spend the whole Class B 50 m³ on one full-width flat-roof box dormer in the main rear slope (face set 0.2 m up from the eaves, top below the 7.5 m ridge, cheeks within the flank walls): on this roof (eaves ~5.15–5.5 m, ridge ~7.5 m, ~11 m wide) a full-width dormer runs ≈40–48 m³ — inside the allowance, but the volume calc must be done off the measured survey before building. Do <em>not</em> hip-to-gable: it burns ~15–20 m³ of the same allowance for less floor area and picks a needless fight with the hipped-roof position. <strong>(3)</strong> Link the main-roof dormer to the extension's attic with an enlargement joining the two roofs — expressly permitted within the same 50 m³ (the "L-shaped dormer" carve-out in B.2(b)). <strong>(4)</strong> Class C rooflights (≤0.15 m proud) on the front and side slopes for light — uncapped. <strong>(5)</strong> The garage wing's flat roof is not part of the original main roof, so it neither consumes nor gains Class B volume. Net result: a dormered main loft plus a full attic storey over the new extension, all below the existing ridge, with the only discretionary piece being the extension roof — which travels inside the planning application you are already making.</p>
+
+  <h3>3.4 Everything else</h3>
+  <p><strong>Side:</strong> the ~1.5 m gap to the No.113 boundary can be infilled single-storey (≤4 m high, eaves ≤3 m within 2 m of boundary, total side width ≤ half the original house). <strong>Front:</strong> nothing beyond the principal elevation except a 3 m² porch. <strong>Garden:</strong> Class E outbuildings up to 4 m (dual-pitched) — at 607 m² of plot the 50% cap leaves room for a very large garden room; keep it 2 m off boundaries or drop to 2.5 m height. <strong>Never:</strong> balconies/roof terraces (excluded from PD and a near-automatic privacy refusal at 0.78 m / 1.25 m gaps).</p>
+  </div>
+
+  <h2>4 · What you can actually do — four tiers, to scale</h2>
+  <div class="col"><p>Every line below is plotted at a consistent scale from the measured/scaled site data (28 px = 1 m plan; 26 px = 1 m section). <strong>G — Guaranteed</strong>: statutory rights, certifiable by LDC, no design discretion exists. <strong>E — Very easy</strong>: the officer's own written invitation; refusal would contradict her letter. <strong>L — Very likely</strong>: planning application with the full evidence pack; no policy number stands against it. <strong>H — Best hope</strong>: needs the "detached" point won by certificate (ground floor) or an appeal (first floor).</p></div>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 660 500" width="660" height="500" role="img" aria-label="To-scale plan of the four massing tiers at 115 Vicarage Road">
+      <!-- 28px/m; x=88 at No.113 boundary; y=376 original rear wall datum -->
+      <rect x="115" y="376" width="290" height="58" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.4"/>
+      <text x="260" y="410" text-anchor="middle" font-family="var(--disp)" font-size="13" fill="var(--ink)" letter-spacing="1">ORIGINAL HOUSE + GARAGE</text>
+      <line x1="88" y1="60" x2="88" y2="460" stroke="var(--grid)" stroke-width="1" stroke-dasharray="9 5"/>
+      <line x1="434.1" y1="60" x2="434.1" y2="460" stroke="var(--grid)" stroke-width="1" stroke-dasharray="9 5"/>
+      <text x="84" y="74" text-anchor="end" font-family="var(--disp)" font-size="11" fill="var(--ink-soft)">No.113 bdy</text>
+      <text x="438" y="74" font-family="var(--disp)" font-size="11" fill="var(--ink-soft)">No.117 bdy (garage abuts full length at front)</text>
+      <!-- existing block 4.39m -->
+      <rect x="115" y="253.1" width="289.8" height="122.9" fill="none" stroke="var(--grid)" stroke-width="1.6"/>
+      <text x="260" y="315" text-anchor="middle" font-family="var(--disp)" font-size="11" fill="var(--ink-soft)">EXISTING 4.39 m (2005 approved — lawful)</text>
+      <!-- G: GF 6.0m full width -->
+      <rect x="104.8" y="208" width="310.8" height="168" fill="none" stroke="var(--pass)" stroke-width="3"/>
+      <text x="110" y="202" font-family="var(--disp)" font-size="12" fill="var(--pass)">G · GF 6.00 m × 11.1 m — prior approval, any-house right</text>
+      <!-- G: FF 3m -->
+      <line x1="104.8" y1="292" x2="415.6" y2="292" stroke="var(--pass)" stroke-width="1.6" stroke-dasharray="5 4"/>
+      <text x="420" y="296" font-family="var(--disp)" font-size="10" fill="var(--pass)">G · FF 3.00 m (PD)</text>
+      <!-- E: FF 4m -->
+      <line x1="104.8" y1="264" x2="415.6" y2="264" stroke="var(--pass)" stroke-width="2.4" stroke-dasharray="12 4"/>
+      <text x="420" y="268" font-family="var(--disp)" font-size="11" fill="var(--pass)">E · FF 4.00 m (officer-invited)</text>
+      <!-- L: GF 6.7 / FF 5.0 -->
+      <line x1="104.8" y1="188.4" x2="415.6" y2="188.4" stroke="var(--warn)" stroke-width="2.4"/>
+      <text x="420" y="192" font-family="var(--disp)" font-size="11" fill="var(--warn)">L · GF 6.70 m (planning)</text>
+      <line x1="104.8" y1="236" x2="415.6" y2="236" stroke="var(--warn)" stroke-width="1.8" stroke-dasharray="12 4"/>
+      <text x="420" y="240" font-family="var(--disp)" font-size="11" fill="var(--warn)">L · FF 4.5–5.0 m (planning + evidence)</text>
+      <!-- H: GF 8 / FF 6 -->
+      <line x1="104.8" y1="152" x2="415.6" y2="152" stroke="var(--accent)" stroke-width="2.4" stroke-dasharray="7 5"/>
+      <text x="420" y="156" font-family="var(--disp)" font-size="11" fill="var(--accent)">H · GF 8.00 m (if "detached" wins)</text>
+      <line x1="104.8" y1="208" x2="415.6" y2="208" stroke="var(--accent)" stroke-width="1.2" stroke-dasharray="3 5"/>
+      <text x="420" y="220" font-family="var(--disp)" font-size="10" fill="var(--accent)">H · FF 6.00 m (appeal fight)</text>
+      <!-- side infill G -->
+      <rect x="88" y="376" width="27" height="58" fill="none" stroke="var(--pass)" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <text x="82" y="452" font-family="var(--disp)" font-size="9" fill="var(--pass)">G · side infill ~1 m, 1 storey</text>
+      <!-- tree -->
+      <circle cx="260" cy="100" r="9.8" fill="none" stroke="var(--warn)" stroke-width="2"/>
+      <text x="274" y="96" font-family="var(--disp)" font-size="10" fill="var(--warn)">700 mm ⌀ tree (~6 m out — position TBC; RPA 8.4 m radius)</text>
+      <circle cx="260" cy="100" r="235" fill="none" stroke="var(--warn)" stroke-width="0.7" stroke-dasharray="2 6" opacity="0.55"/>
+      <line x1="60" y1="376" x2="530" y2="376" stroke="var(--ink)" stroke-width="2.2"/>
+      <text x="60" y="392" font-family="var(--disp)" font-size="11" fill="var(--ink)">ORIGINAL REAR WALL — 0.00</text>
+      <text x="60" y="490" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">Scale 28 px = 1 m. Indicative massing diagram from measured data — not for setting out.</text>
+    </svg>
+  </div>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 660 320" width="660" height="320" role="img" aria-label="To-scale section of the four massing tiers">
+      <!-- 26px/m; x=200 original rear wall; ground y=270 -->
+      <line x1="30" y1="270" x2="630" y2="270" stroke="var(--ink)" stroke-width="2"/>
+      <!-- house body -->
+      <rect x="60" y="136" width="140" height="134" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.4"/>
+      <polygon points="60,136 125,74.5 200,136" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.4"/>
+      <text x="130" y="230" text-anchor="middle" font-family="var(--disp)" font-size="11" fill="var(--ink)">HOUSE · eaves 5.15 · ridge 7.52</text>
+      <!-- dormer G -->
+      <rect x="136" y="96" width="58" height="34" fill="none" stroke="var(--pass)" stroke-width="2.2"/>
+      <text x="133" y="90" text-anchor="end" font-family="var(--disp)" font-size="10" fill="var(--pass)">G · rear dormer ≤50 m³ (Class B, below ridge)</text>
+      <!-- existing block: mono-pitch 3.5 at house to 2.55 at 4.39m -->
+      <polygon points="200,270 200,179 314.2,203.7 314.2,270" fill="none" stroke="var(--grid)" stroke-width="1.6"/>
+      <text x="250" y="250" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">EXISTING 4.39 m</text>
+      <!-- G GF envelope 6m: eaves 3m, cap 4m -->
+      <line x1="314.2" y1="192" x2="356" y2="192" stroke="var(--pass)" stroke-width="3"/>
+      <line x1="356" y1="192" x2="356" y2="270" stroke="var(--pass)" stroke-width="3"/>
+      <line x1="200" y1="166" x2="356" y2="166" stroke="var(--pass)" stroke-width="1" stroke-dasharray="4 4"/>
+      <text x="360" y="188" font-family="var(--disp)" font-size="11" fill="var(--pass)">G · GF to 6.00 m — eaves ≤3.00, cap ≤4.00</text>
+      <!-- L GF 6.7 -->
+      <line x1="356" y1="196" x2="374.2" y2="196" stroke="var(--warn)" stroke-width="2.2"/>
+      <line x1="374.2" y1="196" x2="374.2" y2="270" stroke="var(--warn)" stroke-width="2.2"/>
+      <text x="360" y="248" font-family="var(--disp)" font-size="10" fill="var(--warn)">L · 6.70 m</text>
+      <!-- H GF 8 -->
+      <line x1="374.2" y1="200" x2="408" y2="200" stroke="var(--accent)" stroke-width="1.8" stroke-dasharray="7 4"/>
+      <line x1="408" y1="200" x2="408" y2="270" stroke="var(--accent)" stroke-width="1.8" stroke-dasharray="7 4"/>
+      <text x="414" y="234" font-family="var(--disp)" font-size="10" fill="var(--accent)">H · 8.00 m</text>
+      <!-- FF masses: E 4m hipped, wall to 5.15 eaves, ridge ~6.9 -->
+      <polyline points="200,136 304,136 304,192" fill="none" stroke="var(--pass)" stroke-width="2.6" stroke-dasharray="12 4"/>
+      <polyline points="200,90.6 268,90.6 304,136" fill="none" stroke="var(--pass)" stroke-width="1.6" stroke-dasharray="12 4"/>
+      <text x="230" y="128" font-family="var(--disp)" font-size="10" fill="var(--pass)">E · FF 4.00 m · hipped · attic inside (uncapped)</text>
+      <!-- L FF 5m -->
+      <polyline points="330,141 330,196" fill="none" stroke="var(--warn)" stroke-width="2" stroke-dasharray="12 4"/>
+      <text x="322" y="156" font-family="var(--disp)" font-size="10" fill="var(--warn)">L · 5.0</text>
+      <!-- H FF 6m -->
+      <polyline points="356,146 356,192" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-dasharray="3 5"/>
+      <text x="350" y="160" font-family="var(--disp)" font-size="10" fill="var(--accent)">H · 6.0</text>
+      <text x="30" y="300" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">Scale 26 px = 1 m. Heights from calibrated 2005 metrology; FF ridge drawn set below main ridge as the officer requires.</text>
+    </svg>
+  </div>
+
+  <div class="tablewrap"><table>
+    <tr><th>Tier</th><th>Ground floor</th><th>First floor</th><th>Roof</th><th>Route / status</th></tr>
+    <tr><td><span class="chip right">G · Guaranteed</span></td><td><span class="dim">6.00 m</span> × 11.1 m, eaves ≤3 m</td><td><span class="dim">3.00 m</span> two-storey (hip to match, ≥7 m to rear bdy)</td><td>≤<span class="dim">50 m³</span> rear dormer below ridge + rooflights</td><td>Statutory rights; £249 notification + LDCs; no design discretion exists to refuse</td></tr>
+    <tr><td><span class="chip right">E · Very easy</span></td><td>as G</td><td><span class="dim">4.00 m</span> full width, hipped</td><td>+ full attic storey inside the new extension roof (uncapped — part of the consent)</td><td>Householder application drawn to the officer's own letter</td></tr>
+    <tr><td><span class="chip invite">L · Very likely</span></td><td><span class="dim">6.70 m</span> (planning; officer never objected to GF depth; BRE numbers pass)</td><td><span class="dim">4.5–5.0 m</span> with set-in flanks, chamfered 113 corner, ridge set-down</td><td>as E + L-shaped dormer link</td><td>Same application, evidence pack + Mansell fallback; free resubmission at 4.0 m if pushed back</td></tr>
+    <tr><td><span class="chip push">H · Best hope</span></td><td><span class="dim">8.00 m</span> — only if "detached" survives the garage link (s.192 LDC test, £~265)</td><td><span class="dim">6.00 m</span> — appeal territory</td><td>as L</td><td>Don't build on either until certificated/won; nothing else waits for them</td></tr>
+  </table></div>
+
+  <h2>4a · Maximum floor plans — assuming fully detached</h2>
+  <div class="col"><p>Each floor drawn to scale (28 px = 1 m) with the factor that limits every edge written on that edge. Premise: the s.192 test confirms "detached", so the 8 m prior-approval right stands.</p></div>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 700 640" width="700" height="640" role="img" aria-label="Accurate maximum ground floor plan with existing"><text x="30" y="30" font-family="var(--disp)" font-size="15" fill="var(--ink)" letter-spacing="1.5">GROUND FLOOR — FLUSH SCHEME (walls on existing lines)</text><line x1="88.0" y1="162.4" x2="88.0" y2="602.0" stroke="var(--grid)" stroke-width="1" stroke-dasharray="9 5"/><line x1="434.1" y1="162.4" x2="434.1" y2="602.0" stroke="var(--grid)" stroke-width="1" stroke-dasharray="9 5"/><text x="83.8" y="168.0" text-anchor="end" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">No.113 bdy</text><text x="438.0" y="168.0" text-anchor="start" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">No.117 bdy</text><line x1="4.0" y1="325.9" x2="88.0" y2="325.9" stroke="var(--grid)" stroke-width="1.4"/><rect x="17.7" y="322.9" width="23.0" height="6" fill="var(--grid)"/><text x="6.8" y="310.8" text-anchor="start" font-family="var(--disp)" font-size="9" fill="var(--ink-soft)">113 kitchen wall + window</text><line x1="442.5" y1="277.5" x2="513.6" y2="277.5" stroke="var(--grid)" stroke-width="1.4"/><line x1="442.5" y1="277.5" x2="442.5" y2="420.0" stroke="var(--grid)" stroke-width="2.2"/><text x="444.2" y="266.0" text-anchor="start" font-family="var(--disp)" font-size="9" fill="var(--ink-soft)">117 conservatory end = 5.09 m</text><line x1="60.0" y1="420.0" x2="530.4" y2="420.0" stroke="var(--ink)" stroke-width="2.2"/><text x="457.6" y="434.0" text-anchor="start" font-family="var(--disp)" font-size="9" fill="var(--ink)">ORIGINAL REAR WALL 0.00</text><rect x="115.2" y="252.0" width="289.8" height="168.0" fill="var(--pass)" fill-opacity="0.09" stroke="var(--pass)" stroke-width="3"/><text x="115.2" y="231.0" text-anchor="start" font-family="var(--disp)" font-size="10.5" fill="var(--pass)">GF 6.00 m (PD secure; 8.00 m if detached wins) × 10.35 m — FLANKS CONTINUE THE EXISTING BLOCK LINES</text><text x="115.2" y="242.2" text-anchor="start" font-family="var(--disp)" font-size="9" fill="var(--pass)">eaves ≤3.00 m both flanks (A.1(i)) · height ≤4.00 m · walls rebuilt on same lines, new founds (2005 footings inadequate)</text><text x="260.2" y="270.2" text-anchor="middle" font-family="var(--disp)" font-size="9.5" fill="var(--pass)">NEW KITCHEN / DINING / FAMILY +1.64 m beyond existing (+3.64 m if 8 m)</text><rect x="115.2" y="297.9" width="289.8" height="122.1" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.8"/><text x="260.2" y="310.8" text-anchor="middle" font-family="var(--disp)" font-size="9" fill="var(--ink)">EXISTING BLOCK 4.36 m — subsumed; flank lines retained</text><line x1="225.5" y1="420.0" x2="225.5" y2="297.9" stroke="var(--ink)" stroke-width="1"/><line x1="362.7" y1="420.0" x2="362.7" y2="297.9" stroke="var(--ink)" stroke-width="1"/><text x="170.3" y="358.4" text-anchor="middle" font-family="var(--disp)" font-size="9" fill="var(--ink-soft)">CONSERVATORY</text><text x="294.1" y="358.4" text-anchor="middle" font-family="var(--disp)" font-size="9" fill="var(--ink-soft)">KITCHEN</text><text x="383.8" y="358.4" text-anchor="middle" font-family="var(--disp)" font-size="8" fill="var(--ink-soft)">W/C</text><rect x="130.6" y="420.0" width="225.4" height="151.2" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.8"/><rect x="356.0" y="420.0" width="70.6" height="151.2" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.8"/><text x="243.3" y="492.8" text-anchor="middle" font-family="var(--disp)" font-size="10" fill="var(--ink)">THROUGH LOUNGE · STUDY · LOBBY</text><text x="391.2" y="492.8" text-anchor="middle" font-family="var(--disp)" font-size="10" fill="var(--ink)">GARAGE</text><text x="391.2" y="512.4" text-anchor="middle" font-family="var(--disp)" font-size="8" fill="var(--ink-soft)">(abuts 117)</text><rect x="149.6" y="571.2" width="70.0" height="19.6" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.4"/><circle cx="260.2" cy="128.8" r="9.8" fill="none" stroke="var(--warn)" stroke-width="2"/><text x="275.6" y="123.2" text-anchor="start" font-family="var(--disp)" font-size="9" fill="var(--warn)">700 mm ⌀ tree (pos. TBC) — RPA 8.4 m: piled founds rear zone</text></svg>
+  </div>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 700 640" width="700" height="640" role="img" aria-label="Accurate maximum first floor plan with existing"><text x="30" y="30" font-family="var(--disp)" font-size="15" fill="var(--ink)" letter-spacing="1.5">FIRST FLOOR — FLUSH SCHEME (stacked walls, no steps)</text><line x1="88.0" y1="162.4" x2="88.0" y2="602.0" stroke="var(--grid)" stroke-width="1" stroke-dasharray="9 5"/><line x1="434.1" y1="162.4" x2="434.1" y2="602.0" stroke="var(--grid)" stroke-width="1" stroke-dasharray="9 5"/><text x="83.8" y="168.0" text-anchor="end" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">No.113 bdy</text><text x="438.0" y="168.0" text-anchor="start" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">No.117 bdy</text><line x1="4.0" y1="325.9" x2="88.0" y2="325.9" stroke="var(--grid)" stroke-width="1.4"/><rect x="17.7" y="322.9" width="23.0" height="6" fill="var(--grid)"/><text x="6.8" y="310.8" text-anchor="start" font-family="var(--disp)" font-size="9" fill="var(--ink-soft)">113 kitchen wall + window</text><line x1="442.5" y1="277.5" x2="513.6" y2="277.5" stroke="var(--grid)" stroke-width="1.4"/><line x1="442.5" y1="277.5" x2="442.5" y2="420.0" stroke="var(--grid)" stroke-width="2.2"/><text x="444.2" y="266.0" text-anchor="start" font-family="var(--disp)" font-size="9" fill="var(--ink-soft)">117 conservatory end = 5.09 m</text><line x1="60.0" y1="420.0" x2="530.4" y2="420.0" stroke="var(--ink)" stroke-width="2.2"/><text x="457.6" y="434.0" text-anchor="start" font-family="var(--disp)" font-size="9" fill="var(--ink)">ORIGINAL REAR WALL 0.00</text><rect x="115.2" y="252.0" width="289.8" height="168.0" fill="none" stroke="var(--pass)" stroke-width="1" stroke-dasharray="3 5"/><text x="407.2" y="246.4" text-anchor="end" font-family="var(--disp)" font-size="8.5" fill="var(--pass)">GF envelope below (ghost)</text><rect x="115.2" y="280.0" width="289.8" height="140.0" fill="var(--warn)" fill-opacity="0.12" stroke="var(--warn)" stroke-width="3"/><text x="115.2" y="231.0" text-anchor="start" font-family="var(--disp)" font-size="10.5" fill="var(--warn)">FF MAX 5.00 × 10.35 m — FLUSH ABOVE GF, WALLS STACK (no transfer structure, no steps)</text><text x="115.2" y="242.2" text-anchor="start" font-family="var(--disp)" font-size="9" fill="var(--warn)">45°: ¼-pt line from 113 kitchen allows 6.01 m at this flank · rear face sits 0.09 m SHORT of 117 conservatory end (5.09 m)</text><text x="260.2" y="298.2" text-anchor="middle" font-family="var(--disp)" font-size="9.5" fill="var(--warn)">2–3 NEW BEDROOMS + BATH · flank windows obscure-glazed</text><line x1="115.2" y1="308.0" x2="405.0" y2="308.0" stroke="var(--pass)" stroke-width="2" stroke-dasharray="12 4"/><text x="409.2" y="309.4" text-anchor="start" font-family="var(--disp)" font-size="8.5" fill="var(--pass)">4.00 m — officer-invited (her scheme was full-width too)</text><line x1="115.2" y1="252.0" x2="405.0" y2="252.0" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="3 5"/><text x="409.2" y="253.4" text-anchor="start" font-family="var(--disp)" font-size="8.5" fill="var(--accent)">6.00 m — appeal max</text><text x="107.3" y="350.0" text-anchor="start" font-family="var(--mono)" font-size="11" fill="var(--warn)">5.00 m</text><rect x="130.6" y="420.0" width="225.4" height="151.2" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.8"/><rect x="356.0" y="420.0" width="70.6" height="151.2" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.8"/><text x="243.3" y="487.2" text-anchor="middle" font-family="var(--disp)" font-size="9" fill="var(--ink)">BED 1 · BED 2 · BED 3 · BED 4 · BATH · LANDING</text><text x="391.2" y="487.2" text-anchor="middle" font-family="var(--disp)" font-size="8.5" fill="var(--ink)">WING over garage</text><rect x="149.6" y="571.2" width="70.0" height="19.6" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.4"/><text x="260.2" y="386.4" text-anchor="middle" font-family="var(--disp)" font-size="8" fill="var(--ink-soft)">FF bears on the NEW stacked flank walls — 2005 footings replaced within same lines</text></svg>
+  </div>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 660 600" width="660" height="600" role="img" aria-label="Maximum roof plan">
+      <text x="30" y="30" font-family="var(--disp)" font-size="15" fill="var(--ink)" letter-spacing="1.5">ROOF — MAXIMUM: ONE UNIFIED CROWN ROOF</text>
+      <text x="30" y="48" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">One structure over house + extension · perimeter slopes at the existing ~41° pitch · flat centre for headroom · garden at top</text>
+      <line x1="88" y1="60" x2="88" y2="560" stroke="var(--grid)" stroke-width="1" stroke-dasharray="9 5"/>
+      <line x1="434.1" y1="60" x2="434.1" y2="560" stroke="var(--grid)" stroke-width="1" stroke-dasharray="9 5"/>
+      <text x="84" y="74" text-anchor="end" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">No.113 bdy</text>
+      <text x="438" y="74" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">No.117 bdy</text>
+      <polygon points="115.2,350.0 115.2,210.0 405.0,210.0 405.0,350.0 356.0,350.0 356.0,501.2 130.6,501.2 130.6,350.0" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/>
+      <polygon points="202.8,282.8 312.0,282.8 312.0,428.4 202.8,428.4" fill="var(--pass)" fill-opacity="0.16" stroke="var(--pass)" stroke-width="2.4"/>
+      <line x1="126.1" y1="210.0" x2="202.8" y2="282.8" stroke="var(--ink)" stroke-width="0.8"/>
+      <line x1="387.6" y1="210.0" x2="312.0" y2="282.8" stroke="var(--ink)" stroke-width="0.8"/>
+      <line x1="130.6" y1="501.2" x2="202.8" y2="428.4" stroke="var(--ink)" stroke-width="0.8"/>
+      <line x1="356.0" y1="501.2" x2="312.0" y2="428.4" stroke="var(--ink)" stroke-width="0.8"/>
+      <text x="257.4" y="338.8" text-anchor="middle" font-family="var(--disp)" font-size="11" fill="var(--pass)">FLAT CROWN ≈7.40–7.50 m — one loft storey, ~20–25 m² full headroom (~1.9–2.0 m int.)</text>
+      <text x="257.4" y="359.8" text-anchor="middle" font-family="var(--disp)" font-size="9.5" fill="var(--pass)">LIMIT: no part above the existing ridge 7.52 m (subservience / B.1(b) fallback) — survey-verify the ridge; every 100 mm is headroom</text>
+      <text x="257.4" y="228.2" text-anchor="middle" font-family="var(--disp)" font-size="10" fill="var(--ink)">rear slope: dormer/rooflights — garden outlook</text>
+      <text x="257.4" y="487.2" text-anchor="middle" font-family="var(--disp)" font-size="10" fill="var(--ink)">front slope RETAINED at existing plane — crown invisible from the street (B.1(c) logic)</text>
+      <text x="135.6" y="308.0" font-family="var(--disp)" font-size="9" fill="var(--ink-soft)" transform="rotate(-90 135.6 308.0)">side slopes ~41° — obscure rooflights only</text>
+      <text x="30" y="520" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">ROUTE: the whole unified roof travels in the ONE householder application with the first floor — no volume cap applies to a consented roof.</text>
+      <text x="30" y="536" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">Merits: perimeter hips match the existing form in every public view; ridge not raised; reads as one coherent house, not a bolt-on.</text>
+      <text x="30" y="552" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">FALLBACK if the crown is resisted: (a) Class B crown re-roof of the MAIN body alone ≈ +35–40 m³ (inside the 50 m³ cap, no application) with the extension attic tied in at the junction; (b) the two-roof scheme. Both keep the same first-floor envelope.</text>
+    </svg>
+  </div>
+
+  <h2>4b · Plan geometry — the 45° lines</h2>
+  <div class="figwrap">
+    <svg viewBox="0 0 640 470" width="640" height="470" role="img" aria-label="Plan diagram of the rear extension envelope at 115 Vicarage Road showing 45-degree lines from both neighbours">
+      <!-- scale: 28px = 1m. x0=88 at No.113 boundary; y0=376 at original rear wall, garden upward -->
+      <defs>
+        <pattern id="hatch" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+          <line x1="0" y1="0" x2="0" y2="7" stroke="var(--grid)" stroke-width="1.1"/>
+        </pattern>
+      </defs>
+      <!-- house body below datum -->
+      <rect x="115" y="376" width="290" height="62" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.4"/>
+      <text x="260" y="412" text-anchor="middle" font-family="var(--disp)" font-size="13" fill="var(--ink)" letter-spacing="1">ORIGINAL HOUSE</text>
+      <rect x="405" y="376" width="70" height="62" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.4"/>
+      <text x="440" y="412" text-anchor="middle" font-family="var(--disp)" font-size="11" fill="var(--ink-soft)">GARAGE</text>
+      <!-- existing rear block 4.36m deep, x 0.97..11.32 -->
+      <rect x="115" y="253.9" width="289.8" height="122.1" fill="url(#hatch)" stroke="var(--grid)" stroke-width="1.3"/>
+      <text x="260" y="316" text-anchor="middle" font-family="var(--disp)" font-size="12" fill="var(--ink)">EXISTING BLOCK — drawn 4.36 m</text>
+      <!-- boundaries -->
+      <line x1="88" y1="28" x2="88" y2="452" stroke="var(--grid)" stroke-width="1" stroke-dasharray="9 5"/>
+      <line x1="434.1" y1="28" x2="434.1" y2="452" stroke="var(--grid)" stroke-width="1" stroke-dasharray="9 5"/>
+      <text x="84" y="42" text-anchor="end" font-family="var(--disp)" font-size="11" fill="var(--ink-soft)">No.113 boundary</text>
+      <text x="438" y="42" font-family="var(--disp)" font-size="11" fill="var(--ink-soft)">No.117 boundary</text>
+      <!-- 113 kitchen wall at y=+3.36 (y=281.9), window centre x=-2.10 (x=29.2) -->
+      <line x1="0" y1="281.9" x2="88" y2="281.9" stroke="var(--ink)" stroke-width="1.4"/>
+      <rect x="17.7" y="278.9" width="45.9" height="6" fill="var(--accent)"/>
+      <text x="8" y="272" font-family="var(--disp)" font-size="11" fill="var(--ink-soft)">No.113 kitchen window</text>
+      <!-- 117 conservatory: front at y=5.09 (y=233.4), from boundary+0.30 (x=442.5) width to plot edge -->
+      <line x1="442.5" y1="233.4" x2="530" y2="233.4" stroke="var(--ink)" stroke-width="1.4"/>
+      <line x1="442.5" y1="233.4" x2="442.5" y2="376" stroke="var(--ink)" stroke-width="2.6"/>
+      <text x="447" y="225" font-family="var(--disp)" font-size="11" fill="var(--ink-soft)">No.117 conservatory (solid side wall)</text>
+      <!-- 45 line from 113 window centre (29.2, 281.9) going up-right at 45: to x=115 -> dy=85.8 -> y=196.1 ; extend to y=100 -->
+      <line x1="29.2" y1="281.9" x2="211" y2="100" stroke="var(--accent)" stroke-width="1.6" stroke-dasharray="7 5"/>
+      <text x="120" y="185" font-family="var(--disp)" font-size="11" fill="var(--accent)" transform="rotate(-45 130 190)">45° — centre = 6.43 m</text>
+      <!-- 45 line from 113 window quarter point (40.7,281.9) -->
+      <line x1="40.7" y1="281.9" x2="222" y2="100.4" stroke="var(--accent)" stroke-width="1" stroke-dasharray="3 5"/>
+      <!-- 45 from 117 conservatory glazing centre approx x=14.13m => 483.6, y=233.4; going up-left -->
+      <line x1="483.6" y1="233.4" x2="330" y2="79.8" stroke="var(--accent)" stroke-width="1.6" stroke-dasharray="7 5"/>
+      <text x="418" y="150" font-family="var(--disp)" font-size="11" fill="var(--accent)" transform="rotate(45 428 155)">45° — 7.92 m</text>
+      <!-- envelope depth lines from datum y=376: 8m => y=152 ; 6.7m => y=188.4 ; 6m => y=208 ; 4m => y=264 ; 3m => y=292 -->
+      <line x1="105" y1="152" x2="445" y2="152" stroke="var(--accent)" stroke-width="2.6" stroke-dasharray="8 5"/>
+      <text x="452" y="156" font-family="var(--disp)" font-size="12" fill="var(--accent)">8.00 m — GF upside (if "detached" stands)</text>
+      <line x1="105" y1="208" x2="445" y2="208" stroke="var(--warn)" stroke-width="1.6" stroke-dasharray="10 5"/>
+      <text x="452" y="212" font-family="var(--disp)" font-size="11" fill="var(--warn)">6.00 m — GF secure PD / FF best-hope</text>
+      <line x1="105" y1="264" x2="445" y2="264" stroke="var(--pass)" stroke-width="2"/>
+      <text x="452" y="268" font-family="var(--disp)" font-size="11" fill="var(--pass)">4.00 m — FF officer-invited</text>
+      <line x1="105" y1="292" x2="445" y2="292" stroke="var(--pass)" stroke-width="1.2" stroke-dasharray="4 4"/>
+      <text x="452" y="296" font-family="var(--disp)" font-size="10" fill="var(--pass)">3.00 m — FF as-of-right (PD)</text>
+      <!-- datum -->
+      <line x1="60" y1="376" x2="530" y2="376" stroke="var(--ink)" stroke-width="2.2"/>
+      <text x="60" y="392" font-family="var(--disp)" font-size="11" fill="var(--ink)">ORIGINAL REAR WALL — datum 0.00</text>
+      <text x="60" y="460" font-family="var(--disp)" font-size="10" fill="var(--ink-soft)">Indicative only — drawn from D01/D03 written dims + vector-scaled geometry. Not for setting out.</text>
+    </svg>
+    <div class="legend">
+      <span><span class="sw" style="border-color:var(--accent)"></span>45° code lines / PD max</span>
+      <span><span class="sw" style="border-color:var(--pass)"></span>banked tiers</span>
+      <span><span class="sw" style="border-color:var(--warn);border-top-style:dashed"></span>push tier</span>
+    </div>
+  </div>
+  <div class="col">
+  <p>The geometry cross-checks: a 45° line from the centre of No.113's kitchen window lands <span class="dim">6.43 m</span> from the datum on the west flank — matching the architect's written <span class="dim">6433</span>; his quarter-point construction gives <span class="dim">6008</span>; the No.117 conservatory-centre construction gives <span class="dim">7.92 m</span> at the east flank (written <span class="dim">3562</span> beyond the existing block). Two watch-points from the independent daylight computation: at <strong>6.7 m</strong> ground-floor depth the mid-point 45° line from No.113's kitchen window is crossed by ~0.3–0.6 m (the 6.0 m depth clears it), and the "met from both neighbours" pre-app finding is only reproducible at No.117 if the point is taken on the conservatory glazing rather than its boundary corner. Neither kills the deep scheme — the code is SPD guidance beneath Policy DM2 and the BRE numbers pass — but it is exactly where an objector would aim, so the submission drawings must show the construction from every candidate point.</p>
+  </div>
+
+  <h2>5 · Sequencing — the order that makes it stick</h2>
+  <div class="col">
+  <ol class="qs">
+    <li><strong>Measured survey + fact pack</strong> (see §8). Resolve the three conflicting depths of the existing block; measure its eaves; confirm nothing touches a neighbouring structure; get title/build dates.</li>
+    <li><strong>Regularise the existing block</strong> if it exceeds the 2005 approval: s.191 certificate (built c.2005 → long immune under the preserved 4-year rule; SI 2024/452 reg 5 / LURA 2023 s.115 verified).</li>
+    <li><strong>Prior approval notification for the 6.00 m ground floor</strong> (£249). Description: 6.00 m beyond original rear wall, 4.00 m max height, 3.00 m eaves — the "any dwellinghouse" limit, immune to the detached/link-detached argument. Attach nothing you don't have to. If No.113 objects, the amenity file (pre-app letter + BRE note) answers it. 42 days later — or on written approval — the right crystallises. Then s.192 LDC to make it conclusive (s.192(4): lawfulness "conclusively presumed"). The 8.00 m upside is tested separately by LDC only if the extra 2 m is wanted (see §3.1) — nothing else waits for it.</li>
+    <li><strong>s.192 LDCs for the Class B dormer and the 3 m two-storey fallback</strong> — cheap certificates that turn PD analysis into conclusive documents and freeze the position against any future Article 4 direction or GPDO amendment.</li>
+    <li><strong>Householder application:</strong> two-storey rear at 4.5–5.0 m (fallback to 4.0 m by amendment/condition), hipped roof matching, first floor set in from No.117, chamfered No.113 corner, obscure-glazed flank windows, and re-roof of the flat-roofed side wing in a matching hip offered as betterment. Evidence pack: 45° compliance drawing from every candidate datum (plan <em>and</em> sections), BRE daylight note, floor-area subservience schedule, SuDS note, parking/bin plan, D&amp;A quoting the pre-app paragraph by paragraph, Mansell fallback statement, 834 Walsall Road appeal, 95 Vicarage Road (2020/06341/PA) consistency point (make-weight only — but you hold the decision notice and delegated report, same officer).</li>
+    <li><strong>If refused on depth alone:</strong> appeal the deeper scheme while building out the consented/PD elements — nothing in the appeal delays the 8 m ground floor or the loft.</li>
+  </ol>
+  <div class="callout"><strong>Hygiene that protects the "cannot be contested" status:</strong> use the true owner/applicant name on every formal submission and LDC (a certificate obtained on false or misleading information can be revoked — s.193(7) TCPA 1990; the pre-app went in under a name that matches neither the owner nor the deed). Serve Party Wall Act notices early on both neighbours (works within 3 m/6 m of their structures). Get the Severn Trent asset map before designing foundations near the alleyway. Build exactly what the notification/LDC describes — deviations forfeit the protection.</div>
+  </div>
+
+  <h2>6 · Every refusal ground, pre-answered</h2>
+  <div class="tablewrap"><table>
+    <tr><th>Ground the LPA could raise</th><th>Policy hook</th><th>Risk here</th><th>Kill it by</th></tr>
+    <tr><td>Overdevelopment / not subservient</td><td>Design Guide LW-16, DP16 §2.116, PG3</td><td>High at 6 m two-storey; nil at 4 m; n/a to PD elements</td><td>4 m base + push-tier design levers; no numeric cap exists; 834 Walsall Rd appeal</td></tr>
+    <tr><td>45° Code — No.113 side</td><td>City Note LW-4 (under DM2)</td><td>Real above ~6 m GF / above 4 m FF at the corner</td><td>Chamfer/step the No.113 corner (architect already drew it); compliance drawing from centre <em>and</em> quarter point</td></tr>
+    <tr><td>45° Code — No.117 side</td><td>City Note LW-4</td><td>Low — officer takes datum at conservatory end (+0.73 m)</td><td>Lock her written concession into the drawings; sensitivity check from every candidate point</td></tr>
+    <tr><td>Loss of light (BRE)</td><td>DM2; BR209 (2022)</td><td>Low — VSC ratios 0.90–1.00 computed at both windows</td><td>Commission a formal BRE note for the file (~£500–900)</td></tr>
+    <tr><td>Overbearing / enclosure at No.117</td><td>DM2 outlook</td><td>Medium if two-storey runs to the boundary</td><td>First floor set in ≥1 m; single-storey only within ~1 m of the fence; hip pitching away</td></tr>
+    <tr><td>Privacy / overlooking</td><td>DM2; 5 m-per-storey flank rule (95 Vicarage Rd report)</td><td>Medium — flank windows over 1.25 m alley</td><td>Obscure-glazed, non-opening below 1.7 m (also the PD condition); principal outlooks rearward</td></tr>
+    <tr><td>Roof form not matching hip</td><td>Pre-app; LW-16</td><td>High for flat/gable/mansard at first floor</td><td>Hip everything two-storey; offer side-wing re-roof as betterment</td></tr>
+    <tr><td>Overshadowing of gardens</td><td>DM2; BRE sun-hours</td><td>Orientation-dependent (unknown)</td><td>Confirm orientation; run the 2-hour/50% garden test if the rear faces N–E</td></tr>
+    <tr><td>Street scene / terracing</td><td>PG3; LW-18</td><td>Low — rear invisible from Vicarage Rd; no further side widening proposed</td><td>State it in the D&amp;A; keep first-floor side massing at existing width</td></tr>
+    <tr><td>Trees</td><td>TP7; BS 5837</td><td>Unknown — tree near rear elevation in photos</td><td>Survey any stem &gt;75 mm within 12 m; check TPO register</td></tr>
+    <tr><td>Drainage / SuDS</td><td>DM DPD; Class F permeability</td><td>Paperwork-only</td><td>One-page SuDS note; permeable frontage spec; soakaways to BRE 365</td></tr>
+    <tr><td>Parking (garage conversion)</td><td>Parking SPD</td><td>Low-medium</td><td>Keep two spaces + cycle store on the drawing; cite rail station proximity</td></tr>
+    <tr><td>Own-house daylight (deep plan)</td><td>NPPF ch.12; DM DPD</td><td>Low</td><td>Open-plan trapped rooms; rooflights over the single-storey run</td></tr>
+    <tr><td>Garden retention</td><td>DM DPD standards</td><td>Nil — ~30 m garden</td><td>Annotate retained area on the block plan</td></tr>
+    <tr><td>Balcony / terrace privacy</td><td>DM2 + PD exclusion</td><td>Fatal if included</td><td>Omit entirely; no Juliet projections</td></tr>
+    <tr><td>PD-removal condition on new consent</td><td>art.3(4) GPDO</td><td>Watch-point</td><td>Resist/negotiate any such condition; appeal it if imposed (Dunnett requires clear words)</td></tr>
+    <tr><td>Sewer build-over (non-planning)</td><td>Building Regs H4</td><td>Project risk near the alley</td><td>Severn Trent map + build-over agreement pre-design</td></tr>
+    <tr><td>Party Wall (non-planning)</td><td>PWA 1996 ss.1/2/6</td><td>Programme risk — hostile No.113</td><td>Serve notices early; budget for adjoining-owner surveyors</td></tr>
+  </table></div>
+
+  <h2>7 · Daylight geometry — computed results</h2>
+  <div class="tablewrap"><table>
+    <tr><th>Scheme</th><th>No.117 (conservatory / side window)</th><th>No.113 (kitchen rear window)</th></tr>
+    <tr><td>GF 6.0 m</td><td>Passes 45° Code from conservatory end (+0.12 m spare); BRE screens pass; VSC ratio ~1.00</td><td>Passes plan 45° from window centre (0.07–0.43 m spare); VSC 0.97</td></tr>
+    <tr><td>GF 6.7 m</td><td>Passes as the officer applies it (glazing datum); crosses a boundary-corner construction by ~0.58 m</td><td><strong>Crosses the mid-point 45° line by ~0.3–0.6 m</strong>; BRE 45° approach still passes (3 m wall under the elevation line); VSC 0.96</td></tr>
+    <tr><td>GF 8.0 m (PD)</td><td colspan="2">45° Code is not the statutory test at prior approval — amenity is. A ≤3 m-eaves wall at ≥3.1 m lateral separation passes every BRE screen; VSC impact marginal. This is why the deep ground floor travels by prior approval, not planning.</td></tr>
+    <tr><td>FF 4.0 m</td><td>All tests pass; VSC 0.97</td><td>All tests pass (quarter-point and mid-point); VSC 0.95</td></tr>
+    <tr><td>FF 6.0 m</td><td>BRE screen fails (51.6° &gt; 45°) but VSC passes at 0.93</td><td>Knife-edge on the 2006 quarter-point rule (±0.3 m); passes an LW-4 mid-point reading; VSC 0.90</td></tr>
+  </table></div>
+  <p class="src col">Assumptions: window centres 1.5 m AFFL, GF wall 3.0 m, two-storey wall 5.7 m, CIE overcast integration, neighbour structures as drawn on D01. Screening estimates — a surveyor's BR209 assessment is the formal evidence for a contested application.</p>
+
+  <h2>8 · Survey data — provenance and conflicts</h2>
+  <div class="tablewrap"><table>
+    <tr><th>Item</th><th>Value</th><th>Provenance</th><th>Status</th></tr>
+    <tr><td>Plot area</td><td><span class="dim">607.14 m²</span></td><td>Written on location plan (Drg 001)</td><td>Reliable</td></tr>
+    <tr><td>Plot width</td><td><span class="dim">~12.36 m</span></td><td>Vector-scaled from D01 @1:100</td><td>Scaled — confirm</td></tr>
+    <tr><td>Existing rear block depth</td><td><span class="dim big">4.39 m ±0.08</span> approved (scaled by calibrated metrology off Drg 381/02 A plan) — matches Ruhel's drawn <span class="dim">4.36 m</span>. The "3.3 m" was the Catnic lintel span, not a depth; your "~5 m" to Asam remains the outlier to kill on site</td><td>2005 approved drawing 381/02 A, scale-bar-calibrated (47.65 px/m); D01</td><td><strong>RESOLVED — existing block ≈ as approved 2005, lawful</strong></td></tr>
+    <tr><td>Existing block eaves height</td><td>2005 elevations draw the rear fascia at <span class="dim">2.42–2.72 m</span>, mono-pitch (~9–10°) rising to <span class="dim">~3.5 m</span> at the house wall; photos read ~2.9–3.1 m</td><td>381/02 A elevations (3 views) / photos</td><td><strong>Likely ≤3.00 m ✓ — confirm by tape (PD limit)</strong></td></tr>
+    <tr><td>Orientation</td><td>Rear elevation faces <span class="dim">SOUTH-EAST</span> (titled on 381/02 A); No.117 = SW side, No.113 = NE side</td><td>2005 drawings + officer-report appendix map</td><td>Resolved — only No.113 needs a sunlight (APSH) glance</td></tr>
+    <tr><td>Ownership</td><td>Purchased; registration to Sultana Uddin pending at HM Land Registry (register snapshot of Aug 2025 still shows the seller, Yousaf Khan — title WM833614)</td><td>HM Land Registry summary + owner's confirmation</td><td>Applicant = Sultana Uddin; use Certificate B + notice to the registered proprietor until registration completes, then Certificate A</td></tr>
+    <tr><td>Main eaves / ridge</td><td><span class="dim">~5.2–5.5 m</span> / <span class="dim">~7.5–8.0 m</span></td><td>Photo estimate</td><td>Survey for dormer/FF design</td></tr>
+    <tr><td>House width (excl. garage) / with garage</td><td><span class="dim">~8.05 m</span> / <span class="dim">~10.57 m</span></td><td>D01 vectors</td><td>Scaled</td></tr>
+    <tr><td>Extension flank → No.117 boundary / → conservatory</td><td><span class="dim">~1.03 m</span> / <span class="dim">+0.30 m</span> (you measured the gap at <span class="dim">0.78 m</span> wall-to-wall)</td><td>D01 vectors / site tape 29.04.26</td><td>Consistent ±0.25 m</td></tr>
+    <tr><td>No.117 conservatory beyond 115's block</td><td><span class="dim">0.73 m</span> (drawn) / <span class="dim">0.60 m</span> (your tape)</td><td>D01 / 29.04.26</td><td>Consistent</td></tr>
+    <tr><td>No.113: 115's block projects beyond hers</td><td><span class="dim">~1.0 m</span> (drawn) / <span class="dim">1.36 m</span> (your tape)</td><td>D01 / 29.04.26</td><td>±0.36 m — survey</td></tr>
+    <tr><td>No.113 kitchen window</td><td>width <span class="dim">~1.64 m</span>, jamb <span class="dim">~1.28 m</span> off boundary; your tape: centre <span class="dim">1.80 m</span> from her extension corner</td><td>D01 / 29.04.26</td><td>Consistent</td></tr>
+    <tr><td>No.117 side window</td><td><span class="dim">2.30 m</span> from fence; centre <span class="dim">3.70 m</span> from her rear wall</td><td>Your tape 29.04.26</td><td>Position ambiguity flagged</td></tr>
+    <tr><td>Alleyway to No.113</td><td><span class="dim">1.25 m</span> (tape) / <span class="dim">~1.42 m</span> (drawn)</td><td>29.04.26 / D01</td><td>±0.17 m</td></tr>
+    <tr><td>Proposed GF (architect)</td><td><span class="dim">6008</span> → <span class="dim">6710 × 11109 mm</span></td><td>Written dims, D03 / D03 rev A (30.07.26)</td><td>Reliable as drawn</td></tr>
+    <tr><td>House type</td><td>Link-attached: the garage abuts No.117's structure for its whole length (owner-confirmed, matching the "link detached" sale listing). Officer's letter says "detached" — evidence for the LDC test, not proof</td><td>Owner 04.08.26; pre-app letter; sale listing</td><td><strong>"Detached" status unresolved — determines 6 m vs 8 m; establish what 117's abutting structure is and whether it attaches to her house</strong></td></tr>
+    <tr><td>Rear-garden tree</td><td>~<span class="dim">700 mm</span> stem diameter, ~6 m beyond the current built line (position to be fixed). BS 5837 RPA = 12 × stem ⌀ ≈ <span class="dim">8.4 m</span> radius — deep foundations/piling likely inside it; check the TPO register (free)</td><td>Owner 04.08.26</td><td>Survey position + species; TPO check before any pruning/removal</td></tr>
+  </table></div>
+
+  <h2>9 · What was verified, and how</h2>
+  <div class="col">
+  <p>Twenty-one research agents ran across four passes: document ingestion (every drawing, photo, portal document and pre-app screenshot), statutory research, Birmingham policy and precedent research, and a final adversarial pass instructed to refute every claim. Outcomes: all headline PD limits confirmed against the consolidated GPDO (as amended to SI 2026/313, current at 9 Apr 2026); the L-shaped dormer wording confirmed as original 2015 text (a researcher's attribution to SI 2024/579 was <em>corrected</em> — that SI touched only Parts 3 and 6); SI 2026/313's Class AA change confirmed as an NPPF-reference tidy-up only; the LURA enforcement transition corrected to "substantially complete before 25 Apr 2024 keeps the 4-year rule"; the 95 Vicarage Road consistency argument downgraded to make-weight; the 834 Walsall Road appeal confirmed allowed (pull the PDF before quoting depths). Primary-source caveat: this environment's proxy blocked direct fetches of legislation.gov.uk, birmingham.gov.uk and the appeals portal, so statutory text was verified via a consolidated mirror plus cross-checked search extracts of the official pages — re-verify verbatim quotes against the live sources before filing anything.</p>
+  </div>
+
+  <h2>10 · Information needed from you</h2>
+  <div class="col"><ol class="qs">
+    <li><strong>Measured survey</strong> (laser, one visit): tape-confirm the existing block at ≈4.39 m deep with rear fascia ≤3.00 m (the 2005 drawings now say both are true — the site must agree); main eaves/ridge for the dormer volume calc; garden length; confirmation that no part of 115 touches any neighbouring structure ("link-detached" listing vs detached drawings).</li>
+    <li><strong>The planner's 28 July email</strong> — Rouhel forwarded only a blank shell. What did she actually say to the 9 July counter-offer (6 m ground + 4 m first floor)? If she accepted the 6 m ground floor in writing, the planning route improves again.</li>
+    <li><strong>Ownership paperwork</strong>: applicant on everything = Sultana Uddin. Until HM Land Registry completes her registration, planning applications go in with Certificate B and notice served on the registered proprietor of record; once the register updates, Certificate A. Keep the TR1/completion statement to hand as ownership evidence for the certificates (a certificate obtained on misleading information is revocable — s.193(7) TCPA 1990). Order the updated official copy when registration completes.</li>
+    <li><strong>Five-minute portal pulls</strong> (blocked from this environment; any normal browser works): full history for 111/113/117 (incl. when the side wing over the garage was consented, if ever); ref 2014/06721/PA; 131 Vicarage Road 2025/04397/PA and 2025/04448/PA outcomes with approved drawings; the refused-then-approved "high-level windows + roof lantern" case; the decision PDF for APP/P4605/D/25/3373138; and the adopted Healthy Living &amp; Working Places City Manual PDF (LW-4's exact first-floor measurement point).</li>
+    <li><strong>Site facts</strong>: any tree &gt;75 mm stem within 12 m of the works; Severn Trent sewer map for the rear/alley (the 2005 drawings show the drain run and manholes through the garage line).</li>
+    <li><strong>Voice notes</strong>: three WhatsApp audio files couldn't be transcribed here (18.04, 22.04, 25.05). If any records a commitment from the planner or a neighbour, tell me what was said.</li>
+    <li><strong>Build date of the house</strong> (only if you ever want to test Class AA — an inter-war build excludes it; 1939 Register or old OS mapping settles it).</li>
+  </ol></div>
+
+  <h2>11 · Key references</h2>
+  <div class="col refs"><ul>
+    <li>GPDO 2015 (SI 2015/596) Sch.2 Pt.1 Classes A, AA, B, C, D, E; arts. 2(1), 3(4) — <a href="https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/1">legislation.gov.uk (consolidated)</a></li>
+    <li>MHCLG, <em>Permitted development rights for householders: technical guidance</em> (Sept 2019) — <a href="https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance">gov.uk</a></li>
+    <li>SI 2019/907 (6/8 m right made permanent; A.1(ja) inserted; completion deadline removed) · SI 2020/755 (Class AA) · SI 2014/564 (L-shaped dormer wording) · SI 2026/313 (NPPF-reference amendments, in force 9 Apr 2026) · SI 2024/452 reg 5 + LURA 2023 s.115 (enforcement time limits)</li>
+    <li>TCPA 1990 ss.191–193 (lawful development certificates; s.192(4) conclusive presumption; s.193(7) revocation for false statements)</li>
+    <li>CAB Housing Ltd v SSLUHC [2023] EWCA Civ 194 (prior-approval scope) · Mansell v Tonbridge &amp; Malling BC [2017] EWCA Civ 1314 (fallback) · Dunnett Investments v SSCLG [2017] EWCA Civ 192 (conditions excluding PD) · North Wiltshire DC v SSE (1992) 65 P&amp;CR 137 (consistency)</li>
+    <li>Birmingham Development Plan 2031 (2017) Policy PG3 · Development Management in Birmingham DPD (2021) Policies DM2/DM10 · Birmingham Design Guide SPD (adopted 6 Sept 2022): Design Principles DP16 §2.116; City Notes LW-4 (45° Code), LW-16–LW-22 — <a href="https://www.birmingham.gov.uk/info/20054/local_plan_documents/1367/birmingham_design_guide">birmingham.gov.uk</a></li>
+    <li>Pre-app 2026/03356/PA response, Leah Russell MRTPI, Birmingham CC (7 Jul 2026) · Decision S/03404/05/FUL (5 Oct 2005) · 95 Vicarage Road 2020/06341/PA decision notice + delegated report (11 Dec 2020)</li>
+    <li>Appeal APP/P4605/D/25/3373138, 834 Walsall Road, Perry Barr — allowed — <a href="https://acp.planninginspectorate.gov.uk/ViewDocument.aspx?fileid=64412349">acp.planninginspectorate.gov.uk</a> · PINS annual statistics (23 Apr 2026): householder appeals ~36% allowed 2025/26</li>
+    <li>BRE, <em>Site layout planning for daylight and sunlight</em> (BR209, 2022): 25° test, 45° approach, VSC ≥27% / ≥0.8× former, NSL ≥0.8×</li>
+  </ul></div>
+
+  <div class="footer">Prepared from: the uploaded pre-app correspondence and response; D01 existing plans (3 issues), D03 proposed plans (3 issues), 115 location plan; S/03404/05/FUL decision + approved section; 95 Vicarage Road application file (2020/06341/PA); 34 site/neighbour photos and pre-app submission screenshots; and the WhatsApp records to 4 Aug 2026. Statutory and policy positions verified by an independent adversarial pass; residual verification items are flagged inline. This is planning-strategy advice, not a measured survey or a formal BRE assessment.</div>
+</main>

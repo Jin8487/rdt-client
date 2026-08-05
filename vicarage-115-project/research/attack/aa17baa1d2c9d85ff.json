@@ -1,0 +1,213 @@
+{
+ "summary": "Refusal-risk schedule for a maximum-massing scheme at 115 Vicarage Road, Kings Heath (pre-app 2026/03356/PA). The single decisive constraint is the officer's stated position on scale: a 6m two-storey rear extension WILL be refused as overdevelopment/non-subservience (Design Guide SPD 2022 City Note LW-16, BDP 2017 PG3, DM DPD 2021); 4m two-storey depth with a matching hipped roof is the negotiated ceiling. The 45-Degree Code is currently assessed as PASSED from both neighbours \u2014 but only because No.117's conservatory has a solid side wall (code taken from its end, which sits 60cm proud of 115's existing extension) and because No.113's nearest window centre (180cm lateral) exceeds the 136cm existing projection; every additional metre of depth or any change in the datum (e.g. if No.117 rebuilds the conservatory or the officer applies the vertical/elevation test at two-storey height) erodes that headroom. Secondary but real risks: overbearing on No.117 across a 78cm gap at two storeys, roof form (flat roof at two-storey will be resisted \u2014 \"any roof design should match the existing hipped roof design\"), privacy from new first-floor flank windows across the 125cm alley to No.113, and total prohibition on any roof terrace/balcony. Lower-order matters (trees, SuDS/permeable frontage, parking after garage conversion, bin storage, daylight to own deep-plan rooms, garden retention) are each individually survivable with standard evidence but collectively give a refusal-minded officer material. Non-planning flags: Severn Trent build-over agreement, Party Wall Act 1996 notices to both neighbours, and a materially constrained permitted-development fallback (original-dwelling baseline already partly consumed by the 2005 rear extension and the two-storey side extension). Strategy that cannot sensibly be refused: 4m-deep two-storey rear with hipped roof matching the main house, set in from the No.117 boundary at first floor, single-storey element (only) pushed deeper under a separate PD/prior-approval route, obscure-glazed non-opening flank windows, no balcony, with a daylight/45-degree compliance drawing, tree survey, SuDS note and parking statement submitted up front.",
+ "facts": [
+  {
+   "topic": "Ground 1 \u2014 Overdevelopment / lack of subservience (THE decisive ground)",
+   "detail": "Design Guide SPD 2022 City Note LW-16 (householder additions, LW-16 to LW-22) + BDP 2017 Policy PG3 + NPPF ch.12. The pre-app is explicit and verbatim: the 6m two-storey depth 'would be an overdevelopment... doubling the size of the existing property and would not be subservient' and 'would need to be reduced by 2m to 4m in depth'. This is a pre-stated refusal reason with officer authorship \u2014 an application at 6m is near-certain refusal and weak at appeal because the SPD wording ('smaller than the main part of the house and not dominate') is clear. NEUTRALISE: fix two-storey depth at 4.0m exactly as invited; take extra volume in width/single-storey depth instead; annotate a floor-area schedule on the drawings showing extension < original house; quote the pre-app compliance in the Design & Access statement.",
+   "value": "Risk: HIGH (certain refusal at 6m; low at 4m)",
+   "source": "Pre-app 2026/03356/PA; Birmingham Design Guide SPD 2022",
+   "confidence": "high"
+  },
+  {
+   "topic": "Ground 2 \u2014 45-Degree Code, plan test vs No.117",
+   "detail": "45-Degree Code is in Design Guide City Note LW-4 (formerly Extending Your Home SPD / 45-Degree Code SPG), applied via DM DPD amenity policy. Officer currently takes the datum from the END of No.117's conservatory because it has a solid side wall \u2014 and that conservatory projects 60cm BEYOND 115's existing extension, gifting extra depth. Fragility: (a) if No.117 demolishes/rebuilds the conservatory with a glazed side or replaces it with a habitable extension, the datum reverts to the original rear windows and the assessment collapses; (b) the concession is officer discretion, not policy right \u2014 a different case officer or committee can re-run it from the original openings. Nearest side window is 230cm off the fence. NEUTRALISE: submit a dimensioned 45-degree compliance drawing (plan AND section) taken BOTH from the conservatory end and, as sensitivity, from the original window, showing the 4m scheme passes either way; if it only passes from the conservatory end, keep the deep massing single-storey on that flank.",
+   "value": "Risk: MEDIUM (currently passes, but on a fragile discretionary datum)",
+   "source": "Pre-app verbatim; Design Guide LW-4",
+   "confidence": "high"
+  },
+  {
+   "topic": "Ground 3 \u2014 45-Degree Code, plan test vs No.113",
+   "detail": "115's existing extension already projects 136cm beyond No.113's own rear extension; No.113's nearest window centre is 180cm laterally from 115's extension corner. On plan, a 45-degree line from that window centre tolerates ~180cm of projection beyond No.113's rear building line \u2014 so only ~44cm of extra depth on that flank exists before the line is cut. Any 'maximum massing' deepening on the No.113 side beyond ~40cm breaches the code at ground AND first floor. NEUTRALISE: step the plan \u2014 full extra depth on the No.117 side (where the conservatory datum gives headroom), chamfer/set-in the No.113 corner, or hold that flank at the existing 3.3m line; show the geometry explicitly on the compliance drawing.",
+   "value": "Risk: HIGH for any added depth on the No.113 flank; LOW if stepped",
+   "source": "Measured distances supplied; Design Guide LW-4",
+   "confidence": "high"
+  },
+  {
+   "topic": "Ground 4 \u2014 45-Degree Code, vertical/elevation test and level changes",
+   "detail": "Birmingham's code guidance (LW-4) allows officers to require MORE than the plan test where scale or level changes worsen shadowing/enclosure \u2014 i.e., a vertical 45-degree section from the centre of the nearest habitable window. A two-storey (~5.2-5.7m eaves/wall) mass whose corner sits 180cm from No.113's window centre, and 78cm from No.117's conservatory, will cut a vertical 45-degree line even where the plan line passes. Officers rarely refuse solely on the vertical test for householder schemes but it is available and appeal inspectors use it. NEUTRALISE: hip the roof away from both boundaries (lowers effective height at the flank), keep first-floor flanks set in ~1m from each boundary, and include sections through both neighbour windows in the submission before the officer asks.",
+   "value": "Risk: MEDIUM (site geometry genuinely tight at two storeys)",
+   "source": "Design Guide LW-4 caveat text; DM DPD amenity policy",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Ground 5 \u2014 Overbearing / loss of outlook (BRE 25-degree and enclosure)",
+   "detail": "DM DPD 2021 amenity policy (development must not cause unacceptable impacts on privacy, daylight, overshadowing, aspect and outlook) + NPPF para on amenity. A two-storey flank wall 78cm from No.117's conservatory and ~3m from her side window would fail a BRE 209 25-degree test taken from that window if the wall faces it, and reads as severe enclosure regardless. Mitigation in the owner's favour: conservatories carry reduced amenity weight, the solid side wall self-screens, and the window centre is 370cm from her rear wall. NEUTRALISE: keep the two-storey element off the shared boundary (single-storey only within ~1m of the No.117 fence), hipped roof pitching away, and commission a short daylight/sunlight note (BRE 209 VSC/25-degree check) from both neighbours' nearest windows \u2014 cheap insurance that pre-empts the most common third-party objection.",
+   "value": "Risk: HIGH if two-storey goes to the No.117 boundary; MEDIUM if set in 1m+",
+   "source": "DM DPD 2021; BRE 209 (2022)",
+   "confidence": "high"
+  },
+  {
+   "topic": "Ground 6 \u2014 Overshadowing / loss of daylight-sunlight",
+   "detail": "Same policy basis as Ground 5. Actual harm depends on orientation, which is not in the brief (open question). If 115's rear faces south/west, the two-storey mass shadows No.113's garden across only a 125cm alley; if north, shadowing falls on 115's own garden and the ground weakens. NEUTRALISE: establish orientation, run the BRE 209 sun-hours-on-ground test for both neighbouring gardens for the 4m scheme, and put the result in the application. If marginal, the hipped roof (mandated anyway) materially reduces the shadow envelope versus flat roof.",
+   "value": "Risk: MEDIUM (orientation-dependent, unresolved)",
+   "source": "DM DPD 2021; BRE 209",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Ground 7 \u2014 Privacy / overlooking from first-floor windows",
+   "detail": "DM DPD amenity policy + Design Guide separation-distance guidance. New first-floor REAR windows are generally acceptable (normal back-to-back relationship), but any first-floor SIDE/flank window overlooking No.113 across the 125cm alley or into No.117's garden 78cm away will be resisted unless obscure-glazed and non-opening below 1.7m; oblique views from a deeper rear elevation into No.117's garden may also be raised. NEUTRALISE: no clear-glazed flank windows at first floor (condition-accept obscure glazing), keep principal outlooks rearward, and offer a 1.8m boundary treatment where oblique views arise.",
+   "value": "Risk: MEDIUM (fully designable-out; certain objection if ignored)",
+   "source": "DM DPD 2021; Design Guide SPD",
+   "confidence": "high"
+  },
+  {
+   "topic": "Ground 8 \u2014 Roof terrace / balcony / raised platform",
+   "detail": "Any roof terrace on the flat-roof side extension or on a flat-roofed rear element, or any first-floor balcony, is (a) a near-automatic privacy refusal given 78cm/125cm neighbour gaps, and (b) expressly EXCLUDED from permitted development \u2014 GPDO 2015 Sch.2 Part 1 Class A development is not permitted where it includes a veranda, balcony or raised platform (and Class B/C similarly for roof alterations). There is no compliant 'maximum massing' version of a terrace here. NEUTRALISE: omit entirely; if outdoor amenity at level is wanted, a Juliet guard on inward-opening doors (no projecting platform) is the only defensible form and even that invites scrutiny at these separations.",
+   "value": "Risk: HIGH \u2014 treat as prohibited on this site",
+   "source": "GPDO 2015 SI 596 Sch.2 Pt.1; DM DPD amenity policy",
+   "confidence": "high"
+  },
+  {
+   "topic": "Ground 9 \u2014 Roof form / design not matching hipped original",
+   "detail": "Pre-app verbatim: 'any roof design should match the existing hipped roof design' (LW-16: design must complement the scale and style of the house). Consequences: the existing FLAT-roof two-storey side extension cannot be replicated or extended at two-storey with another flat roof; a mansard, crown-flat, or large box dormers on the hip would conflict; a hip-to-gable conversion changes the 'hipped roof design' the officer has anchored to. NEUTRALISE: hipped roof on every two-storey element, matching pitch/eaves/materials; if loft space is wanted, use rear-facing pitched-roof dormers subordinate in the hip slope rather than a gable conversion, and treat re-roofing the existing side extension with a matching hip as a positive planning-balance card (visual improvement to trade against massing).",
+   "value": "Risk: HIGH for flat/gabled/mansard forms; LOW if hipped throughout",
+   "source": "Pre-app verbatim; Design Guide LW-16/LW-17",
+   "confidence": "high"
+  },
+  {
+   "topic": "Ground 10 \u2014 Street scene / character and terracing effect (side extensions)",
+   "detail": "PG3 + LW-16 + DM DPD design policy. The rear massing is largely invisible from Vicarage Road (weakens any street-scene refusal for the rear), but further SIDE widening at two storeys engages Birmingham's long-standing terracing rule: two-storey side extensions should keep a gap to the side boundary (historically ~1m at first floor) and be set back/set down from the main frontage so paired extensions cannot read as a continuous terrace. The house is detached with an existing two-storey side extension, so the front building line and gap are already established \u2014 going wider or forward of that line at first floor is the risk. NEUTRALISE: no further sideways first-floor widening beyond the existing flank; keep any side elements behind the front elevation and below the main ridge; state in the D&A that the rear elevation is not visible in the public realm.",
+   "value": "Risk: LOW for rear massing; MEDIUM if the side extension is widened at first floor",
+   "source": "BDP 2017 PG3; Design Guide SPD; DM DPD 2021",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Ground 11 \u2014 Trees",
+   "detail": "BDP 2017 (TP7 green infrastructure), DM DPD tree/landscape policy, NPPF. No tree information supplied \u2014 open question. Mature garden trees within influencing distance of a 6m-deep foundation, or street trees affected by a widened crossover, trigger a BS 5837 survey demand and can found refusal or delay. NEUTRALISE: pre-emptive BS 5837 tree survey + arboricultural impact assessment if ANY tree over ~75mm stem sits within 12m of the works; check the TPO register and Kings Heath conservation-area maps before submission.",
+   "value": "Risk: LOW-MEDIUM (unknown site facts; cheap to close out)",
+   "source": "BDP 2017; DM DPD 2021",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Ground 12 \u2014 Drainage, flooding and permeable surfaces",
+   "detail": "DM DPD sustainable drainage requirements + BDP TP6 + NPPF ch.14; GPDO Part 1 Class F makes new front-garden hardstanding over 5 sqm permitted ONLY if permeable or draining to a permeable area. A maximum scheme that also paves the frontage for parking (see Ground 13) must show permeable construction. Roof area roughly doubles \u2014 soakaway/attenuation note avoids a drainage holding objection. NEUTRALISE: one-page SuDS statement, permeable paving spec on the drawings, rainwater to soakaways sized to BRE 365.",
+   "value": "Risk: LOW (paperwork ground, but a free refusal reason if omitted)",
+   "source": "DM DPD 2021; GPDO Sch.2 Pt.1 Class F",
+   "confidence": "high"
+  },
+  {
+   "topic": "Ground 13 \u2014 Parking after garage conversion",
+   "detail": "Birmingham Car Parking Guidelines SPD / DM DPD parking standards. The two-storey side extension sits OVER the garage; a maximum scheme that converts the garage to habitable space removes an off-street space while adding bedrooms (likely 4-5 bed outcome), inviting a highways consultation response. Vicarage Road is a busy B-road in Kings Heath, which cuts both ways (on-street pressure vs sustainable location near the high street and the new Kings Heath rail station). NEUTRALISE: retain two off-street spaces on the frontage drawing (permeable), show cycle storage, and cite the site's sustainable-location credentials.",
+   "value": "Risk: LOW-MEDIUM (rarely a sole refusal reason for householders)",
+   "source": "Birmingham parking SPD/DM DPD",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Ground 14 \u2014 Bin storage and frontage clutter",
+   "detail": "Design Guide SPD expects convenient, screened bin storage that does not dominate the frontage; on a maximum scheme where the side alley is built over, bins can lose their route to the street, which officers now routinely flag. NEUTRALISE: keep or replace a side access route/gate, or show a screened bin store on the front drawing.",
+   "value": "Risk: LOW (condition-able, not refusal-grade alone)",
+   "source": "Birmingham Design Guide SPD 2022",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Ground 15 \u2014 Daylight to the OWN dwelling's habitable rooms",
+   "detail": "NPPF (standards of amenity for existing AND future users) + DM DPD residential standards. A full-width rear addition 4m (two-storey) plus deeper single-storey elements leaves the original rear rooms mid-plan; officers can and do refuse where habitable rooms would rely on borrowed light. NEUTRALISE: open-plan the trapped rooms into the new space, add roof lights over the single-storey element, and label mid-plan spaces as non-habitable (hall/utility) where dark.",
+   "value": "Risk: LOW-MEDIUM (design-out at plan stage)",
+   "source": "NPPF ch.12; DM DPD 2021",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Ground 16 \u2014 Amenity space / garden retention",
+   "detail": "DM DPD residential standards (standards for residential development topic area) expect adequate usable private garden retained. A 6m-deep footprint plus patio can push a suburban plot below acceptable retained garden; at 4m this is unlikely to bite for a typical Kings Heath plot but must be evidenced. NEUTRALISE: annotate retained garden area (sqm) on the block plan; keep comfortably above ~70 sqm for a family house.",
+   "value": "Risk: LOW at 4m depth; MEDIUM at 6m (another reason the 6m dies)",
+   "source": "DM DPD 2021 residential standards",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Ground 17 \u2014 Permitted development fallback: disqualifiers and baseline erosion",
+   "detail": "GPDO 2015 Sch.2 Pt.1: (a) BASELINE \u2014 'original dwellinghouse' means as built/as at 1.7.1948; the 2005 rear extension (permitted S/03404/05/FUL, so PD headroom may survive if that was express permission not PD, but cumulative Class A limits count all enlargements) and the two-storey side extension consume Class A tolerance; (b) Class A limits for a DETACHED house: single-storey rear 4m (up to 8m via Larger Home Extension prior approval with neighbour consultation \u2014 No.113/No.117 WILL be consulted and objections force an amenity assessment); two-storey rear max 3m depth AND no part within 7m of the rear boundary; within 2m of any boundary eaves max 3m; side extensions single-storey, max half the width of the original house; (c) CONDITIONS \u2014 materials of 'similar appearance' to the existing exterior; upper-floor side windows obscure-glazed and non-opening below 1.7m; no veranda/balcony/raised platform; height measured from the HIGHEST adjacent natural ground level (matters if the plot slopes \u2014 a flat-roof height claimed from the high side can be unlawful from the low side); (d) check for any Article 4 direction in Kings Heath before relying on PD. NEUTRALISE: get a Lawful Development Certificate (s.192) for whatever PD element is used (e.g. deep single-storey rear via prior approval) BEFORE building, and use the certificated PD scheme as the fallback position in negotiating the planning application.",
+   "value": "Risk: MEDIUM that assumed PD rights don't exist as imagined \u2014 verify before relying",
+   "source": "GPDO 2015 SI 596 Sch.2 Pt.1 Classes A-H",
+   "confidence": "high"
+  },
+  {
+   "topic": "Ground 18 \u2014 Materials",
+   "detail": "LW-16/PG3 require materials complementing the host; the existing house is presumably brick with a tiled hip, the side extension flat-roofed (likely rendered/felt). Officers will condition matching brick/tile; contrasting cladding on a maximum-massing scheme hands them a design refusal ground on top of scale. NEUTRALISE: matching facing brick and roof tile specified on drawings; accept a materials condition.",
+   "value": "Risk: LOW (condition-able)",
+   "source": "Design Guide SPD 2022; BDP PG3",
+   "confidence": "high"
+  },
+  {
+   "topic": "Non-planning flag A \u2014 Build over/near public sewer",
+   "detail": "Not a planning ground but a project-stopper: building within 3m of a public sewer (common along rear garden lines and side alleys \u2014 note the 125cm alley to No.113) requires a Severn Trent build-over agreement under the Building Regulations H4 regime; refusal can force redesign of foundations or a piled/bridged solution. NEUTRALISE: obtain the sewer map and, if applicable, the build-over agreement before detailed design.",
+   "value": "Flag \u2014 resolve pre-construction",
+   "source": "Building Act/Building Regs H4; Severn Trent policy",
+   "confidence": "high"
+  },
+  {
+   "topic": "Non-planning flag B \u2014 Party Wall etc. Act 1996",
+   "detail": "Not a planning ground and NOT a reason for the council to refuse, but with a wall 78cm from No.117's conservatory and works beside a 125cm alley to No.113, s.1 (line of junction), s.2 and s.6 (excavation within 3m and deeper than neighbour foundations) notices to BOTH neighbours are near-certain. Neighbours antagonised by a maximum scheme can slow this via surveyor appointments. NEUTRALISE: serve notices early, budget for two adjoining-owner surveyors, and pair with pre-application neighbour liaison \u2014 which also reduces objection letters on the planning file.",
+   "value": "Flag \u2014 programme and neighbour-relations risk",
+   "source": "Party Wall etc. Act 1996",
+   "confidence": "high"
+  },
+  {
+   "topic": "Overall strategy \u2014 the scheme that cannot sensibly be refused",
+   "detail": "(1) Two-storey rear: 4.0m deep (officer's stated ceiling), hipped roof matching the main house, first floor set in ~1m from the No.117 boundary and chamfered/held back on the No.113 corner to clear the 45-degree line from the 180cm window; (2) Single-storey rear: take the extra depth here \u2014 up to 6m+ via the planning application (single-storey depth was not the officer's objection) or certificate the 8m Larger Home Extension prior-approval route as a fallback; (3) no balcony/terrace anywhere; obscure non-opening flank glazing; matching materials; (4) submission pack front-loads the evidence: 45-degree plan+section drawing from both datums, BRE 209 daylight note, tree survey or nil-return, SuDS note, parking/bin plan, floor-area subservience schedule, and a D&A that quotes the pre-app back at the officer paragraph by paragraph. The pre-app letter is the roadmap: every quantified concession in it (4m, hipped roof, conservatory-end datum) should be locked into the drawings verbatim so refusal would require the officer to contradict her own written advice.",
+   "value": "Composite recommendation",
+   "source": "Synthesis of pre-app 2026/03356/PA and policy set",
+   "confidence": "high"
+  }
+ ],
+ "open_questions": [
+  "Orientation of the rear elevation (sun path) \u2014 determines whether the overshadowing/BRE ground bites on No.113's or No.117's garden or falls away entirely.",
+  "Is 115 Vicarage Road within a conservation area or covered by any Article 4 direction (Kings Heath/Moseley fringe)? This would strip or modify the PD fallback and add design scrutiny.",
+  "Were the existing two-storey side extension and the 2005 rear extension built under express permission or PD, and what is the exact 'original dwellinghouse' footprint \u2014 needed to compute remaining Class A headroom for the Lawful Development Certificate fallback.",
+  "Any trees over 75mm stem within ~12m of the works, and any TPOs on or adjacent to the plot.",
+  "Location of public sewers relative to the rear and side (125cm alley) \u2014 Severn Trent asset map needed before foundation design.",
+  "Ground levels: is there any level change between 115 and either neighbour that would trigger the LW-4 'level changes' caveat or affect PD height measurement from highest adjacent ground?",
+  "Which specific DM DPD policy numbers apply post-Main Modifications (amenity and residential-standards policies) \u2014 verify final adopted numbering against the adopted DPD PDF before citing in the D&A statement."
+ ],
+ "references": [
+  {
+   "title": "Birmingham Design Guide SPD (adopted 6 September 2022) \u2014 landing page",
+   "url": "https://www.birmingham.gov.uk/info/20054/local_plan_documents/1367/birmingham_design_guide",
+   "quote": "City notes LW16 \u2013 LW22 deal with design guidance for householder additions; details of the 45 degree code can be found in City Note LW-4."
+  },
+  {
+   "title": "Birmingham Design Guide \u2014 Healthy Living and Working City Manual (Sept 2022 PDF, contains LW-4 and LW-16)",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/24168/4_healthy_living_and_working_city_manual_-_september_2022.pdf",
+   "quote": "The 45 degree code will be applied consistently... there may be cases where a greater setback may be required due to the scale of development proposed; and/or level changes that would enhance overlooking or shadowing."
+  },
+  {
+   "title": "Development Management in Birmingham DPD (adopted 7 December 2021)",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/21273/development_management_in_birmingham_dpd.pdf",
+   "quote": "Development must not result in unacceptable adverse impacts on neighbours, having regard to privacy, overlooking, daylight, overshadowing, aspect and outlook."
+  },
+  {
+   "title": "Birmingham Development Plan 2031 (adopted 10 January 2017) \u2014 Policy PG3 Place making",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/5433/adopted_birmingham_development_plan_2031.pdf",
+   "quote": "Policy PG3 Place making: All new development will be expected to demonstrate high design quality, contributing to a strong sense of place."
+  },
+  {
+   "title": "Town and Country Planning (General Permitted Development) (England) Order 2015, Schedule 2 Part 1 (Classes A\u2013H, as amended)",
+   "url": "https://www.legislation.gov.uk/uksi/2015/596/schedule/2",
+   "quote": "Development is not permitted by Class A if it would consist of or include... the construction or provision of a verandah, balcony or raised platform... the materials used in any exterior work must be of a similar appearance to those used in the construction of the exterior of the existing dwellinghouse."
+  },
+  {
+   "title": "GPDO 2015 Sch.2 Pt.1 Classes A\u2013C consolidated extract (High Peak core document copy)",
+   "url": "https://www.highpeak.gov.uk/media/7604/CD5.8-GPDO-2015-as-amended-as-at-12.10.22-Arts-1-4-sch-2-part-1-classes-A-C/pdf/rsCD5.8_GPDO_2015_as_amended_as_at_12.10.22_Arts_1-4__sch_2__part_1_classes_A-C.pdf?m=1665993331427",
+   "quote": "any upper-floor window located in a wall or roof slope forming a side elevation of the dwellinghouse must be obscure-glazed, and non-opening unless the parts of the window which can be opened are more than 1.7 metres above the floor."
+  },
+  {
+   "title": "National Planning Policy Framework \u2014 Chapter 12 (Achieving well-designed places)",
+   "url": "https://www.gov.uk/government/publications/national-planning-policy-framework--2"
+  },
+  {
+   "title": "Birmingham City Council \u2014 How we assess planning applications",
+   "url": "https://www.birmingham.gov.uk/info/20160/planning_applications/3004/how_we_assess_planning_applications"
+  },
+  {
+   "title": "Development Management in Birmingham \u2014 adopted DPD submission page (adoption confirmation)",
+   "url": "https://www.birmingham.gov.uk/info/20054/local_plan_documents/1861/development_management_in_birmingham_submission"
+  },
+  {
+   "title": "BCC DM10 Standards for Residential Development Topic Paper (residential standards evidence base)",
+   "url": "https://www.birminghambeheard.org.uk/economy/dmb/supporting_documents/BCC%20DM10%20Standards%20for%20Residential%20Development%20Topic%20Paper%20FINAL.pdf"
+  },
+  {
+   "title": "Pre-application response 2026/03356/PA, Leah Russell MRTPI, Birmingham City Council (supplied in brief)",
+   "quote": "The proposed extension would need to be reduced by 2m to 4m in depth to ensure the extension would not dominate the existing property... any roof design should match the existing hipped roof design... No. 117 has an existing conservatory with a solid side wall so in this case it would appear the 45 Degree Code would be taken from the end of this conservatory rather than the original window openings."
+  }
+ ]
+}

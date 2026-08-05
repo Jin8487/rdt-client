@@ -1,0 +1,182 @@
+{
+ "summary": "Birmingham's standalone '45-Degree Code' SPD (EBD43, March 2006) and 'Extending your home' (March 2007) were SUPERSEDED on 6 September 2022 by the Birmingham Design Guide SPD; the current 45-degree rule lives in City Note LW-4 of the Design Guide's Healthy Living and Working Places City Manual (September 2022). The historic 2006 code drew an imaginary 45\u00b0 line from the nearest front/rear window that is the main source of light to a habitable room: from the MID-POINT of the nearest ground-floor window for single-storey extensions, and from the QUARTER-POINT of the nearest ground-floor window for two-storey extensions (falling back to the mid-point of the nearest first-floor window if there is no ground-floor window or a first-floor window is nearer). Habitable rooms include living rooms, bedrooms, kitchens and conservatories but NOT bathrooms, utility rooms, halls, landings or garages. The adopted LW-4 version takes the line from the nearest PRIMARY habitable-room window (front or rear facing), applies to all household extensions including conservatories (and low-rise development up to 4 storeys), uses mid-point of nearest ground-floor window for single-storey and quarter-point of the nearest first-floor window for first-floor work, with bay windows measured from a set-back position in line with the wall from which the bay projects. Development plan in force in 2026: Birmingham Development Plan 2031 (adopted 10 January 2017) Policy PG3 Place making ('All new development will be expected to demonstrate high design quality, contributing to a strong sense of place') plus the Development Management in Birmingham DPD (adopted 7 December 2021), whose Policy DM2 Amenity (privacy/overlooking, sunlight/daylight/overshadowing, aspect/outlook) is the key householder-extension policy; DMB adoption revoked the remaining saved UDP 2005 policies. 'Places for Living' SPG (March 2001) is likewise superseded by the Design Guide SPD and retained only as evidence-base document EBD18. Pre-application advice: 2026-27 charge schedule Category H (householder \u2014 extend/alter a single dwelling): written advice only c.\u00a3166.80 incl VAT, plus c.\u00a3332.40 if a meeting is requested (figures from search extraction \u2014 verify against the PDF); the service is optional, advice is an officer opinion given without prejudice and cannot guarantee approval. Article 4/Kings Heath: the only Article 4 affecting B14 is the citywide HMO direction (C3\u2192C4, in force 8 June 2020) which does not remove householder extension PD rights; Birmingham's Article 4(2) householder directions apply only in nine conservation areas (Austin Village, Bournville Village, Edgbaston, Greenfield Road Harborne, High Street Sutton Coldfield, Moor Pool Harborne, Moseley, Old Yardley, St Agnes Moseley) \u2014 none in Kings Heath. Kings Heath has NO conservation area in Birmingham's list (c.29 designated areas), and Vicarage Road B14 7QG does not fall within any conservation area \u2014 'All Saints' at 2 Vicarage Road is a church/community centre, not a conservation area. NOTE: WebFetch and outbound curl were 403-blocked by the session egress policy for every host, so verbatim quotes are as extracted by the search tool from the source documents rather than read directly from the PDFs.",
+ "facts": [
+  {
+   "topic": "45 Degree Code - status",
+   "detail": "The standalone '45 Degree Code for Residential Extensions' (March 2006, evidence-base ref EBD43) and 'Extending your home: Home extensions design guide' (March 2007) were city-wide supplementary planning documents that were REPLACED by the Birmingham Design Guide SPD upon its adoption. The Design Guide SPD was adopted on 6 September 2022. A council 'list of policies and guidance to be superseded' names: '45 Degree Code for Residential Extensions (March 2006)', 'Extending your home: Home extensions design guide (March 2007)' and 'Places for Living (March 2001)'.",
+   "value": "Superseded 6 September 2022 by Birmingham Design Guide SPD",
+   "source": "birmingham.gov.uk design guide SPD adoption statement (downloads/id/24162) and list_of_policies_and_guidance_to_be_superseded.docx (downloads/id/21277)",
+   "confidence": "high"
+  },
+  {
+   "topic": "45 Degree Code (2006) - core rule text",
+   "detail": "As extracted from EBD43 (March 2006): 'An imaginary line is drawn at an angle of 45\u00b0 from the nearest front or rear window of the house/flat that may be affected by the new building work. This window must be the main source of light to a habitable room.' Single-storey: 'If the extension/building is going to be single-storey, the measurement is taken (and the line is drawn) from the mid point of the nearest ground floor window of the nearby house/flat.' Two-storey: 'If the extension/building is to be two-storey, the measurement is taken from the quarter point of the nearest ground floor window.' Fallback: 'If there is no ground floor window to which the Code can be applied, or if a first floor window is nearer (and so more likely to be affected), the line may instead be drawn from the mid point of the nearest first floor window.'",
+   "value": "Single-storey = mid point of nearest ground-floor window; two-storey = quarter point of nearest ground-floor window; fallback = mid point of nearest first-floor window",
+   "source": "EBD43 BCC 45 Degree Code for Residential Extensions March 2006, birmingham.gov.uk/download/downloads/id/16864 (text extracted via search; PDF direct fetch blocked)",
+   "confidence": "medium"
+  },
+  {
+   "topic": "45 Degree Code - which windows count",
+   "detail": "Verbatim habitable-room definition (appears in both the 2006 Code and current guidance): 'Habitable rooms include living rooms, bedrooms, kitchens and conservatories but do not include rooms such as bathrooms, utility rooms, halls, landings or garages.' The window measured must be 'the main source of light' to the habitable room \u2014 i.e. secondary windows to a room with another main light source do not trigger the code. Kitchens: YES they count. Conservatories: YES they count.",
+   "value": "Habitable = living rooms, bedrooms, kitchens, conservatories; excluded = bathrooms, utility rooms, halls, landings, garages; window must be main source of light (secondary windows excluded)",
+   "source": "EBD43 (2006) and Birmingham Design Guide Healthy Living & Working Places City Manual",
+   "confidence": "high"
+  },
+  {
+   "topic": "Current successor rule - City Note LW-4, Birmingham Design Guide",
+   "detail": "The operative 45-degree rule since September 2022 is City Note LW-4 ('45 Degree Code') in the Birmingham Design Guide \u2014 Healthy Living and Working Places City Manual (September 2022). As extracted: the Code is 'based on a 45 degree (imaginary) line taken from the nearest primary habitable room window (front or rear facing) to the proposed development'; it 'will primarily relate to all household extensions (including conservatories), but it may also be applied to any development proposal that will impact on the privacy and amenity of existing residential, such as bungalows, houses and out-of-centre low-rise flats up to 4 storeys'. Measurement points: 'if the extension is single storey the measurement is taken from the mid-point of the nearest ground floor window. If the extension is at the first floor the measurement is taken from the quarter point of the nearest first floor window.' (One secondary source adds: for a double/two-storey extension the ground-floor window is also measured from the mid-point.) Bay windows: 'Where the nearest habitable room window is a bay window, the point should be taken from a setback position in line with the wall from which the bay projects.' Design Principle 16 / City Note LW-18 additionally require extensions to complement the host building and not over-dominate it.",
+   "value": "City Note LW-4, Healthy Living and Working Places City Manual, Birmingham Design Guide SPD (Sept 2022)",
+   "source": "birmingham.gov.uk/download/downloads/id/24168/4_healthy_living_and_working_city_manual_-_september_2022.pdf (extracted via search); extensionhub.co.uk/45-degree-code; PINS appeal decisions citing LW-4",
+   "confidence": "medium"
+  },
+  {
+   "topic": "45 Degree Code - plan vs elevation",
+   "detail": "Neither the 2006 code text nor the LW-4 extract obtained states in terms whether the line is applied in plan only or also in elevation. The mid-point (single-storey) vs quarter-point (two-storey) mechanism is a plan-based test measured along the window; no explicit elevation (vertical section) test wording was recovered. This needs verification against the full PDF.",
+   "value": "Plan-based test; explicit plan/elevation wording not verified",
+   "source": "EBD43 2006 and LW-4 extracts",
+   "confidence": "low"
+  },
+  {
+   "topic": "Birmingham Development Plan 2031 - Policy PG3",
+   "detail": "BDP 2031 adopted 10 January 2017. Policy PG3 Place making opens: 'All new development will be expected to demonstrate high design quality, contributing to a strong sense of place.' Bullets (as extracted) require development to: 'Reinforce or create a positive sense of place and local distinctiveness, with design that responds to site conditions and the local area context, including heritage assets and appropriate use of innovation in design'; 'Create safe environments that design out crime and make provision for people with disabilities through carefully considered site layouts, designing buildings and open spaces that promote positive social interaction and natural surveillance'; 'Provide attractive environments that encourage people to move around by cycling and walking'; 'Take opportunities to make sustainable design integral to development, such as green infrastructure, sustainable drainage and energy generating features'; 'Make best use of existing buildings and efficient use of land in support of the overall development strategy'. Full bullet list not fully recovered \u2014 check adopted plan PDF pp. Policy PG3.",
+   "value": "PG3 Place making, BDP 2031 (adopted 10 Jan 2017)",
+   "source": "birmingham.gov.uk/download/downloads/id/5433/adopted_birmingham_development_plan_2031.pdf (extracted via search); dokumen.tips mirror",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Development Management DPD in force 2026",
+   "detail": "The Development Management in Birmingham (DMB) DPD was ADOPTED on 7 December 2021 and forms part of Birmingham's Local Plan, setting out non-strategic policies for determining applications. Its adoption 'replaces the remaining policies of the Birmingham Unitary Development Plan (2005) (UDP) contained in chapter 8 and paragraphs 3.14 to 3.14D which have now been revoked.' Policies most relevant to householder extensions: DM2 Amenity \u2014 development must be 'appropriate to its location and not result in unacceptable adverse impacts on the amenity of occupiers and neighbours', considering visual privacy and overlooking; sunlight, daylight and overshadowing; aspect and outlook; access to amenity space; noise, vibration, odour, fumes; safety; compatibility of adjacent uses; and cumulative impacts. Also DM10 Standards for Residential Development, DM11 HMOs, DM12 Residential Conversions and Specialist Accommodation. The emerging Birmingham Local Plan (Preferred Options July 2024; second Preferred Options consultation Autumn 2025 following NPPF Green Belt review; submission allowed under transitional rules by 12 December 2026) will eventually replace it but the BDP+DMB remain the development plan in 2026.",
+   "value": "DMB DPD adopted 7 Dec 2021; key policies DM2 Amenity, DM10",
+   "source": "birmingham.gov.uk/info/20054/local_plan_documents/1861/development_management_in_birmingham_submission; birmingham.gov.uk/download/downloads/id/21273/development_management_in_birmingham_dpd.pdf",
+   "confidence": "high"
+  },
+  {
+   "topic": "Places for Living SPG status",
+   "detail": "'Places for Living' was adopted as Supplementary Planning Guidance in March 2001 (evidence-base ref EBD18). It was on the council's list of city-wide guidance to be replaced by the Birmingham Design Guide SPD upon adoption, and was therefore superseded on 6 September 2022. It survives only as an archived evidence-base/library document; it is no longer the operative residential design guidance.",
+   "value": "SPG March 2001 \u2014 superseded 6 September 2022 by Birmingham Design Guide SPD",
+   "source": "birmingham.gov.uk/downloads/file/16840/ebd18_places_for_living_spd_mar_2001; list_of_policies_and_guidance_to_be_superseded.docx (downloads/id/21277)",
+   "confidence": "high"
+  },
+  {
+   "topic": "Pre-application advice - householder fees 2026-27",
+   "detail": "Birmingham's 'Planning Pre-application Charges 2026 to 2027' schedule (downloads/file/13521) \u2014 Category H covers householder pre-application advice to extend or alter a single domestic property (not a listed building). As extracted: written advice only \u00a3166.80 including VAT; an additional charge of \u00a3332.40 if a meeting is requested. All charges include VAT at 20%. The schedule/service pages indicate that where additional information is required the process 'may include additional plans, a meeting, or a site visit', with the charge triggered when a meeting is requested; no separately listed householder 'site visit' fee was recovered \u2014 verify the exact figures and any site-visit line against the PDF (planning_pre_application_charges_2026_to_2027.pdf).",
+   "value": "Category H householder: c.\u00a3166.80 incl VAT written advice; c.\u00a3332.40 additional if meeting requested",
+   "source": "birmingham.gov.uk/downloads/file/13521/planning_pre-application_charges_2026_to_2027 (extracted via search \u2014 figures need direct verification)",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Pre-application advice - weight",
+   "detail": "Birmingham states pre-application advice is an optional service and 'cannot guarantee that a planning application will be approved. Officers may not be aware of all issues at this stage and cannot consider comments made after your application is submitted.' Advice is an officer opinion given without prejudice to the formal consideration of any subsequent application; it does not bind the council or planning committee. In appeal terms pre-app advice is a material consideration of limited weight \u2014 the statutory duty (s.38(6) PCPA 2004) to determine in accordance with the development plan prevails.",
+   "value": "Officer opinion, without prejudice, non-binding; no guarantee of approval",
+   "source": "birmingham.gov.uk/info/20160/planning_applications/79/pre-application_advice (pages 1, 4, 5)",
+   "confidence": "high"
+  },
+  {
+   "topic": "Article 4 directions affecting Kings Heath B14",
+   "detail": "The only Article 4 direction covering Kings Heath B14 is the CITY-WIDE Article 4 Direction relating to HMOs, in force from 8 June 2020, which removes permitted development rights to change a C3 dwellinghouse to a C4 small HMO (3-6 people) \u2014 it does NOT remove householder extension/alteration PD rights. Birmingham's householder-restricting Article 4(2) directions exist only in nine conservation areas: Austin Village, Bournville Village, Edgbaston, Greenfield Road (Harborne), High Street (Sutton Coldfield), Moor Pool (Harborne), Moseley, Old Yardley, and St Agnes (Moseley). None covers Kings Heath, so normal householder PD rights (Class A extensions etc.) are unaffected in B14 apart from the HMO change-of-use restriction.",
+   "value": "No householder-PD Article 4 in Kings Heath; citywide HMO (C3 to C4) Article 4 in force 8 June 2020 applies",
+   "source": "birmingham.gov.uk/info/20055/conservation_areas/15/extra_protection_for_conservation_areas_article_4_directions; birmingham.gov.uk/info/20054/local_plan_documents/1933 (city-wide HMO Article 4)",
+   "confidence": "high"
+  },
+  {
+   "topic": "Conservation area status - Vicarage Road B14 7QG",
+   "detail": "Birmingham's conservation area list (c.29 designated areas, per the council's conservation areas pages) contains NO Kings Heath conservation area, and no 'All Saints Kings Heath' conservation area exists \u2014 'All Saints' at 2 Vicarage Road, Kings Heath B14 7RA is the parish church and its attached community centre on Kings Heath Village Square, not a heritage designation. Vicarage Road B14 7QG therefore does not fall within any conservation area. Nearest designated areas are Moseley and St Agnes Moseley (B13), both with Article 4(2) directions. (Kings Heath does have a 'Kings Heath Local Action Plan' SPD adopted January 2006, and the former Kingsway Cinema on the High Street is locally listed Grade A \u2014 local list, not conservation area.) Recommend confirming against the council's interactive conservation area map before relying on this for a specific site.",
+   "value": "Not in a conservation area; no All Saints Kings Heath CA exists",
+   "source": "birmingham.gov.uk/info/20055/conservation_areas/13/birminghams_conservation_areas/2; allsaintscentrekh.co.uk/about-us/location",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Research limitation",
+   "detail": "The session's egress proxy returned 403 for every WebFetch and curl request (including birmingham.gov.uk, planvu.co.uk, Wikipedia and archive.org), so no source PDF could be opened directly. All quotes are as extracted by the WebSearch tool from indexed copies of the named documents. Verbatim wording should be re-verified against the linked PDFs before being quoted in any formal report or planning submission.",
+   "value": "Direct document fetch blocked; quotes are search-extracted",
+   "source": "Session tooling",
+   "confidence": "high"
+  }
+ ],
+ "open_questions": [
+  "Exact adopted wording of City Note LW-4 in the Healthy Living and Working Places City Manual (Sept 2022) \u2014 including whether a two-storey rear extension is tested against the quarter point of the ground-floor window (as in the 2006 code), the quarter point of the first-floor window, or both \u2014 could not be read directly because the PDF (birmingham.gov.uk downloads/id/24168) was 403-blocked; secondary sources differ slightly.",
+  "Whether the 45-degree test is expressed as applying in plan only or in both plan and elevation in the adopted LW-4 text.",
+  "Precise 2026-27 Category H fee figures (\u00a3166.80 written / \u00a3332.40 meeting were search-extracted) and whether a separate householder site-visit charge exists in the schedule \u2014 verify against planning_pre_application_charges_2026_to_2027.pdf.",
+  "Full verbatim bullet list of BDP Policy PG3 (only five of the bullets were recovered).",
+  "Exact current count of Birmingham conservation areas (sources say 29; older material says 30) and confirmation via the council's interactive conservation area map that no part of Vicarage Road B14 7QG touches a designated boundary.",
+  "Whether the emerging Birmingham Local Plan (second Preferred Options, Autumn 2025) proposes any change to the 45-degree code approach for householder extensions."
+ ],
+ "references": [
+  {
+   "title": "EBD43 \u2014 BCC 45 Degree Code for Residential Extensions (March 2006), Birmingham City Council",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/16864/ebd43_bcc_45_degree_code_for_residential_extensions_mar_2006.pdf",
+   "quote": "An imaginary line is drawn at an angle of 45\u00b0 from the nearest front or rear window of the house/flat that may be affected by the new building work. This window must be the main source of light to a 'habitable room'... If the extension/building is going to be single-storey, the measurement is taken (and the line is drawn) from the mid point of the nearest ground floor window of the nearby house/flat. If the extension/building is to be two-storey, the measurement is taken from the quarter point of the nearest ground floor window."
+  },
+  {
+   "title": "Birmingham Design Guide \u2014 Healthy Living and Working Places City Manual (September 2022), City Note LW-4",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/24168/4_healthy_living_and_working_city_manual_-_september_2022.pdf",
+   "quote": "The Code is based on a 45 degree (imaginary) line taken from the nearest primary habitable room window (front or rear facing) to the proposed development... will primarily relate to all household extensions (including conservatories)... Where the nearest habitable room window is a bay window, the point should be taken from a setback position in line with the wall from which the bay projects."
+  },
+  {
+   "title": "Habitable room definition (2006 Code and successor guidance)",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/16864/ebd43_bcc_45_degree_code_for_residential_extensions_mar_2006.pdf",
+   "quote": "Habitable rooms include living rooms, bedrooms, kitchens and conservatories but do not include rooms such as bathrooms, utility rooms, halls, landings or garages."
+  },
+  {
+   "title": "Birmingham Design Guide SPD adoption statement (adopted 6 September 2022)",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/24162/design_guide_spd_adoption_statement.pdf"
+  },
+  {
+   "title": "List of policies and guidance superseded by the Birmingham Design Guide SPD",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/21277/list_of_policies_and_guidance_to_be_superseded.docx",
+   "quote": "45 Degree Code for Residential Extensions (March 2006); Extending your home: Home extensions design guide (March 2007); Places for Living (March 2001)"
+  },
+  {
+   "title": "Adopted Birmingham Development Plan 2031 (adopted 10 January 2017) \u2014 Policy PG3 Place making",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/5433/adopted_birmingham_development_plan_2031.pdf",
+   "quote": "Policy PG3 Place making: All new development will be expected to demonstrate high design quality, contributing to a strong sense of place."
+  },
+  {
+   "title": "Adopted Development Management in Birmingham DPD (adopted 7 December 2021)",
+   "url": "https://www.birmingham.gov.uk/info/20054/local_plan_documents/1861/development_management_in_birmingham_submission",
+   "quote": "Adoption of the DMB replaces the remaining policies of the Birmingham Unitary Development Plan (2005) (UDP) contained in chapter 8 and paragraphs 3.14 to 3.14D which have now been revoked."
+  },
+  {
+   "title": "Development Management in Birmingham DPD (December 2021) \u2014 Policy DM2 Amenity",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/21273/development_management_in_birmingham_dpd.pdf",
+   "quote": "Development must be appropriate to its location and not result in unacceptable adverse impacts on the amenity of occupiers and neighbours... visual privacy and overlooking; sunlight, daylight and overshadowing; aspect and outlook."
+  },
+  {
+   "title": "EBD18 \u2014 Places for Living SPG (March 2001), Birmingham City Council",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/16840/ebd18_places_for_living_spd_mar_2001.pdf"
+  },
+  {
+   "title": "Planning pre-application charges 2026 to 2027, Birmingham City Council",
+   "url": "https://www.birmingham.gov.uk/downloads/file/13521/planning_pre-application_charges_2026_to_2027",
+   "quote": "Category H \u2014 Householder: to extend or alter a single domestic property... Written advice only \u00a3166.80 (including VAT); charge if a meeting is requested \u00a3332.40 (as extracted; verify against PDF)."
+  },
+  {
+   "title": "Pre-application advice, Birmingham City Council",
+   "url": "https://www.birmingham.gov.uk/info/20160/planning_applications/79/pre-application_advice",
+   "quote": "Pre-planning advice cannot guarantee that a planning application will be approved. Officers may not be aware of all issues at this stage and cannot consider comments made after your application is submitted."
+  },
+  {
+   "title": "Extra protection for Conservation Areas: Article 4 Directions, Birmingham City Council",
+   "url": "https://www.birmingham.gov.uk/info/20055/conservation_areas/15/extra_protection_for_conservation_areas_article_4_directions",
+   "quote": "Article 4(2) directions apply in nine conservation areas: Austin Village, Bournville Village, Edgbaston, Greenfield Road Harborne, High Street Sutton Coldfield, Moor Pool Harborne, Moseley, Old Yardley, and St Agnes Moseley."
+  },
+  {
+   "title": "City-Wide Article 4 Direction relating to Houses in Multiple Occupation (HMOs), Birmingham City Council",
+   "url": "https://www.birmingham.gov.uk/info/20054/local_plan_documents/1933/city-wide_article_4_direction_relating_to_houses_in_multiple_occupation_hmos/5",
+   "quote": "From Monday 8 June 2020, the Article 4 Direction removes permitted development rights for the conversion of C3 dwellings to C4 small HMOs."
+  },
+  {
+   "title": "Birmingham's conservation areas (list), Birmingham City Council",
+   "url": "https://www.birmingham.gov.uk/info/20055/conservation_areas/13/birminghams_conservation_areas/2"
+  },
+  {
+   "title": "All Saints Centre Kings Heath \u2014 location (2 Vicarage Road, B14 7RA)",
+   "url": "https://www.allsaintscentrekh.co.uk/about-us/location/"
+  },
+  {
+   "title": "What is the 45 Degree Code? (Extension Hub \u2014 secondary source on single vs two-storey measurement points)",
+   "url": "https://www.extensionhub.co.uk/45-degree-code",
+   "quote": "If the extension is single storey the measurement is taken from the mid-point of the nearest ground floor window. If the extension is at the first floor the measurement is taken from the quarter point of the nearest first floor window. If the extension is double storey the ground floor window is also measured from the midpoint."
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "summary": "All 12 photos read and described. Key corrections vs the briefing: photos 00000073-75 are NOT neighbour rear views \u2014 they are WhatsApp screenshots of a message thread between Mo and \"Asam 113 Vicarage Neighbour\" in which Mo states an intention to extend \"approximately 8 metres from the original rear boundary... around 3 metres beyond the existing extension\" (implying the existing rear extension already projects ~5m). Photo 00000092 is a screenshot of a council officer report table (45 Degree Code assessment, apparently a precedent case referencing Nos. 93 and 99 Vicarage Road). Photo 00000143 is an Eid Mubarak greeting card, irrelevant. Photos 00000113 (wa1) and 00000004 (wa2) are the same photo of no.117's rear elevation with three windows/doors circled in red. Photos 00000156/157 are the architect's Adobe-Acrobat marked-up proposed floor plan showing the 45-degree line taken from no.113's kitchen window with annotations \"For Grd\" and \"For 1st\", plus printed dimensions 6008 and 1647 mm.",
+ "facts": [
+  {
+   "topic": "00000073 (wa1, 24 Apr 2026 20:47)",
+   "detail": "WhatsApp screenshot, chat titled 'Asam 113 Vicarage Neighbour'. Blue (sent by Mo) message: 'Hi Asam... follow up to see if you've had a chance to speak with Shakeela regarding the property. As mentioned previously, the house is significantly smaller than our current home, and in order for it to work for our family long-term, we would need to extend the ground floor. Our intention is to extend approximately 8 metres from the original rear boundary, which effectively adds around 3 metres beyond the existing extension. This move is primarily a lifestyle decision... close to the school...'. No photo of any building; this is text only.",
+   "value": "Owner told no.113 the ground-floor plan = ~8m from original rear wall, i.e. ~3m beyond existing extension (implies existing extension ~5m deep as described to neighbour)",
+   "source": "WhatsApp screenshot",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000074 (wa1)",
+   "detail": "Continuation of the same blue message: property must remain practical, 'there is naturally a limit to how much we can compromise on space'; 'We completely respect that this is your right as a neighbour... it would really help us to understand your position at this stage, before we proceed with any formal application, as we would need to reconsider our options if the extension is not feasible'; values good neighbour relationship, happy to speak or meet with Shakeela directly.",
+   "source": "WhatsApp screenshot",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000075 (wa1)",
+   "detail": "End of Mo's message signed 'Kind regards, Mo & Tamanna, 115 Vicarage Road' (sent 09:25). Reply from Asam at 14:04: 'Hi Mo, The wife is on nights this week. I have not had the opportunity to talk to her about it. As soon as a do I will let you know. Regards, Asam'. Mo replies 15:01: 'Thank you Asam, we look forward to your response. Mo'.",
+   "value": "No.113 neighbour (Asam) non-committal as of 24 Apr 2026; wife = Shakeela",
+   "source": "WhatsApp screenshot",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000082 (wa1, architect 45-degree sketch)",
+   "detail": "Google Maps satellite view of 115 Vicarage Rd (red pin) with 113 to the left and 117 to the right. Teal/cyan freehand annotations: a hatched rectangular band drawn across the rear of no.115 immediately behind its existing rear extension roof, spanning roughly from the 113 boundary line to the 117 boundary \u2014 apparently the proposed additional rear extension footprint. A short teal downward arrow on the left points at the rear corner of no.113's extension, and a small dashed teal tick sits between the arrow and the hatched zone. On the right, two small teal arrow strokes point at no.117's conservatory (white-framed glazed roof visible on the aerial). No measurements or angles are written; it is a massing/footprint indication, not a true 45-degree construction.",
+   "source": "Annotated Google Maps aerial",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000084 (wa1, described in brief as 'neighbour window')",
+   "detail": "Same satellite screenshot as 00000082 (teal hatched footprint retained) with two additional marks: a short vertical GREEN bar drawn on no.117's side, located on the boundary-side edge of 117's rear projection/conservatory area (just below the '115 Vicarage Rd / Recently viewed' label, roughly level with the rear of 117's outrigger), and a RED arrow coming from the lower-right pointing up-left at that green bar. This appears to mark the position of no.117's first side window (the one measured at 230cm from the fence / 370cm from her back wall), not a photo of an actual window.",
+   "source": "Annotated Google Maps aerial",
+   "confidence": "medium"
+  },
+  {
+   "topic": "00000090 (wa1, owner's 45-degree attempt)",
+   "detail": "Same satellite base image (teal hatching and the red-arrow/green-bar marks still visible) overlaid with thick RED freehand lines by the owner: (1) a red hatched rectangle drawn over the rear part of no.115's existing extension roof between the two boundaries; (2) a long vertical red stroke on the 113 boundary side and a shorter vertical red stroke on the 117 boundary side rising into the garden; (3) two red diagonal lines fanning outward/rearward from the top of the marked block toward each side \u2014 a rough attempt at plotting 45-degree splay lines in plan from the rear corners of the proposed first-floor extension toward both neighbours. Also a small magenta/pink dot near 117's front driveway (likely accidental). No dimensions, angles or window references are written.",
+   "source": "Annotated Google Maps aerial",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000092 (wa1, 25 Apr 2026)",
+   "detail": "Screenshot of a Birmingham City Council officer-report table 'Planning Considerations / Impact on residential amenity'. Ticks: 'Complies with 45 Degree Code? No'; 'Complies with numerical guidelines? No'. Comments text: the single storey rear extension would technically breach the 45 Degree Code from the rear patio doors to No. 99 Vicarage Road, but the Code allows structures mainly of glass; the section adjacent to No. 93 incorporates glazing to the side elevation above the existing fence line and large bi-fold doors to the rear; amended plans included a fully glazed roof to this section; combined with existing close-boarded fencing there would be no adverse impact by loss of light and outlook; consideration also given to the previous relationship where there was a conservatory of a similar scale in the same location; the proposal complies with the 45 Degree Code in relation to No. 99; side-elevation windows fail the 5m-per-storey separation distance for windows overlooking private amenity space, condition attached for obscure glazing.",
+   "value": "Precedent officer report (references Nos. 93 & 99 Vicarage Rd, so a nearby application, not no.115's own) showing council accepted 45-degree breach where extension mainly glazed + glazed roof + prior conservatory of similar scale",
+   "source": "Council officer report screenshot",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000113 (wa1, 10 May 2026) and wa2/00000004 (same photo)",
+   "detail": "Ground-level photo taken from no.115's garden looking at the REAR of the neighbouring semi (no.117 side, i.e. the conservatory neighbour): two-storey rendered/brick house with a white uPVC lean-to conservatory across the rear. Three red circles drawn on it: (1) a large circle around the ground-floor side/rear window of the main back wall to the LEFT of the conservatory (small top-opening casement window at ground floor under the first-floor window); (2) a circle around the conservatory's glazed double French-door leaf area (centre of conservatory rear); (3) a circle around the adjacent glazed panel/door leaf immediately right of the doors. Uncircled: the first-floor windows above, and the conservatory's right-hand rear window panel. This is the architect asking which rooms these circled openings serve. A timber fence (the 115/117 boundary) runs along the right foreground; part of no.115's own structure and a neighbouring brick outrigger appear at frame right.",
+   "value": "Circled at no.117: ground-floor rear window left of conservatory + two glazed door/panel sections of the conservatory rear",
+   "source": "Annotated site photo",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000143 (wa1, 27 May 2026)",
+   "detail": "An 'Eid Mubarak' greeting graphic (Dome of the Rock imagery, lantern, blessing text, watermark 'emanboost'). No planning content whatsoever.",
+   "source": "WhatsApp forwarded image",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000156 (wa1, 6 Jun 2026, architect markup \u2014 113 side)",
+   "detail": "Screenshot of a drawing PDF open in Adobe Acrobat mobile ('Generative summary' banner). Shows part of the proposed floor plan: room labelled 'KITCHEN No.113' at left, 'CONSERVA[TORY]' at right (no.117 side), with no.115's proposed rear extension between. A printed 45-degree construction: dashed line rising at a marked '45\u00b0' arc from a point on no.113's rear elevation at its kitchen window, running up-right to meet the extension flank; printed vertical dimensions '6008' (depth of the proposed extension flank from the rear building line, i.e. ~6.0m) and '1647' (the distance from the 45-degree line intersection to the conservatory-side rear line, ~1.65m). Blue handwritten ink: 'For Grd' with arrow to a circled portion of no.113's kitchen window (the window itself circled at the wall, with the dashed centreline through it), and 'For 1st' with a curving arrow pointing to the INNER edge/nearer jamb of that same window opening \u2014 i.e. the architect distinguishes the 45-degree line start point used for the ground-floor check vs the first-floor check on no.113's kitchen window.",
+   "value": "45\u00b0 line for no.113 taken from kitchen window; printed dims 6008mm extension depth and 1647mm; 'For Grd' = circled window (centre), 'For 1st' = nearer edge of same window",
+   "source": "Architect-annotated plan screenshot",
+   "confidence": "high"
+  },
+  {
+   "topic": "00000157 (wa1, 6 Jun 2026, architect markup \u2014 117 side)",
+   "detail": "Second screenshot of the same PDF, panned to the no.117 side. Shows 'CONSERVATORY' room of no.117 with its rear French doors (double door swing arcs printed), the 115/117 boundary line dashed at left, label 'STING' (part of 'EXISTING') at far left, and 'CH No.11[5?]' at lower right. Printed 45\u00b0 construction: dashed line from no.115's extension corner at the marked '45\u00b0' arc descending toward the conservatory. Blue handwritten ink: 'For Grd' with arrow into a circle drawn around a point on the conservatory's REAR wall at the left-hand jamb/centre of the French-door opening (a dashed centreline passes through it); 'For 1st' with a long curved arrow pointing to the LEFT-HAND rear window of the conservatory (the panel nearest the 115 boundary). I.e. for no.117 the architect takes the ground-floor 45-degree line from the conservatory door position and the first-floor line from the conservatory window nearest the boundary. No numeric dimensions visible in this crop.",
+   "value": "45\u00b0 line for no.117: 'For Grd' point = conservatory rear door area, 'For 1st' point = conservatory window nearest the 115 boundary",
+   "source": "Architect-annotated plan screenshot",
+   "confidence": "high"
+  },
+  {
+   "topic": "Cross-check vs measured dims",
+   "detail": "The aerial green-bar mark (00000084) is consistent with the stated 117 side-window position (230cm from fence, 370cm from her back wall). The 6008mm printed depth on 00000156 matches the proposed ~6m ground-floor extension. The '1647' dim (~1.65m) is where the 45\u00b0 line from 113's kitchen window lands relative to the extension \u2014 the architect appears to be demonstrating how much of the 6m depth clears the 45\u00b0 test. Note the tension with photo 00000073, where Mo told no.113 the extension would be ~8m from the original rear wall (~3m beyond existing) \u2014 larger than the 6m/6.7m figure in the current brief.",
+   "confidence": "medium"
+  }
+ ],
+ "open_questions": [
+  "Photos 00000073-75 were labelled 'neighbour rear views' in the task but are WhatsApp text screenshots \u2014 were different photo files intended?",
+  "Is the officer report in 00000092 from application 2004/00658/PA-type case at 93/99 Vicarage Rd (precedent) \u2014 the application reference is cropped out of the screenshot",
+  "In 00000157 no dimensions are visible for the 117-side 45-degree check \u2014 is there a further crop showing the numeric result on that side?",
+  "Photo 00000073 says ~8m from original rear boundary / ~3m beyond existing extension, which conflicts with the ~6-6.7m ground-floor figure and the 3.3m 2005 approval \u2014 which existing-extension depth is correct?"
+ ]
+}

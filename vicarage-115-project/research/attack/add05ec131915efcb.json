@@ -1,0 +1,132 @@
+{
+ "summary": "Birmingham City Council's planning portal (eplanning.birmingham.gov.uk/Northgate/PlanningExplorer) is UNREACHABLE from this environment: the pre-configured agent proxy gateway answers \"403 to CONNECT (policy denial or upstream failure)\" for eplanning.birmingham.gov.uk, www.birmingham.gov.uk, acp.planninginspectorate.gov.uk, planit.org.uk, planningfinder.co.uk, r.jina.ai, and even direct google.com/bing.com/duckduckgo.com \u2014 confirmed via curl through $HTTPS_PROXY and via WebFetch (both return 403; proxy status log shows repeated \"connect_rejected ... gateway answered 403 to CONNECT\" entries for these hosts). The ONLY working channel was the hosted WebSearch tool (server-side, US-indexed). Using it exhaustively (address searches, ref-number searches, site: searches of the portal and of birmingham.gov.uk weekly-list PDFs, aggregator searches): (1) NO planning records for 115 Vicarage Road B14 7QG could be found in any index \u2014 S/03404/05/FUL is not verifiable online (2005 records exist only inside the blocked portal; indexed weekly PDF lists start ~Jan 2025), and no record of the two-storey side extension over the garage was found (likely pre-digitisation); notable: 115 sold 7 April 2025 for \u00a3430,000, marketed by Robert Oulsnam as a \"three bedroom LINK detached\" with garage/store \u2014 a possible tension with the pre-app's \"detached\" description worth checking. (2) No indexed planning history for 111, 113 or 117 Vicarage Road (sale dates only: 113 sold Jul 2009 \u00a3215k; 111 sold Feb 2023 \u00a3367.5k). (3) The refused-then-approved \"high-level windows + roof lantern\" case in the 100-130 range was NOT found; the closest documented activity is 131 Vicarage Road B14 7QQ with householder application(s) received w/c 10 Aug 2025 \u2014 2025/04397/PA \"erection of first floor rear extension\" and 2025/04448/PA (reported variously as first floor front or rear extension; both refs appear against the 10-16 Aug 2025 weekly list PDF), decisions unknown. This 131 first-floor-rear application is the best candidate for the owner's \"neighbours have first-floor rear extensions\" claim on the same street. (4) Nothing indexed for Taylor Road / Barn Lane / Woodthorpe Road B14 two-storey rear extensions 2025-26. (5) No Vicarage Road B14 appeal decisions found; nearest Birmingham S appeal located was APP/P4605/W/25/3372225 (230A Grange Road, Moseley & Kings Heath \u2014 allowed, change of use of builders yard, not relevant as extension precedent). Two orphan portal refs surfaced under a \"B14 7QG\" site-query (2011/00180/PA, 2014/06692/PA) that could not be tied to an address and should be checked on the portal from an unrestricted connection. Bottom line: full verified planning histories require portal access outside this proxied environment (or a call to BCC Planning, 0121 303 1115); the specific refs to pull first are S/03404/05/FUL, 2025/04397/PA, 2025/04448/PA, 2011/00180/PA, 2014/06692/PA and the side-extension permission for 115 (address search, pre-2005).",
+ "facts": [
+  {
+   "topic": "Portal accessibility",
+   "detail": "eplanning.birmingham.gov.uk (Northgate PlanningExplorer) is blocked by the environment's agent proxy: curl through $HTTPS_PROXY returns 'curl: (56) CONNECT tunnel failed, response 403' and WebFetch returns 'HTTP 403 Forbidden'. Proxy status endpoint logs 'connect_rejected \u2014 gateway answered 403 to CONNECT (policy denial or upstream failure)' for eplanning.birmingham.gov.uk, www.birmingham.gov.uk, www.solihull.gov.uk and acp.planninginspectorate.gov.uk. Also blocked: planit.org.uk, planningfinder.co.uk, r.jina.ai, html.duckduckgo.com, www.bing.com, www.google.com, webcache.googleusercontent.com. The portal itself is presumably fine \u2014 the denial is at the proxy gateway.",
+   "value": "Portal unreachable \u2014 proxy policy denial (403 to CONNECT)",
+   "source": "curl tests + $HTTPS_PROXY/__agentproxy/status",
+   "confidence": "high"
+  },
+  {
+   "topic": "115 Vicarage Road \u2014 planning history",
+   "detail": "No planning application for 115 Vicarage Road B14 7QG appears in any web index searched (exact-phrase searches of birmingham.gov.uk weekly-list PDFs Jan 2025-Jul 2026, eplanning site: searches, aggregators). S/03404/05/FUL (2005 single-storey rear, ~3.3m) could not be verified \u2014 2005-era records exist only on the blocked portal; indexed weekly PDF lists only start ~Jan 2025. No record found of the two-storey flat-roof side extension over the garage (no ref, date, dims or conditions obtainable) \u2014 likely pre-dates online records. No post-pre-app 2026 submission for 115 appears in indexed weekly lists through 25 Jul 2026.",
+   "value": "No records retrievable online; portal access required",
+   "source": "WebSearch (multiple queries)",
+   "confidence": "high"
+  },
+  {
+   "topic": "115 Vicarage Road \u2014 property facts",
+   "detail": "Sold 7 April 2025 for \u00a3430,000 (themovemarket property page for 115 Vicarage Road B14 7QG \u2014 an earlier search summary mis-attributed this sale to No.117). Marketed by Robert Oulsnam as a 'three bedroom LINK detached residence' with living room, dining room, kitchen, downstairs WC, garage/store, off-road parking; opposite Kings Heath Park and Camp Hill School; Council Tax Band E. The 'link detached' description is a possible tension with the pre-app officer's 'detached' characterisation and with subservience arguments \u2014 verify.",
+   "value": "Sold Apr 2025 \u00a3430k; 'link detached' per agent",
+   "source": "themovemarket.com / oulsnam.net via WebSearch",
+   "confidence": "medium"
+  },
+  {
+   "topic": "111/113/117 Vicarage Road",
+   "detail": "No planning applications for 111, 113 or 117 Vicarage Road B14 7QG found in any index. Sale data only: 113 (4-bed period house) sold \u00a3215,000 Jul 2009; 111 sold \u00a3367,500 Feb 2023. The claimed full-width first-floor rear extension at 111/113 and 117's conservatory permission (if any \u2014 conservatories are usually permitted development) cannot be verified without portal access.",
+   "value": "No indexed planning records",
+   "source": "WebSearch (192.com, bricksandlogic summaries)",
+   "confidence": "medium"
+  },
+  {
+   "topic": "131 Vicarage Road B14 7QQ \u2014 nearest documented street precedent",
+   "detail": "Householder application(s) received week 10-16 Aug 2025, Brandwood & King's Heath ward: ref 2025/04397/PA described as 'erection of first floor rear extension' and ref 2025/04448/PA described in one reading as 'first floor front extension' and in another as 'first floor rear extension' \u2014 both refs cited against the same weekly PDF (birmingham.gov.uk download id/30667); may be two applications (front + rear) or one summarisation error. Decisions NOT ascertainable (weekly lists are received-lists only). This is the strongest candidate for (a) the owner's 'neighbours in line' first-floor rear precedent and possibly (b) the refused-then-revised case \u2014 131 is on the odd side a few doors up from 115. Pull both refs first on the portal.",
+   "value": "2025/04397/PA and 2025/04448/PA, received Aug 2025, decisions unknown",
+   "source": "birmingham.gov.uk weekly list PDF id/30667 via WebSearch snippets",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Refused-then-approved case with high-level windows / roof lantern (100-130 range)",
+   "detail": "Not found in any index. No refusal, appeal or re-approval on Vicarage Road B14 7QG/7QQ is indexed. If it exists it is only visible on the portal (address search of each number 100-131) \u2014 recommend checking 131 (2025/04397/PA / 2025/04448/PA) first since a first-floor application there in Aug 2025 followed by nothing indexed could mask a refusal-and-resubmission sequence.",
+   "value": "Not located",
+   "source": "WebSearch (exhaustive)",
+   "confidence": "high"
+  },
+  {
+   "topic": "Adjoining streets (Taylor Rd, Barn Lane, Woodthorpe Rd B14)",
+   "detail": "No two-storey/first-floor rear extension approvals on these streets appear in indexed weekly lists 2025-2026 or portal-indexed pages. Absence of evidence only \u2014 the received-lists are indexed patchily by Google and decisions lists are not indexed at all.",
+   "value": "Nothing found (weak negative)",
+   "source": "WebSearch",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Appeals",
+   "detail": "No Planning Inspectorate appeal decisions for Vicarage Road B14 found. Nearest located Birmingham appeal: APP/P4605/W/25/3372225, 230A Grange Road, Moseley & Kings Heath (Mr M Puopolo v Birmingham CC) \u2014 ALLOWED, change of use of builders yard to residential incl. extensions; not an extension-design precedent. acp.planninginspectorate.gov.uk itself is proxy-blocked so full-text appeal searching was impossible.",
+   "value": "No relevant appeals found",
+   "source": "WebSearch",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Orphan portal references worth checking",
+   "detail": "Google's index of eplanning.birmingham.gov.uk surfaced two application detail pages in response to a '\"Vicarage Road\" \"B14 7QG\"' site-query that could not be resolved to an address without portal access: 2011/00180/PA (PARAM0=494483) and 2014/06692/PA (PARAM0=670375). They may relate to Kings Heath Park/other Vicarage Road properties rather than No.115, but should be pulled when the portal is accessible. Also indexed: 2015/01188/PA = 1 Vicarage Road B14 7QA (change of use A2 to C3, approved with conditions 30 Apr 2015 \u2014 not relevant as massing precedent).",
+   "value": "2011/00180/PA, 2014/06692/PA unresolved",
+   "source": "Google index of eplanning.birmingham.gov.uk via WebSearch",
+   "confidence": "medium"
+  },
+  {
+   "topic": "How to complete this research",
+   "detail": "From an unrestricted connection: (1) eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/GeneralSearch.aspx \u2014 address-search each of 100-131 Vicarage Road B14, plus Taylor Rd/Barn Lane/Woodthorpe Rd; (2) pull refs S/03404/05/FUL, 2025/04397/PA, 2025/04448/PA, 2011/00180/PA, 2014/06692/PA and decision notices + approved drawings (dims are on the drawings, not the register entry); (3) planit.org.uk API (search=Vicarage Road, auth=Birmingham) gives the whole street's history in one JSON call; (4) acp.planninginspectorate.gov.uk CaseSearch for LPA P4605 + 'Vicarage Road'; (5) BCC Planning enquiries 0121 303 1115 / planning.enquiries@birmingham.gov.uk for the pre-2000 side-extension permission (paper microfiche era).",
+   "value": "Portal checklist for follow-up",
+   "source": "investigation-derived",
+   "confidence": "high"
+  }
+ ],
+ "open_questions": [
+  "Reference, date and approved dimensions of the existing two-storey side extension over the garage at 115 Vicarage Road (no online trace; likely pre-digitisation \u2014 needs portal/microfiche check)",
+  "Verification of S/03404/05/FUL (2005 single-storey rear at 115): approved depth, conditions, whether built as approved",
+  "Whether 2025/04397/PA and 2025/04448/PA at 131 Vicarage Road are two separate applications (front + rear first-floor) or one, and their DECISIONS \u2014 this is the likely street precedent for first-floor rear massing and possibly the refused-then-revised case",
+  "Identity of the 'few doors down' refused-then-approved scheme with high-level windows and roof lantern \u2014 not in any index; needs number-by-number portal search of 100-131 Vicarage Road",
+  "Whether 111 or 113 actually holds permission for a full-width first-floor rear extension, and any permission history for 117's conservatory",
+  "What addresses 2011/00180/PA and 2014/06692/PA relate to (surfaced under B14 7QG queries but unresolvable without portal access)",
+  "Whether 115 is truly detached or 'link detached' (agent listing says link detached; pre-app says detached) \u2014 affects PD fallback and subservience arguments",
+  "Whether a full application for 115 has been submitted since the 2026/03356/PA pre-app (nothing in indexed weekly lists to 25 Jul 2026)"
+ ],
+ "references": [
+  {
+   "title": "Birmingham CC Planning Explorer \u2014 General Search (blocked by proxy: 403 to CONNECT)",
+   "url": "https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/GeneralSearch.aspx"
+  },
+  {
+   "title": "Weekly list PDF, planning applications received 10-16 Aug 2025 (contains 131 Vicarage Road B14 7QQ, 2025/04397/PA first floor rear extension and 2025/04448/PA)",
+   "url": "https://www.birmingham.gov.uk/download/downloads/id/30667/planning_applications_received_10_august_to_16_august_2025.pdf",
+   "quote": "131 Vicarage Road, Birmingham, B14 7QQ \u2014 erection of first floor rear extension (householder), per WebSearch snippet of this PDF; decisions not stated in received-lists"
+  },
+  {
+   "title": "Birmingham CC weekly planning application downloads index (received lists, ~Jan 2025 onwards)",
+   "url": "https://www.birmingham.gov.uk/downloads/20160/planning_applications"
+  },
+  {
+   "title": "115 Vicarage Road, Kings Heath, B14 7QG \u2014 property record (sold \u00a3430,000 on 7 Apr 2025)",
+   "url": "https://themovemarket.com/tools/propertyprices/115-vicarage-road-kings-heath-birmingham-b14-7qg"
+  },
+  {
+   "title": "Robert Oulsnam listing, Vicarage Road B14 7QG ('three bedroom link detached residence... garage/store')",
+   "url": "https://www.oulsnam.net/property/vicarage-road-kings-heath-birmingham-west-midlands-b14-7qg/"
+  },
+  {
+   "title": "Portal detail page (indexed, unresolved address) \u2014 2011/00180/PA",
+   "url": "https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/Generic/StdDetails.aspx?PT=Planning+Applications+On-Line&TYPE=PL/PlanningPK.xml&PARAM0=494483&XSLT=/Northgate/PlanningExplorer/SiteFiles/Skins/Birmingham/xslt/PL/PLDetailsDates.xslt&FT=Planning+Application+Details&PUBLIC=Y&XMLSIDE=/Northgate/PlanningExplorer/SiteFiles/Skins/Birmingham/Menus/PL.xml&DAURI=PLANNING"
+  },
+  {
+   "title": "Portal detail page (indexed, unresolved address) \u2014 2014/06692/PA",
+   "url": "https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/Generic/StdDetails.aspx?PT=Planning+Applications+On-Line&TYPE=PL/PlanningPK.xml&PARAM0=670375&XSLT=/Northgate/PlanningExplorer/SiteFiles/Skins/Birmingham/xslt/PL/PLDetails.xslt&FT=Planning+Application+Details&PUBLIC=N&DAURI=PLANNING"
+  },
+  {
+   "title": "Portal detail page \u2014 2015/01188/PA, 1 Vicarage Road B14 7QA (A2 to C3, approved 30 Apr 2015)",
+   "url": "https://eplanning.birmingham.gov.uk/Northgate/PlanningExplorer/Generic/StdDetails.aspx?PT=Planning+Applications+On-Line&TYPE=PL/PlanningPK.xml&PARAM0=710235&XSLT=/Northgate/PlanningExplorer/SiteFiles/Skins/Birmingham/xslt/PL/PLDetails.xslt&FT=Planning+Application+Details&PUBLIC=Y&DAURI=PLANNING"
+  },
+  {
+   "title": "PlanIt API (whole-street history in one call, blocked in this environment)",
+   "url": "https://www.planit.org.uk/api/applics/json?search=Vicarage+Road+Kings+Heath&auth=Birmingham&pg_sz=50"
+  },
+  {
+   "title": "Planning Inspectorate appeal casework search (blocked by proxy)",
+   "url": "https://acp.planninginspectorate.gov.uk/CaseSearch.aspx"
+  },
+  {
+   "title": "Sold prices, Vicarage Road B14 (111 sold Feb 2023 \u00a3367.5k; 113 sold Jul 2009 \u00a3215k)",
+   "url": "https://www.rightmove.co.uk/house-prices/b14/vicarage-road.html"
+  }
+ ]
+}

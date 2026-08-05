@@ -1,0 +1,152 @@
+{
+ "summary": "Extracted the full Birmingham City Council pre-application submission evidence for 115 Vicarage Road, Kings Heath, B14 7QG. The pre-app (submitted 09/06/2026 via BCC \"Apply for pre-application advice\" online form, householder category) was made by agent Rouhel Ahmed on behalf of applicant/payee Mohammed Ahmed, fee \u00a3166.80 inc VAT, council submission reference 17123150. The verbatim advice request was: \"Proposed double storey rear extension. Require confirmation of the size of the extension in relation to the 45 degree rule from neighbouring properties.\" Location plan confirms plot area 607.14 sq m, scales 1:1250 (location) and 1:500 (block), no written plot dimensions. Five site photos show the existing single-storey rear projection at no.115, the alleyway gap to no.113's rendered extension, and no.117's lean-to conservatory abutting the boundary. No evidence of a site-visit request appears in any screenshot provided.",
+ "facts": [
+  {
+   "topic": "Proposal description submitted (verbatim)",
+   "detail": "Form field 'Tell us briefly what you need advice on' reads verbatim: \"Proposed double storey rear extension. Require confirmation of the size of the extension in relation to the 45 degree rule from neighbouring properties.\" Site address details field: \"115 Vicarage Rd, B14 7QG\". 'Are you a householder, planning an extension or [alteration to an existing...]' answered \"Yes\".",
+   "source": "00000203-PHOTO-2026-06-09-11-51-11.jpg (Review page, 'Page: Application information')",
+   "value": "Proposed double storey rear extension; advice sought on size vs 45 degree rule",
+   "confidence": "high"
+  },
+  {
+   "topic": "Applicant / payee name used",
+   "detail": "Payee details page: First name 'Mohammed', Last name 'Ahmed', Email address 'rouhel_ahmed@hotmail.com', Cardholder address '103 Stoney Lane, South Yardley, Birmingham, B25 8RE'. Note the payee name (Mohammed Ahmed) differs from the agent name, but the payee email is the agent's own hotmail address.",
+   "source": "00000204 and 00000205 screenshots (Page: Payee details)",
+   "value": "Mohammed Ahmed (payee); email rouhel_ahmed@hotmail.com",
+   "confidence": "high"
+  },
+  {
+   "topic": "Agent details",
+   "detail": "'Are you an agent acting on behalf of an applicant': Yes. Agent's name: Rouhel Ahmed. Agent's email address: rouhel_ahmed@hotmail.com. Agent's phone number: 07815575110. Agent's address: 103 Stoney Lane, South Yardley, Birmingham, B25 8RE.",
+   "source": "00000201-PHOTO-2026-06-09-11-50-47.jpg and 00000203 (Review page, 'Page: Contact information')",
+   "value": "Rouhel Ahmed, 07815575110, 103 Stoney Lane, South Yardley, B25 8RE",
+   "confidence": "high"
+  },
+  {
+   "topic": "Fee paid",
+   "detail": "'Householder fees \u2014 The cost of your pre-application is \u00a3166.80'. Payments Basket: service '* BRUM Account standard VAT', cost \u00a3166.80, 'Amount to pay: \u00a3166.80'. Confirmation email: 'Your payment of 166.80 includes VAT at 20%'. Council VAT Registration Number GB112082130.",
+   "source": "00000200, 00000206, 00000207 screenshots",
+   "value": "\u00a3166.80 including VAT at 20% (householder pre-app fee)",
+   "confidence": "high"
+  },
+  {
+   "topic": "Council reference number",
+   "detail": "Confirmation email from webteam@birmingham.gov.uk on behalf of Planning.Registration@birmingham.gov.uk, Tue 09/06/2026 10:55 (screen clock ~11:56): 'Your application for pre-planning advice has been submitted, reference 17123150.' Council will review the pre-application and any documents and send an acknowledgement letter with the assigned officer's details and expected timescales for assessment. (Note: 17123150 is the online-submission/payment reference; the council's later pre-app case reference 2026/03356/PA is not shown in these files.)",
+   "source": "00000207-PHOTO-2026-06-09-11-57-04.jpg",
+   "value": "17123150 (submission reference)",
+   "confidence": "high"
+  },
+  {
+   "topic": "Documents submitted with the pre-app",
+   "detail": "'Page: Documents required' \u2014 Location and/or site plan: 115_Location_Plan.pdf. 'Submit any other files in support of your application': D01_Ext_Plans_A.pdf, D03_Prop_Plans.pdf, pic_1.jpeg, pic_2.jpeg, pic_3.jpeg, pic_4.jpeg, pic_5.jpeg.",
+   "source": "00000204-PHOTO-2026-06-09-11-51-24.jpg",
+   "value": "1 location plan PDF, 2 drawing PDFs (D01 existing, D03 proposed), 5 photos",
+   "confidence": "high"
+  },
+  {
+   "topic": "Site visit request",
+   "detail": "None of the supplied form screenshots (00000175, 00000200, 00000201, 00000203\u201300000207) shows any question or answer about requesting a site visit or meeting; the visible review pages cover Contact information, Application information, Documents required and Payee details only. No evidence either way of a site visit being requested.",
+   "source": "All wa1 form screenshots reviewed",
+   "value": "Not evidenced in supplied screenshots",
+   "confidence": "high"
+  },
+  {
+   "topic": "Submission date/time",
+   "detail": "Form being filled 09/06/2026 (Windows clock 11:16 on Payee details entry screenshot; 11:51\u201311:52 on review/basket screenshots; confirmation email timestamped Tue 09/06/2026 10:55, read at 11:56). Weather widget '14C Mostly cloudy'. Filled on a Dell laptop via the BCC website 'Online forms / Apply for pre-application advice'.",
+   "source": "Screen clocks in 00000175, 00000203\u201300000207",
+   "value": "Tuesday 9 June 2026, late morning",
+   "confidence": "high"
+  },
+  {
+   "topic": "Location plan \u2014 title block (verbatim)",
+   "detail": "Contract: '115 VICARAGE ROAD KINGS HEATH BIRMINGHAM B14 7QG'. Drawing: 'LOCATION & BLOCK PLANS'. Scale: '1:1250 & 500'. Drg no: 001, Rev: 00. Date, drn by, job no and status boxes blank. Notes: 'Contractor to verify all dimensions at the job before commencing any work or making any shop drawings and allow all tollerances.' Two graphic scale bars: 1:500 (0-5-10-15-20-25 metres) and 1:1250 (0-12.5-25-37.5-50-62.5 metres). North point symbol present. OS attribution: 'Ordnance Survey (c) Crown Copyright 2015. All rights reserved. Licence number 100022432'.",
+   "source": "00000189-115 Location Plan.pdf (rendered at 200 dpi)",
+   "value": "Drg 001 rev 00, Location 1:1250 + Block 1:500",
+   "confidence": "high"
+  },
+  {
+   "topic": "Location plan \u2014 plot area and dimensions",
+   "detail": "The red-line plot is annotated '607.14m2' on both the 1:1250 location plan and 1:500 block plan. This is the ONLY written dimension/area on the sheet \u2014 no linear plot dimensions (width/depth) are written anywhere; any lengths would have to be scaled off the sheet using the 1:500/1:1250 scale bars.",
+   "source": "00000189-115 Location Plan.pdf",
+   "value": "607.14 sq m plot area (written); no linear dimensions written",
+   "confidence": "high"
+  },
+  {
+   "topic": "Location plan \u2014 plot orientation and shape",
+   "detail": "Vicarage Road runs along the plot's frontage at the top of the plan (road labelled 'VICARAGE ROAD'); Colmore Road labelled curving along/near the side/rear-left. The red-line plot is a long, narrow, near-parallelogram strip running back from Vicarage Road at an angle (rear boundary skewed, not square to the frontage), with the house (labelled 115) sited at the front of the plot and a very long rear garden \u2014 the garden depth visually many times the house depth. North point is on the sheet (top-right notes panel) but the plan itself is not annotated with a north arrow adjacent to the maps; on the block plan Vicarage Road is top-left and the garden runs down-right. Judged against typical OS orientation the long garden runs roughly south-east from the road, but this is interpretation, not written on the drawing.",
+   "source": "00000189-115 Location Plan.pdf",
+   "value": "Long narrow rear-garden plot off Vicarage Road, skewed rear boundary",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Location plan \u2014 relationship to 113 and 117",
+   "detail": "Block plan (1:500) labels: '117' to the left (south-west side) of 115 \u2014 a larger, wider footprint building close to/at the shared boundary; '115' the subject semi with a small rear projection shown; '113' immediately to the right (north-east) with its own rear projection, and '111' beyond it. The footprints of 115 and 113 rear projections are drawn close together with a small gap (the alleyway) but no gap dimension is written. Rear-boundary properties: the rear of the plot backs onto land/gardens off Colmore Road (Colmore Road curves around the left/rear; a 'Scout Hut' labelled building and other Colmore Road plots appear beyond the side/rear on the 1:1250 plan). No rear-neighbour building is shown close to the shared rear boundary on the block plan extract.",
+   "source": "00000189-115 Location Plan.pdf",
+   "value": "117 SW side (attached semi pair), 113 NE side with adjacent rear projection, long garden backing towards Colmore Road land incl. Scout Hut area",
+   "confidence": "high"
+  },
+  {
+   "topic": "Pre-app photo 1 (pic set) \u2014 rear of 115",
+   "detail": "Full-width rear view of 115 (right, painted render semi with hipped clay-tile roof) and 117 (left, attached semi): 115 has an existing flat-roof single-storey rear projection across most of its rear with a rear door, small side window, large kitchen window and a wide 4-leaf glazed door/screen set; two-storey rear wall above with first-floor windows. To the left, 117's white lean-to conservatory is visible behind the timber close-board boundary fence; to the right, the brick flank of 113 and its panel fence. Large overgrown paved patio and lawn in foreground; mature tree right of centre. No dimensions.",
+   "source": "00000192-PHOTO-2026-06-09-11-33-47.jpg",
+   "value": "Rear elevation context photo",
+   "confidence": "high"
+  },
+  {
+   "topic": "Pre-app photo 2 \u2014 113 side/rear extension",
+   "detail": "Looking up at no.113's two-storey brick rear/side wing from behind a fence: brick gable with first-floor window, ground-floor window pair, black rainwater goods; beyond it a white-rendered building with dark tiled roof and rooflight (appears to be the rear of 115's neighbour context / another property). Shows 113 already has a substantial two-storey rear element. No dimensions.",
+   "source": "00000193-PHOTO-2026-06-09-11-33-47.jpg",
+   "value": "No.113 two-storey brick rear wing photo",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Pre-app photo 3 \u2014 rear of 117 and its conservatory",
+   "detail": "Rear of the 115/117 semi pair from 117's garden: 117 (roughcast render, gabled two-storey rear bay) with a long white uPVC lean-to conservatory running along the shared boundary toward 115; brick chimney breast on the party line; to the right edge, the neighbouring property across the other boundary. Shows the conservatory hard against the 115/117 boundary. No dimensions.",
+   "source": "00000194-PHOTO-2026-06-09-11-33-47.jpg",
+   "value": "No.117 conservatory along shared boundary",
+   "confidence": "high"
+  },
+  {
+   "topic": "Pre-app photo 4 \u2014 alleyway gap between 115 and 113",
+   "detail": "The narrow passage between 115's existing rear extension (right, cream render, with Hikvision-type CCTV dome camera under the fascia, louvre vent, obscure-glazed window) and the brick garden/extension wall of 117-side conservatory (left, brick wall with uPVC conservatory windows above and white downpipe). Green tarpaulin-covered material stored in the gap. Illustrates the ~1.25m alleyway condition (no dimension written). Grey soil/vent pipes on the far wall.",
+   "source": "00000195-PHOTO-2026-06-09-11-33-47.jpg",
+   "value": "Alleyway/gap condition photo",
+   "confidence": "medium"
+  },
+  {
+   "topic": "Pre-app photo 5 \u2014 117 conservatory close-up",
+   "detail": "Close-up along 117's white uPVC lean-to conservatory (glazed doors and top-hung windows, brick base panels, interior with washing machine, clock, wood-burner flue visible), butting up to the brick pier and timber fence on the boundary with 115; 115's rendered flank and rainwater pipes at right. Shows conservatory glazing directly facing the boundary over which the proposed extension would sit. No dimensions.",
+   "source": "00000196-PHOTO-2026-06-09-11-33-47.jpg",
+   "value": "No.117 conservatory at boundary close-up",
+   "confidence": "high"
+  },
+  {
+   "topic": "Pre-app form entry screenshot (11:16)",
+   "detail": "BCC website page 'Apply for pre-application advice' \u2014 'Payee details' section being filled at 11:16 on 09/06/2026: fields First name (required), Last name (required), Email address (required), Cardholder address (required) with Postcode lookup; empty at time of photo. Breadcrumb 'Online forms / Apply for pre-application advice'. Dell laptop, Windows taskbar shows Word, AutoCAD, WhatsApp open.",
+   "source": "00000175-PHOTO-2026-06-09-11-16-57.jpg",
+   "value": "Form-filling in progress screenshot",
+   "confidence": "high"
+  },
+  {
+   "topic": "Category of pre-app",
+   "detail": "Fee page header 'Householder fees' with cost \u00a3166.80 confirms the pre-app was submitted under the householder category, consistent with the 'Are you a householder, planning an extension or alteration to an existing [dwelling]' = Yes answer.",
+   "source": "00000200 and 00000203 screenshots",
+   "value": "Householder pre-application",
+   "confidence": "high"
+  },
+  {
+   "topic": "Note on names for the record",
+   "detail": "The pre-app was submitted with agent = Rouhel Ahmed and payee = Mohammed Ahmed. Neither screenshot shows a separate 'applicant name' field beyond these; the owner name 'Mo Rahman / Candor' given in the task context does not appear anywhere in the submitted form screenshots.",
+   "source": "00000201, 00000204, 00000205 screenshots",
+   "value": "No 'Mo Rahman'/'Candor' on the form as evidenced",
+   "confidence": "high"
+  }
+ ],
+ "open_questions": [
+  "Whether a site visit was requested: the screenshots supplied do not show any site-visit question or answer on the form.",
+  "The full applicant-details page (if separate from agent/payee) was not captured; the applicant of record may be Mohammed Ahmed or someone else \u2014 only agent and payee pages are evidenced.",
+  "The council pre-app case reference 2026/03356/PA does not appear in these files; only online submission reference 17123150 is evidenced \u2014 the acknowledgement letter that would carry the case reference and officer details is not among the supplied files.",
+  "The location plan title block has no date, job no, status or drawn-by entries, so authorship/date of drawing 001 rev 00 cannot be confirmed from the sheet.",
+  "Plot linear dimensions (frontage width, garden depth) are not written on the location plan and would need scaling off the 1:500/1:1250 scale bars."
+ ]
+}
