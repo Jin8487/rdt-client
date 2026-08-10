@@ -1,0 +1,15 @@
+# 115 Vicarage Road — Executive Summary (Aug 2026)
+
+**Planning.** Maximum lawful envelope mapped and rejection-proofed: 6m ground floor (planning-led, PD fallback), first floor over, crown-roof loft = ~305m² finished, ridge ≤7.52m. Detached-status LDC strategy set; pre-app concessions banked; A.1(ja) trap managed by demolition pivot; 45° geometry passes. Non-negotiables found late and priced: three-storey fire package, CIL self-build exemption filed BEFORE ground-breaking (~£15k exposure), party-wall notices seeking consent.
+
+**Value.** Street ceiling ~£700–725k (261 Vicarage Rd, £680k, 2023). Full build is a lifestyle asset, not arbitrage: value-optimal stop is 6m GF + loft (~£680–710k on ~£150–190k). Investment margin lives nearby: Selly Park villas (~£75–150k net) and prime Moseley refurbs (~£110–180k) beat the home play; £150k+ margins live in teaser-guide auctions. Deal screener built, tested (19/19), live: 61 candidates, any-postcode radius, every assumption adjustable.
+
+**Build cost journey: £307k → £171k.** Panelised plan (£2,045/m²) beaten by price-work cavity masonry (£1,300–1,400/m²), then line-by-line VE: foundations decision tree (piles only if borehole/TPO force them: £7.3–14.25k), block spec (dense out/aircrete in, −£2.2k), roof honest-corrected £19,650 (truss re-tender −£2.3k is the lever; warm deck + insulation scope added), 4.8m pier-split lift-slide instead of full-width bifold (−£17.6k vs naive), drained near-level threshold (£400), imports of work not workers (windows/slider/stairs/kitchen from Poland — crew import illegal and uneconomic; RTW checks on all subbies from 1 Oct 2026), finishes stack (auction sanitaryware, B-grade porcelain, Kidderminster carpet seconds, spray decoration, tape-and-joint no-skim, seconds PIR). **Floor ≈ £167.5–174k fully finished; below ~£170k something lawful is missing.**
+
+**Delivery.** 11 dispute-proofed packages (interface fixes: wallplate acceptance, cavity trays owned by masonry, deck-accepted-by-text, pressure-test-gauge handoff). Delegation stack £13k (working foreman + QS-lite + fit-out SM) cuts Mo to 6–8 hrs/wk while keeping ~£30k of the main-contractor saving. All-in ≈ **£184k vs £205–222k contracted**. CDM letters, self-build insurance with EL + 6.5.1 cover, asbestos survey before demo. Critical path: slider ordered week −10.
+
+**Design language.** Quiet-money system throughout: stone-white walls, RAL 6009 green signature joinery, sage kitchen perimeter, oak + brass only; entrance axis to garden glass; top-lit protected-stair as triple-height drama; vaulted master under crown glass; no bifolds, no lanterns, no skim, nothing gaudy.
+
+**Total cash: ~£195k** (build £171k + management £13k + kitchen ~£8k + patio ~£3k) for a ~305m² finished family house worth ~£700–725k.
+
+**This week:** ① borehole with plasticity + sulfate suites ② TPO check + tree species photo ③ Polish slider/window quotes ④ truss tender with rooflight layout locked ⑤ CIL Form 9 sequence ⑥ create the private GitHub repo to rehouse this folder.
